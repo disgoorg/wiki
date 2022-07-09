@@ -1,0 +1,39 @@
+site_name: DisGo Wiki
+
+theme:
+  favicon: assets/images/logo.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - toc.integrate
+    - content.code.annotate
+  name: material
+  logo: assets/images/logo.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: #5865F2
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: #5865F2
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+repo_name: disgo
+repo_url: https://github.com/disgoorg/disgo
+edit_uri: ../disgo-wiki/edit/master/docs/
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/disgoorg
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/9tKpqXjYVC
+
+nav:
+  - Home: index.md
