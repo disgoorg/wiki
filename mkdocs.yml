@@ -3,13 +3,24 @@ site_description: DisGo Wiki
 site_author: TopiSenpai
 copyright: Copyright 2022 TopiSenpai, Skye-31
 
+watch:
+  - templates
+
+extra_css:
+  - 'assets/stylesheets/colors.css'
+  - 'assets/stylesheets/style.css'
+
 nav:
-  - Home: index.md
+  - Getting Started:
+    - DisGo: getting-started/disgo.md
+    - DisGoPlayer: getting-started/disgoplayer.md
+    - DisGoLink: getting-started/disgolink.md
+    - Log: getting-started/log.md
 
 plugins:
   - search
   - git-revision-date-localized:
-        enable_creation_date: true
+      enable_creation_date: true
 
 markdown_extensions:
   - admonition
@@ -20,6 +31,7 @@ markdown_extensions:
   - footnotes
   - def_list
   - attr_list
+  - md_in_html
   - pymdownx.tasklist:
       custom_checkbox: true
   - toc:
@@ -31,6 +43,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 theme:
+  custom_dir: templates
   favicon: assets/images/logo.png
   features:
     - navigation.tracking
@@ -44,13 +57,13 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
       primary: #5865F2
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       primary: #5865F2
       toggle:

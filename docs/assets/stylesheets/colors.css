@@ -1,0 +1,7 @@
+.md-annotation__index::after {
+  background-color: var(--md-primary-fg-color);
+}
+
+.mdx-container .mdx-hero .mdx-description, .mdx-container .mdx-hero .mdx-button {
+    margin: 1.8rem auto;
+}
