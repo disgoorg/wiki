@@ -11,11 +11,17 @@ extra_css:
   - 'assets/stylesheets/style.css'
 
 nav:
-  - Getting Started:
-    - DisGo: getting-started/disgo.md
-    - DisGoPlayer: getting-started/disgoplayer.md
-    - DisGoLink: getting-started/disgolink.md
-    - Log: getting-started/log.md
+  - DisGo:
+    - Index: disgo/index.md
+    - Getting Started: disgo/getting-started.md
+    - Bot: disgo/bot.md
+    - Gateway: disgo/gateway.md
+  - DisGoPlayer:
+    - Getting Started: disgoplayer/getting-started.md
+  - DisGoLink:
+    - Getting Started: disgolink/getting-started.md
+  - log:
+    - Getting Started: log/getting-started.md
 
 plugins:
   - search
