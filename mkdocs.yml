@@ -13,10 +13,12 @@ extra_css:
 nav:
   - DisGo:
     - Getting Started: disgo/index.md
-    - Bot: disgo/bot.md
-    - Gateway: disgo/gateway.md
+    - Examples: disgo/examples.md
   - DisGoLink:
     - Getting Started: disgolink/index.md
+    - Examples: disgolink/examples.md
+    - Events: disgolink/events.md
+    - Plugins: disgolink/plugins.md
 
 plugins:
   - search
