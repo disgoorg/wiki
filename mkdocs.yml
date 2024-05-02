@@ -26,6 +26,7 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
+  - open-in-new-tab
 
 markdown_extensions:
   - admonition
