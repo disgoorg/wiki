@@ -12,16 +12,15 @@ extra_css:
 
 nav:
   - DisGo:
-    - Index: disgo/index.md
-    - Getting Started: disgo/getting-started.md
+    - Getting Started: disgo/index.md
     - Bot: disgo/bot.md
     - Gateway: disgo/gateway.md
   - DisGoPlayer:
-    - Getting Started: disgoplayer/getting-started.md
+    - Getting Started: disgoplayer/index.md
   - DisGoLink:
-    - Getting Started: disgolink/getting-started.md
+    - Getting Started: disgolink/index.md
   - log:
-    - Getting Started: log/getting-started.md
+    - Getting Started: log/index.md
 
 plugins:
   - search
