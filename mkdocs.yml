@@ -15,12 +15,8 @@ nav:
     - Getting Started: disgo/index.md
     - Bot: disgo/bot.md
     - Gateway: disgo/gateway.md
-  - DisGoPlayer:
-    - Getting Started: disgoplayer/index.md
   - DisGoLink:
     - Getting Started: disgolink/index.md
-  - log:
-    - Getting Started: log/index.md
 
 plugins:
   - search
