@@ -12,6 +12,7 @@ extra_css:
 
 nav:
   - DisGo:
+    - Features: disgo/features.md
     - Getting Started: disgo/index.md
     - Examples: disgo/examples.md
   - DisGoLink:
