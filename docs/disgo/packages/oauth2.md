@@ -1,7 +1,10 @@
+# OAuth2
 
 ```go
 import "github.com/disgoorg/disgo/oauth2"
 ```
+
+Package oauth2 provides a high level client interface for interacting with Discord oauth2.
 
 ## Variables
 
@@ -23,7 +26,7 @@ var (
 ```
 
 <a name="AuthorizationURLParams"></a>
-## type [AuthorizationURLParams](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/client.go#L49-L56>)
+## type [AuthorizationURLParams](<https://github.com/disgoorg/disgo/blob/master/oauth2/client.go#L49-L56>)
 
 
 
@@ -39,7 +42,7 @@ type AuthorizationURLParams struct {
 ```
 
 <a name="Client"></a>
-## type [Client](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/client.go#L59-L94>)
+## type [Client](<https://github.com/disgoorg/disgo/blob/master/oauth2/client.go#L59-L94>)
 
 Client is a high level wrapper around Discord's OAuth2 API.
 
@@ -83,7 +86,7 @@ type Client interface {
 ```
 
 <a name="New"></a>
-### func [New](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/client_impl.go#L14>)
+### func [New](<https://github.com/disgoorg/disgo/blob/master/oauth2/client_impl.go#L14>)
 
 ```go
 func New(id snowflake.ID, secret string, opts ...ConfigOpt) Client
@@ -92,7 +95,7 @@ func New(id snowflake.ID, secret string, opts ...ConfigOpt) Client
 New returns a new OAuth2 client with the given ID, secret and ConfigOpt\(s\).
 
 <a name="Config"></a>
-## type [Config](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L17-L24>)
+## type [Config](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L17-L24>)
 
 Config is the configuration for the OAuth2 client
 
@@ -108,7 +111,7 @@ type Config struct {
 ```
 
 <a name="DefaultConfig"></a>
-### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L10>)
+### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L10>)
 
 ```go
 func DefaultConfig() *Config
@@ -117,7 +120,7 @@ func DefaultConfig() *Config
 DefaultConfig is the configuration which is used by default
 
 <a name="Config.Apply"></a>
-### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L30>)
+### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L30>)
 
 ```go
 func (c *Config) Apply(opts []ConfigOpt)
@@ -126,7 +129,7 @@ func (c *Config) Apply(opts []ConfigOpt)
 Apply applies the given ConfigOpt\(s\) to the Config
 
 <a name="ConfigOpt"></a>
-## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L27>)
+## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L27>)
 
 ConfigOpt can be used to supply optional parameters to New
 
@@ -135,7 +138,7 @@ type ConfigOpt func(config *Config)
 ```
 
 <a name="WithLogger"></a>
-### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L46>)
+### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L46>)
 
 ```go
 func WithLogger(logger *slog.Logger) ConfigOpt
@@ -144,7 +147,7 @@ func WithLogger(logger *slog.Logger) ConfigOpt
 WithLogger applies a custom logger to the OAuth2 client
 
 <a name="WithOAuth2"></a>
-### func [WithOAuth2](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L67>)
+### func [WithOAuth2](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L67>)
 
 ```go
 func WithOAuth2(oauth2 rest.OAuth2) ConfigOpt
@@ -153,7 +156,7 @@ func WithOAuth2(oauth2 rest.OAuth2) ConfigOpt
 WithOAuth2 applies a custom rest.OAuth2 to the OAuth2 client
 
 <a name="WithRestClient"></a>
-### func [WithRestClient](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L53>)
+### func [WithRestClient](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L53>)
 
 ```go
 func WithRestClient(restClient rest.Client) ConfigOpt
@@ -162,7 +165,7 @@ func WithRestClient(restClient rest.Client) ConfigOpt
 WithRestClient applies a custom rest.Client to the OAuth2 client
 
 <a name="WithRestClientConfigOpts"></a>
-### func [WithRestClientConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L60>)
+### func [WithRestClientConfigOpts](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L60>)
 
 ```go
 func WithRestClientConfigOpts(opts ...rest.ConfigOpt) ConfigOpt
@@ -171,7 +174,7 @@ func WithRestClientConfigOpts(opts ...rest.ConfigOpt) ConfigOpt
 WithRestClientConfigOpts applies rest.ConfigOpt for the rest.Client to the OAuth2 client
 
 <a name="WithStateController"></a>
-### func [WithStateController](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L74>)
+### func [WithStateController](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L74>)
 
 ```go
 func WithStateController(stateController StateController) ConfigOpt
@@ -180,7 +183,7 @@ func WithStateController(stateController StateController) ConfigOpt
 WithStateController applies a custom StateController to the OAuth2 client
 
 <a name="WithStateControllerOpts"></a>
-### func [WithStateControllerOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/config.go#L81>)
+### func [WithStateControllerOpts](<https://github.com/disgoorg/disgo/blob/master/oauth2/config.go#L81>)
 
 ```go
 func WithStateControllerOpts(opts ...StateControllerConfigOpt) ConfigOpt
@@ -189,7 +192,7 @@ func WithStateControllerOpts(opts ...StateControllerConfigOpt) ConfigOpt
 WithStateControllerOpts applies all StateControllerConfigOpt\(s\) to the StateController
 
 <a name="Session"></a>
-## type [Session](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/client.go#L28-L43>)
+## type [Session](<https://github.com/disgoorg/disgo/blob/master/oauth2/client.go#L28-L43>)
 
 Session represents a discord access token response \(https://discord.com/developers/docs/topics/oauth2#authorization-code-grant-access-token-response\)
 
@@ -213,7 +216,7 @@ type Session struct {
 ```
 
 <a name="Session.Expired"></a>
-### func \(Session\) [Expired](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/client.go#L45>)
+### func \(Session\) [Expired](<https://github.com/disgoorg/disgo/blob/master/oauth2/client.go#L45>)
 
 ```go
 func (s Session) Expired() bool
@@ -222,7 +225,7 @@ func (s Session) Expired() bool
 
 
 <a name="StateController"></a>
-## type [StateController](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller.go#L10-L16>)
+## type [StateController](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller.go#L10-L16>)
 
 StateController is responsible for generating, storing and validating states.
 
@@ -237,7 +240,7 @@ type StateController interface {
 ```
 
 <a name="NewStateController"></a>
-### func [NewStateController](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller.go#L19>)
+### func [NewStateController](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller.go#L19>)
 
 ```go
 func NewStateController(opts ...StateControllerConfigOpt) StateController
@@ -246,7 +249,7 @@ func NewStateController(opts ...StateControllerConfigOpt) StateController
 NewStateController returns a new empty StateController.
 
 <a name="StateControllerConfig"></a>
-## type [StateControllerConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L21-L26>)
+## type [StateControllerConfig](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L21-L26>)
 
 StateControllerConfig is the configuration for the StateController
 
@@ -260,7 +263,7 @@ type StateControllerConfig struct {
 ```
 
 <a name="DefaultStateControllerConfig"></a>
-### func [DefaultStateControllerConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L11>)
+### func [DefaultStateControllerConfig](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L11>)
 
 ```go
 func DefaultStateControllerConfig() *StateControllerConfig
@@ -269,7 +272,7 @@ func DefaultStateControllerConfig() *StateControllerConfig
 DefaultStateControllerConfig is the default configuration for the StateController
 
 <a name="StateControllerConfig.Apply"></a>
-### func \(\*StateControllerConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L32>)
+### func \(\*StateControllerConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L32>)
 
 ```go
 func (c *StateControllerConfig) Apply(opts []StateControllerConfigOpt)
@@ -278,7 +281,7 @@ func (c *StateControllerConfig) Apply(opts []StateControllerConfigOpt)
 Apply applies the given StateControllerConfigOpt\(s\) to the StateControllerConfig
 
 <a name="StateControllerConfigOpt"></a>
-## type [StateControllerConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L29>)
+## type [StateControllerConfigOpt](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L29>)
 
 StateControllerConfigOpt is used to pass optional parameters to NewStateController
 
@@ -287,7 +290,7 @@ type StateControllerConfigOpt func(config *StateControllerConfig)
 ```
 
 <a name="WithMaxTTL"></a>
-### func [WithMaxTTL](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L60>)
+### func [WithMaxTTL](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L60>)
 
 ```go
 func WithMaxTTL(maxTTL time.Duration) StateControllerConfigOpt
@@ -296,7 +299,7 @@ func WithMaxTTL(maxTTL time.Duration) StateControllerConfigOpt
 WithMaxTTL sets the maximum time to live for a state
 
 <a name="WithNewStateFunc"></a>
-### func [WithNewStateFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L53>)
+### func [WithNewStateFunc](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L53>)
 
 ```go
 func WithNewStateFunc(newStateFunc func() string) StateControllerConfigOpt
@@ -305,7 +308,7 @@ func WithNewStateFunc(newStateFunc func() string) StateControllerConfigOpt
 WithNewStateFunc sets the function which is used to generate a new random state
 
 <a name="WithStateControllerLogger"></a>
-### func [WithStateControllerLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L39>)
+### func [WithStateControllerLogger](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L39>)
 
 ```go
 func WithStateControllerLogger(logger *slog.Logger) StateControllerConfigOpt
@@ -314,7 +317,7 @@ func WithStateControllerLogger(logger *slog.Logger) StateControllerConfigOpt
 WithStateControllerLogger sets the logger for the StateController
 
 <a name="WithStates"></a>
-### func [WithStates](<https://github.com/disgoorg/disgo/blob/master/disgo/oauth2/state_controller_config.go#L46>)
+### func [WithStates](<https://github.com/disgoorg/disgo/blob/master/oauth2/state_controller_config.go#L46>)
 
 ```go
 func WithStates(states map[string]string) StateControllerConfigOpt

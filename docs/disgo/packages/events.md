@@ -1,10 +1,13 @@
+# Events
 
 ```go
 import "github.com/disgoorg/disgo/events"
 ```
 
+Package events provide high level events around the Discord Events.
+
 <a name="ApplicationCommandInteractionCreate"></a>
-## type [ApplicationCommandInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L29-L33>)
+## type [ApplicationCommandInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L29-L33>)
 
 ApplicationCommandInteractionCreate is the base struct for all application command interaction create events.
 
@@ -17,7 +20,7 @@ type ApplicationCommandInteractionCreate struct {
 ```
 
 <a name="ApplicationCommandInteractionCreate.CreateMessage"></a>
-### func \(\*ApplicationCommandInteractionCreate\) [CreateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L46>)
+### func \(\*ApplicationCommandInteractionCreate\) [CreateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L46>)
 
 ```go
 func (e *ApplicationCommandInteractionCreate) CreateMessage(messageCreate discord.MessageCreate, opts ...rest.RequestOpt) error
@@ -26,7 +29,7 @@ func (e *ApplicationCommandInteractionCreate) CreateMessage(messageCreate discor
 CreateMessage responds to the interaction with a new message.
 
 <a name="ApplicationCommandInteractionCreate.DeferCreateMessage"></a>
-### func \(\*ApplicationCommandInteractionCreate\) [DeferCreateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L51>)
+### func \(\*ApplicationCommandInteractionCreate\) [DeferCreateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L51>)
 
 ```go
 func (e *ApplicationCommandInteractionCreate) DeferCreateMessage(ephemeral bool, opts ...rest.RequestOpt) error
@@ -35,7 +38,7 @@ func (e *ApplicationCommandInteractionCreate) DeferCreateMessage(ephemeral bool,
 DeferCreateMessage responds to the interaction with a "bot is thinking..." message which should be edited later.
 
 <a name="ApplicationCommandInteractionCreate.Guild"></a>
-### func \(\*ApplicationCommandInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L38>)
+### func \(\*ApplicationCommandInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L38>)
 
 ```go
 func (e *ApplicationCommandInteractionCreate) Guild() (discord.Guild, bool)
@@ -44,7 +47,7 @@ func (e *ApplicationCommandInteractionCreate) Guild() (discord.Guild, bool)
 Guild returns the guild that the interaction happened in if it happened in a guild. If the interaction happened in a DM, it returns nil. This only returns cached guilds.
 
 <a name="ApplicationCommandInteractionCreate.Modal"></a>
-### func \(\*ApplicationCommandInteractionCreate\) [Modal](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L60>)
+### func \(\*ApplicationCommandInteractionCreate\) [Modal](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L60>)
 
 ```go
 func (e *ApplicationCommandInteractionCreate) Modal(modalCreate discord.ModalCreate, opts ...rest.RequestOpt) error
@@ -53,7 +56,7 @@ func (e *ApplicationCommandInteractionCreate) Modal(modalCreate discord.ModalCre
 Modal responds to the interaction with a new modal.
 
 <a name="ApplicationCommandInteractionCreate.PremiumRequired"></a>
-### func \(\*ApplicationCommandInteractionCreate\) [PremiumRequired](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L65>)
+### func \(\*ApplicationCommandInteractionCreate\) [PremiumRequired](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L65>)
 
 ```go
 func (e *ApplicationCommandInteractionCreate) PremiumRequired(opts ...rest.RequestOpt) error
@@ -62,7 +65,7 @@ func (e *ApplicationCommandInteractionCreate) PremiumRequired(opts ...rest.Reque
 PremiumRequired responds to the interaction with an upgrade button if available.
 
 <a name="AutoModerationActionExecution"></a>
-## type [AutoModerationActionExecution](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_auto_moderation_events.go#L31-L34>)
+## type [AutoModerationActionExecution](<https://github.com/disgoorg/disgo/blob/master/events/guild_auto_moderation_events.go#L31-L34>)
 
 
 
@@ -74,7 +77,7 @@ type AutoModerationActionExecution struct {
 ```
 
 <a name="AutoModerationActionExecution.Guild"></a>
-### func \(\*AutoModerationActionExecution\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_auto_moderation_events.go#L38>)
+### func \(\*AutoModerationActionExecution\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/guild_auto_moderation_events.go#L38>)
 
 ```go
 func (e *AutoModerationActionExecution) Guild() (discord.Guild, bool)
@@ -83,7 +86,7 @@ func (e *AutoModerationActionExecution) Guild() (discord.Guild, bool)
 Guild returns the discord.Guild the event happened in. This will only check cached guilds\!
 
 <a name="AutoModerationRuleCreate"></a>
-## type [AutoModerationRuleCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_auto_moderation_events.go#L19-L21>)
+## type [AutoModerationRuleCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_auto_moderation_events.go#L19-L21>)
 
 
 
@@ -94,7 +97,7 @@ type AutoModerationRuleCreate struct {
 ```
 
 <a name="AutoModerationRuleDelete"></a>
-## type [AutoModerationRuleDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_auto_moderation_events.go#L27-L29>)
+## type [AutoModerationRuleDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_auto_moderation_events.go#L27-L29>)
 
 
 
@@ -105,7 +108,7 @@ type AutoModerationRuleDelete struct {
 ```
 
 <a name="AutoModerationRuleUpdate"></a>
-## type [AutoModerationRuleUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_auto_moderation_events.go#L23-L25>)
+## type [AutoModerationRuleUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_auto_moderation_events.go#L23-L25>)
 
 
 
@@ -116,7 +119,7 @@ type AutoModerationRuleUpdate struct {
 ```
 
 <a name="AutocompleteInteractionCreate"></a>
-## type [AutocompleteInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L121-L125>)
+## type [AutocompleteInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L121-L125>)
 
 AutocompleteInteractionCreate indicates that a new autocomplete interaction has been created.
 
@@ -129,7 +132,7 @@ type AutocompleteInteractionCreate struct {
 ```
 
 <a name="AutocompleteInteractionCreate.AutocompleteResult"></a>
-### func \(\*AutocompleteInteractionCreate\) [AutocompleteResult](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L138>)
+### func \(\*AutocompleteInteractionCreate\) [AutocompleteResult](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L138>)
 
 ```go
 func (e *AutocompleteInteractionCreate) AutocompleteResult(choices []discord.AutocompleteChoice, opts ...rest.RequestOpt) error
@@ -138,7 +141,7 @@ func (e *AutocompleteInteractionCreate) AutocompleteResult(choices []discord.Aut
 AutocompleteResult responds to the interaction with a slice of choices.
 
 <a name="AutocompleteInteractionCreate.Guild"></a>
-### func \(\*AutocompleteInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L130>)
+### func \(\*AutocompleteInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L130>)
 
 ```go
 func (e *AutocompleteInteractionCreate) Guild() (discord.Guild, bool)
@@ -147,7 +150,7 @@ func (e *AutocompleteInteractionCreate) Guild() (discord.Guild, bool)
 Guild returns the guild that the interaction happened in if it happened in a guild. If the interaction happened in a DM, it returns nil. This only returns cached guilds.
 
 <a name="ComponentInteractionCreate"></a>
-## type [ComponentInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L70-L74>)
+## type [ComponentInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L70-L74>)
 
 ComponentInteractionCreate indicates that a new component interaction has been created.
 
@@ -160,7 +163,7 @@ type ComponentInteractionCreate struct {
 ```
 
 <a name="ComponentInteractionCreate.CreateMessage"></a>
-### func \(\*ComponentInteractionCreate\) [CreateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L87>)
+### func \(\*ComponentInteractionCreate\) [CreateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L87>)
 
 ```go
 func (e *ComponentInteractionCreate) CreateMessage(messageCreate discord.MessageCreate, opts ...rest.RequestOpt) error
@@ -169,7 +172,7 @@ func (e *ComponentInteractionCreate) CreateMessage(messageCreate discord.Message
 CreateMessage responds to the interaction with a new message.
 
 <a name="ComponentInteractionCreate.DeferCreateMessage"></a>
-### func \(\*ComponentInteractionCreate\) [DeferCreateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L92>)
+### func \(\*ComponentInteractionCreate\) [DeferCreateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L92>)
 
 ```go
 func (e *ComponentInteractionCreate) DeferCreateMessage(ephemeral bool, opts ...rest.RequestOpt) error
@@ -178,7 +181,7 @@ func (e *ComponentInteractionCreate) DeferCreateMessage(ephemeral bool, opts ...
 DeferCreateMessage responds to the interaction with a "bot is thinking..." message which should be edited later.
 
 <a name="ComponentInteractionCreate.DeferUpdateMessage"></a>
-### func \(\*ComponentInteractionCreate\) [DeferUpdateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L106>)
+### func \(\*ComponentInteractionCreate\) [DeferUpdateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L106>)
 
 ```go
 func (e *ComponentInteractionCreate) DeferUpdateMessage(opts ...rest.RequestOpt) error
@@ -187,7 +190,7 @@ func (e *ComponentInteractionCreate) DeferUpdateMessage(opts ...rest.RequestOpt)
 DeferUpdateMessage responds to the interaction with nothing.
 
 <a name="ComponentInteractionCreate.Guild"></a>
-### func \(\*ComponentInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L79>)
+### func \(\*ComponentInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L79>)
 
 ```go
 func (e *ComponentInteractionCreate) Guild() (discord.Guild, bool)
@@ -196,7 +199,7 @@ func (e *ComponentInteractionCreate) Guild() (discord.Guild, bool)
 Guild returns the guild that the interaction happened in if it happened in a guild. If the interaction happened in a DM, it returns nil. This only returns cached guilds.
 
 <a name="ComponentInteractionCreate.Modal"></a>
-### func \(\*ComponentInteractionCreate\) [Modal](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L111>)
+### func \(\*ComponentInteractionCreate\) [Modal](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L111>)
 
 ```go
 func (e *ComponentInteractionCreate) Modal(modalCreate discord.ModalCreate, opts ...rest.RequestOpt) error
@@ -205,7 +208,7 @@ func (e *ComponentInteractionCreate) Modal(modalCreate discord.ModalCreate, opts
 Modal responds to the interaction with a new modal.
 
 <a name="ComponentInteractionCreate.PremiumRequired"></a>
-### func \(\*ComponentInteractionCreate\) [PremiumRequired](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L116>)
+### func \(\*ComponentInteractionCreate\) [PremiumRequired](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L116>)
 
 ```go
 func (e *ComponentInteractionCreate) PremiumRequired(opts ...rest.RequestOpt) error
@@ -214,7 +217,7 @@ func (e *ComponentInteractionCreate) PremiumRequired(opts ...rest.RequestOpt) er
 PremiumRequired responds to the interaction with an upgrade button if available.
 
 <a name="ComponentInteractionCreate.UpdateMessage"></a>
-### func \(\*ComponentInteractionCreate\) [UpdateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L101>)
+### func \(\*ComponentInteractionCreate\) [UpdateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L101>)
 
 ```go
 func (e *ComponentInteractionCreate) UpdateMessage(messageUpdate discord.MessageUpdate, opts ...rest.RequestOpt) error
@@ -223,7 +226,7 @@ func (e *ComponentInteractionCreate) UpdateMessage(messageUpdate discord.Message
 UpdateMessage responds to the interaction with updating the message the component is from.
 
 <a name="DMChannelPinsUpdate"></a>
-## type [DMChannelPinsUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_channel_events.go#L10-L14>)
+## type [DMChannelPinsUpdate](<https://github.com/disgoorg/disgo/blob/master/events/dm_channel_events.go#L10-L14>)
 
 DMChannelPinsUpdate indicates that a discord.Message got pinned or unpinned.
 
@@ -236,7 +239,7 @@ type DMChannelPinsUpdate struct {
 ```
 
 <a name="DMMessageCreate"></a>
-## type [DMMessageCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_event_events.go#L18-L20>)
+## type [DMMessageCreate](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_event_events.go#L18-L20>)
 
 DMMessageCreate is called upon receiving a discord.Message in a Channel \(requires gateway.IntentsDirectMessage\)
 
@@ -247,7 +250,7 @@ type DMMessageCreate struct {
 ```
 
 <a name="DMMessageDelete"></a>
-## type [DMMessageDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_event_events.go#L29-L31>)
+## type [DMMessageDelete](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_event_events.go#L29-L31>)
 
 DMMessageDelete is called upon deleting a discord.Message in a Channel \(requires gateway.IntentsDirectMessage\)
 
@@ -258,7 +261,7 @@ type DMMessageDelete struct {
 ```
 
 <a name="DMMessagePollVoteAdd"></a>
-## type [DMMessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_poll_events.go#L17-L19>)
+## type [DMMessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_poll_events.go#L17-L19>)
 
 DMMessagePollVoteAdd indicates that a discord.User voted on a discord.Poll in a DM \(requires gateway.IntentDirectMessagePolls\)
 
@@ -269,7 +272,7 @@ type DMMessagePollVoteAdd struct {
 ```
 
 <a name="DMMessagePollVoteRemove"></a>
-## type [DMMessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_poll_events.go#L22-L24>)
+## type [DMMessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_poll_events.go#L22-L24>)
 
 DMMessagePollVoteRemove indicates that a discord.User removed their vote on a discord.Poll in a DM \(requires gateway.IntentDirectMessagePolls\)
 
@@ -280,7 +283,7 @@ type DMMessagePollVoteRemove struct {
 ```
 
 <a name="DMMessageReactionAdd"></a>
-## type [DMMessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_reaction_events.go#L21-L24>)
+## type [DMMessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_reaction_events.go#L21-L24>)
 
 DMMessageReactionAdd indicates that a discord.User added a discord.MessageReaction to a discord.Message in a Channel \(requires the gateway.IntentDirectMessageReactions\)
 
@@ -292,7 +295,7 @@ type DMMessageReactionAdd struct {
 ```
 
 <a name="DMMessageReactionRemove"></a>
-## type [DMMessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_reaction_events.go#L27-L29>)
+## type [DMMessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_reaction_events.go#L27-L29>)
 
 DMMessageReactionRemove indicates that a discord.User removed a discord.MessageReaction from a discord.Message in a Channel \(requires the gateway.IntentDirectMessageReactions\)
 
@@ -303,7 +306,7 @@ type DMMessageReactionRemove struct {
 ```
 
 <a name="DMMessageReactionRemoveAll"></a>
-## type [DMMessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_reaction_events.go#L40-L44>)
+## type [DMMessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_reaction_events.go#L40-L44>)
 
 DMMessageReactionRemoveAll indicates someone removed all discord.MessageReaction\(s\) from a discord.Message in a Channel \(requires the gateway.IntentDirectMessageReactions\)
 
@@ -316,7 +319,7 @@ type DMMessageReactionRemoveAll struct {
 ```
 
 <a name="DMMessageReactionRemoveEmoji"></a>
-## type [DMMessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_reaction_events.go#L32-L37>)
+## type [DMMessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_reaction_events.go#L32-L37>)
 
 DMMessageReactionRemoveEmoji indicates someone removed all discord.MessageReaction\(s\) of a specific discord.Emoji from a discord.Message in a Channel \(requires the gateway.IntentDirectMessageReactions\)
 
@@ -330,7 +333,7 @@ type DMMessageReactionRemoveEmoji struct {
 ```
 
 <a name="DMMessageUpdate"></a>
-## type [DMMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_event_events.go#L23-L26>)
+## type [DMMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_event_events.go#L23-L26>)
 
 DMMessageUpdate is called upon editing a discord.Message in a Channel \(requires gateway.IntentsDirectMessage\)
 
@@ -342,7 +345,7 @@ type DMMessageUpdate struct {
 ```
 
 <a name="DMUserTypingStart"></a>
-## type [DMUserTypingStart](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_channel_events.go#L17-L22>)
+## type [DMUserTypingStart](<https://github.com/disgoorg/disgo/blob/master/events/dm_channel_events.go#L17-L22>)
 
 DMUserTypingStart indicates that a discord.User started typing in a discord.DMChannel\(requires gateway.IntentDirectMessageTyping\).
 
@@ -356,7 +359,7 @@ type DMUserTypingStart struct {
 ```
 
 <a name="EmojiCreate"></a>
-## type [EmojiCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_emoji_events.go#L25-L27>)
+## type [EmojiCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_emoji_events.go#L25-L27>)
 
 EmojiCreate indicates that a new discord.Emoji got created in a discord.Guild \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -367,7 +370,7 @@ type EmojiCreate struct {
 ```
 
 <a name="EmojiDelete"></a>
-## type [EmojiDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_emoji_events.go#L36-L38>)
+## type [EmojiDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_emoji_events.go#L36-L38>)
 
 EmojiDelete indicates that a discord.Emoji got deleted in a discord.Guild \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -378,7 +381,7 @@ type EmojiDelete struct {
 ```
 
 <a name="EmojiUpdate"></a>
-## type [EmojiUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_emoji_events.go#L30-L33>)
+## type [EmojiUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_emoji_events.go#L30-L33>)
 
 EmojiUpdate indicates that a discord.Emoji got updated in a discord.Guild \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -390,7 +393,7 @@ type EmojiUpdate struct {
 ```
 
 <a name="EmojisUpdate"></a>
-## type [EmojisUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_emoji_events.go#L12-L15>)
+## type [EmojisUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_emoji_events.go#L12-L15>)
 
 EmojisUpdate is dispatched when a guild's emojis are updated. This event does not depend on a cache like EmojiCreate, EmojiUpdate or EmojiDelete.
 
@@ -402,7 +405,7 @@ type EmojisUpdate struct {
 ```
 
 <a name="EntitlementCreate"></a>
-## type [EntitlementCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/entitlement_events.go#L10-L12>)
+## type [EntitlementCreate](<https://github.com/disgoorg/disgo/blob/master/events/entitlement_events.go#L10-L12>)
 
 
 
@@ -413,7 +416,7 @@ type EntitlementCreate struct {
 ```
 
 <a name="EntitlementDelete"></a>
-## type [EntitlementDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/entitlement_events.go#L18-L20>)
+## type [EntitlementDelete](<https://github.com/disgoorg/disgo/blob/master/events/entitlement_events.go#L18-L20>)
 
 
 
@@ -424,7 +427,7 @@ type EntitlementDelete struct {
 ```
 
 <a name="EntitlementUpdate"></a>
-## type [EntitlementUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/entitlement_events.go#L14-L16>)
+## type [EntitlementUpdate](<https://github.com/disgoorg/disgo/blob/master/events/entitlement_events.go#L14-L16>)
 
 
 
@@ -435,7 +438,7 @@ type EntitlementUpdate struct {
 ```
 
 <a name="GenericAutoModerationRule"></a>
-## type [GenericAutoModerationRule](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_auto_moderation_events.go#L8-L11>)
+## type [GenericAutoModerationRule](<https://github.com/disgoorg/disgo/blob/master/events/guild_auto_moderation_events.go#L8-L11>)
 
 
 
@@ -447,7 +450,7 @@ type GenericAutoModerationRule struct {
 ```
 
 <a name="GenericAutoModerationRule.Guild"></a>
-### func \(\*GenericAutoModerationRule\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_auto_moderation_events.go#L15>)
+### func \(\*GenericAutoModerationRule\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/guild_auto_moderation_events.go#L15>)
 
 ```go
 func (e *GenericAutoModerationRule) Guild() (discord.Guild, bool)
@@ -456,7 +459,7 @@ func (e *GenericAutoModerationRule) Guild() (discord.Guild, bool)
 Guild returns the discord.Guild the event happened in. This will only check cached guilds\!
 
 <a name="GenericDMMessage"></a>
-## type [GenericDMMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_event_events.go#L10-L15>)
+## type [GenericDMMessage](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_event_events.go#L10-L15>)
 
 GenericDMMessage is called upon receiving DMMessageCreate , DMMessageUpdate , DMMessageDelete , GenericDMMessageReaction , DMMessageReactionAdd , DMMessageReactionRemove , DMMessageReactionRemoveEmoji or DMMessageReactionRemoveAll \(requires gateway.IntentsDirectMessage\)
 
@@ -470,7 +473,7 @@ type GenericDMMessage struct {
 ```
 
 <a name="GenericDMMessagePollVote"></a>
-## type [GenericDMMessagePollVote](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_poll_events.go#L8-L14>)
+## type [GenericDMMessagePollVote](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_poll_events.go#L8-L14>)
 
 GenericDMMessagePollVote is called upon receiving DMMessagePollVoteAdd or DMMessagePollVoteRemove \(requires gateway.IntentDirectMessagePolls\)
 
@@ -485,7 +488,7 @@ type GenericDMMessagePollVote struct {
 ```
 
 <a name="GenericDMMessageReaction"></a>
-## type [GenericDMMessageReaction](<https://github.com/disgoorg/disgo/blob/master/disgo/events/dm_message_reaction_events.go#L10-L18>)
+## type [GenericDMMessageReaction](<https://github.com/disgoorg/disgo/blob/master/events/dm_message_reaction_events.go#L10-L18>)
 
 GenericDMMessageReaction is called upon receiving DMMessageReactionAdd or DMMessageReactionRemove \(requires the gateway.IntentDirectMessageReactions\)
 
@@ -502,7 +505,7 @@ type GenericDMMessageReaction struct {
 ```
 
 <a name="GenericEmoji"></a>
-## type [GenericEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_emoji_events.go#L18-L22>)
+## type [GenericEmoji](<https://github.com/disgoorg/disgo/blob/master/events/guild_emoji_events.go#L18-L22>)
 
 GenericEmoji is called upon receiving EmojiCreate , EmojiUpdate or EmojiDelete \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -515,7 +518,7 @@ type GenericEmoji struct {
 ```
 
 <a name="GenericEntitlementEvent"></a>
-## type [GenericEntitlementEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/events/entitlement_events.go#L5-L8>)
+## type [GenericEntitlementEvent](<https://github.com/disgoorg/disgo/blob/master/events/entitlement_events.go#L5-L8>)
 
 
 
@@ -527,7 +530,7 @@ type GenericEntitlementEvent struct {
 ```
 
 <a name="GenericEvent"></a>
-## type [GenericEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/events/generic_event.go#L13-L17>)
+## type [GenericEvent](<https://github.com/disgoorg/disgo/blob/master/events/generic_event.go#L13-L17>)
 
 GenericEvent the base event structure
 
@@ -538,7 +541,7 @@ type GenericEvent struct {
 ```
 
 <a name="NewGenericEvent"></a>
-### func [NewGenericEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/events/generic_event.go#L8>)
+### func [NewGenericEvent](<https://github.com/disgoorg/disgo/blob/master/events/generic_event.go#L8>)
 
 ```go
 func NewGenericEvent(client bot.Client, sequenceNumber int, shardID int) *GenericEvent
@@ -547,7 +550,7 @@ func NewGenericEvent(client bot.Client, sequenceNumber int, shardID int) *Generi
 NewGenericEvent constructs a new GenericEvent with the provided Client instance
 
 <a name="GenericEvent.Client"></a>
-### func \(\*GenericEvent\) [Client](<https://github.com/disgoorg/disgo/blob/master/disgo/events/generic_event.go#L20>)
+### func \(\*GenericEvent\) [Client](<https://github.com/disgoorg/disgo/blob/master/events/generic_event.go#L20>)
 
 ```go
 func (e *GenericEvent) Client() bot.Client
@@ -556,7 +559,7 @@ func (e *GenericEvent) Client() bot.Client
 Client returns the bot.Client instance that dispatched the event
 
 <a name="GenericEvent.SequenceNumber"></a>
-### func \(\*GenericEvent\) [SequenceNumber](<https://github.com/disgoorg/disgo/blob/master/disgo/events/generic_event.go#L25>)
+### func \(\*GenericEvent\) [SequenceNumber](<https://github.com/disgoorg/disgo/blob/master/events/generic_event.go#L25>)
 
 ```go
 func (e *GenericEvent) SequenceNumber() int
@@ -565,7 +568,7 @@ func (e *GenericEvent) SequenceNumber() int
 SequenceNumber returns the sequence number of the gateway event
 
 <a name="GenericEvent.ShardID"></a>
-### func \(\*GenericEvent\) [ShardID](<https://github.com/disgoorg/disgo/blob/master/disgo/events/generic_event.go#L30>)
+### func \(\*GenericEvent\) [ShardID](<https://github.com/disgoorg/disgo/blob/master/events/generic_event.go#L30>)
 
 ```go
 func (e *GenericEvent) ShardID() int
@@ -574,7 +577,7 @@ func (e *GenericEvent) ShardID() int
 ShardID returns the shard ID the event was dispatched from
 
 <a name="GenericGuild"></a>
-## type [GenericGuild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L10-L14>)
+## type [GenericGuild](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L10-L14>)
 
 GenericGuild is called upon receiving GuildUpdate , GuildAvailable , GuildUnavailable , GuildJoin , GuildLeave , GuildReady , GuildBan , GuildUnban
 
@@ -587,7 +590,7 @@ type GenericGuild struct {
 ```
 
 <a name="GenericGuildChannel"></a>
-## type [GenericGuildChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_channel_events.go#L12-L17>)
+## type [GenericGuildChannel](<https://github.com/disgoorg/disgo/blob/master/events/guild_channel_events.go#L12-L17>)
 
 GenericGuildChannel is called upon receiving GuildChannelCreate , GuildChannelUpdate or GuildChannelDelete
 
@@ -601,7 +604,7 @@ type GenericGuildChannel struct {
 ```
 
 <a name="GenericGuildChannel.Guild"></a>
-### func \(\*GenericGuildChannel\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_channel_events.go#L21>)
+### func \(\*GenericGuildChannel\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/guild_channel_events.go#L21>)
 
 ```go
 func (e *GenericGuildChannel) Guild() (discord.Guild, bool)
@@ -610,7 +613,7 @@ func (e *GenericGuildChannel) Guild() (discord.Guild, bool)
 Guild returns the discord.Guild the event happened in. This will only check cached guilds\!
 
 <a name="GenericGuildMember"></a>
-## type [GenericGuildMember](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_member_events.go#L12-L16>)
+## type [GenericGuildMember](<https://github.com/disgoorg/disgo/blob/master/events/guild_member_events.go#L12-L16>)
 
 GenericGuildMember generic discord.Member event
 
@@ -623,7 +626,7 @@ type GenericGuildMember struct {
 ```
 
 <a name="GenericGuildMessage"></a>
-## type [GenericGuildMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_events.go#L10-L16>)
+## type [GenericGuildMessage](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_events.go#L10-L16>)
 
 GenericGuildMessage is called upon receiving GuildMessageCreate , GuildMessageUpdate or GuildMessageDelete
 
@@ -638,7 +641,7 @@ type GenericGuildMessage struct {
 ```
 
 <a name="GenericGuildMessage.Channel"></a>
-### func \(\*GenericGuildMessage\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_events.go#L25>)
+### func \(\*GenericGuildMessage\) [Channel](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_events.go#L25>)
 
 ```go
 func (e *GenericGuildMessage) Channel() (discord.GuildMessageChannel, bool)
@@ -647,7 +650,7 @@ func (e *GenericGuildMessage) Channel() (discord.GuildMessageChannel, bool)
 Channel returns the discord.GuildMessageChannel where the GenericGuildMessage happened
 
 <a name="GenericGuildMessage.Guild"></a>
-### func \(\*GenericGuildMessage\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_events.go#L20>)
+### func \(\*GenericGuildMessage\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_events.go#L20>)
 
 ```go
 func (e *GenericGuildMessage) Guild() (discord.Guild, bool)
@@ -656,7 +659,7 @@ func (e *GenericGuildMessage) Guild() (discord.Guild, bool)
 Guild returns the discord.Guild the GenericGuildMessage happened in. This will only check cached guilds\!
 
 <a name="GenericGuildMessagePollVote"></a>
-## type [GenericGuildMessagePollVote](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_poll_events.go#L9-L16>)
+## type [GenericGuildMessagePollVote](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_poll_events.go#L9-L16>)
 
 GenericGuildMessagePollVote is called upon receiving GuildMessagePollVoteAdd or GuildMessagePollVoteRemove \(requires gateway.IntentGuildMessagePolls\)
 
@@ -672,7 +675,7 @@ type GenericGuildMessagePollVote struct {
 ```
 
 <a name="GenericGuildMessagePollVote.Channel"></a>
-### func \(\*GenericGuildMessagePollVote\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_poll_events.go#L24>)
+### func \(\*GenericGuildMessagePollVote\) [Channel](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_poll_events.go#L24>)
 
 ```go
 func (e *GenericGuildMessagePollVote) Channel() (discord.GuildMessageChannel, bool)
@@ -681,7 +684,7 @@ func (e *GenericGuildMessagePollVote) Channel() (discord.GuildMessageChannel, bo
 Channel returns the discord.GuildMessageChannel where the GenericGuildMessagePollVote happened
 
 <a name="GenericGuildMessagePollVote.Guild"></a>
-### func \(\*GenericGuildMessagePollVote\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_poll_events.go#L19>)
+### func \(\*GenericGuildMessagePollVote\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_poll_events.go#L19>)
 
 ```go
 func (e *GenericGuildMessagePollVote) Guild() (discord.Guild, bool)
@@ -690,7 +693,7 @@ func (e *GenericGuildMessagePollVote) Guild() (discord.Guild, bool)
 Guild returns the discord.Guild where the GenericGuildMessagePollVote happened
 
 <a name="GenericGuildMessageReaction"></a>
-## type [GenericGuildMessageReaction](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_reaction_events.go#L10-L19>)
+## type [GenericGuildMessageReaction](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_reaction_events.go#L10-L19>)
 
 GenericGuildMessageReaction is called upon receiving GuildMessageReactionAdd or GuildMessageReactionRemove
 
@@ -708,7 +711,7 @@ type GenericGuildMessageReaction struct {
 ```
 
 <a name="GenericGuildMessageReaction.Member"></a>
-### func \(\*GenericGuildMessageReaction\) [Member](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_reaction_events.go#L22>)
+### func \(\*GenericGuildMessageReaction\) [Member](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_reaction_events.go#L22>)
 
 ```go
 func (e *GenericGuildMessageReaction) Member() (discord.Member, bool)
@@ -717,7 +720,7 @@ func (e *GenericGuildMessageReaction) Member() (discord.Member, bool)
 Member returns the Member that reacted to the discord.Message from the cache.
 
 <a name="GenericGuildScheduledEvent"></a>
-## type [GenericGuildScheduledEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L10-L13>)
+## type [GenericGuildScheduledEvent](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L10-L13>)
 
 GenericGuildScheduledEvent is the base struct for all GuildScheduledEvents events.
 
@@ -729,7 +732,7 @@ type GenericGuildScheduledEvent struct {
 ```
 
 <a name="GenericGuildScheduledEventUser"></a>
-## type [GenericGuildScheduledEventUser](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L32-L37>)
+## type [GenericGuildScheduledEventUser](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L32-L37>)
 
 GenericGuildScheduledEventUser is the base struct for all GuildScheduledEventUser events.
 
@@ -743,7 +746,7 @@ type GenericGuildScheduledEventUser struct {
 ```
 
 <a name="GenericGuildScheduledEventUser.GuildScheduledEvent"></a>
-### func \(\*GenericGuildScheduledEventUser\) [GuildScheduledEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L40>)
+### func \(\*GenericGuildScheduledEventUser\) [GuildScheduledEvent](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L40>)
 
 ```go
 func (e *GenericGuildScheduledEventUser) GuildScheduledEvent() (discord.GuildScheduledEvent, bool)
@@ -752,7 +755,7 @@ func (e *GenericGuildScheduledEventUser) GuildScheduledEvent() (discord.GuildSch
 GuildScheduledEvent returns the discord.GuildScheduledEvent the event is for.
 
 <a name="GenericGuildScheduledEventUser.Member"></a>
-### func \(\*GenericGuildScheduledEventUser\) [Member](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L45>)
+### func \(\*GenericGuildScheduledEventUser\) [Member](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L45>)
 
 ```go
 func (e *GenericGuildScheduledEventUser) Member() (discord.Member, bool)
@@ -761,7 +764,7 @@ func (e *GenericGuildScheduledEventUser) Member() (discord.Member, bool)
 Member returns the Member who was added/removed from the GuildScheduledEvent from the cache.
 
 <a name="GenericGuildVoiceState"></a>
-## type [GenericGuildVoiceState](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_voice_events.go#L9-L13>)
+## type [GenericGuildVoiceState](<https://github.com/disgoorg/disgo/blob/master/events/guild_voice_events.go#L9-L13>)
 
 GenericGuildVoiceState is called upon receiving GuildVoiceJoin , GuildVoiceMove , GuildVoiceLeave
 
@@ -774,7 +777,7 @@ type GenericGuildVoiceState struct {
 ```
 
 <a name="GenericIntegration"></a>
-## type [GenericIntegration](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_integration_events.go#L10-L14>)
+## type [GenericIntegration](<https://github.com/disgoorg/disgo/blob/master/events/guild_integration_events.go#L10-L14>)
 
 GenericIntegration is called upon receiving IntegrationCreate, IntegrationUpdate or IntegrationDelete\(requires the gateway.IntentGuildIntegrations\)
 
@@ -787,7 +790,7 @@ type GenericIntegration struct {
 ```
 
 <a name="GenericIntegration.Guild"></a>
-### func \(\*GenericIntegration\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_integration_events.go#L18>)
+### func \(\*GenericIntegration\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/guild_integration_events.go#L18>)
 
 ```go
 func (e *GenericIntegration) Guild() (discord.Guild, bool)
@@ -796,7 +799,7 @@ func (e *GenericIntegration) Guild() (discord.Guild, bool)
 Guild returns the Guild this Integration was created in. This will only check cached guilds\!
 
 <a name="GenericInvite"></a>
-## type [GenericInvite](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_invite_events.go#L10-L15>)
+## type [GenericInvite](<https://github.com/disgoorg/disgo/blob/master/events/guild_invite_events.go#L10-L15>)
 
 GenericInvite is called upon receiving InviteCreate or InviteDelete \(requires gateway.IntentGuildInvites\)
 
@@ -810,7 +813,7 @@ type GenericInvite struct {
 ```
 
 <a name="GenericInvite.Channel"></a>
-### func \(\*GenericInvite\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_invite_events.go#L18>)
+### func \(\*GenericInvite\) [Channel](<https://github.com/disgoorg/disgo/blob/master/events/guild_invite_events.go#L18>)
 
 ```go
 func (e *GenericInvite) Channel() (discord.GuildChannel, bool)
@@ -819,7 +822,7 @@ func (e *GenericInvite) Channel() (discord.GuildChannel, bool)
 Channel returns the discord.GuildChannel the GenericInvite happened in.
 
 <a name="GenericMessage"></a>
-## type [GenericMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_events.go#L10-L16>)
+## type [GenericMessage](<https://github.com/disgoorg/disgo/blob/master/events/message_events.go#L10-L16>)
 
 GenericMessage generic discord.Message event
 
@@ -834,7 +837,7 @@ type GenericMessage struct {
 ```
 
 <a name="GenericMessage.Channel"></a>
-### func \(\*GenericMessage\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_events.go#L19>)
+### func \(\*GenericMessage\) [Channel](<https://github.com/disgoorg/disgo/blob/master/events/message_events.go#L19>)
 
 ```go
 func (e *GenericMessage) Channel() (discord.GuildMessageChannel, bool)
@@ -843,7 +846,7 @@ func (e *GenericMessage) Channel() (discord.GuildMessageChannel, bool)
 Channel returns the discord.GuildMessageChannel where the GenericMessage happened
 
 <a name="GenericMessage.Guild"></a>
-### func \(\*GenericMessage\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_events.go#L24>)
+### func \(\*GenericMessage\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/message_events.go#L24>)
 
 ```go
 func (e *GenericMessage) Guild() (discord.Guild, bool)
@@ -852,7 +855,7 @@ func (e *GenericMessage) Guild() (discord.Guild, bool)
 Guild returns the discord.Guild where the GenericMessage happened or nil if it happened in DMs
 
 <a name="GenericMessagePollVote"></a>
-## type [GenericMessagePollVote](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_poll_events.go#L9-L16>)
+## type [GenericMessagePollVote](<https://github.com/disgoorg/disgo/blob/master/events/message_poll_events.go#L9-L16>)
 
 GenericMessagePollVote is a generic poll vote event \(requires gateway.IntentGuildMessagePolls and/or gateway.IntentDirectMessagePolls\)
 
@@ -868,7 +871,7 @@ type GenericMessagePollVote struct {
 ```
 
 <a name="GenericMessagePollVote.Guild"></a>
-### func \(\*GenericMessagePollVote\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_poll_events.go#L19>)
+### func \(\*GenericMessagePollVote\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/message_poll_events.go#L19>)
 
 ```go
 func (e *GenericMessagePollVote) Guild() (discord.Guild, bool)
@@ -877,7 +880,7 @@ func (e *GenericMessagePollVote) Guild() (discord.Guild, bool)
 Guild returns the discord.Guild where the GenericMessagePollVote happened or empty if it happened in DMs
 
 <a name="GenericReaction"></a>
-## type [GenericReaction](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_reaction_events.go#L10-L19>)
+## type [GenericReaction](<https://github.com/disgoorg/disgo/blob/master/events/message_reaction_events.go#L10-L19>)
 
 GenericReaction is called upon receiving MessageReactionAdd or MessageReactionRemove
 
@@ -895,7 +898,7 @@ type GenericReaction struct {
 ```
 
 <a name="GenericRole"></a>
-## type [GenericRole](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_role_events.go#L10-L15>)
+## type [GenericRole](<https://github.com/disgoorg/disgo/blob/master/events/guild_role_events.go#L10-L15>)
 
 GenericRole generic discord.Role event
 
@@ -909,7 +912,7 @@ type GenericRole struct {
 ```
 
 <a name="GenericStageInstance"></a>
-## type [GenericStageInstance](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_stage_instance_events.go#L10-L14>)
+## type [GenericStageInstance](<https://github.com/disgoorg/disgo/blob/master/events/guild_stage_instance_events.go#L10-L14>)
 
 GenericStageInstance generic StageInstance event
 
@@ -922,7 +925,7 @@ type GenericStageInstance struct {
 ```
 
 <a name="GenericSticker"></a>
-## type [GenericSticker](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_sticker_events.go#L18-L22>)
+## type [GenericSticker](<https://github.com/disgoorg/disgo/blob/master/events/guild_sticker_events.go#L18-L22>)
 
 GenericSticker is called upon receiving StickerCreate , StickerUpdate or StickerDelete \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -935,7 +938,7 @@ type GenericSticker struct {
 ```
 
 <a name="GenericThread"></a>
-## type [GenericThread](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L10-L16>)
+## type [GenericThread](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L10-L16>)
 
 GenericThread is the base struct for all Thread events.
 
@@ -950,7 +953,7 @@ type GenericThread struct {
 ```
 
 <a name="GenericThreadMember"></a>
-## type [GenericThreadMember](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L46-L52>)
+## type [GenericThreadMember](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L46-L52>)
 
 GenericThreadMember is the base struct for all ThreadMember events.
 
@@ -965,7 +968,7 @@ type GenericThreadMember struct {
 ```
 
 <a name="GenericUser"></a>
-## type [GenericUser](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_events.go#L12-L16>)
+## type [GenericUser](<https://github.com/disgoorg/disgo/blob/master/events/user_events.go#L12-L16>)
 
 GenericUser is called upon receiving UserUpdate or UserTypingStart
 
@@ -978,7 +981,7 @@ type GenericUser struct {
 ```
 
 <a name="GenericUserActivity"></a>
-## type [GenericUserActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_activity_events.go#L16-L21>)
+## type [GenericUserActivity](<https://github.com/disgoorg/disgo/blob/master/events/user_activity_events.go#L16-L21>)
 
 GenericUserActivity generic Activity event
 
@@ -992,7 +995,7 @@ type GenericUserActivity struct {
 ```
 
 <a name="GenericUserActivity.Guild"></a>
-### func \(\*GenericUserActivity\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_activity_events.go#L31>)
+### func \(\*GenericUserActivity\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/user_activity_events.go#L31>)
 
 ```go
 func (g *GenericUserActivity) Guild() (discord.Guild, bool)
@@ -1001,7 +1004,7 @@ func (g *GenericUserActivity) Guild() (discord.Guild, bool)
 Guild returns the Guild that changed their Activity. This will only check cached guilds\!
 
 <a name="GenericUserActivity.Member"></a>
-### func \(\*GenericUserActivity\) [Member](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_activity_events.go#L25>)
+### func \(\*GenericUserActivity\) [Member](<https://github.com/disgoorg/disgo/blob/master/events/user_activity_events.go#L25>)
 
 ```go
 func (g *GenericUserActivity) Member() (discord.Member, bool)
@@ -1010,7 +1013,7 @@ func (g *GenericUserActivity) Member() (discord.Member, bool)
 Member returns the Member that changed their Activity. This will only check cached members\!
 
 <a name="GuildApplicationCommandPermissionsUpdate"></a>
-## type [GuildApplicationCommandPermissionsUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_integration_events.go#L47-L50>)
+## type [GuildApplicationCommandPermissionsUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_integration_events.go#L47-L50>)
 
 GuildApplicationCommandPermissionsUpdate indicates that a Guild's application's permissions were updated
 
@@ -1022,7 +1025,7 @@ type GuildApplicationCommandPermissionsUpdate struct {
 ```
 
 <a name="GuildAuditLogEntryCreate"></a>
-## type [GuildAuditLogEntryCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L67-L71>)
+## type [GuildAuditLogEntryCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L67-L71>)
 
 GuildAuditLogEntryCreate is called when a new discord.AuditLogEntry is created
 
@@ -1035,7 +1038,7 @@ type GuildAuditLogEntryCreate struct {
 ```
 
 <a name="GuildAvailable"></a>
-## type [GuildAvailable](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L23-L25>)
+## type [GuildAvailable](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L23-L25>)
 
 GuildAvailable is called when an unavailable discord.Guild becomes available
 
@@ -1046,7 +1049,7 @@ type GuildAvailable struct {
 ```
 
 <a name="GuildBan"></a>
-## type [GuildBan](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L53-L57>)
+## type [GuildBan](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L53-L57>)
 
 GuildBan is called when a discord.Member/discord.User is banned from the discord.Guild
 
@@ -1059,7 +1062,7 @@ type GuildBan struct {
 ```
 
 <a name="GuildChannelCreate"></a>
-## type [GuildChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_channel_events.go#L26-L28>)
+## type [GuildChannelCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_channel_events.go#L26-L28>)
 
 GuildChannelCreate indicates that a new Channel got created in a discord.Guild
 
@@ -1070,7 +1073,7 @@ type GuildChannelCreate struct {
 ```
 
 <a name="GuildChannelDelete"></a>
-## type [GuildChannelDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_channel_events.go#L37-L39>)
+## type [GuildChannelDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_channel_events.go#L37-L39>)
 
 GuildChannelDelete indicates that a Channel got deleted in a discord.Guild
 
@@ -1081,7 +1084,7 @@ type GuildChannelDelete struct {
 ```
 
 <a name="GuildChannelPinsUpdate"></a>
-## type [GuildChannelPinsUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_channel_events.go#L42-L48>)
+## type [GuildChannelPinsUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_channel_events.go#L42-L48>)
 
 GuildChannelPinsUpdate indicates a discord.Message got pinned or unpinned in a discord.GuildMessageChannel
 
@@ -1096,7 +1099,7 @@ type GuildChannelPinsUpdate struct {
 ```
 
 <a name="GuildChannelUpdate"></a>
-## type [GuildChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_channel_events.go#L31-L34>)
+## type [GuildChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_channel_events.go#L31-L34>)
 
 GuildChannelUpdate indicates that a Channel got updated in a discord.Guild
 
@@ -1108,7 +1111,7 @@ type GuildChannelUpdate struct {
 ```
 
 <a name="GuildIntegrationsUpdate"></a>
-## type [GuildIntegrationsUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_integration_events.go#L41-L44>)
+## type [GuildIntegrationsUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_integration_events.go#L41-L44>)
 
 GuildIntegrationsUpdate indicates that a Guild's integrations were updated
 
@@ -1120,7 +1123,7 @@ type GuildIntegrationsUpdate struct {
 ```
 
 <a name="GuildJoin"></a>
-## type [GuildJoin](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L33-L35>)
+## type [GuildJoin](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L33-L35>)
 
 GuildJoin is called when the bot joins a discord.Guild
 
@@ -1131,7 +1134,7 @@ type GuildJoin struct {
 ```
 
 <a name="GuildLeave"></a>
-## type [GuildLeave](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L38-L40>)
+## type [GuildLeave](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L38-L40>)
 
 GuildLeave is called when the bot leaves a discord.Guild
 
@@ -1142,7 +1145,7 @@ type GuildLeave struct {
 ```
 
 <a name="GuildMemberJoin"></a>
-## type [GuildMemberJoin](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_member_events.go#L19-L21>)
+## type [GuildMemberJoin](<https://github.com/disgoorg/disgo/blob/master/events/guild_member_events.go#L19-L21>)
 
 GuildMemberJoin indicates that a discord.Member joined the discord.Guild
 
@@ -1153,7 +1156,7 @@ type GuildMemberJoin struct {
 ```
 
 <a name="GuildMemberLeave"></a>
-## type [GuildMemberLeave](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_member_events.go#L30-L35>)
+## type [GuildMemberLeave](<https://github.com/disgoorg/disgo/blob/master/events/guild_member_events.go#L30-L35>)
 
 GuildMemberLeave indicates that a discord.Member left the discord.Guild
 
@@ -1167,7 +1170,7 @@ type GuildMemberLeave struct {
 ```
 
 <a name="GuildMemberTypingStart"></a>
-## type [GuildMemberTypingStart](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_member_events.go#L41-L48>)
+## type [GuildMemberTypingStart](<https://github.com/disgoorg/disgo/blob/master/events/guild_member_events.go#L41-L48>)
 
 GuildMemberTypingStart indicates that a discord.Member started typing in a discord.BaseGuildMessageChannel\(requires gateway.IntentGuildMessageTyping\) Member will be empty when event is triggered by [Clyde bot](<https://support.discord.com/hc/en-us/articles/13066317497239-Clyde-Discord-s-AI-Chatbot>)
 
@@ -1183,7 +1186,7 @@ type GuildMemberTypingStart struct {
 ```
 
 <a name="GuildMemberTypingStart.Channel"></a>
-### func \(\*GuildMemberTypingStart\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_member_events.go#L51>)
+### func \(\*GuildMemberTypingStart\) [Channel](<https://github.com/disgoorg/disgo/blob/master/events/guild_member_events.go#L51>)
 
 ```go
 func (e *GuildMemberTypingStart) Channel() (discord.GuildMessageChannel, bool)
@@ -1192,7 +1195,7 @@ func (e *GuildMemberTypingStart) Channel() (discord.GuildMessageChannel, bool)
 Channel returns the discord.GuildMessageChannel the GuildMemberTypingStart happened in
 
 <a name="GuildMemberUpdate"></a>
-## type [GuildMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_member_events.go#L24-L27>)
+## type [GuildMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_member_events.go#L24-L27>)
 
 GuildMemberUpdate indicates that a discord.Member updated
 
@@ -1204,7 +1207,7 @@ type GuildMemberUpdate struct {
 ```
 
 <a name="GuildMessageCreate"></a>
-## type [GuildMessageCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_events.go#L30-L32>)
+## type [GuildMessageCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_events.go#L30-L32>)
 
 GuildMessageCreate is called upon receiving a discord.Message in a Channel
 
@@ -1215,7 +1218,7 @@ type GuildMessageCreate struct {
 ```
 
 <a name="GuildMessageDelete"></a>
-## type [GuildMessageDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_events.go#L41-L43>)
+## type [GuildMessageDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_events.go#L41-L43>)
 
 GuildMessageDelete is called upon deleting a discord.Message in a Channel
 
@@ -1226,7 +1229,7 @@ type GuildMessageDelete struct {
 ```
 
 <a name="GuildMessagePollVoteAdd"></a>
-## type [GuildMessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_poll_events.go#L29-L31>)
+## type [GuildMessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_poll_events.go#L29-L31>)
 
 GuildMessagePollVoteAdd indicates that a discord.User voted on a discord.Poll in a discord.Guild \(requires gateway.IntentGuildMessagePolls\)
 
@@ -1237,7 +1240,7 @@ type GuildMessagePollVoteAdd struct {
 ```
 
 <a name="GuildMessagePollVoteRemove"></a>
-## type [GuildMessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_poll_events.go#L34-L36>)
+## type [GuildMessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_poll_events.go#L34-L36>)
 
 GuildMessagePollVoteRemove indicates that a discord.User removed their vote on a discord.Poll in a discord.Guild \(requires gateway.IntentGuildMessagePolls\)
 
@@ -1248,7 +1251,7 @@ type GuildMessagePollVoteRemove struct {
 ```
 
 <a name="GuildMessageReactionAdd"></a>
-## type [GuildMessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_reaction_events.go#L27-L31>)
+## type [GuildMessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_reaction_events.go#L27-L31>)
 
 GuildMessageReactionAdd indicates that a discord.Member added a discord.PartialEmoji to a discord.Message in a discord.GuildMessageChannel\(requires the gateway.IntentGuildMessageReactions\)
 
@@ -1261,7 +1264,7 @@ type GuildMessageReactionAdd struct {
 ```
 
 <a name="GuildMessageReactionRemove"></a>
-## type [GuildMessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_reaction_events.go#L34-L36>)
+## type [GuildMessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_reaction_events.go#L34-L36>)
 
 GuildMessageReactionRemove indicates that a discord.Member removed a discord.MessageReaction from a discord.Message in a Channel \(requires the gateway.IntentGuildMessageReactions\)
 
@@ -1272,7 +1275,7 @@ type GuildMessageReactionRemove struct {
 ```
 
 <a name="GuildMessageReactionRemoveAll"></a>
-## type [GuildMessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_reaction_events.go#L48-L53>)
+## type [GuildMessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_reaction_events.go#L48-L53>)
 
 GuildMessageReactionRemoveAll indicates someone removed all discord.MessageReaction\(s\) from a discord.Message in a Channel \(requires the gateway.IntentGuildMessageReactions\)
 
@@ -1286,7 +1289,7 @@ type GuildMessageReactionRemoveAll struct {
 ```
 
 <a name="GuildMessageReactionRemoveEmoji"></a>
-## type [GuildMessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_reaction_events.go#L39-L45>)
+## type [GuildMessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_reaction_events.go#L39-L45>)
 
 GuildMessageReactionRemoveEmoji indicates someone removed all discord.MessageReaction of a specific discord.Emoji from a discord.Message in a Channel \(requires the gateway.IntentGuildMessageReactions\)
 
@@ -1301,7 +1304,7 @@ type GuildMessageReactionRemoveEmoji struct {
 ```
 
 <a name="GuildMessageUpdate"></a>
-## type [GuildMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_message_events.go#L35-L38>)
+## type [GuildMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_message_events.go#L35-L38>)
 
 GuildMessageUpdate is called upon editing a discord.Message in a Channel
 
@@ -1313,7 +1316,7 @@ type GuildMessageUpdate struct {
 ```
 
 <a name="GuildReady"></a>
-## type [GuildReady](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L43-L45>)
+## type [GuildReady](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L43-L45>)
 
 GuildReady is called when a discord.Guild becomes loaded for the first time
 
@@ -1324,7 +1327,7 @@ type GuildReady struct {
 ```
 
 <a name="GuildScheduledEventCreate"></a>
-## type [GuildScheduledEventCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L16-L18>)
+## type [GuildScheduledEventCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L16-L18>)
 
 GuildScheduledEventCreate is dispatched when a guild scheduled event is created.
 
@@ -1335,7 +1338,7 @@ type GuildScheduledEventCreate struct {
 ```
 
 <a name="GuildScheduledEventDelete"></a>
-## type [GuildScheduledEventDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L27-L29>)
+## type [GuildScheduledEventDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L27-L29>)
 
 GuildScheduledEventDelete is dispatched when a guild scheduled event is deleted.
 
@@ -1346,7 +1349,7 @@ type GuildScheduledEventDelete struct {
 ```
 
 <a name="GuildScheduledEventUpdate"></a>
-## type [GuildScheduledEventUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L21-L24>)
+## type [GuildScheduledEventUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L21-L24>)
 
 GuildScheduledEventUpdate is dispatched when a guild scheduled event is updated.
 
@@ -1358,7 +1361,7 @@ type GuildScheduledEventUpdate struct {
 ```
 
 <a name="GuildScheduledEventUserAdd"></a>
-## type [GuildScheduledEventUserAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L50-L52>)
+## type [GuildScheduledEventUserAdd](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L50-L52>)
 
 GuildScheduledEventUserAdd is dispatched when a user is added to a discord.GuildScheduledEvent.
 
@@ -1369,7 +1372,7 @@ type GuildScheduledEventUserAdd struct {
 ```
 
 <a name="GuildScheduledEventUserRemove"></a>
-## type [GuildScheduledEventUserRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_scheduled_events_events.go#L55-L57>)
+## type [GuildScheduledEventUserRemove](<https://github.com/disgoorg/disgo/blob/master/events/guild_scheduled_events_events.go#L55-L57>)
 
 GuildScheduledEventUserRemove is dispatched when a user is removed from a discord.GuildScheduledEvent.
 
@@ -1380,7 +1383,7 @@ type GuildScheduledEventUserRemove struct {
 ```
 
 <a name="GuildUnavailable"></a>
-## type [GuildUnavailable](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L28-L30>)
+## type [GuildUnavailable](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L28-L30>)
 
 GuildUnavailable is called when an available discord.Guild becomes unavailable
 
@@ -1391,7 +1394,7 @@ type GuildUnavailable struct {
 ```
 
 <a name="GuildUnban"></a>
-## type [GuildUnban](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L60-L64>)
+## type [GuildUnban](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L60-L64>)
 
 GuildUnban is called when a discord.Member/discord.User is unbanned from the discord.Guild
 
@@ -1404,7 +1407,7 @@ type GuildUnban struct {
 ```
 
 <a name="GuildUpdate"></a>
-## type [GuildUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L17-L20>)
+## type [GuildUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L17-L20>)
 
 GuildUpdate is called upon receiving discord.Guild updates
 
@@ -1416,7 +1419,7 @@ type GuildUpdate struct {
 ```
 
 <a name="GuildVoiceJoin"></a>
-## type [GuildVoiceJoin](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_voice_events.go#L22-L24>)
+## type [GuildVoiceJoin](<https://github.com/disgoorg/disgo/blob/master/events/guild_voice_events.go#L22-L24>)
 
 GuildVoiceJoin indicates that a discord.Member joined a discord.Channel\(requires gateway.IntentsGuildVoiceStates\)
 
@@ -1427,7 +1430,7 @@ type GuildVoiceJoin struct {
 ```
 
 <a name="GuildVoiceLeave"></a>
-## type [GuildVoiceLeave](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_voice_events.go#L33-L36>)
+## type [GuildVoiceLeave](<https://github.com/disgoorg/disgo/blob/master/events/guild_voice_events.go#L33-L36>)
 
 GuildVoiceLeave indicates that a discord.Member left a discord.Channel\(requires gateway.IntentsGuildVoiceStates\)
 
@@ -1439,7 +1442,7 @@ type GuildVoiceLeave struct {
 ```
 
 <a name="GuildVoiceMove"></a>
-## type [GuildVoiceMove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_voice_events.go#L27-L30>)
+## type [GuildVoiceMove](<https://github.com/disgoorg/disgo/blob/master/events/guild_voice_events.go#L27-L30>)
 
 GuildVoiceMove indicates that a discord.Member moved a discord.Channel\(requires gateway.IntentsGuildVoiceStates\)
 
@@ -1451,7 +1454,7 @@ type GuildVoiceMove struct {
 ```
 
 <a name="GuildVoiceStateUpdate"></a>
-## type [GuildVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_voice_events.go#L16-L19>)
+## type [GuildVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_voice_events.go#L16-L19>)
 
 GuildVoiceStateUpdate indicates that the discord.VoiceState of a discord.Member has updated\(requires gateway.IntentsGuildVoiceStates\)
 
@@ -1463,7 +1466,7 @@ type GuildVoiceStateUpdate struct {
 ```
 
 <a name="GuildsReady"></a>
-## type [GuildsReady](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_events.go#L48-L50>)
+## type [GuildsReady](<https://github.com/disgoorg/disgo/blob/master/events/guild_events.go#L48-L50>)
 
 GuildsReady is called when all discord.Guild\(s\) are loaded after logging in
 
@@ -1474,7 +1477,7 @@ type GuildsReady struct {
 ```
 
 <a name="HeartbeatAck"></a>
-## type [HeartbeatAck](<https://github.com/disgoorg/disgo/blob/master/disgo/events/heartbeat_ack.go#L5-L8>)
+## type [HeartbeatAck](<https://github.com/disgoorg/disgo/blob/master/events/heartbeat_ack.go#L5-L8>)
 
 
 
@@ -1486,7 +1489,7 @@ type HeartbeatAck struct {
 ```
 
 <a name="IntegrationCreate"></a>
-## type [IntegrationCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_integration_events.go#L23-L25>)
+## type [IntegrationCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_integration_events.go#L23-L25>)
 
 IntegrationCreate indicates that a new Integration was created in a Guild
 
@@ -1497,7 +1500,7 @@ type IntegrationCreate struct {
 ```
 
 <a name="IntegrationDelete"></a>
-## type [IntegrationDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_integration_events.go#L33-L38>)
+## type [IntegrationDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_integration_events.go#L33-L38>)
 
 IntegrationDelete indicates that an Integration was deleted from a Guild
 
@@ -1511,7 +1514,7 @@ type IntegrationDelete struct {
 ```
 
 <a name="IntegrationUpdate"></a>
-## type [IntegrationUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_integration_events.go#L28-L30>)
+## type [IntegrationUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_integration_events.go#L28-L30>)
 
 IntegrationUpdate indicates that an integration was updated in a Guild
 
@@ -1522,7 +1525,7 @@ type IntegrationUpdate struct {
 ```
 
 <a name="InteractionCreate"></a>
-## type [InteractionCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L12-L16>)
+## type [InteractionCreate](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L12-L16>)
 
 InteractionCreate indicates that a new interaction has been created.
 
@@ -1535,7 +1538,7 @@ type InteractionCreate struct {
 ```
 
 <a name="InteractionCreate.Guild"></a>
-### func \(\*InteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L21>)
+### func \(\*InteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L21>)
 
 ```go
 func (e *InteractionCreate) Guild() (discord.Guild, bool)
@@ -1544,7 +1547,7 @@ func (e *InteractionCreate) Guild() (discord.Guild, bool)
 Guild returns the guild that the interaction happened in if it happened in a guild. If the interaction happened in a DM, it returns nil. This only returns cached guilds.
 
 <a name="InteractionResponderFunc"></a>
-## type [InteractionResponderFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L9>)
+## type [InteractionResponderFunc](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L9>)
 
 InteractionResponderFunc is a function that can be used to respond to a discord.Interaction.
 
@@ -1553,7 +1556,7 @@ type InteractionResponderFunc func(responseType discord.InteractionResponseType,
 ```
 
 <a name="InviteCreate"></a>
-## type [InviteCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_invite_events.go#L23-L26>)
+## type [InviteCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_invite_events.go#L23-L26>)
 
 InviteCreate is called upon creation of a new discord.Invite \(requires gateway.IntentGuildInvites\)
 
@@ -1565,7 +1568,7 @@ type InviteCreate struct {
 ```
 
 <a name="InviteDelete"></a>
-## type [InviteDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_invite_events.go#L29-L31>)
+## type [InviteDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_invite_events.go#L29-L31>)
 
 InviteDelete is called upon deletion of a discord.Invite \(requires gateway.IntentGuildInvites\)
 
@@ -1576,7 +1579,7 @@ type InviteDelete struct {
 ```
 
 <a name="ListenerAdapter"></a>
-## type [ListenerAdapter](<https://github.com/disgoorg/disgo/blob/master/disgo/events/listener_adapter.go#L13-L193>)
+## type [ListenerAdapter](<https://github.com/disgoorg/disgo/blob/master/events/listener_adapter.go#L13-L193>)
 
 ListenerAdapter lets you override the handles for receiving events
 
@@ -1765,7 +1768,7 @@ type ListenerAdapter struct {
 ```
 
 <a name="ListenerAdapter.OnEvent"></a>
-### func \(\*ListenerAdapter\) [OnEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/events/listener_adapter.go#L196>)
+### func \(\*ListenerAdapter\) [OnEvent](<https://github.com/disgoorg/disgo/blob/master/events/listener_adapter.go#L196>)
 
 ```go
 func (l *ListenerAdapter) OnEvent(event bot.Event)
@@ -1774,7 +1777,7 @@ func (l *ListenerAdapter) OnEvent(event bot.Event)
 OnEvent is getting called everytime we receive an event
 
 <a name="MessageCreate"></a>
-## type [MessageCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_events.go#L32-L34>)
+## type [MessageCreate](<https://github.com/disgoorg/disgo/blob/master/events/message_events.go#L32-L34>)
 
 MessageCreate indicates that a discord.Message got received
 
@@ -1785,7 +1788,7 @@ type MessageCreate struct {
 ```
 
 <a name="MessageDelete"></a>
-## type [MessageDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_events.go#L43-L45>)
+## type [MessageDelete](<https://github.com/disgoorg/disgo/blob/master/events/message_events.go#L43-L45>)
 
 MessageDelete indicates that a discord.Message got deleted
 
@@ -1796,7 +1799,7 @@ type MessageDelete struct {
 ```
 
 <a name="MessagePollVoteAdd"></a>
-## type [MessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_poll_events.go#L27-L29>)
+## type [MessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/events/message_poll_events.go#L27-L29>)
 
 MessagePollVoteAdd indicates that a discord.User voted on a discord.Poll \(requires gateway.IntentGuildMessagePolls and/or gateway.IntentDirectMessagePolls\)
 
@@ -1807,7 +1810,7 @@ type MessagePollVoteAdd struct {
 ```
 
 <a name="MessagePollVoteRemove"></a>
-## type [MessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_poll_events.go#L32-L34>)
+## type [MessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/events/message_poll_events.go#L32-L34>)
 
 MessagePollVoteRemove indicates that a discord.User removed their vote on a discord.Poll \(requires gateway.IntentGuildMessagePolls and/or gateway.IntentDirectMessagePolls\)
 
@@ -1818,7 +1821,7 @@ type MessagePollVoteRemove struct {
 ```
 
 <a name="MessageReactionAdd"></a>
-## type [MessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_reaction_events.go#L22-L25>)
+## type [MessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/events/message_reaction_events.go#L22-L25>)
 
 MessageReactionAdd indicates that a discord.User added a discord.MessageReaction to a discord.Message in a discord.Channel\(this\+\+\+ requires the gateway.IntentGuildMessageReactions and/or gateway.IntentDirectMessageReactions\)
 
@@ -1830,7 +1833,7 @@ type MessageReactionAdd struct {
 ```
 
 <a name="MessageReactionRemove"></a>
-## type [MessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_reaction_events.go#L28-L30>)
+## type [MessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/events/message_reaction_events.go#L28-L30>)
 
 MessageReactionRemove indicates that a discord.User removed a discord.MessageReaction from a discord.Message in a discord.GetChannel\(requires the gateway.IntentGuildMessageReactions and/or gateway.IntentDirectMessageReactions\)
 
@@ -1841,7 +1844,7 @@ type MessageReactionRemove struct {
 ```
 
 <a name="MessageReactionRemoveAll"></a>
-## type [MessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_reaction_events.go#L42-L47>)
+## type [MessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/events/message_reaction_events.go#L42-L47>)
 
 MessageReactionRemoveAll indicates someone removed all discord.MessageReaction\(s\) from a discord.Message in a discord.Channel\(requires the gateway.IntentGuildMessageReactions and/or gateway.IntentDirectMessageReactions\)
 
@@ -1855,7 +1858,7 @@ type MessageReactionRemoveAll struct {
 ```
 
 <a name="MessageReactionRemoveEmoji"></a>
-## type [MessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_reaction_events.go#L33-L39>)
+## type [MessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/events/message_reaction_events.go#L33-L39>)
 
 MessageReactionRemoveEmoji indicates someone removed all discord.MessageReaction of a specific discord.Emoji from a discord.Message in a discord.Channel\(requires the gateway.IntentGuildMessageReactions and/or gateway.IntentDirectMessageReactions\)
 
@@ -1870,7 +1873,7 @@ type MessageReactionRemoveEmoji struct {
 ```
 
 <a name="MessageUpdate"></a>
-## type [MessageUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/message_events.go#L37-L40>)
+## type [MessageUpdate](<https://github.com/disgoorg/disgo/blob/master/events/message_events.go#L37-L40>)
 
 MessageUpdate indicates that a discord.Message got update
 
@@ -1882,7 +1885,7 @@ type MessageUpdate struct {
 ```
 
 <a name="ModalSubmitInteractionCreate"></a>
-## type [ModalSubmitInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L143-L147>)
+## type [ModalSubmitInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L143-L147>)
 
 ModalSubmitInteractionCreate indicates that a new modal submit interaction has been created.
 
@@ -1895,7 +1898,7 @@ type ModalSubmitInteractionCreate struct {
 ```
 
 <a name="ModalSubmitInteractionCreate.CreateMessage"></a>
-### func \(\*ModalSubmitInteractionCreate\) [CreateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L160>)
+### func \(\*ModalSubmitInteractionCreate\) [CreateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L160>)
 
 ```go
 func (e *ModalSubmitInteractionCreate) CreateMessage(messageCreate discord.MessageCreate, opts ...rest.RequestOpt) error
@@ -1904,7 +1907,7 @@ func (e *ModalSubmitInteractionCreate) CreateMessage(messageCreate discord.Messa
 CreateMessage responds to the interaction with a new message.
 
 <a name="ModalSubmitInteractionCreate.DeferCreateMessage"></a>
-### func \(\*ModalSubmitInteractionCreate\) [DeferCreateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L165>)
+### func \(\*ModalSubmitInteractionCreate\) [DeferCreateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L165>)
 
 ```go
 func (e *ModalSubmitInteractionCreate) DeferCreateMessage(ephemeral bool, opts ...rest.RequestOpt) error
@@ -1913,7 +1916,7 @@ func (e *ModalSubmitInteractionCreate) DeferCreateMessage(ephemeral bool, opts .
 DeferCreateMessage responds to the interaction with a "bot is thinking..." message which should be edited later.
 
 <a name="ModalSubmitInteractionCreate.DeferUpdateMessage"></a>
-### func \(\*ModalSubmitInteractionCreate\) [DeferUpdateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L179>)
+### func \(\*ModalSubmitInteractionCreate\) [DeferUpdateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L179>)
 
 ```go
 func (e *ModalSubmitInteractionCreate) DeferUpdateMessage(opts ...rest.RequestOpt) error
@@ -1922,7 +1925,7 @@ func (e *ModalSubmitInteractionCreate) DeferUpdateMessage(opts ...rest.RequestOp
 DeferUpdateMessage responds to the interaction with nothing.
 
 <a name="ModalSubmitInteractionCreate.Guild"></a>
-### func \(\*ModalSubmitInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L152>)
+### func \(\*ModalSubmitInteractionCreate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L152>)
 
 ```go
 func (e *ModalSubmitInteractionCreate) Guild() (discord.Guild, bool)
@@ -1931,7 +1934,7 @@ func (e *ModalSubmitInteractionCreate) Guild() (discord.Guild, bool)
 Guild returns the guild that the interaction happened in if it happened in a guild. If the interaction happened in a DM, it returns nil. This only returns cached guilds.
 
 <a name="ModalSubmitInteractionCreate.PremiumRequired"></a>
-### func \(\*ModalSubmitInteractionCreate\) [PremiumRequired](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L184>)
+### func \(\*ModalSubmitInteractionCreate\) [PremiumRequired](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L184>)
 
 ```go
 func (e *ModalSubmitInteractionCreate) PremiumRequired(opts ...rest.RequestOpt) error
@@ -1940,7 +1943,7 @@ func (e *ModalSubmitInteractionCreate) PremiumRequired(opts ...rest.RequestOpt) 
 PremiumRequired responds to the interaction with an upgrade button if available.
 
 <a name="ModalSubmitInteractionCreate.UpdateMessage"></a>
-### func \(\*ModalSubmitInteractionCreate\) [UpdateMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/events/interaction_events.go#L174>)
+### func \(\*ModalSubmitInteractionCreate\) [UpdateMessage](<https://github.com/disgoorg/disgo/blob/master/events/interaction_events.go#L174>)
 
 ```go
 func (e *ModalSubmitInteractionCreate) UpdateMessage(messageUpdate discord.MessageUpdate, opts ...rest.RequestOpt) error
@@ -1949,7 +1952,7 @@ func (e *ModalSubmitInteractionCreate) UpdateMessage(messageUpdate discord.Messa
 UpdateMessage responds to the interaction with updating the message the component is from.
 
 <a name="PresenceUpdate"></a>
-## type [PresenceUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_activity_events.go#L10-L13>)
+## type [PresenceUpdate](<https://github.com/disgoorg/disgo/blob/master/events/user_activity_events.go#L10-L13>)
 
 
 
@@ -1961,7 +1964,7 @@ type PresenceUpdate struct {
 ```
 
 <a name="Raw"></a>
-## type [Raw](<https://github.com/disgoorg/disgo/blob/master/disgo/events/raw_event.go#L5-L8>)
+## type [Raw](<https://github.com/disgoorg/disgo/blob/master/events/raw_event.go#L5-L8>)
 
 
 
@@ -1973,7 +1976,7 @@ type Raw struct {
 ```
 
 <a name="Ready"></a>
-## type [Ready](<https://github.com/disgoorg/disgo/blob/master/disgo/events/gateway_status_events.go#L6-L9>)
+## type [Ready](<https://github.com/disgoorg/disgo/blob/master/events/gateway_status_events.go#L6-L9>)
 
 Ready indicates we received the Ready from the gateway.Gateway
 
@@ -1985,7 +1988,7 @@ type Ready struct {
 ```
 
 <a name="Resumed"></a>
-## type [Resumed](<https://github.com/disgoorg/disgo/blob/master/disgo/events/gateway_status_events.go#L12-L14>)
+## type [Resumed](<https://github.com/disgoorg/disgo/blob/master/events/gateway_status_events.go#L12-L14>)
 
 Resumed indicates disgo resumed the gateway.Gateway
 
@@ -1996,7 +1999,7 @@ type Resumed struct {
 ```
 
 <a name="RoleCreate"></a>
-## type [RoleCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_role_events.go#L18-L20>)
+## type [RoleCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_role_events.go#L18-L20>)
 
 RoleCreate indicates that a discord.Role got created
 
@@ -2007,7 +2010,7 @@ type RoleCreate struct {
 ```
 
 <a name="RoleDelete"></a>
-## type [RoleDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_role_events.go#L29-L31>)
+## type [RoleDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_role_events.go#L29-L31>)
 
 RoleDelete indicates that a discord.Role got deleted
 
@@ -2018,7 +2021,7 @@ type RoleDelete struct {
 ```
 
 <a name="RoleUpdate"></a>
-## type [RoleUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_role_events.go#L23-L26>)
+## type [RoleUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_role_events.go#L23-L26>)
 
 RoleUpdate indicates that a discord.Role got updated
 
@@ -2030,7 +2033,7 @@ type RoleUpdate struct {
 ```
 
 <a name="SelfUpdate"></a>
-## type [SelfUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/self_update_events.go#L8-L12>)
+## type [SelfUpdate](<https://github.com/disgoorg/disgo/blob/master/events/self_update_events.go#L8-L12>)
 
 SelfUpdate is called when something about this discord.User updates
 
@@ -2043,7 +2046,7 @@ type SelfUpdate struct {
 ```
 
 <a name="StageInstanceCreate"></a>
-## type [StageInstanceCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_stage_instance_events.go#L17-L19>)
+## type [StageInstanceCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_stage_instance_events.go#L17-L19>)
 
 StageInstanceCreate indicates that a StageInstance got created
 
@@ -2054,7 +2057,7 @@ type StageInstanceCreate struct {
 ```
 
 <a name="StageInstanceDelete"></a>
-## type [StageInstanceDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_stage_instance_events.go#L28-L30>)
+## type [StageInstanceDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_stage_instance_events.go#L28-L30>)
 
 StageInstanceDelete indicates that a StageInstance got deleted
 
@@ -2065,7 +2068,7 @@ type StageInstanceDelete struct {
 ```
 
 <a name="StageInstanceUpdate"></a>
-## type [StageInstanceUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_stage_instance_events.go#L22-L25>)
+## type [StageInstanceUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_stage_instance_events.go#L22-L25>)
 
 StageInstanceUpdate indicates that a StageInstance got updated
 
@@ -2077,7 +2080,7 @@ type StageInstanceUpdate struct {
 ```
 
 <a name="StickerCreate"></a>
-## type [StickerCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_sticker_events.go#L25-L27>)
+## type [StickerCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_sticker_events.go#L25-L27>)
 
 StickerCreate indicates that a new discord.Sticker got created in a discord.Guild \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -2088,7 +2091,7 @@ type StickerCreate struct {
 ```
 
 <a name="StickerDelete"></a>
-## type [StickerDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_sticker_events.go#L36-L38>)
+## type [StickerDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_sticker_events.go#L36-L38>)
 
 StickerDelete indicates that a discord.Sticker got deleted in a discord.Guild \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -2099,7 +2102,7 @@ type StickerDelete struct {
 ```
 
 <a name="StickerUpdate"></a>
-## type [StickerUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_sticker_events.go#L30-L33>)
+## type [StickerUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_sticker_events.go#L30-L33>)
 
 StickerUpdate indicates that a discord.Sticker got updated in a discord.Guild \(requires gateway.IntentGuildEmojisAndStickers\)
 
@@ -2111,7 +2114,7 @@ type StickerUpdate struct {
 ```
 
 <a name="StickersUpdate"></a>
-## type [StickersUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_sticker_events.go#L12-L15>)
+## type [StickersUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_sticker_events.go#L12-L15>)
 
 StickersUpdate is dispatched when a guild's stickers are updated. This event does not depend on a cache like StickerCreate, StickerUpdate or StickerDelete.
 
@@ -2123,7 +2126,7 @@ type StickersUpdate struct {
 ```
 
 <a name="ThreadCreate"></a>
-## type [ThreadCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L19-L22>)
+## type [ThreadCreate](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L19-L22>)
 
 ThreadCreate is dispatched when a thread is created.
 
@@ -2135,7 +2138,7 @@ type ThreadCreate struct {
 ```
 
 <a name="ThreadDelete"></a>
-## type [ThreadDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L31-L33>)
+## type [ThreadDelete](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L31-L33>)
 
 ThreadDelete is dispatched when a thread is deleted.
 
@@ -2146,7 +2149,7 @@ type ThreadDelete struct {
 ```
 
 <a name="ThreadHide"></a>
-## type [ThreadHide](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L41-L43>)
+## type [ThreadHide](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L41-L43>)
 
 ThreadHide is dispatched when your bot loses access to a thread.
 
@@ -2157,7 +2160,7 @@ type ThreadHide struct {
 ```
 
 <a name="ThreadMemberAdd"></a>
-## type [ThreadMemberAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L55-L59>)
+## type [ThreadMemberAdd](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L55-L59>)
 
 ThreadMemberAdd is dispatched when a user is added to a thread.
 
@@ -2170,7 +2173,7 @@ type ThreadMemberAdd struct {
 ```
 
 <a name="ThreadMemberRemove"></a>
-## type [ThreadMemberRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L68-L70>)
+## type [ThreadMemberRemove](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L68-L70>)
 
 ThreadMemberRemove is dispatched when a user is removed from a thread.
 
@@ -2181,7 +2184,7 @@ type ThreadMemberRemove struct {
 ```
 
 <a name="ThreadMemberUpdate"></a>
-## type [ThreadMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L62-L65>)
+## type [ThreadMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L62-L65>)
 
 ThreadMemberUpdate is dispatched when a user is updated in a thread.
 
@@ -2193,7 +2196,7 @@ type ThreadMemberUpdate struct {
 ```
 
 <a name="ThreadShow"></a>
-## type [ThreadShow](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L36-L38>)
+## type [ThreadShow](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L36-L38>)
 
 ThreadShow is dispatched when your bot gains access to a thread.
 
@@ -2204,7 +2207,7 @@ type ThreadShow struct {
 ```
 
 <a name="ThreadUpdate"></a>
-## type [ThreadUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_thread_events.go#L25-L28>)
+## type [ThreadUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_thread_events.go#L25-L28>)
 
 ThreadUpdate is dispatched when a thread is updated.
 
@@ -2216,7 +2219,7 @@ type ThreadUpdate struct {
 ```
 
 <a name="UserActivityStart"></a>
-## type [UserActivityStart](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_activity_events.go#L36-L38>)
+## type [UserActivityStart](<https://github.com/disgoorg/disgo/blob/master/events/user_activity_events.go#L36-L38>)
 
 UserActivityStart indicates that a User started an Activity
 
@@ -2227,7 +2230,7 @@ type UserActivityStart struct {
 ```
 
 <a name="UserActivityStop"></a>
-## type [UserActivityStop](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_activity_events.go#L47-L49>)
+## type [UserActivityStop](<https://github.com/disgoorg/disgo/blob/master/events/user_activity_events.go#L47-L49>)
 
 UserActivityStop indicates that a User stopped an Activity
 
@@ -2238,7 +2241,7 @@ type UserActivityStop struct {
 ```
 
 <a name="UserActivityUpdate"></a>
-## type [UserActivityUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_activity_events.go#L41-L44>)
+## type [UserActivityUpdate](<https://github.com/disgoorg/disgo/blob/master/events/user_activity_events.go#L41-L44>)
 
 UserActivityUpdate indicates that a User updated their Activity
 
@@ -2250,7 +2253,7 @@ type UserActivityUpdate struct {
 ```
 
 <a name="UserClientStatusUpdate"></a>
-## type [UserClientStatusUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_status_events.go#L18-L23>)
+## type [UserClientStatusUpdate](<https://github.com/disgoorg/disgo/blob/master/events/user_status_events.go#L18-L23>)
 
 UserClientStatusUpdate generic client\-specific Status event
 
@@ -2264,7 +2267,7 @@ type UserClientStatusUpdate struct {
 ```
 
 <a name="UserStatusUpdate"></a>
-## type [UserStatusUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_status_events.go#L10-L15>)
+## type [UserStatusUpdate](<https://github.com/disgoorg/disgo/blob/master/events/user_status_events.go#L10-L15>)
 
 UserStatusUpdate generic Status event
 
@@ -2278,7 +2281,7 @@ type UserStatusUpdate struct {
 ```
 
 <a name="UserTypingStart"></a>
-## type [UserTypingStart](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_events.go#L25-L31>)
+## type [UserTypingStart](<https://github.com/disgoorg/disgo/blob/master/events/user_events.go#L25-L31>)
 
 UserTypingStart indicates that a discord.User started typing in a discord.DMChannel or discord.MessageChanel\(requires the gateway.IntentDirectMessageTyping and/or gateway.IntentGuildMessageTyping\)
 
@@ -2293,7 +2296,7 @@ type UserTypingStart struct {
 ```
 
 <a name="UserTypingStart.Channel"></a>
-### func \(\*UserTypingStart\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_events.go#L34>)
+### func \(\*UserTypingStart\) [Channel](<https://github.com/disgoorg/disgo/blob/master/events/user_events.go#L34>)
 
 ```go
 func (e *UserTypingStart) Channel() (discord.GuildMessageChannel, bool)
@@ -2302,7 +2305,7 @@ func (e *UserTypingStart) Channel() (discord.GuildMessageChannel, bool)
 Channel returns the discord.GuildMessageChannel the discord.User started typing in
 
 <a name="UserUpdate"></a>
-## type [UserUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/user_events.go#L19-L22>)
+## type [UserUpdate](<https://github.com/disgoorg/disgo/blob/master/events/user_events.go#L19-L22>)
 
 UserUpdate indicates that a discord.User updated
 
@@ -2314,7 +2317,7 @@ type UserUpdate struct {
 ```
 
 <a name="VoiceServerUpdate"></a>
-## type [VoiceServerUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_voice_events.go#L39-L42>)
+## type [VoiceServerUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_voice_events.go#L39-L42>)
 
 VoiceServerUpdate indicates that a voice server the bot is connected to has been changed
 
@@ -2326,7 +2329,7 @@ type VoiceServerUpdate struct {
 ```
 
 <a name="WebhooksUpdate"></a>
-## type [WebhooksUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_webhooks_update_events.go#L10-L14>)
+## type [WebhooksUpdate](<https://github.com/disgoorg/disgo/blob/master/events/guild_webhooks_update_events.go#L10-L14>)
 
 WebhooksUpdate indicates that a guilds webhooks were updated.
 
@@ -2339,7 +2342,7 @@ type WebhooksUpdate struct {
 ```
 
 <a name="WebhooksUpdate.Channel"></a>
-### func \(\*WebhooksUpdate\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_webhooks_update_events.go#L24>)
+### func \(\*WebhooksUpdate\) [Channel](<https://github.com/disgoorg/disgo/blob/master/events/guild_webhooks_update_events.go#L24>)
 
 ```go
 func (e *WebhooksUpdate) Channel() (discord.GuildMessageChannel, bool)
@@ -2348,7 +2351,7 @@ func (e *WebhooksUpdate) Channel() (discord.GuildMessageChannel, bool)
 Channel returns the discord.GuildMessageChannel the webhook was updated in. This will only return cached channels\!
 
 <a name="WebhooksUpdate.Guild"></a>
-### func \(\*WebhooksUpdate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/events/guild_webhooks_update_events.go#L18>)
+### func \(\*WebhooksUpdate\) [Guild](<https://github.com/disgoorg/disgo/blob/master/events/guild_webhooks_update_events.go#L18>)
 
 ```go
 func (e *WebhooksUpdate) Guild() (discord.Guild, bool)

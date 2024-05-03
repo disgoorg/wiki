@@ -1,7 +1,10 @@
+# Gateway
 
 ```go
 import "github.com/disgoorg/disgo/gateway"
 ```
+
+Package gateway is used to connect and interact with the Discord Gateway.
 
 ## Constants
 
@@ -147,7 +150,7 @@ var (
 ```
 
 <a name="ActivityOpt"></a>
-## type [ActivityOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L568>)
+## type [ActivityOpt](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L568>)
 
 ActivityOpt is a type alias for a function that sets optional data for an Activity
 
@@ -156,7 +159,7 @@ type ActivityOpt func(activity discord.Activity)
 ```
 
 <a name="WithActivityState"></a>
-### func [WithActivityState](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L571>)
+### func [WithActivityState](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L571>)
 
 ```go
 func WithActivityState(state string) ActivityOpt
@@ -165,7 +168,7 @@ func WithActivityState(state string) ActivityOpt
 WithActivityState sets the Activity.State
 
 <a name="AddedThreadMember"></a>
-## type [AddedThreadMember](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L143-L147>)
+## type [AddedThreadMember](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L143-L147>)
 
 
 
@@ -178,7 +181,7 @@ type AddedThreadMember struct {
 ```
 
 <a name="CloseEventCode"></a>
-## type [CloseEventCode](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_opcodes.go#L22-L27>)
+## type [CloseEventCode](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_opcodes.go#L22-L27>)
 
 
 
@@ -192,7 +195,7 @@ type CloseEventCode struct {
 ```
 
 <a name="CloseEventCodeByCode"></a>
-### func [CloseEventCodeByCode](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_opcodes.go#L152>)
+### func [CloseEventCodeByCode](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_opcodes.go#L152>)
 
 ```go
 func CloseEventCodeByCode(code int) CloseEventCode
@@ -201,7 +204,7 @@ func CloseEventCodeByCode(code int) CloseEventCode
 
 
 <a name="CloseHandlerFunc"></a>
-## type [CloseHandlerFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway.go#L60>)
+## type [CloseHandlerFunc](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway.go#L60>)
 
 CloseHandlerFunc is a function that is called when the Gateway is closed.
 
@@ -210,7 +213,7 @@ type CloseHandlerFunc func(gateway Gateway, err error)
 ```
 
 <a name="Config"></a>
-## type [Config](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L26-L68>)
+## type [Config](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L26-L68>)
 
 Config lets you configure your Gateway instance.
 
@@ -261,7 +264,7 @@ type Config struct {
 ```
 
 <a name="DefaultConfig"></a>
-### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L10>)
+### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L10>)
 
 ```go
 func DefaultConfig() *Config
@@ -270,7 +273,7 @@ func DefaultConfig() *Config
 DefaultConfig returns a Config with sensible defaults.
 
 <a name="Config.Apply"></a>
-### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L74>)
+### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L74>)
 
 ```go
 func (c *Config) Apply(opts []ConfigOpt)
@@ -279,7 +282,7 @@ func (c *Config) Apply(opts []ConfigOpt)
 Apply applies the given ConfigOpt\(s\) to the Config
 
 <a name="ConfigOpt"></a>
-## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L71>)
+## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L71>)
 
 ConfigOpt is a type alias for a function that takes a Config and is used to configure your Server.
 
@@ -288,7 +291,7 @@ type ConfigOpt func(config *Config)
 ```
 
 <a name="WithAutoReconnect"></a>
-### func [WithAutoReconnect](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L161>)
+### func [WithAutoReconnect](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L161>)
 
 ```go
 func WithAutoReconnect(autoReconnect bool) ConfigOpt
@@ -297,7 +300,7 @@ func WithAutoReconnect(autoReconnect bool) ConfigOpt
 WithAutoReconnect sets whether the Gateway should automatically reconnect to Discord.
 
 <a name="WithBrowser"></a>
-### func [WithBrowser](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L216>)
+### func [WithBrowser](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L216>)
 
 ```go
 func WithBrowser(browser string) ConfigOpt
@@ -306,7 +309,7 @@ func WithBrowser(browser string) ConfigOpt
 WithBrowser sets the browser the bot is running on. See here for more information: https://discord.com/developers/docs/topics/gateway#identify-identify-connection-properties
 
 <a name="WithCompress"></a>
-### func [WithCompress](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L115>)
+### func [WithCompress](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L115>)
 
 ```go
 func WithCompress(compress bool) ConfigOpt
@@ -315,7 +318,7 @@ func WithCompress(compress bool) ConfigOpt
 WithCompress sets whether this Gateway supports compression. See here for more information: https://discord.com/developers/docs/topics/gateway#encoding-and-compression
 
 <a name="WithDevice"></a>
-### func [WithDevice](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L224>)
+### func [WithDevice](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L224>)
 
 ```go
 func WithDevice(device string) ConfigOpt
@@ -324,7 +327,7 @@ func WithDevice(device string) ConfigOpt
 WithDevice sets the device the bot is running on. See here for more information: https://discord.com/developers/docs/topics/gateway#identify-identify-connection-properties
 
 <a name="WithDialer"></a>
-### func [WithDialer](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L91>)
+### func [WithDialer](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L91>)
 
 ```go
 func WithDialer(dialer *websocket.Dialer) ConfigOpt
@@ -333,7 +336,7 @@ func WithDialer(dialer *websocket.Dialer) ConfigOpt
 WithDialer sets the websocket.Dialer for the Gateway.
 
 <a name="WithEnableRawEvents"></a>
-### func [WithEnableRawEvents](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L168>)
+### func [WithEnableRawEvents](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L168>)
 
 ```go
 func WithEnableRawEvents(enableRawEventEvents bool) ConfigOpt
@@ -342,7 +345,7 @@ func WithEnableRawEvents(enableRawEventEvents bool) ConfigOpt
 WithEnableRawEvents enables/disables the EventTypeRaw.
 
 <a name="WithEnableResumeURL"></a>
-### func [WithEnableResumeURL](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L175>)
+### func [WithEnableResumeURL](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L175>)
 
 ```go
 func WithEnableResumeURL(enableResumeURL bool) ConfigOpt
@@ -351,7 +354,7 @@ func WithEnableResumeURL(enableResumeURL bool) ConfigOpt
 WithEnableResumeURL enables/disables usage of resume URLs sent by Discord.
 
 <a name="WithIntents"></a>
-### func [WithIntents](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L107>)
+### func [WithIntents](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L107>)
 
 ```go
 func WithIntents(intents ...Intents) ConfigOpt
@@ -360,7 +363,7 @@ func WithIntents(intents ...Intents) ConfigOpt
 WithIntents sets the Intents for the Gateway. See here for more information: https://discord.com/developers/docs/topics/gateway#gateway-intents
 
 <a name="WithLargeThreshold"></a>
-### func [WithLargeThreshold](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L99>)
+### func [WithLargeThreshold](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L99>)
 
 ```go
 func WithLargeThreshold(largeThreshold int) ConfigOpt
@@ -369,7 +372,7 @@ func WithLargeThreshold(largeThreshold int) ConfigOpt
 WithLargeThreshold sets the threshold for the Gateway. See here for more information: https://discord.com/developers/docs/topics/gateway#identify-identify-structure
 
 <a name="WithLogger"></a>
-### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L84>)
+### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L84>)
 
 ```go
 func WithLogger(logger *slog.Logger) ConfigOpt
@@ -378,7 +381,7 @@ func WithLogger(logger *slog.Logger) ConfigOpt
 WithLogger sets the Logger for the Gateway.
 
 <a name="WithOS"></a>
-### func [WithOS](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L208>)
+### func [WithOS](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L208>)
 
 ```go
 func WithOS(os string) ConfigOpt
@@ -387,7 +390,7 @@ func WithOS(os string) ConfigOpt
 WithOS sets the operating system the bot is running on. See here for more information: https://discord.com/developers/docs/topics/gateway#identify-identify-connection-properties
 
 <a name="WithPresenceOpts"></a>
-### func [WithPresenceOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L196>)
+### func [WithPresenceOpts](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L196>)
 
 ```go
 func WithPresenceOpts(opts ...PresenceOpt) ConfigOpt
@@ -396,7 +399,7 @@ func WithPresenceOpts(opts ...PresenceOpt) ConfigOpt
 WithPresenceOpts allows to pass initial presence data the bot should display.
 
 <a name="WithRateLimiter"></a>
-### func [WithRateLimiter](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L182>)
+### func [WithRateLimiter](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L182>)
 
 ```go
 func WithRateLimiter(rateLimiter RateLimiter) ConfigOpt
@@ -405,7 +408,7 @@ func WithRateLimiter(rateLimiter RateLimiter) ConfigOpt
 WithRateLimiter sets the grate.RateLimiter for the Gateway.
 
 <a name="WithRateLimiterConfigOpts"></a>
-### func [WithRateLimiterConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L189>)
+### func [WithRateLimiterConfigOpts](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L189>)
 
 ```go
 func WithRateLimiterConfigOpts(opts ...RateLimiterConfigOpt) ConfigOpt
@@ -414,7 +417,7 @@ func WithRateLimiterConfigOpts(opts ...RateLimiterConfigOpt) ConfigOpt
 WithRateLimiterConfigOpts lets you configure the default RateLimiter.
 
 <a name="WithSequence"></a>
-### func [WithSequence](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L154>)
+### func [WithSequence](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L154>)
 
 ```go
 func WithSequence(sequence int) ConfigOpt
@@ -423,7 +426,7 @@ func WithSequence(sequence int) ConfigOpt
 WithSequence sets the last sequence received for the Gateway. If sessionID and lastSequence is present while connecting, the Gateway will try to resume the session.
 
 <a name="WithSessionID"></a>
-### func [WithSessionID](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L146>)
+### func [WithSessionID](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L146>)
 
 ```go
 func WithSessionID(sessionID string) ConfigOpt
@@ -432,7 +435,7 @@ func WithSessionID(sessionID string) ConfigOpt
 WithSessionID sets the Session ID for the Gateway. If sessionID and lastSequence is present while connecting, the Gateway will try to resume the session.
 
 <a name="WithShardCount"></a>
-### func [WithShardCount](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L138>)
+### func [WithShardCount](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L138>)
 
 ```go
 func WithShardCount(shardCount int) ConfigOpt
@@ -441,7 +444,7 @@ func WithShardCount(shardCount int) ConfigOpt
 WithShardCount sets the shard count for the Gateway. See here for more information on sharding: https://discord.com/developers/docs/topics/gateway#sharding
 
 <a name="WithShardID"></a>
-### func [WithShardID](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L130>)
+### func [WithShardID](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L130>)
 
 ```go
 func WithShardID(shardID int) ConfigOpt
@@ -450,7 +453,7 @@ func WithShardID(shardID int) ConfigOpt
 WithShardID sets the shard ID for the Gateway. See here for more information on sharding: https://discord.com/developers/docs/topics/gateway#sharding
 
 <a name="WithURL"></a>
-### func [WithURL](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_config.go#L122>)
+### func [WithURL](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_config.go#L122>)
 
 ```go
 func WithURL(url string) ConfigOpt
@@ -459,7 +462,7 @@ func WithURL(url string) ConfigOpt
 WithURL sets the Gateway URL for the Gateway.
 
 <a name="CreateFunc"></a>
-## type [CreateFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway.go#L57>)
+## type [CreateFunc](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway.go#L57>)
 
 CreateFunc is a type that is used to create a new Gateway\(s\).
 
@@ -468,7 +471,7 @@ type CreateFunc func(token string, eventHandlerFunc EventHandlerFunc, closeHandl
 ```
 
 <a name="EventApplicationCommandPermissionsUpdate"></a>
-## type [EventApplicationCommandPermissionsUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L46-L48>)
+## type [EventApplicationCommandPermissionsUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L46-L48>)
 
 
 
@@ -479,7 +482,7 @@ type EventApplicationCommandPermissionsUpdate struct {
 ```
 
 <a name="EventAutoModerationActionExecution"></a>
-## type [EventAutoModerationActionExecution](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L698-L710>)
+## type [EventAutoModerationActionExecution](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L698-L710>)
 
 
 
@@ -500,7 +503,7 @@ type EventAutoModerationActionExecution struct {
 ```
 
 <a name="EventAutoModerationRuleCreate"></a>
-## type [EventAutoModerationRuleCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L677-L679>)
+## type [EventAutoModerationRuleCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L677-L679>)
 
 
 
@@ -511,7 +514,7 @@ type EventAutoModerationRuleCreate struct {
 ```
 
 <a name="EventAutoModerationRuleDelete"></a>
-## type [EventAutoModerationRuleDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L691-L693>)
+## type [EventAutoModerationRuleDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L691-L693>)
 
 
 
@@ -522,7 +525,7 @@ type EventAutoModerationRuleDelete struct {
 ```
 
 <a name="EventAutoModerationRuleUpdate"></a>
-## type [EventAutoModerationRuleUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L684-L686>)
+## type [EventAutoModerationRuleUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L684-L686>)
 
 
 
@@ -533,7 +536,7 @@ type EventAutoModerationRuleUpdate struct {
 ```
 
 <a name="EventChannelCreate"></a>
-## type [EventChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L53-L55>)
+## type [EventChannelCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L53-L55>)
 
 
 
@@ -544,7 +547,7 @@ type EventChannelCreate struct {
 ```
 
 <a name="EventChannelCreate.UnmarshalJSON"></a>
-### func \(\*EventChannelCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L57>)
+### func \(\*EventChannelCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L57>)
 
 ```go
 func (e *EventChannelCreate) UnmarshalJSON(data []byte) error
@@ -553,7 +556,7 @@ func (e *EventChannelCreate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventChannelDelete"></a>
-## type [EventChannelDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L85-L87>)
+## type [EventChannelDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L85-L87>)
 
 
 
@@ -564,7 +567,7 @@ type EventChannelDelete struct {
 ```
 
 <a name="EventChannelDelete.UnmarshalJSON"></a>
-### func \(\*EventChannelDelete\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L89>)
+### func \(\*EventChannelDelete\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L89>)
 
 ```go
 func (e *EventChannelDelete) UnmarshalJSON(data []byte) error
@@ -573,7 +576,7 @@ func (e *EventChannelDelete) UnmarshalJSON(data []byte) error
 
 
 <a name="EventChannelPinsUpdate"></a>
-## type [EventChannelPinsUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L249-L253>)
+## type [EventChannelPinsUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L249-L253>)
 
 
 
@@ -586,7 +589,7 @@ type EventChannelPinsUpdate struct {
 ```
 
 <a name="EventChannelUpdate"></a>
-## type [EventChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L69-L71>)
+## type [EventChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L69-L71>)
 
 
 
@@ -597,7 +600,7 @@ type EventChannelUpdate struct {
 ```
 
 <a name="EventChannelUpdate.UnmarshalJSON"></a>
-### func \(\*EventChannelUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L73>)
+### func \(\*EventChannelUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L73>)
 
 ```go
 func (e *EventChannelUpdate) UnmarshalJSON(data []byte) error
@@ -606,7 +609,7 @@ func (e *EventChannelUpdate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventData"></a>
-## type [EventData](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L13-L16>)
+## type [EventData](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L13-L16>)
 
 
 
@@ -618,7 +621,7 @@ type EventData interface {
 ```
 
 <a name="UnmarshalEventData"></a>
-### func [UnmarshalEventData](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L105>)
+### func [UnmarshalEventData](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L105>)
 
 ```go
 func UnmarshalEventData(data []byte, eventType EventType) (EventData, error)
@@ -627,7 +630,7 @@ func UnmarshalEventData(data []byte, eventType EventType) (EventData, error)
 
 
 <a name="EventEntitlementCreate"></a>
-## type [EventEntitlementCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L731-L733>)
+## type [EventEntitlementCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L731-L733>)
 
 
 
@@ -638,7 +641,7 @@ type EventEntitlementCreate struct {
 ```
 
 <a name="EventEntitlementDelete"></a>
-## type [EventEntitlementDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L745-L747>)
+## type [EventEntitlementDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L745-L747>)
 
 
 
@@ -649,7 +652,7 @@ type EventEntitlementDelete struct {
 ```
 
 <a name="EventEntitlementUpdate"></a>
-## type [EventEntitlementUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L738-L740>)
+## type [EventEntitlementUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L738-L740>)
 
 
 
@@ -660,7 +663,7 @@ type EventEntitlementUpdate struct {
 ```
 
 <a name="EventGuildAuditLogEntryCreate"></a>
-## type [EventGuildAuditLogEntryCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L181-L184>)
+## type [EventGuildAuditLogEntryCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L181-L184>)
 
 
 
@@ -672,7 +675,7 @@ type EventGuildAuditLogEntryCreate struct {
 ```
 
 <a name="EventGuildBanAdd"></a>
-## type [EventGuildBanAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L271-L274>)
+## type [EventGuildBanAdd](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L271-L274>)
 
 
 
@@ -684,7 +687,7 @@ type EventGuildBanAdd struct {
 ```
 
 <a name="EventGuildBanRemove"></a>
-## type [EventGuildBanRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L279-L282>)
+## type [EventGuildBanRemove](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L279-L282>)
 
 
 
@@ -696,7 +699,7 @@ type EventGuildBanRemove struct {
 ```
 
 <a name="EventGuildCreate"></a>
-## type [EventGuildCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L160-L162>)
+## type [EventGuildCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L160-L162>)
 
 
 
@@ -707,7 +710,7 @@ type EventGuildCreate struct {
 ```
 
 <a name="EventGuildDelete"></a>
-## type [EventGuildDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L174-L176>)
+## type [EventGuildDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L174-L176>)
 
 
 
@@ -718,7 +721,7 @@ type EventGuildDelete struct {
 ```
 
 <a name="EventGuildEmojisUpdate"></a>
-## type [EventGuildEmojisUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L287-L290>)
+## type [EventGuildEmojisUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L287-L290>)
 
 
 
@@ -730,7 +733,7 @@ type EventGuildEmojisUpdate struct {
 ```
 
 <a name="EventGuildEmojisUpdate.UnmarshalJSON"></a>
-### func \(\*EventGuildEmojisUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L292>)
+### func \(\*EventGuildEmojisUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L292>)
 
 ```go
 func (e *EventGuildEmojisUpdate) UnmarshalJSON(data []byte) error
@@ -739,7 +742,7 @@ func (e *EventGuildEmojisUpdate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventGuildIntegrationsUpdate"></a>
-## type [EventGuildIntegrationsUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L316-L318>)
+## type [EventGuildIntegrationsUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L316-L318>)
 
 
 
@@ -750,7 +753,7 @@ type EventGuildIntegrationsUpdate struct {
 ```
 
 <a name="EventGuildMemberAdd"></a>
-## type [EventGuildMemberAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L323-L325>)
+## type [EventGuildMemberAdd](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L323-L325>)
 
 
 
@@ -761,7 +764,7 @@ type EventGuildMemberAdd struct {
 ```
 
 <a name="EventGuildMemberRemove"></a>
-## type [EventGuildMemberRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L337-L340>)
+## type [EventGuildMemberRemove](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L337-L340>)
 
 
 
@@ -773,7 +776,7 @@ type EventGuildMemberRemove struct {
 ```
 
 <a name="EventGuildMemberUpdate"></a>
-## type [EventGuildMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L330-L332>)
+## type [EventGuildMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L330-L332>)
 
 
 
@@ -784,7 +787,7 @@ type EventGuildMemberUpdate struct {
 ```
 
 <a name="EventGuildMembersChunk"></a>
-## type [EventGuildMembersChunk](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L258-L266>)
+## type [EventGuildMembersChunk](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L258-L266>)
 
 
 
@@ -801,7 +804,7 @@ type EventGuildMembersChunk struct {
 ```
 
 <a name="EventGuildRoleCreate"></a>
-## type [EventGuildRoleCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L345-L348>)
+## type [EventGuildRoleCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L345-L348>)
 
 
 
@@ -813,7 +816,7 @@ type EventGuildRoleCreate struct {
 ```
 
 <a name="EventGuildRoleCreate.MarshalJSON"></a>
-### func \(\*EventGuildRoleCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L361>)
+### func \(\*EventGuildRoleCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L361>)
 
 ```go
 func (e *EventGuildRoleCreate) MarshalJSON() ([]byte, error)
@@ -822,7 +825,7 @@ func (e *EventGuildRoleCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="EventGuildRoleCreate.UnmarshalJSON"></a>
-### func \(\*EventGuildRoleCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L350>)
+### func \(\*EventGuildRoleCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L350>)
 
 ```go
 func (e *EventGuildRoleCreate) UnmarshalJSON(data []byte) error
@@ -831,7 +834,7 @@ func (e *EventGuildRoleCreate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventGuildRoleDelete"></a>
-## type [EventGuildRoleDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L370-L373>)
+## type [EventGuildRoleDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L370-L373>)
 
 
 
@@ -843,7 +846,7 @@ type EventGuildRoleDelete struct {
 ```
 
 <a name="EventGuildRoleUpdate"></a>
-## type [EventGuildRoleUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L378-L381>)
+## type [EventGuildRoleUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L378-L381>)
 
 
 
@@ -855,7 +858,7 @@ type EventGuildRoleUpdate struct {
 ```
 
 <a name="EventGuildRoleUpdate.MarshalJSON"></a>
-### func \(\*EventGuildRoleUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L394>)
+### func \(\*EventGuildRoleUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L394>)
 
 ```go
 func (e *EventGuildRoleUpdate) MarshalJSON() ([]byte, error)
@@ -864,7 +867,7 @@ func (e *EventGuildRoleUpdate) MarshalJSON() ([]byte, error)
 
 
 <a name="EventGuildRoleUpdate.UnmarshalJSON"></a>
-### func \(\*EventGuildRoleUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L383>)
+### func \(\*EventGuildRoleUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L383>)
 
 ```go
 func (e *EventGuildRoleUpdate) UnmarshalJSON(data []byte) error
@@ -873,7 +876,7 @@ func (e *EventGuildRoleUpdate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventGuildScheduledEventCreate"></a>
-## type [EventGuildScheduledEventCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L403-L405>)
+## type [EventGuildScheduledEventCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L403-L405>)
 
 
 
@@ -884,7 +887,7 @@ type EventGuildScheduledEventCreate struct {
 ```
 
 <a name="EventGuildScheduledEventDelete"></a>
-## type [EventGuildScheduledEventDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L417-L419>)
+## type [EventGuildScheduledEventDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L417-L419>)
 
 
 
@@ -895,7 +898,7 @@ type EventGuildScheduledEventDelete struct {
 ```
 
 <a name="EventGuildScheduledEventUpdate"></a>
-## type [EventGuildScheduledEventUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L410-L412>)
+## type [EventGuildScheduledEventUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L410-L412>)
 
 
 
@@ -906,7 +909,7 @@ type EventGuildScheduledEventUpdate struct {
 ```
 
 <a name="EventGuildScheduledEventUserAdd"></a>
-## type [EventGuildScheduledEventUserAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L424-L428>)
+## type [EventGuildScheduledEventUserAdd](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L424-L428>)
 
 
 
@@ -919,7 +922,7 @@ type EventGuildScheduledEventUserAdd struct {
 ```
 
 <a name="EventGuildScheduledEventUserRemove"></a>
-## type [EventGuildScheduledEventUserRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L433-L437>)
+## type [EventGuildScheduledEventUserRemove](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L433-L437>)
 
 
 
@@ -932,7 +935,7 @@ type EventGuildScheduledEventUserRemove struct {
 ```
 
 <a name="EventGuildStickersUpdate"></a>
-## type [EventGuildStickersUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L308-L311>)
+## type [EventGuildStickersUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L308-L311>)
 
 
 
@@ -944,7 +947,7 @@ type EventGuildStickersUpdate struct {
 ```
 
 <a name="EventGuildUpdate"></a>
-## type [EventGuildUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L167-L169>)
+## type [EventGuildUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L167-L169>)
 
 
 
@@ -955,7 +958,7 @@ type EventGuildUpdate struct {
 ```
 
 <a name="EventHandlerFunc"></a>
-## type [EventHandlerFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway.go#L54>)
+## type [EventHandlerFunc](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway.go#L54>)
 
 EventHandlerFunc is a function that is called when an event is received.
 
@@ -964,7 +967,7 @@ type EventHandlerFunc func(gatewayEventType EventType, sequenceNumber int, shard
 ```
 
 <a name="EventHeartbeatAck"></a>
-## type [EventHeartbeatAck](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L723-L726>)
+## type [EventHeartbeatAck](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L723-L726>)
 
 
 
@@ -976,7 +979,7 @@ type EventHeartbeatAck struct {
 ```
 
 <a name="EventIntegrationCreate"></a>
-## type [EventIntegrationCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L618-L621>)
+## type [EventIntegrationCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L618-L621>)
 
 
 
@@ -988,7 +991,7 @@ type EventIntegrationCreate struct {
 ```
 
 <a name="EventIntegrationCreate.UnmarshalJSON"></a>
-### func \(\*EventIntegrationCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L623>)
+### func \(\*EventIntegrationCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L623>)
 
 ```go
 func (e *EventIntegrationCreate) UnmarshalJSON(data []byte) error
@@ -997,7 +1000,7 @@ func (e *EventIntegrationCreate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventIntegrationDelete"></a>
-## type [EventIntegrationDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L668-L672>)
+## type [EventIntegrationDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L668-L672>)
 
 
 
@@ -1010,7 +1013,7 @@ type EventIntegrationDelete struct {
 ```
 
 <a name="EventIntegrationUpdate"></a>
-## type [EventIntegrationUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L643-L646>)
+## type [EventIntegrationUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L643-L646>)
 
 
 
@@ -1022,7 +1025,7 @@ type EventIntegrationUpdate struct {
 ```
 
 <a name="EventIntegrationUpdate.UnmarshalJSON"></a>
-### func \(\*EventIntegrationUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L648>)
+### func \(\*EventIntegrationUpdate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L648>)
 
 ```go
 func (e *EventIntegrationUpdate) UnmarshalJSON(data []byte) error
@@ -1031,7 +1034,7 @@ func (e *EventIntegrationUpdate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventInteractionCreate"></a>
-## type [EventInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L442-L444>)
+## type [EventInteractionCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L442-L444>)
 
 
 
@@ -1042,7 +1045,7 @@ type EventInteractionCreate struct {
 ```
 
 <a name="EventInteractionCreate.MarshalJSON"></a>
-### func \(EventInteractionCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L455>)
+### func \(EventInteractionCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L455>)
 
 ```go
 func (e EventInteractionCreate) MarshalJSON() ([]byte, error)
@@ -1051,7 +1054,7 @@ func (e EventInteractionCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="EventInteractionCreate.UnmarshalJSON"></a>
-### func \(\*EventInteractionCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L446>)
+### func \(\*EventInteractionCreate\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L446>)
 
 ```go
 func (e *EventInteractionCreate) UnmarshalJSON(data []byte) error
@@ -1060,7 +1063,7 @@ func (e *EventInteractionCreate) UnmarshalJSON(data []byte) error
 
 
 <a name="EventInviteCreate"></a>
-## type [EventInviteCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L462-L464>)
+## type [EventInviteCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L462-L464>)
 
 
 
@@ -1071,7 +1074,7 @@ type EventInviteCreate struct {
 ```
 
 <a name="EventInviteDelete"></a>
-## type [EventInviteDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L469-L473>)
+## type [EventInviteDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L469-L473>)
 
 
 
@@ -1084,7 +1087,7 @@ type EventInviteDelete struct {
 ```
 
 <a name="EventMessageCreate"></a>
-## type [EventMessageCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L478-L480>)
+## type [EventMessageCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L478-L480>)
 
 
 
@@ -1095,7 +1098,7 @@ type EventMessageCreate struct {
 ```
 
 <a name="EventMessageDelete"></a>
-## type [EventMessageDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L492-L496>)
+## type [EventMessageDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L492-L496>)
 
 
 
@@ -1108,7 +1111,7 @@ type EventMessageDelete struct {
 ```
 
 <a name="EventMessageDeleteBulk"></a>
-## type [EventMessageDeleteBulk](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L501-L505>)
+## type [EventMessageDeleteBulk](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L501-L505>)
 
 
 
@@ -1121,7 +1124,7 @@ type EventMessageDeleteBulk struct {
 ```
 
 <a name="EventMessagePollVoteAdd"></a>
-## type [EventMessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L510-L516>)
+## type [EventMessagePollVoteAdd](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L510-L516>)
 
 
 
@@ -1136,7 +1139,7 @@ type EventMessagePollVoteAdd struct {
 ```
 
 <a name="EventMessagePollVoteRemove"></a>
-## type [EventMessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L521-L527>)
+## type [EventMessagePollVoteRemove](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L521-L527>)
 
 
 
@@ -1151,7 +1154,7 @@ type EventMessagePollVoteRemove struct {
 ```
 
 <a name="EventMessageReactionAdd"></a>
-## type [EventMessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L189-L199>)
+## type [EventMessageReactionAdd](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L189-L199>)
 
 
 
@@ -1170,7 +1173,7 @@ type EventMessageReactionAdd struct {
 ```
 
 <a name="EventMessageReactionAdd.UnmarshalJSON"></a>
-### func \(\*EventMessageReactionAdd\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L201>)
+### func \(\*EventMessageReactionAdd\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L201>)
 
 ```go
 func (e *EventMessageReactionAdd) UnmarshalJSON(data []byte) error
@@ -1179,7 +1182,7 @@ func (e *EventMessageReactionAdd) UnmarshalJSON(data []byte) error
 
 
 <a name="EventMessageReactionRemove"></a>
-## type [EventMessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L217-L225>)
+## type [EventMessageReactionRemove](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L217-L225>)
 
 
 
@@ -1196,7 +1199,7 @@ type EventMessageReactionRemove struct {
 ```
 
 <a name="EventMessageReactionRemoveAll"></a>
-## type [EventMessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L240-L244>)
+## type [EventMessageReactionRemoveAll](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L240-L244>)
 
 
 
@@ -1209,7 +1212,7 @@ type EventMessageReactionRemoveAll struct {
 ```
 
 <a name="EventMessageReactionRemoveEmoji"></a>
-## type [EventMessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L230-L235>)
+## type [EventMessageReactionRemoveEmoji](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L230-L235>)
 
 
 
@@ -1223,7 +1226,7 @@ type EventMessageReactionRemoveEmoji struct {
 ```
 
 <a name="EventMessageUpdate"></a>
-## type [EventMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L485-L487>)
+## type [EventMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L485-L487>)
 
 
 
@@ -1234,7 +1237,7 @@ type EventMessageUpdate struct {
 ```
 
 <a name="EventPresenceUpdate"></a>
-## type [EventPresenceUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L532-L534>)
+## type [EventPresenceUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L532-L534>)
 
 
 
@@ -1245,7 +1248,7 @@ type EventPresenceUpdate struct {
 ```
 
 <a name="EventRaw"></a>
-## type [EventRaw](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L715-L718>)
+## type [EventRaw](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L715-L718>)
 
 
 
@@ -1257,7 +1260,7 @@ type EventRaw struct {
 ```
 
 <a name="EventReady"></a>
-## type [EventReady](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L33-L41>)
+## type [EventReady](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L33-L41>)
 
 EventReady is the event sent by discord when you successfully Identify
 
@@ -1274,7 +1277,7 @@ type EventReady struct {
 ```
 
 <a name="EventStageInstanceCreate"></a>
-## type [EventStageInstanceCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L539-L541>)
+## type [EventStageInstanceCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L539-L541>)
 
 
 
@@ -1285,7 +1288,7 @@ type EventStageInstanceCreate struct {
 ```
 
 <a name="EventStageInstanceDelete"></a>
-## type [EventStageInstanceDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L553-L555>)
+## type [EventStageInstanceDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L553-L555>)
 
 
 
@@ -1296,7 +1299,7 @@ type EventStageInstanceDelete struct {
 ```
 
 <a name="EventStageInstanceUpdate"></a>
-## type [EventStageInstanceUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L546-L548>)
+## type [EventStageInstanceUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L546-L548>)
 
 
 
@@ -1307,7 +1310,7 @@ type EventStageInstanceUpdate struct {
 ```
 
 <a name="EventThreadCreate"></a>
-## type [EventThreadCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L101-L104>)
+## type [EventThreadCreate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L101-L104>)
 
 
 
@@ -1319,7 +1322,7 @@ type EventThreadCreate struct {
 ```
 
 <a name="EventThreadDelete"></a>
-## type [EventThreadDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L116-L121>)
+## type [EventThreadDelete](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L116-L121>)
 
 
 
@@ -1333,7 +1336,7 @@ type EventThreadDelete struct {
 ```
 
 <a name="EventThreadListSync"></a>
-## type [EventThreadListSync](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L126-L131>)
+## type [EventThreadListSync](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L126-L131>)
 
 
 
@@ -1347,7 +1350,7 @@ type EventThreadListSync struct {
 ```
 
 <a name="EventThreadMemberUpdate"></a>
-## type [EventThreadMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L136-L138>)
+## type [EventThreadMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L136-L138>)
 
 
 
@@ -1358,7 +1361,7 @@ type EventThreadMemberUpdate struct {
 ```
 
 <a name="EventThreadMembersUpdate"></a>
-## type [EventThreadMembersUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L149-L155>)
+## type [EventThreadMembersUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L149-L155>)
 
 
 
@@ -1373,7 +1376,7 @@ type EventThreadMembersUpdate struct {
 ```
 
 <a name="EventThreadUpdate"></a>
-## type [EventThreadUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L109-L111>)
+## type [EventThreadUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L109-L111>)
 
 
 
@@ -1384,7 +1387,7 @@ type EventThreadUpdate struct {
 ```
 
 <a name="EventType"></a>
-## type [EventType](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_event_type.go#L4>)
+## type [EventType](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_event_type.go#L4>)
 
 EventType wraps all EventType types
 
@@ -1469,7 +1472,7 @@ const (
 ```
 
 <a name="EventTypingStart"></a>
-## type [EventTypingStart](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L560-L567>)
+## type [EventTypingStart](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L560-L567>)
 
 
 
@@ -1485,7 +1488,7 @@ type EventTypingStart struct {
 ```
 
 <a name="EventTypingStart.UnmarshalJSON"></a>
-### func \(\*EventTypingStart\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L569>)
+### func \(\*EventTypingStart\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L569>)
 
 ```go
 func (e *EventTypingStart) UnmarshalJSON(data []byte) error
@@ -1494,7 +1497,7 @@ func (e *EventTypingStart) UnmarshalJSON(data []byte) error
 
 
 <a name="EventUnknown"></a>
-## type [EventUnknown](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L19>)
+## type [EventUnknown](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L19>)
 
 EventUnknown is an event that is not known to disgo
 
@@ -1503,7 +1506,7 @@ type EventUnknown json.RawMessage
 ```
 
 <a name="EventUnknown.MarshalJSON"></a>
-### func \(EventUnknown\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L21>)
+### func \(EventUnknown\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L21>)
 
 ```go
 func (e EventUnknown) MarshalJSON() ([]byte, error)
@@ -1512,7 +1515,7 @@ func (e EventUnknown) MarshalJSON() ([]byte, error)
 
 
 <a name="EventUnknown.UnmarshalJSON"></a>
-### func \(\*EventUnknown\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L25>)
+### func \(\*EventUnknown\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L25>)
 
 ```go
 func (e *EventUnknown) UnmarshalJSON(data []byte) error
@@ -1521,7 +1524,7 @@ func (e *EventUnknown) UnmarshalJSON(data []byte) error
 
 
 <a name="EventUserUpdate"></a>
-## type [EventUserUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L586-L588>)
+## type [EventUserUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L586-L588>)
 
 
 
@@ -1532,7 +1535,7 @@ type EventUserUpdate struct {
 ```
 
 <a name="EventVoiceServerUpdate"></a>
-## type [EventVoiceServerUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L601-L605>)
+## type [EventVoiceServerUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L601-L605>)
 
 
 
@@ -1545,7 +1548,7 @@ type EventVoiceServerUpdate struct {
 ```
 
 <a name="EventVoiceStateUpdate"></a>
-## type [EventVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L593-L596>)
+## type [EventVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L593-L596>)
 
 
 
@@ -1557,7 +1560,7 @@ type EventVoiceStateUpdate struct {
 ```
 
 <a name="EventWebhooksUpdate"></a>
-## type [EventWebhooksUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_events.go#L610-L613>)
+## type [EventWebhooksUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_events.go#L610-L613>)
 
 
 
@@ -1569,7 +1572,7 @@ type EventWebhooksUpdate struct {
 ```
 
 <a name="Gateway"></a>
-## type [Gateway](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway.go#L64-L106>)
+## type [Gateway](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway.go#L64-L106>)
 
 Gateway is what is used to connect to discord.
 
@@ -1620,7 +1623,7 @@ type Gateway interface {
 ```
 
 <a name="New"></a>
-### func [New](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_impl.go#L25>)
+### func [New](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_impl.go#L25>)
 
 ```go
 func New(token string, eventHandlerFunc EventHandlerFunc, closeHandlerFunc CloseHandlerFunc, opts ...ConfigOpt) Gateway
@@ -1629,7 +1632,7 @@ func New(token string, eventHandlerFunc EventHandlerFunc, closeHandlerFunc Close
 New creates a new Gateway instance with the provided token, eventHandlerFunc, closeHandlerFunc and ConfigOpt\(s\).
 
 <a name="IdentifyCommandDataProperties"></a>
-## type [IdentifyCommandDataProperties](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L466-L470>)
+## type [IdentifyCommandDataProperties](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L466-L470>)
 
 IdentifyCommandDataProperties is used for specifying to discord which library and OS the bot is using, is automatically handled by the library and should rarely be used.
 
@@ -1642,7 +1645,7 @@ type IdentifyCommandDataProperties struct {
 ```
 
 <a name="Intents"></a>
-## type [Intents](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_intents.go#L6>)
+## type [Intents](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_intents.go#L6>)
 
 Intents is an extension of the Bit structure used when identifying with discord
 
@@ -1733,7 +1736,7 @@ const (
 ```
 
 <a name="Intents.Add"></a>
-### func \(Intents\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_intents.go#L91>)
+### func \(Intents\) [Add](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_intents.go#L91>)
 
 ```go
 func (i Intents) Add(bits ...Intents) Intents
@@ -1742,7 +1745,7 @@ func (i Intents) Add(bits ...Intents) Intents
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="Intents.Has"></a>
-### func \(Intents\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_intents.go#L101>)
+### func \(Intents\) [Has](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_intents.go#L101>)
 
 ```go
 func (i Intents) Has(bits ...Intents) bool
@@ -1751,7 +1754,7 @@ func (i Intents) Has(bits ...Intents) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="Intents.Missing"></a>
-### func \(Intents\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_intents.go#L106>)
+### func \(Intents\) [Missing](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_intents.go#L106>)
 
 ```go
 func (i Intents) Missing(bits ...Intents) bool
@@ -1760,7 +1763,7 @@ func (i Intents) Missing(bits ...Intents) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="Intents.Remove"></a>
-### func \(Intents\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_intents.go#L96>)
+### func \(Intents\) [Remove](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_intents.go#L96>)
 
 ```go
 func (i Intents) Remove(bits ...Intents) Intents
@@ -1769,7 +1772,7 @@ func (i Intents) Remove(bits ...Intents) Intents
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="Message"></a>
-## type [Message](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L13-L19>)
+## type [Message](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L13-L19>)
 
 Message raw Message type
 
@@ -1784,7 +1787,7 @@ type Message struct {
 ```
 
 <a name="Message.UnmarshalJSON"></a>
-### func \(\*Message\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L21>)
+### func \(\*Message\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L21>)
 
 ```go
 func (e *Message) UnmarshalJSON(data []byte) error
@@ -1793,7 +1796,7 @@ func (e *Message) UnmarshalJSON(data []byte) error
 
 
 <a name="MessageData"></a>
-## type [MessageData](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L101-L103>)
+## type [MessageData](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L101-L103>)
 
 
 
@@ -1804,7 +1807,7 @@ type MessageData interface {
 ```
 
 <a name="MessageDataHeartbeat"></a>
-## type [MessageDataHeartbeat](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L447>)
+## type [MessageDataHeartbeat](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L447>)
 
 MessageDataHeartbeat is used to ensure the websocket connection remains open, and disconnect if not.
 
@@ -1813,7 +1816,7 @@ type MessageDataHeartbeat int
 ```
 
 <a name="MessageDataHello"></a>
-## type [MessageDataHello](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L614-L616>)
+## type [MessageDataHello](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L614-L616>)
 
 
 
@@ -1824,7 +1827,7 @@ type MessageDataHello struct {
 ```
 
 <a name="MessageDataIdentify"></a>
-## type [MessageDataIdentify](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L452-L460>)
+## type [MessageDataIdentify](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L452-L460>)
 
 MessageDataIdentify is the data used in IdentifyCommandData
 
@@ -1841,7 +1844,7 @@ type MessageDataIdentify struct {
 ```
 
 <a name="MessageDataInvalidSession"></a>
-## type [MessageDataInvalidSession](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L610>)
+## type [MessageDataInvalidSession](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L610>)
 
 
 
@@ -1850,7 +1853,7 @@ type MessageDataInvalidSession bool
 ```
 
 <a name="MessageDataPresenceUpdate"></a>
-## type [MessageDataPresenceUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L473-L478>)
+## type [MessageDataPresenceUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L473-L478>)
 
 MessageDataPresenceUpdate is used for updating Client's presence
 
@@ -1864,7 +1867,7 @@ type MessageDataPresenceUpdate struct {
 ```
 
 <a name="MessageDataRequestGuildMembers"></a>
-## type [MessageDataRequestGuildMembers](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L599-L606>)
+## type [MessageDataRequestGuildMembers](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L599-L606>)
 
 MessageDataRequestGuildMembers is used for fetching all the members of a guild\_events. It is recommended you have a strict member caching policy when using this.
 
@@ -1880,7 +1883,7 @@ type MessageDataRequestGuildMembers struct {
 ```
 
 <a name="MessageDataResume"></a>
-## type [MessageDataResume](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L589-L593>)
+## type [MessageDataResume](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L589-L593>)
 
 MessageDataResume is used to resume a connection to discord in the case that you are disconnected. Is automatically handled by the library and should rarely be used.
 
@@ -1893,7 +1896,7 @@ type MessageDataResume struct {
 ```
 
 <a name="MessageDataUnknown"></a>
-## type [MessageDataUnknown](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L442>)
+## type [MessageDataUnknown](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L442>)
 
 
 
@@ -1902,7 +1905,7 @@ type MessageDataUnknown json.RawMessage
 ```
 
 <a name="MessageDataVoiceStateUpdate"></a>
-## type [MessageDataVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L578-L583>)
+## type [MessageDataVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L578-L583>)
 
 MessageDataVoiceStateUpdate is used for updating the bots voice state in a guild
 
@@ -1916,7 +1919,7 @@ type MessageDataVoiceStateUpdate struct {
 ```
 
 <a name="Opcode"></a>
-## type [Opcode](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_opcodes.go#L4>)
+## type [Opcode](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_opcodes.go#L4>)
 
 Opcode are opcodes used by discord
 
@@ -1944,7 +1947,7 @@ const (
 ```
 
 <a name="PresenceOpt"></a>
-## type [PresenceOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L482>)
+## type [PresenceOpt](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L482>)
 
 
 
@@ -1953,7 +1956,7 @@ type PresenceOpt func(presenceUpdate *MessageDataPresenceUpdate)
 ```
 
 <a name="WithAfk"></a>
-### func [WithAfk](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L554>)
+### func [WithAfk](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L554>)
 
 ```go
 func WithAfk(afk bool) PresenceOpt
@@ -1962,7 +1965,7 @@ func WithAfk(afk bool) PresenceOpt
 WithAfk sets whether the session is afk
 
 <a name="WithCompetingActivity"></a>
-### func [WithCompetingActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L530>)
+### func [WithCompetingActivity](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L530>)
 
 ```go
 func WithCompetingActivity(name string, opts ...ActivityOpt) PresenceOpt
@@ -1971,7 +1974,7 @@ func WithCompetingActivity(name string, opts ...ActivityOpt) PresenceOpt
 WithCompetingActivity creates a new "Competing in ..." activity of type discord.ActivityTypeCompeting
 
 <a name="WithCustomActivity"></a>
-### func [WithCustomActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L521>)
+### func [WithCustomActivity](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L521>)
 
 ```go
 func WithCustomActivity(status string, opts ...ActivityOpt) PresenceOpt
@@ -1980,7 +1983,7 @@ func WithCustomActivity(status string, opts ...ActivityOpt) PresenceOpt
 WithCustomActivity creates a new activity of type discord.ActivityTypeCustom
 
 <a name="WithListeningActivity"></a>
-### func [WithListeningActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L505>)
+### func [WithListeningActivity](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L505>)
 
 ```go
 func WithListeningActivity(name string, opts ...ActivityOpt) PresenceOpt
@@ -1989,7 +1992,7 @@ func WithListeningActivity(name string, opts ...ActivityOpt) PresenceOpt
 WithListeningActivity creates a new "Listening to ..." activity of type discord.ActivityTypeListening
 
 <a name="WithOnlineStatus"></a>
-### func [WithOnlineStatus](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L547>)
+### func [WithOnlineStatus](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L547>)
 
 ```go
 func WithOnlineStatus(status discord.OnlineStatus) PresenceOpt
@@ -1998,7 +2001,7 @@ func WithOnlineStatus(status discord.OnlineStatus) PresenceOpt
 WithOnlineStatus sets the online status to the provided discord.OnlineStatus
 
 <a name="WithPlayingActivity"></a>
-### func [WithPlayingActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L485>)
+### func [WithPlayingActivity](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L485>)
 
 ```go
 func WithPlayingActivity(name string, opts ...ActivityOpt) PresenceOpt
@@ -2007,7 +2010,7 @@ func WithPlayingActivity(name string, opts ...ActivityOpt) PresenceOpt
 WithPlayingActivity creates a new "Playing ..." activity of type discord.ActivityTypeGame
 
 <a name="WithSince"></a>
-### func [WithSince](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L561>)
+### func [WithSince](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L561>)
 
 ```go
 func WithSince(since *int64) PresenceOpt
@@ -2016,7 +2019,7 @@ func WithSince(since *int64) PresenceOpt
 WithSince sets when the session has gone afk
 
 <a name="WithStreamingActivity"></a>
-### func [WithStreamingActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L493>)
+### func [WithStreamingActivity](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L493>)
 
 ```go
 func WithStreamingActivity(name string, url string, opts ...ActivityOpt) PresenceOpt
@@ -2025,7 +2028,7 @@ func WithStreamingActivity(name string, url string, opts ...ActivityOpt) Presenc
 WithStreamingActivity creates a new "Streaming ..." activity of type discord.ActivityTypeStreaming
 
 <a name="WithWatchingActivity"></a>
-### func [WithWatchingActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_messages.go#L513>)
+### func [WithWatchingActivity](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_messages.go#L513>)
 
 ```go
 func WithWatchingActivity(name string, opts ...ActivityOpt) PresenceOpt
@@ -2034,7 +2037,7 @@ func WithWatchingActivity(name string, opts ...ActivityOpt) PresenceOpt
 WithWatchingActivity creates a new "Watching ..." activity of type discord.ActivityTypeWatching
 
 <a name="RateLimiter"></a>
-## type [RateLimiter](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter.go#L11-L25>)
+## type [RateLimiter](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter.go#L11-L25>)
 
 RateLimiter provides handles the rate limiting logic for connecting to Discord's Gateway.
 
@@ -2057,7 +2060,7 @@ type RateLimiter interface {
 ```
 
 <a name="NewRateLimiter"></a>
-### func [NewRateLimiter](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter_impl.go#L12>)
+### func [NewRateLimiter](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter_impl.go#L12>)
 
 ```go
 func NewRateLimiter(opts ...RateLimiterConfigOpt) RateLimiter
@@ -2066,7 +2069,7 @@ func NewRateLimiter(opts ...RateLimiterConfigOpt) RateLimiter
 NewRateLimiter creates a new default RateLimiter with the given RateLimiterConfigOpt\(s\).
 
 <a name="RateLimiterConfig"></a>
-## type [RateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter_config.go#L16-L19>)
+## type [RateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter_config.go#L16-L19>)
 
 RateLimiterConfig lets you configure your Gateway instance.
 
@@ -2078,7 +2081,7 @@ type RateLimiterConfig struct {
 ```
 
 <a name="DefaultRateLimiterConfig"></a>
-### func [DefaultRateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter_config.go#L8>)
+### func [DefaultRateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter_config.go#L8>)
 
 ```go
 func DefaultRateLimiterConfig() *RateLimiterConfig
@@ -2087,7 +2090,7 @@ func DefaultRateLimiterConfig() *RateLimiterConfig
 DefaultRateLimiterConfig returns a RateLimiterConfig with sensible defaults.
 
 <a name="RateLimiterConfig.Apply"></a>
-### func \(\*RateLimiterConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter_config.go#L25>)
+### func \(\*RateLimiterConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter_config.go#L25>)
 
 ```go
 func (c *RateLimiterConfig) Apply(opts []RateLimiterConfigOpt)
@@ -2096,7 +2099,7 @@ func (c *RateLimiterConfig) Apply(opts []RateLimiterConfigOpt)
 Apply applies the given RateLimiterConfigOpt\(s\) to the RateLimiterConfig
 
 <a name="RateLimiterConfigOpt"></a>
-## type [RateLimiterConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter_config.go#L22>)
+## type [RateLimiterConfigOpt](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter_config.go#L22>)
 
 RateLimiterConfigOpt is a type alias for a function that takes a RateLimiterConfig and is used to configure your Server.
 
@@ -2105,7 +2108,7 @@ type RateLimiterConfigOpt func(config *RateLimiterConfig)
 ```
 
 <a name="WithCommandsPerMinute"></a>
-### func [WithCommandsPerMinute](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter_config.go#L39>)
+### func [WithCommandsPerMinute](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter_config.go#L39>)
 
 ```go
 func WithCommandsPerMinute(commandsPerMinute int) RateLimiterConfigOpt
@@ -2114,7 +2117,7 @@ func WithCommandsPerMinute(commandsPerMinute int) RateLimiterConfigOpt
 WithCommandsPerMinute sets the number of commands per minute that the Gateway will allow.
 
 <a name="WithRateLimiterLogger"></a>
-### func [WithRateLimiterLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway_rate_limiter_config.go#L32>)
+### func [WithRateLimiterLogger](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway_rate_limiter_config.go#L32>)
 
 ```go
 func WithRateLimiterLogger(logger *slog.Logger) RateLimiterConfigOpt
@@ -2123,7 +2126,7 @@ func WithRateLimiterLogger(logger *slog.Logger) RateLimiterConfigOpt
 WithRateLimiterLogger sets the Logger for the Gateway.
 
 <a name="Status"></a>
-## type [Status](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway.go#L12>)
+## type [Status](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway.go#L12>)
 
 Status is the state that the client is currently in.
 
@@ -2163,7 +2166,7 @@ const (
 ```
 
 <a name="Status.IsConnected"></a>
-### func \(Status\) [IsConnected](<https://github.com/disgoorg/disgo/blob/master/disgo/gateway/gateway.go#L15>)
+### func \(Status\) [IsConnected](<https://github.com/disgoorg/disgo/blob/master/gateway/gateway.go#L15>)
 
 ```go
 func (s Status) IsConnected() bool

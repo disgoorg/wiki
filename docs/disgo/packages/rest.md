@@ -1,7 +1,10 @@
+# Rest
 
 ```go
 import "github.com/disgoorg/disgo/rest"
 ```
+
+Package rest is used to interact with the Discord REST API.
 
 ## Constants
 
@@ -389,7 +392,7 @@ var ErrNoMorePages = errors.New("no more pages")
 ```
 
 <a name="NewError"></a>
-## func [NewError](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_error.go#L30>)
+## func [NewError](<https://github.com/disgoorg/disgo/blob/master/rest/rest_error.go#L30>)
 
 ```go
 func NewError(rq *http.Request, rqBody []byte, rs *http.Response, rsBody []byte) error
@@ -398,7 +401,7 @@ func NewError(rq *http.Request, rqBody []byte, rs *http.Response, rsBody []byte)
 NewError returns a new Error with the given http.Request, http.Response
 
 <a name="Applications"></a>
-## type [Applications](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/applications.go#L16-L46>)
+## type [Applications](<https://github.com/disgoorg/disgo/blob/master/rest/applications.go#L16-L46>)
 
 
 
@@ -437,7 +440,7 @@ type Applications interface {
 ```
 
 <a name="NewApplications"></a>
-### func [NewApplications](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/applications.go#L12>)
+### func [NewApplications](<https://github.com/disgoorg/disgo/blob/master/rest/applications.go#L12>)
 
 ```go
 func NewApplications(client Client) Applications
@@ -446,7 +449,7 @@ func NewApplications(client Client) Applications
 
 
 <a name="AuditLogPage"></a>
-## type [AuditLogPage](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L55-L62>)
+## type [AuditLogPage](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L55-L62>)
 
 
 
@@ -461,7 +464,7 @@ type AuditLogPage struct {
 ```
 
 <a name="AuditLogPage.Next"></a>
-### func \(\*AuditLogPage\) [Next](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L64>)
+### func \(\*AuditLogPage\) [Next](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L64>)
 
 ```go
 func (p *AuditLogPage) Next() bool
@@ -470,7 +473,7 @@ func (p *AuditLogPage) Next() bool
 
 
 <a name="AuditLogPage.Previous"></a>
-### func \(\*AuditLogPage\) [Previous](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L80>)
+### func \(\*AuditLogPage\) [Previous](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L80>)
 
 ```go
 func (p *AuditLogPage) Previous() bool
@@ -479,7 +482,7 @@ func (p *AuditLogPage) Previous() bool
 
 
 <a name="AutoModeration"></a>
-## type [AutoModeration](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/auto_moderation.go#L15-L21>)
+## type [AutoModeration](<https://github.com/disgoorg/disgo/blob/master/rest/auto_moderation.go#L15-L21>)
 
 
 
@@ -494,7 +497,7 @@ type AutoModeration interface {
 ```
 
 <a name="NewAutoModeration"></a>
-### func [NewAutoModeration](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/auto_moderation.go#L11>)
+### func [NewAutoModeration](<https://github.com/disgoorg/disgo/blob/master/rest/auto_moderation.go#L11>)
 
 ```go
 func NewAutoModeration(client Client) AutoModeration
@@ -503,7 +506,7 @@ func NewAutoModeration(client Client) AutoModeration
 
 
 <a name="Channels"></a>
-## type [Channels](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/channels.go#L15-L54>)
+## type [Channels](<https://github.com/disgoorg/disgo/blob/master/rest/channels.go#L15-L54>)
 
 
 
@@ -551,7 +554,7 @@ type Channels interface {
 ```
 
 <a name="NewChannels"></a>
-### func [NewChannels](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/channels.go#L11>)
+### func [NewChannels](<https://github.com/disgoorg/disgo/blob/master/rest/channels.go#L11>)
 
 ```go
 func NewChannels(client Client) Channels
@@ -560,7 +563,7 @@ func NewChannels(client Client) Channels
 
 
 <a name="Check"></a>
-## type [Check](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L30>)
+## type [Check](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L30>)
 
 Check is a function which gets executed right before a request is made
 
@@ -569,7 +572,7 @@ type Check func() bool
 ```
 
 <a name="Client"></a>
-## type [Client](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_client.go#L33-L45>)
+## type [Client](<https://github.com/disgoorg/disgo/blob/master/rest/rest_client.go#L33-L45>)
 
 Client allows doing requests to different endpoints
 
@@ -590,7 +593,7 @@ type Client interface {
 ```
 
 <a name="NewClient"></a>
-### func [NewClient](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_client.go#L19>)
+### func [NewClient](<https://github.com/disgoorg/disgo/blob/master/rest/rest_client.go#L19>)
 
 ```go
 func NewClient(botToken string, opts ...ConfigOpt) Client
@@ -599,7 +602,7 @@ func NewClient(botToken string, opts ...ConfigOpt) Client
 NewClient constructs a new Client with the given Config struct
 
 <a name="CompiledEndpoint"></a>
-## type [CompiledEndpoint](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_endpoints.go#L334-L339>)
+## type [CompiledEndpoint](<https://github.com/disgoorg/disgo/blob/master/rest/rest_endpoints.go#L334-L339>)
 
 CompiledEndpoint represents a Discord Rest API endpoint with applied url params & query values.
 
@@ -613,7 +616,7 @@ type CompiledEndpoint struct {
 ```
 
 <a name="Config"></a>
-## type [Config](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L20-L27>)
+## type [Config](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L20-L27>)
 
 Config is the configuration for the rest client
 
@@ -629,7 +632,7 @@ type Config struct {
 ```
 
 <a name="DefaultConfig"></a>
-### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L11>)
+### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L11>)
 
 ```go
 func DefaultConfig() *Config
@@ -638,7 +641,7 @@ func DefaultConfig() *Config
 DefaultConfig is the configuration which is used by default
 
 <a name="Config.Apply"></a>
-### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L33>)
+### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L33>)
 
 ```go
 func (c *Config) Apply(opts []ConfigOpt)
@@ -647,7 +650,7 @@ func (c *Config) Apply(opts []ConfigOpt)
 Apply applies the given ConfigOpt\(s\) to the Config
 
 <a name="ConfigOpt"></a>
-## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L30>)
+## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L30>)
 
 ConfigOpt can be used to supply optional parameters to NewClient
 
@@ -656,7 +659,7 @@ type ConfigOpt func(config *Config)
 ```
 
 <a name="WithHTTPClient"></a>
-### func [WithHTTPClient](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L50>)
+### func [WithHTTPClient](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L50>)
 
 ```go
 func WithHTTPClient(httpClient *http.Client) ConfigOpt
@@ -665,7 +668,7 @@ func WithHTTPClient(httpClient *http.Client) ConfigOpt
 WithHTTPClient applies a custom http.Client to the rest rate limiter
 
 <a name="WithLogger"></a>
-### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L43>)
+### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L43>)
 
 ```go
 func WithLogger(logger *slog.Logger) ConfigOpt
@@ -674,7 +677,7 @@ func WithLogger(logger *slog.Logger) ConfigOpt
 WithLogger applies a custom logger to the rest rate limiter
 
 <a name="WithRateLimiter"></a>
-### func [WithRateLimiter](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L57>)
+### func [WithRateLimiter](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L57>)
 
 ```go
 func WithRateLimiter(rateLimiter RateLimiter) ConfigOpt
@@ -683,7 +686,7 @@ func WithRateLimiter(rateLimiter RateLimiter) ConfigOpt
 WithRateLimiter applies a custom RateLimiter to the rest client
 
 <a name="WithRateLimiterConfigOpts"></a>
-### func [WithRateLimiterConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L64>)
+### func [WithRateLimiterConfigOpts](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L64>)
 
 ```go
 func WithRateLimiterConfigOpts(opts ...RateLimiterConfigOpt) ConfigOpt
@@ -692,7 +695,7 @@ func WithRateLimiterConfigOpts(opts ...RateLimiterConfigOpt) ConfigOpt
 WithRateLimiterConfigOpts applies RateLimiterConfigOpt to the RateLimiter
 
 <a name="WithURL"></a>
-### func [WithURL](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L71>)
+### func [WithURL](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L71>)
 
 ```go
 func WithURL(url string) ConfigOpt
@@ -701,7 +704,7 @@ func WithURL(url string) ConfigOpt
 WithURL sets the api url for all requests
 
 <a name="WithUserAgent"></a>
-### func [WithUserAgent](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_config.go#L78>)
+### func [WithUserAgent](<https://github.com/disgoorg/disgo/blob/master/rest/rest_config.go#L78>)
 
 ```go
 func WithUserAgent(userAgent string) ConfigOpt
@@ -710,7 +713,7 @@ func WithUserAgent(userAgent string) ConfigOpt
 WithUserAgent sets the user agent for all requests
 
 <a name="Emojis"></a>
-## type [Emojis](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/emojis.go#L15-L21>)
+## type [Emojis](<https://github.com/disgoorg/disgo/blob/master/rest/emojis.go#L15-L21>)
 
 
 
@@ -725,7 +728,7 @@ type Emojis interface {
 ```
 
 <a name="NewEmojis"></a>
-### func [NewEmojis](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/emojis.go#L11>)
+### func [NewEmojis](<https://github.com/disgoorg/disgo/blob/master/rest/emojis.go#L11>)
 
 ```go
 func NewEmojis(client Client) Emojis
@@ -734,7 +737,7 @@ func NewEmojis(client Client) Emojis
 
 
 <a name="Endpoint"></a>
-## type [Endpoint](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_endpoints.go#L327-L331>)
+## type [Endpoint](<https://github.com/disgoorg/disgo/blob/master/rest/rest_endpoints.go#L327-L331>)
 
 Endpoint represents a Discord Rest API endpoint.
 
@@ -747,7 +750,7 @@ type Endpoint struct {
 ```
 
 <a name="NewEndpoint"></a>
-### func [NewEndpoint](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_endpoints.go#L309>)
+### func [NewEndpoint](<https://github.com/disgoorg/disgo/blob/master/rest/rest_endpoints.go#L309>)
 
 ```go
 func NewEndpoint(method string, route string) *Endpoint
@@ -756,7 +759,7 @@ func NewEndpoint(method string, route string) *Endpoint
 NewEndpoint returns a new Endpoint which requires bot auth with the given http method & route.
 
 <a name="NewNoBotAuthEndpoint"></a>
-### func [NewNoBotAuthEndpoint](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_endpoints.go#L318>)
+### func [NewNoBotAuthEndpoint](<https://github.com/disgoorg/disgo/blob/master/rest/rest_endpoints.go#L318>)
 
 ```go
 func NewNoBotAuthEndpoint(method string, route string) *Endpoint
@@ -765,7 +768,7 @@ func NewNoBotAuthEndpoint(method string, route string) *Endpoint
 NewNoBotAuthEndpoint returns a new Endpoint which does not require bot auth with the given http method & route.
 
 <a name="Endpoint.Compile"></a>
-### func \(\*Endpoint\) [Compile](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_endpoints.go#L342>)
+### func \(\*Endpoint\) [Compile](<https://github.com/disgoorg/disgo/blob/master/rest/rest_endpoints.go#L342>)
 
 ```go
 func (e *Endpoint) Compile(values discord.QueryValues, params ...any) *CompiledEndpoint
@@ -774,7 +777,7 @@ func (e *Endpoint) Compile(values discord.QueryValues, params ...any) *CompiledE
 Compile compiles an Endpoint to a CompiledEndpoint with the given url params & query values
 
 <a name="Error"></a>
-## type [Error](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_error.go#L18-L27>)
+## type [Error](<https://github.com/disgoorg/disgo/blob/master/rest/rest_error.go#L18-L27>)
 
 Error holds the http.Response & an error related to a REST request
 
@@ -792,7 +795,7 @@ type Error struct {
 ```
 
 <a name="Error.Error"></a>
-### func \(Error\) [Error](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_error.go#L55>)
+### func \(Error\) [Error](<https://github.com/disgoorg/disgo/blob/master/rest/rest_error.go#L55>)
 
 ```go
 func (e Error) Error() string
@@ -801,7 +804,7 @@ func (e Error) Error() string
 Error returns the error formatted as string
 
 <a name="Error.Is"></a>
-### func \(Error\) [Is](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_error.go#L43>)
+### func \(Error\) [Is](<https://github.com/disgoorg/disgo/blob/master/rest/rest_error.go#L43>)
 
 ```go
 func (e Error) Is(target error) bool
@@ -810,7 +813,7 @@ func (e Error) Is(target error) bool
 Is returns true if the error is a \*Error with the same status code as the target error
 
 <a name="Error.String"></a>
-### func \(Error\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_error.go#L63>)
+### func \(Error\) [String](<https://github.com/disgoorg/disgo/blob/master/rest/rest_error.go#L63>)
 
 ```go
 func (e Error) String() string
@@ -819,7 +822,7 @@ func (e Error) String() string
 Error returns the error formatted as string
 
 <a name="Gateway"></a>
-## type [Gateway](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/gateway.go#L13-L16>)
+## type [Gateway](<https://github.com/disgoorg/disgo/blob/master/rest/gateway.go#L13-L16>)
 
 
 
@@ -831,7 +834,7 @@ type Gateway interface {
 ```
 
 <a name="NewGateway"></a>
-### func [NewGateway](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/gateway.go#L9>)
+### func [NewGateway](<https://github.com/disgoorg/disgo/blob/master/rest/gateway.go#L9>)
 
 ```go
 func NewGateway(client Client) Gateway
@@ -840,7 +843,7 @@ func NewGateway(client Client) Gateway
 
 
 <a name="GuildScheduledEvents"></a>
-## type [GuildScheduledEvents](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/guild_scheduled_events.go#L15-L24>)
+## type [GuildScheduledEvents](<https://github.com/disgoorg/disgo/blob/master/rest/guild_scheduled_events.go#L15-L24>)
 
 
 
@@ -858,7 +861,7 @@ type GuildScheduledEvents interface {
 ```
 
 <a name="NewGuildScheduledEvents"></a>
-### func [NewGuildScheduledEvents](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/guild_scheduled_events.go#L11>)
+### func [NewGuildScheduledEvents](<https://github.com/disgoorg/disgo/blob/master/rest/guild_scheduled_events.go#L11>)
 
 ```go
 func NewGuildScheduledEvents(client Client) GuildScheduledEvents
@@ -867,7 +870,7 @@ func NewGuildScheduledEvents(client Client) GuildScheduledEvents
 
 
 <a name="GuildTemplates"></a>
-## type [GuildTemplates](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/guild_templates.go#L15-L23>)
+## type [GuildTemplates](<https://github.com/disgoorg/disgo/blob/master/rest/guild_templates.go#L15-L23>)
 
 
 
@@ -884,7 +887,7 @@ type GuildTemplates interface {
 ```
 
 <a name="NewGuildTemplates"></a>
-### func [NewGuildTemplates](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/guild_templates.go#L11>)
+### func [NewGuildTemplates](<https://github.com/disgoorg/disgo/blob/master/rest/guild_templates.go#L11>)
 
 ```go
 func NewGuildTemplates(client Client) GuildTemplates
@@ -893,7 +896,7 @@ func NewGuildTemplates(client Client) GuildTemplates
 
 
 <a name="Guilds"></a>
-## type [Guilds](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/guilds.go#L18-L63>)
+## type [Guilds](<https://github.com/disgoorg/disgo/blob/master/rest/guilds.go#L18-L63>)
 
 
 
@@ -947,7 +950,7 @@ type Guilds interface {
 ```
 
 <a name="NewGuilds"></a>
-### func [NewGuilds](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/guilds.go#L14>)
+### func [NewGuilds](<https://github.com/disgoorg/disgo/blob/master/rest/guilds.go#L14>)
 
 ```go
 func NewGuilds(client Client) Guilds
@@ -956,7 +959,7 @@ func NewGuilds(client Client) Guilds
 
 
 <a name="Interactions"></a>
-## type [Interactions](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/interactions.go#L15-L25>)
+## type [Interactions](<https://github.com/disgoorg/disgo/blob/master/rest/interactions.go#L15-L25>)
 
 
 
@@ -975,7 +978,7 @@ type Interactions interface {
 ```
 
 <a name="NewInteractions"></a>
-### func [NewInteractions](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/interactions.go#L11>)
+### func [NewInteractions](<https://github.com/disgoorg/disgo/blob/master/rest/interactions.go#L11>)
 
 ```go
 func NewInteractions(client Client) Interactions
@@ -984,7 +987,7 @@ func NewInteractions(client Client) Interactions
 
 
 <a name="Invites"></a>
-## type [Invites](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/invites.go#L15-L21>)
+## type [Invites](<https://github.com/disgoorg/disgo/blob/master/rest/invites.go#L15-L21>)
 
 
 
@@ -999,7 +1002,7 @@ type Invites interface {
 ```
 
 <a name="NewInvites"></a>
-### func [NewInvites](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/invites.go#L11>)
+### func [NewInvites](<https://github.com/disgoorg/disgo/blob/master/rest/invites.go#L11>)
 
 ```go
 func NewInvites(client Client) Invites
@@ -1008,7 +1011,7 @@ func NewInvites(client Client) Invites
 
 
 <a name="JSONErrorCode"></a>
-## type [JSONErrorCode](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_error.go#L13>)
+## type [JSONErrorCode](<https://github.com/disgoorg/disgo/blob/master/rest/rest_error.go#L13>)
 
 JSONErrorCode is the error code returned by the Discord API. See https://discord.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes
 
@@ -1017,7 +1020,7 @@ type JSONErrorCode int
 ```
 
 <a name="Members"></a>
-## type [Members](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/members.go#L15-L30>)
+## type [Members](<https://github.com/disgoorg/disgo/blob/master/rest/members.go#L15-L30>)
 
 
 
@@ -1041,7 +1044,7 @@ type Members interface {
 ```
 
 <a name="NewMembers"></a>
-### func [NewMembers](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/members.go#L11>)
+### func [NewMembers](<https://github.com/disgoorg/disgo/blob/master/rest/members.go#L11>)
 
 ```go
 func NewMembers(client Client) Members
@@ -1050,7 +1053,7 @@ func NewMembers(client Client) Members
 
 
 <a name="OAuth2"></a>
-## type [OAuth2](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/oauth2.go#L21-L44>)
+## type [OAuth2](<https://github.com/disgoorg/disgo/blob/master/rest/oauth2.go#L21-L44>)
 
 
 
@@ -1082,7 +1085,7 @@ type OAuth2 interface {
 ```
 
 <a name="NewOAuth2"></a>
-### func [NewOAuth2](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/oauth2.go#L17>)
+### func [NewOAuth2](<https://github.com/disgoorg/disgo/blob/master/rest/oauth2.go#L17>)
 
 ```go
 func NewOAuth2(client Client) OAuth2
@@ -1091,7 +1094,7 @@ func NewOAuth2(client Client) OAuth2
 
 
 <a name="Page"></a>
-## type [Page](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L13-L21>)
+## type [Page](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L13-L21>)
 
 
 
@@ -1106,7 +1109,7 @@ type Page[T any] struct {
 ```
 
 <a name="Page[T].Next"></a>
-### func \(\*Page\[T\]\) [Next](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L23>)
+### func \(\*Page\[T\]\) [Next](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L23>)
 
 ```go
 func (p *Page[T]) Next() bool
@@ -1115,7 +1118,7 @@ func (p *Page[T]) Next() bool
 
 
 <a name="Page[T].Previous"></a>
-### func \(\*Page\[T\]\) [Previous](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L39>)
+### func \(\*Page\[T\]\) [Previous](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L39>)
 
 ```go
 func (p *Page[T]) Previous() bool
@@ -1124,7 +1127,7 @@ func (p *Page[T]) Previous() bool
 
 
 <a name="PollAnswerVotesPage"></a>
-## type [PollAnswerVotesPage](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L121-L128>)
+## type [PollAnswerVotesPage](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L121-L128>)
 
 
 
@@ -1139,7 +1142,7 @@ type PollAnswerVotesPage struct {
 ```
 
 <a name="PollAnswerVotesPage.Next"></a>
-### func \(\*PollAnswerVotesPage\) [Next](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L130>)
+### func \(\*PollAnswerVotesPage\) [Next](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L130>)
 
 ```go
 func (p *PollAnswerVotesPage) Next() bool
@@ -1148,7 +1151,7 @@ func (p *PollAnswerVotesPage) Next() bool
 
 
 <a name="RateLimiter"></a>
-## type [RateLimiter](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter.go#L23-L39>)
+## type [RateLimiter](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter.go#L23-L39>)
 
 RateLimiter can be used to supply your own rate limit implementation
 
@@ -1173,7 +1176,7 @@ type RateLimiter interface {
 ```
 
 <a name="NewNoopRateLimiter"></a>
-### func [NewNoopRateLimiter](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_noop.go#L9>)
+### func [NewNoopRateLimiter](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_noop.go#L9>)
 
 ```go
 func NewNoopRateLimiter() RateLimiter
@@ -1182,7 +1185,7 @@ func NewNoopRateLimiter() RateLimiter
 NewNoopRateLimiter return a new noop RateLimiter.
 
 <a name="NewRateLimiter"></a>
-### func [NewRateLimiter](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter.go#L42>)
+### func [NewRateLimiter](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter.go#L42>)
 
 ```go
 func NewRateLimiter(opts ...RateLimiterConfigOpt) RateLimiter
@@ -1191,7 +1194,7 @@ func NewRateLimiter(opts ...RateLimiterConfigOpt) RateLimiter
 NewRateLimiter return a new default RateLimiter with the given RateLimiterConfigOpt\(s\).
 
 <a name="RateLimiterConfig"></a>
-## type [RateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_config.go#L18-L22>)
+## type [RateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_config.go#L18-L22>)
 
 RateLimiterConfig is the configuration for the rate limiter.
 
@@ -1204,7 +1207,7 @@ type RateLimiterConfig struct {
 ```
 
 <a name="DefaultRateLimiterConfig"></a>
-### func [DefaultRateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_config.go#L9>)
+### func [DefaultRateLimiterConfig](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_config.go#L9>)
 
 ```go
 func DefaultRateLimiterConfig() *RateLimiterConfig
@@ -1213,7 +1216,7 @@ func DefaultRateLimiterConfig() *RateLimiterConfig
 DefaultRateLimiterConfig is the configuration which is used by default.
 
 <a name="RateLimiterConfig.Apply"></a>
-### func \(\*RateLimiterConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_config.go#L28>)
+### func \(\*RateLimiterConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_config.go#L28>)
 
 ```go
 func (c *RateLimiterConfig) Apply(opts []RateLimiterConfigOpt)
@@ -1222,7 +1225,7 @@ func (c *RateLimiterConfig) Apply(opts []RateLimiterConfigOpt)
 Apply applies the given RateLimiterConfigOpt\(s\) to the RateLimiterConfig.
 
 <a name="RateLimiterConfigOpt"></a>
-## type [RateLimiterConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_config.go#L25>)
+## type [RateLimiterConfigOpt](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_config.go#L25>)
 
 RateLimiterConfigOpt can be used to supply optional parameters to NewRateLimiter.
 
@@ -1231,7 +1234,7 @@ type RateLimiterConfigOpt func(config *RateLimiterConfig)
 ```
 
 <a name="WithCleanupInterval"></a>
-### func [WithCleanupInterval](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_config.go#L49>)
+### func [WithCleanupInterval](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_config.go#L49>)
 
 ```go
 func WithCleanupInterval(cleanupInterval time.Duration) RateLimiterConfigOpt
@@ -1240,7 +1243,7 @@ func WithCleanupInterval(cleanupInterval time.Duration) RateLimiterConfigOpt
 WithCleanupInterval tells the rest rate limiter how often to clean up the rate limiter buckets.
 
 <a name="WithMaxRetries"></a>
-### func [WithMaxRetries](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_config.go#L42>)
+### func [WithMaxRetries](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_config.go#L42>)
 
 ```go
 func WithMaxRetries(maxRetries int) RateLimiterConfigOpt
@@ -1249,7 +1252,7 @@ func WithMaxRetries(maxRetries int) RateLimiterConfigOpt
 WithMaxRetries tells the rest rate limiter to retry the request up to the specified number of times if it encounters a 429 response.
 
 <a name="WithRateLimiterLogger"></a>
-### func [WithRateLimiterLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest_rate_limiter_config.go#L35>)
+### func [WithRateLimiterLogger](<https://github.com/disgoorg/disgo/blob/master/rest/rest_rate_limiter_config.go#L35>)
 
 ```go
 func WithRateLimiterLogger(logger *slog.Logger) RateLimiterConfigOpt
@@ -1258,7 +1261,7 @@ func WithRateLimiterLogger(logger *slog.Logger) RateLimiterConfigOpt
 WithRateLimiterLogger applies a custom logger to the rest rate limiter.
 
 <a name="RequestConfig"></a>
-## type [RequestConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L22-L27>)
+## type [RequestConfig](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L22-L27>)
 
 RequestConfig are additional options for the request
 
@@ -1272,7 +1275,7 @@ type RequestConfig struct {
 ```
 
 <a name="DefaultRequestConfig"></a>
-### func [DefaultRequestConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L14>)
+### func [DefaultRequestConfig](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L14>)
 
 ```go
 func DefaultRequestConfig(rq *http.Request) *RequestConfig
@@ -1281,7 +1284,7 @@ func DefaultRequestConfig(rq *http.Request) *RequestConfig
 
 
 <a name="RequestConfig.Apply"></a>
-### func \(\*RequestConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L36>)
+### func \(\*RequestConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L36>)
 
 ```go
 func (c *RequestConfig) Apply(opts []RequestOpt)
@@ -1290,7 +1293,7 @@ func (c *RequestConfig) Apply(opts []RequestOpt)
 Apply applies the given RequestOpt\(s\) to the RequestConfig & sets the context if none is set
 
 <a name="RequestOpt"></a>
-## type [RequestOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L33>)
+## type [RequestOpt](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L33>)
 
 RequestOpt can be used to supply optional parameters to Client.Do
 
@@ -1299,7 +1302,7 @@ type RequestOpt func(config *RequestConfig)
 ```
 
 <a name="WithCheck"></a>
-### func [WithCheck](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L53>)
+### func [WithCheck](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L53>)
 
 ```go
 func WithCheck(check Check) RequestOpt
@@ -1308,7 +1311,7 @@ func WithCheck(check Check) RequestOpt
 WithCheck adds a new check to the request
 
 <a name="WithCtx"></a>
-### func [WithCtx](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L46>)
+### func [WithCtx](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L46>)
 
 ```go
 func WithCtx(ctx context.Context) RequestOpt
@@ -1317,7 +1320,7 @@ func WithCtx(ctx context.Context) RequestOpt
 WithCtx applies a custom context to the request
 
 <a name="WithDelay"></a>
-### func [WithDelay](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L60>)
+### func [WithDelay](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L60>)
 
 ```go
 func WithDelay(delay time.Duration) RequestOpt
@@ -1326,7 +1329,7 @@ func WithDelay(delay time.Duration) RequestOpt
 WithDelay applies a delay to the request
 
 <a name="WithDiscordLocale"></a>
-### func [WithDiscordLocale](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L80>)
+### func [WithDiscordLocale](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L80>)
 
 ```go
 func WithDiscordLocale(locale discord.Locale) RequestOpt
@@ -1335,7 +1338,7 @@ func WithDiscordLocale(locale discord.Locale) RequestOpt
 WithDiscordLocale adds the X\-Discord\-Locale header with the passed locale to the request
 
 <a name="WithHeader"></a>
-### func [WithHeader](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L67>)
+### func [WithHeader](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L67>)
 
 ```go
 func WithHeader(key string, value string) RequestOpt
@@ -1344,7 +1347,7 @@ func WithHeader(key string, value string) RequestOpt
 WithHeader adds a custom header to the request
 
 <a name="WithQueryParam"></a>
-### func [WithQueryParam](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L90>)
+### func [WithQueryParam](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L90>)
 
 ```go
 func WithQueryParam(param string, value any) RequestOpt
@@ -1353,7 +1356,7 @@ func WithQueryParam(param string, value any) RequestOpt
 WithQueryParam applies a custom query parameter to the request
 
 <a name="WithReason"></a>
-### func [WithReason](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L74>)
+### func [WithReason](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L74>)
 
 ```go
 func WithReason(reason string) RequestOpt
@@ -1362,7 +1365,7 @@ func WithReason(reason string) RequestOpt
 WithReason adds a reason header to the request. Not all discord endpoints support this
 
 <a name="WithToken"></a>
-### func [WithToken](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/request_config.go#L85>)
+### func [WithToken](<https://github.com/disgoorg/disgo/blob/master/rest/request_config.go#L85>)
 
 ```go
 func WithToken(tokenType discord.TokenType, token string) RequestOpt
@@ -1371,7 +1374,7 @@ func WithToken(tokenType discord.TokenType, token string) RequestOpt
 WithToken adds the Authorization header with the passed token to the request
 
 <a name="Rest"></a>
-## type [Rest](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest.go#L4-L25>)
+## type [Rest](<https://github.com/disgoorg/disgo/blob/master/rest/rest.go#L4-L25>)
 
 Rest is a manager for all of disgo's HTTP requests
 
@@ -1401,7 +1404,7 @@ type Rest interface {
 ```
 
 <a name="New"></a>
-### func [New](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/rest.go#L30>)
+### func [New](<https://github.com/disgoorg/disgo/blob/master/rest/rest.go#L30>)
 
 ```go
 func New(client Client) Rest
@@ -1410,7 +1413,7 @@ func New(client Client) Rest
 New returns a new default Rest
 
 <a name="StageInstances"></a>
-## type [StageInstances](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/stage_instances.go#L15-L20>)
+## type [StageInstances](<https://github.com/disgoorg/disgo/blob/master/rest/stage_instances.go#L15-L20>)
 
 
 
@@ -1424,7 +1427,7 @@ type StageInstances interface {
 ```
 
 <a name="NewStageInstances"></a>
-### func [NewStageInstances](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/stage_instances.go#L11>)
+### func [NewStageInstances](<https://github.com/disgoorg/disgo/blob/master/rest/stage_instances.go#L11>)
 
 ```go
 func NewStageInstances(client Client) StageInstances
@@ -1433,7 +1436,7 @@ func NewStageInstances(client Client) StageInstances
 
 
 <a name="Stickers"></a>
-## type [Stickers](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/stickers.go#L15-L22>)
+## type [Stickers](<https://github.com/disgoorg/disgo/blob/master/rest/stickers.go#L15-L22>)
 
 
 
@@ -1449,7 +1452,7 @@ type Stickers interface {
 ```
 
 <a name="NewStickers"></a>
-### func [NewStickers](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/stickers.go#L11>)
+### func [NewStickers](<https://github.com/disgoorg/disgo/blob/master/rest/stickers.go#L11>)
 
 ```go
 func NewStickers(client Client) Stickers
@@ -1458,7 +1461,7 @@ func NewStickers(client Client) Stickers
 
 
 <a name="ThreadMemberPage"></a>
-## type [ThreadMemberPage](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L96-L103>)
+## type [ThreadMemberPage](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L96-L103>)
 
 
 
@@ -1473,7 +1476,7 @@ type ThreadMemberPage struct {
 ```
 
 <a name="ThreadMemberPage.Next"></a>
-### func \(\*ThreadMemberPage\) [Next](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/page.go#L105>)
+### func \(\*ThreadMemberPage\) [Next](<https://github.com/disgoorg/disgo/blob/master/rest/page.go#L105>)
 
 ```go
 func (p *ThreadMemberPage) Next() bool
@@ -1482,7 +1485,7 @@ func (p *ThreadMemberPage) Next() bool
 
 
 <a name="Threads"></a>
-## type [Threads](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/threads.go#L17-L33>)
+## type [Threads](<https://github.com/disgoorg/disgo/blob/master/rest/threads.go#L17-L33>)
 
 
 
@@ -1507,7 +1510,7 @@ type Threads interface {
 ```
 
 <a name="NewThreads"></a>
-### func [NewThreads](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/threads.go#L13>)
+### func [NewThreads](<https://github.com/disgoorg/disgo/blob/master/rest/threads.go#L13>)
 
 ```go
 func NewThreads(client Client) Threads
@@ -1516,7 +1519,7 @@ func NewThreads(client Client) Threads
 
 
 <a name="Users"></a>
-## type [Users](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/users.go#L15-L21>)
+## type [Users](<https://github.com/disgoorg/disgo/blob/master/rest/users.go#L15-L21>)
 
 
 
@@ -1531,7 +1534,7 @@ type Users interface {
 ```
 
 <a name="NewUsers"></a>
-### func [NewUsers](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/users.go#L11>)
+### func [NewUsers](<https://github.com/disgoorg/disgo/blob/master/rest/users.go#L11>)
 
 ```go
 func NewUsers(client Client) Users
@@ -1540,7 +1543,7 @@ func NewUsers(client Client) Users
 
 
 <a name="Voice"></a>
-## type [Voice](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/voice.go#L13-L15>)
+## type [Voice](<https://github.com/disgoorg/disgo/blob/master/rest/voice.go#L13-L15>)
 
 
 
@@ -1551,7 +1554,7 @@ type Voice interface {
 ```
 
 <a name="NewVoice"></a>
-### func [NewVoice](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/voice.go#L9>)
+### func [NewVoice](<https://github.com/disgoorg/disgo/blob/master/rest/voice.go#L9>)
 
 ```go
 func NewVoice(client Client) Voice
@@ -1560,7 +1563,7 @@ func NewVoice(client Client) Voice
 
 
 <a name="Webhooks"></a>
-## type [Webhooks](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/webhooks.go#L15-L29>)
+## type [Webhooks](<https://github.com/disgoorg/disgo/blob/master/rest/webhooks.go#L15-L29>)
 
 
 
@@ -1583,7 +1586,7 @@ type Webhooks interface {
 ```
 
 <a name="NewWebhooks"></a>
-### func [NewWebhooks](<https://github.com/disgoorg/disgo/blob/master/disgo/rest/webhooks.go#L11>)
+### func [NewWebhooks](<https://github.com/disgoorg/disgo/blob/master/rest/webhooks.go#L11>)
 
 ```go
 func NewWebhooks(client Client) Webhooks

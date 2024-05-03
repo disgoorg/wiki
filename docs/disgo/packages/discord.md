@@ -1,7 +1,10 @@
+# Discord
 
 ```go
 import "github.com/disgoorg/disgo/discord"
 ```
+
+Package discord is a collection of structs and types of the Discord API.
 
 ## Constants
 
@@ -210,7 +213,7 @@ var Locales = map[Locale]string{
 ```
 
 <a name="AllGuildChannels"></a>
-## func [AllGuildChannels](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L153>)
+## func [AllGuildChannels](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L153>)
 
 ```go
 func AllGuildChannels(guildID snowflake.ID) snowflake.ID
@@ -219,7 +222,7 @@ func AllGuildChannels(guildID snowflake.ID) snowflake.ID
 
 
 <a name="AnimatedEmojiMention"></a>
-## func [AnimatedEmojiMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L55>)
+## func [AnimatedEmojiMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L55>)
 
 ```go
 func AnimatedEmojiMention(id snowflake.ID, name string) string
@@ -228,7 +231,7 @@ func AnimatedEmojiMention(id snowflake.ID, name string) string
 
 
 <a name="AuthorizeURL"></a>
-## func [AuthorizeURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/url.go#L46>)
+## func [AuthorizeURL](<https://github.com/disgoorg/disgo/blob/master/discord/url.go#L46>)
 
 ```go
 func AuthorizeURL(values QueryValues) string
@@ -237,7 +240,7 @@ func AuthorizeURL(values QueryValues) string
 AuthorizeURL returns the OAuth2 authorize url with the given query params
 
 <a name="ChannelMention"></a>
-## func [ChannelMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L31>)
+## func [ChannelMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L31>)
 
 ```go
 func ChannelMention(id snowflake.ID) string
@@ -246,7 +249,7 @@ func ChannelMention(id snowflake.ID) string
 
 
 <a name="EmojiMention"></a>
-## func [EmojiMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L51>)
+## func [EmojiMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L51>)
 
 ```go
 func EmojiMention(id snowflake.ID, name string) string
@@ -255,7 +258,7 @@ func EmojiMention(id snowflake.ID, name string) string
 
 
 <a name="FormattedTimestampMention"></a>
-## func [FormattedTimestampMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L63>)
+## func [FormattedTimestampMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L63>)
 
 ```go
 func FormattedTimestampMention(timestamp int64, style TimestampStyle) string
@@ -264,7 +267,7 @@ func FormattedTimestampMention(timestamp int64, style TimestampStyle) string
 
 
 <a name="HasScope"></a>
-## func [HasScope](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L158>)
+## func [HasScope](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L158>)
 
 ```go
 func HasScope(scope OAuth2Scope, scopes ...OAuth2Scope) bool
@@ -273,7 +276,7 @@ func HasScope(scope OAuth2Scope, scopes ...OAuth2Scope) bool
 
 
 <a name="InviteURL"></a>
-## func [InviteURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/url.go#L36>)
+## func [InviteURL](<https://github.com/disgoorg/disgo/blob/master/discord/url.go#L36>)
 
 ```go
 func InviteURL(code string) string
@@ -282,7 +285,7 @@ func InviteURL(code string) string
 InviteURL formats the invite code as an url
 
 <a name="JoinScopes"></a>
-## func [JoinScopes](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L142>)
+## func [JoinScopes](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L142>)
 
 ```go
 func JoinScopes(scopes []OAuth2Scope) string
@@ -291,7 +294,7 @@ func JoinScopes(scopes []OAuth2Scope) string
 
 
 <a name="MessageURL"></a>
-## func [MessageURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L78>)
+## func [MessageURL](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L78>)
 
 ```go
 func MessageURL(guildID snowflake.ID, channelID snowflake.ID, messageID snowflake.ID) string
@@ -300,7 +303,7 @@ func MessageURL(guildID snowflake.ID, channelID snowflake.ID, messageID snowflak
 
 
 <a name="NavigationBrowseMention"></a>
-## func [NavigationBrowseMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L75>)
+## func [NavigationBrowseMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L75>)
 
 ```go
 func NavigationBrowseMention() string
@@ -309,7 +312,7 @@ func NavigationBrowseMention() string
 
 
 <a name="NavigationCustomizeMention"></a>
-## func [NavigationCustomizeMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L79>)
+## func [NavigationCustomizeMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L79>)
 
 ```go
 func NavigationCustomizeMention() string
@@ -318,7 +321,7 @@ func NavigationCustomizeMention() string
 
 
 <a name="NavigationGuideMention"></a>
-## func [NavigationGuideMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L83>)
+## func [NavigationGuideMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L83>)
 
 ```go
 func NavigationGuideMention() string
@@ -327,7 +330,7 @@ func NavigationGuideMention() string
 
 
 <a name="RoleMention"></a>
-## func [RoleMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L47>)
+## func [RoleMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L47>)
 
 ```go
 func RoleMention(id snowflake.ID) string
@@ -336,7 +339,7 @@ func RoleMention(id snowflake.ID) string
 
 
 <a name="SlashCommandMention"></a>
-## func [SlashCommandMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L71>)
+## func [SlashCommandMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L71>)
 
 ```go
 func SlashCommandMention(id snowflake.ID, path string) string
@@ -349,7 +352,7 @@ mention := SlashCommandMention(id, "command group subcommand")
 ```
 
 <a name="TimestampMention"></a>
-## func [TimestampMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L59>)
+## func [TimestampMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L59>)
 
 ```go
 func TimestampMention(timestamp int64) string
@@ -358,7 +361,7 @@ func TimestampMention(timestamp int64) string
 
 
 <a name="UserMention"></a>
-## func [UserMention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L43>)
+## func [UserMention](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L43>)
 
 ```go
 func UserMention(id snowflake.ID) string
@@ -367,7 +370,7 @@ func UserMention(id snowflake.ID) string
 
 
 <a name="UserTag"></a>
-## func [UserTag](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L36>)
+## func [UserTag](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L36>)
 
 ```go
 func UserTag(username string, discriminator string) string
@@ -376,7 +379,7 @@ func UserTag(username string, discriminator string) string
 UserTag returns a formatted string of "Username\#Discriminator", falling back to the username if discriminator is "0"
 
 <a name="WebhookURL"></a>
-## func [WebhookURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/url.go#L41>)
+## func [WebhookURL](<https://github.com/disgoorg/disgo/blob/master/discord/url.go#L41>)
 
 ```go
 func WebhookURL(webhookID snowflake.ID, webhookToken string) string
@@ -385,7 +388,7 @@ func WebhookURL(webhookID snowflake.ID, webhookToken string) string
 WebhookURL returns the url over which the webhook can be called
 
 <a name="AccessTokenResponse"></a>
-## type [AccessTokenResponse](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/access_token.go#L11-L20>)
+## type [AccessTokenResponse](<https://github.com/disgoorg/disgo/blob/master/discord/access_token.go#L11-L20>)
 
 AccessTokenResponse is the response from the OAuth2 exchange endpoint. See https://discord.com/developers/docs/topics/oauth2#authorization-code-grant for more information.
 
@@ -403,7 +406,7 @@ type AccessTokenResponse struct {
 ```
 
 <a name="AccessTokenResponse.MarshalJSON"></a>
-### func \(AccessTokenResponse\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/access_token.go#L40>)
+### func \(AccessTokenResponse\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/access_token.go#L40>)
 
 ```go
 func (e AccessTokenResponse) MarshalJSON() ([]byte, error)
@@ -412,7 +415,7 @@ func (e AccessTokenResponse) MarshalJSON() ([]byte, error)
 
 
 <a name="AccessTokenResponse.UnmarshalJSON"></a>
-### func \(\*AccessTokenResponse\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/access_token.go#L23>)
+### func \(\*AccessTokenResponse\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/access_token.go#L23>)
 
 ```go
 func (e *AccessTokenResponse) UnmarshalJSON(data []byte) error
@@ -421,7 +424,7 @@ func (e *AccessTokenResponse) UnmarshalJSON(data []byte) error
 UnmarshalJSON implements json.Unmarshaler.
 
 <a name="ActionRowComponent"></a>
-## type [ActionRowComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L128>)
+## type [ActionRowComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L128>)
 
 
 
@@ -430,7 +433,7 @@ type ActionRowComponent []InteractiveComponent
 ```
 
 <a name="NewActionRow"></a>
-### func [NewActionRow](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L124>)
+### func [NewActionRow](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L124>)
 
 ```go
 func NewActionRow(components ...InteractiveComponent) ActionRowComponent
@@ -439,7 +442,7 @@ func NewActionRow(components ...InteractiveComponent) ActionRowComponent
 
 
 <a name="ActionRowComponent.AddComponents"></a>
-### func \(ActionRowComponent\) [AddComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L215>)
+### func \(ActionRowComponent\) [AddComponents](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L215>)
 
 ```go
 func (c ActionRowComponent) AddComponents(components ...InteractiveComponent) ActionRowComponent
@@ -448,7 +451,7 @@ func (c ActionRowComponent) AddComponents(components ...InteractiveComponent) Ac
 AddComponents returns a new ActionRowComponent with the provided Component\(s\) added
 
 <a name="ActionRowComponent.Buttons"></a>
-### func \(ActionRowComponent\) [Buttons](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L171>)
+### func \(ActionRowComponent\) [Buttons](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L171>)
 
 ```go
 func (c ActionRowComponent) Buttons() []ButtonComponent
@@ -457,7 +460,7 @@ func (c ActionRowComponent) Buttons() []ButtonComponent
 Buttons returns all ButtonComponent\(s\) in the ActionRowComponent
 
 <a name="ActionRowComponent.Components"></a>
-### func \(ActionRowComponent\) [Components](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L166>)
+### func \(ActionRowComponent\) [Components](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L166>)
 
 ```go
 func (c ActionRowComponent) Components() []InteractiveComponent
@@ -466,7 +469,7 @@ func (c ActionRowComponent) Components() []InteractiveComponent
 
 
 <a name="ActionRowComponent.MarshalJSON"></a>
-### func \(ActionRowComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L130>)
+### func \(ActionRowComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L130>)
 
 ```go
 func (c ActionRowComponent) MarshalJSON() ([]byte, error)
@@ -475,7 +478,7 @@ func (c ActionRowComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="ActionRowComponent.RemoveComponent"></a>
-### func \(ActionRowComponent\) [RemoveComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L220>)
+### func \(ActionRowComponent\) [RemoveComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L220>)
 
 ```go
 func (c ActionRowComponent) RemoveComponent(index int) ActionRowComponent
@@ -484,7 +487,7 @@ func (c ActionRowComponent) RemoveComponent(index int) ActionRowComponent
 RemoveComponent returns a new ActionRowComponent with the provided Component at the index removed
 
 <a name="ActionRowComponent.SelectMenus"></a>
-### func \(ActionRowComponent\) [SelectMenus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L182>)
+### func \(ActionRowComponent\) [SelectMenus](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L182>)
 
 ```go
 func (c ActionRowComponent) SelectMenus() []SelectMenuComponent
@@ -493,7 +496,7 @@ func (c ActionRowComponent) SelectMenus() []SelectMenuComponent
 SelectMenus returns all SelectMenuComponent\(s\) in the ActionRowComponent
 
 <a name="ActionRowComponent.TextInputs"></a>
-### func \(ActionRowComponent\) [TextInputs](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L193>)
+### func \(ActionRowComponent\) [TextInputs](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L193>)
 
 ```go
 func (c ActionRowComponent) TextInputs() []TextInputComponent
@@ -502,7 +505,7 @@ func (c ActionRowComponent) TextInputs() []TextInputComponent
 TextInputs returns all TextInputComponent\(s\) in the ActionRowComponent
 
 <a name="ActionRowComponent.Type"></a>
-### func \(ActionRowComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L159>)
+### func \(ActionRowComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L159>)
 
 ```go
 func (ActionRowComponent) Type() ComponentType
@@ -511,7 +514,7 @@ func (ActionRowComponent) Type() ComponentType
 
 
 <a name="ActionRowComponent.UnmarshalJSON"></a>
-### func \(\*ActionRowComponent\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L140>)
+### func \(\*ActionRowComponent\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L140>)
 
 ```go
 func (c *ActionRowComponent) UnmarshalJSON(data []byte) error
@@ -520,7 +523,7 @@ func (c *ActionRowComponent) UnmarshalJSON(data []byte) error
 
 
 <a name="ActionRowComponent.UpdateComponent"></a>
-### func \(ActionRowComponent\) [UpdateComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L204>)
+### func \(ActionRowComponent\) [UpdateComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L204>)
 
 ```go
 func (c ActionRowComponent) UpdateComponent(customID string, component InteractiveComponent) ActionRowComponent
@@ -529,7 +532,7 @@ func (c ActionRowComponent) UpdateComponent(customID string, component Interacti
 UpdateComponent returns a new ActionRowComponent with the Component which has the customID replaced
 
 <a name="Activity"></a>
-## type [Activity](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L26-L44>)
+## type [Activity](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L26-L44>)
 
 Activity represents the fields of a user's presence
 
@@ -556,7 +559,7 @@ type Activity struct {
 ```
 
 <a name="Activity.MarshalJSON"></a>
-### func \(Activity\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L60>)
+### func \(Activity\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L60>)
 
 ```go
 func (a Activity) MarshalJSON() ([]byte, error)
@@ -565,7 +568,7 @@ func (a Activity) MarshalJSON() ([]byte, error)
 
 
 <a name="Activity.UnmarshalJSON"></a>
-### func \(\*Activity\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L46>)
+### func \(\*Activity\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L46>)
 
 ```go
 func (a *Activity) UnmarshalJSON(data []byte) error
@@ -574,7 +577,7 @@ func (a *Activity) UnmarshalJSON(data []byte) error
 
 
 <a name="ActivityAssets"></a>
-## type [ActivityAssets](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L149-L154>)
+## type [ActivityAssets](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L149-L154>)
 
 ActivityAssets are the images for the presence and hover texts
 
@@ -588,7 +591,7 @@ type ActivityAssets struct {
 ```
 
 <a name="ActivityButton"></a>
-## type [ActivityButton](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L108-L111>)
+## type [ActivityButton](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L108-L111>)
 
 ActivityButton is a button in an activity
 
@@ -600,7 +603,7 @@ type ActivityButton struct {
 ```
 
 <a name="ActivityFlags"></a>
-## type [ActivityFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L72>)
+## type [ActivityFlags](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L72>)
 
 ActivityFlags add additional information to an activity
 
@@ -625,7 +628,7 @@ const (
 ```
 
 <a name="ActivityFlags.Add"></a>
-### func \(ActivityFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L88>)
+### func \(ActivityFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L88>)
 
 ```go
 func (f ActivityFlags) Add(bits ...ActivityFlags) ActivityFlags
@@ -634,7 +637,7 @@ func (f ActivityFlags) Add(bits ...ActivityFlags) ActivityFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="ActivityFlags.Has"></a>
-### func \(ActivityFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L98>)
+### func \(ActivityFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L98>)
 
 ```go
 func (f ActivityFlags) Has(bits ...ActivityFlags) bool
@@ -643,7 +646,7 @@ func (f ActivityFlags) Has(bits ...ActivityFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="ActivityFlags.Missing"></a>
-### func \(ActivityFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L103>)
+### func \(ActivityFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L103>)
 
 ```go
 func (f ActivityFlags) Missing(bits ...ActivityFlags) bool
@@ -652,7 +655,7 @@ func (f ActivityFlags) Missing(bits ...ActivityFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="ActivityFlags.Remove"></a>
-### func \(ActivityFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L93>)
+### func \(ActivityFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L93>)
 
 ```go
 func (f ActivityFlags) Remove(bits ...ActivityFlags) ActivityFlags
@@ -661,7 +664,7 @@ func (f ActivityFlags) Remove(bits ...ActivityFlags) ActivityFlags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="ActivityParty"></a>
-## type [ActivityParty](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L143-L146>)
+## type [ActivityParty](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L143-L146>)
 
 ActivityParty is information about the party of the player
 
@@ -673,7 +676,7 @@ type ActivityParty struct {
 ```
 
 <a name="ActivitySecrets"></a>
-## type [ActivitySecrets](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L157-L161>)
+## type [ActivitySecrets](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L157-L161>)
 
 ActivitySecrets contain secrets for Rich Presence joining and spectating
 
@@ -686,7 +689,7 @@ type ActivitySecrets struct {
 ```
 
 <a name="ActivityTimestamps"></a>
-## type [ActivityTimestamps](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L114-L117>)
+## type [ActivityTimestamps](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L114-L117>)
 
 ActivityTimestamps represents when a user started and ended their activity
 
@@ -698,7 +701,7 @@ type ActivityTimestamps struct {
 ```
 
 <a name="ActivityTimestamps.MarshalJSON"></a>
-### func \(ActivityTimestamps\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L132>)
+### func \(ActivityTimestamps\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L132>)
 
 ```go
 func (a ActivityTimestamps) MarshalJSON() ([]byte, error)
@@ -707,7 +710,7 @@ func (a ActivityTimestamps) MarshalJSON() ([]byte, error)
 
 
 <a name="ActivityTimestamps.UnmarshalJSON"></a>
-### func \(\*ActivityTimestamps\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L119>)
+### func \(\*ActivityTimestamps\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L119>)
 
 ```go
 func (a *ActivityTimestamps) UnmarshalJSON(data []byte) error
@@ -716,7 +719,7 @@ func (a *ActivityTimestamps) UnmarshalJSON(data []byte) error
 
 
 <a name="ActivityType"></a>
-## type [ActivityType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/activity.go#L13>)
+## type [ActivityType](<https://github.com/disgoorg/disgo/blob/master/discord/activity.go#L13>)
 
 ActivityType represents the status of a user, one of Game, Streaming, Listening, Watching, Custom or Competing
 
@@ -738,7 +741,7 @@ const (
 ```
 
 <a name="AddBan"></a>
-## type [AddBan](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/ban.go#L12-L14>)
+## type [AddBan](<https://github.com/disgoorg/disgo/blob/master/discord/ban.go#L12-L14>)
 
 AddBan is used to ban a User \(https://discord.com/developers/docs/resources/guild#create-guild-ban-json-params\)
 
@@ -749,7 +752,7 @@ type AddBan struct {
 ```
 
 <a name="AllowedMentionType"></a>
-## type [AllowedMentionType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/allowed_mentions.go#L22>)
+## type [AllowedMentionType](<https://github.com/disgoorg/disgo/blob/master/discord/allowed_mentions.go#L22>)
 
 AllowedMentionType ?
 
@@ -768,7 +771,7 @@ const (
 ```
 
 <a name="AllowedMentions"></a>
-## type [AllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/allowed_mentions.go#L14-L19>)
+## type [AllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/allowed_mentions.go#L14-L19>)
 
 AllowedMentions are used for avoiding mentioning users in Message and Interaction
 
@@ -782,7 +785,7 @@ type AllowedMentions struct {
 ```
 
 <a name="Application"></a>
-## type [Application](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L14-L43>)
+## type [Application](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L14-L43>)
 
 
 
@@ -820,7 +823,7 @@ type Application struct {
 ```
 
 <a name="Application.CoverImageURL"></a>
-### func \(Application\) [CoverImageURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L53>)
+### func \(Application\) [CoverImageURL](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L53>)
 
 ```go
 func (a Application) CoverImageURL(opts ...CDNOpt) *string
@@ -829,7 +832,7 @@ func (a Application) CoverImageURL(opts ...CDNOpt) *string
 
 
 <a name="Application.CreatedAt"></a>
-### func \(Application\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L61>)
+### func \(Application\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L61>)
 
 ```go
 func (a Application) CreatedAt() time.Time
@@ -838,7 +841,7 @@ func (a Application) CreatedAt() time.Time
 
 
 <a name="Application.IconURL"></a>
-### func \(Application\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L45>)
+### func \(Application\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L45>)
 
 ```go
 func (a Application) IconURL(opts ...CDNOpt) *string
@@ -847,7 +850,7 @@ func (a Application) IconURL(opts ...CDNOpt) *string
 
 
 <a name="ApplicationCommand"></a>
-## type [ApplicationCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L19-L36>)
+## type [ApplicationCommand](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L19-L36>)
 
 
 
@@ -873,7 +876,7 @@ type ApplicationCommand interface {
 ```
 
 <a name="ApplicationCommandCreate"></a>
-## type [ApplicationCommandCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L5-L10>)
+## type [ApplicationCommandCreate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L5-L10>)
 
 
 
@@ -887,7 +890,7 @@ type ApplicationCommandCreate interface {
 ```
 
 <a name="ApplicationCommandInteraction"></a>
-## type [ApplicationCommandInteraction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L14-L17>)
+## type [ApplicationCommandInteraction](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L14-L17>)
 
 
 
@@ -899,7 +902,7 @@ type ApplicationCommandInteraction struct {
 ```
 
 <a name="ApplicationCommandInteraction.MarshalJSON"></a>
-### func \(ApplicationCommandInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L89>)
+### func \(ApplicationCommandInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L89>)
 
 ```go
 func (i ApplicationCommandInteraction) MarshalJSON() ([]byte, error)
@@ -908,7 +911,7 @@ func (i ApplicationCommandInteraction) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandInteraction.MessageCommandInteractionData"></a>
-### func \(ApplicationCommandInteraction\) [MessageCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L128>)
+### func \(ApplicationCommandInteraction\) [MessageCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L128>)
 
 ```go
 func (i ApplicationCommandInteraction) MessageCommandInteractionData() MessageCommandInteractionData
@@ -917,7 +920,7 @@ func (i ApplicationCommandInteraction) MessageCommandInteractionData() MessageCo
 
 
 <a name="ApplicationCommandInteraction.SlashCommandInteractionData"></a>
-### func \(ApplicationCommandInteraction\) [SlashCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L120>)
+### func \(ApplicationCommandInteraction\) [SlashCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L120>)
 
 ```go
 func (i ApplicationCommandInteraction) SlashCommandInteractionData() SlashCommandInteractionData
@@ -926,7 +929,7 @@ func (i ApplicationCommandInteraction) SlashCommandInteractionData() SlashComman
 
 
 <a name="ApplicationCommandInteraction.Type"></a>
-### func \(ApplicationCommandInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L116>)
+### func \(ApplicationCommandInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L116>)
 
 ```go
 func (ApplicationCommandInteraction) Type() InteractionType
@@ -935,7 +938,7 @@ func (ApplicationCommandInteraction) Type() InteractionType
 
 
 <a name="ApplicationCommandInteraction.UnmarshalJSON"></a>
-### func \(\*ApplicationCommandInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L19>)
+### func \(\*ApplicationCommandInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L19>)
 
 ```go
 func (i *ApplicationCommandInteraction) UnmarshalJSON(data []byte) error
@@ -944,7 +947,7 @@ func (i *ApplicationCommandInteraction) UnmarshalJSON(data []byte) error
 
 
 <a name="ApplicationCommandInteraction.UserCommandInteractionData"></a>
-### func \(ApplicationCommandInteraction\) [UserCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L124>)
+### func \(ApplicationCommandInteraction\) [UserCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L124>)
 
 ```go
 func (i ApplicationCommandInteraction) UserCommandInteractionData() UserCommandInteractionData
@@ -953,7 +956,7 @@ func (i ApplicationCommandInteraction) UserCommandInteractionData() UserCommandI
 
 
 <a name="ApplicationCommandInteractionData"></a>
-## type [ApplicationCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L134-L141>)
+## type [ApplicationCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L134-L141>)
 
 
 
@@ -968,7 +971,7 @@ type ApplicationCommandInteractionData interface {
 ```
 
 <a name="ApplicationCommandOption"></a>
-## type [ApplicationCommandOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L27-L33>)
+## type [ApplicationCommandOption](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L27-L33>)
 
 
 
@@ -983,7 +986,7 @@ type ApplicationCommandOption interface {
 ```
 
 <a name="ApplicationCommandOptionAttachment"></a>
-## type [ApplicationCommandOptionAttachment](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L544-L550>)
+## type [ApplicationCommandOptionAttachment](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L544-L550>)
 
 
 
@@ -998,7 +1001,7 @@ type ApplicationCommandOptionAttachment struct {
 ```
 
 <a name="ApplicationCommandOptionAttachment.MarshalJSON"></a>
-### func \(ApplicationCommandOptionAttachment\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L552>)
+### func \(ApplicationCommandOptionAttachment\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L552>)
 
 ```go
 func (o ApplicationCommandOptionAttachment) MarshalJSON() ([]byte, error)
@@ -1007,7 +1010,7 @@ func (o ApplicationCommandOptionAttachment) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionAttachment.OptionDescription"></a>
-### func \(ApplicationCommandOptionAttachment\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L567>)
+### func \(ApplicationCommandOptionAttachment\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L567>)
 
 ```go
 func (o ApplicationCommandOptionAttachment) OptionDescription() string
@@ -1016,7 +1019,7 @@ func (o ApplicationCommandOptionAttachment) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionAttachment.OptionName"></a>
-### func \(ApplicationCommandOptionAttachment\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L563>)
+### func \(ApplicationCommandOptionAttachment\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L563>)
 
 ```go
 func (o ApplicationCommandOptionAttachment) OptionName() string
@@ -1025,7 +1028,7 @@ func (o ApplicationCommandOptionAttachment) OptionName() string
 
 
 <a name="ApplicationCommandOptionAttachment.Type"></a>
-### func \(ApplicationCommandOptionAttachment\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L572>)
+### func \(ApplicationCommandOptionAttachment\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L572>)
 
 ```go
 func (ApplicationCommandOptionAttachment) Type() ApplicationCommandOptionType
@@ -1034,7 +1037,7 @@ func (ApplicationCommandOptionAttachment) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionBool"></a>
-## type [ApplicationCommandOptionBool](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L289-L295>)
+## type [ApplicationCommandOptionBool](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L289-L295>)
 
 
 
@@ -1049,7 +1052,7 @@ type ApplicationCommandOptionBool struct {
 ```
 
 <a name="ApplicationCommandOptionBool.MarshalJSON"></a>
-### func \(ApplicationCommandOptionBool\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L297>)
+### func \(ApplicationCommandOptionBool\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L297>)
 
 ```go
 func (o ApplicationCommandOptionBool) MarshalJSON() ([]byte, error)
@@ -1058,7 +1061,7 @@ func (o ApplicationCommandOptionBool) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionBool.OptionDescription"></a>
-### func \(ApplicationCommandOptionBool\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L312>)
+### func \(ApplicationCommandOptionBool\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L312>)
 
 ```go
 func (o ApplicationCommandOptionBool) OptionDescription() string
@@ -1067,7 +1070,7 @@ func (o ApplicationCommandOptionBool) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionBool.OptionName"></a>
-### func \(ApplicationCommandOptionBool\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L308>)
+### func \(ApplicationCommandOptionBool\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L308>)
 
 ```go
 func (o ApplicationCommandOptionBool) OptionName() string
@@ -1076,7 +1079,7 @@ func (o ApplicationCommandOptionBool) OptionName() string
 
 
 <a name="ApplicationCommandOptionBool.Type"></a>
-### func \(ApplicationCommandOptionBool\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L317>)
+### func \(ApplicationCommandOptionBool\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L317>)
 
 ```go
 func (ApplicationCommandOptionBool) Type() ApplicationCommandOptionType
@@ -1085,7 +1088,7 @@ func (ApplicationCommandOptionBool) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionChannel"></a>
-## type [ApplicationCommandOptionChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L357-L364>)
+## type [ApplicationCommandOptionChannel](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L357-L364>)
 
 
 
@@ -1101,7 +1104,7 @@ type ApplicationCommandOptionChannel struct {
 ```
 
 <a name="ApplicationCommandOptionChannel.MarshalJSON"></a>
-### func \(ApplicationCommandOptionChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L366>)
+### func \(ApplicationCommandOptionChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L366>)
 
 ```go
 func (o ApplicationCommandOptionChannel) MarshalJSON() ([]byte, error)
@@ -1110,7 +1113,7 @@ func (o ApplicationCommandOptionChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionChannel.OptionDescription"></a>
-### func \(ApplicationCommandOptionChannel\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L381>)
+### func \(ApplicationCommandOptionChannel\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L381>)
 
 ```go
 func (o ApplicationCommandOptionChannel) OptionDescription() string
@@ -1119,7 +1122,7 @@ func (o ApplicationCommandOptionChannel) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionChannel.OptionName"></a>
-### func \(ApplicationCommandOptionChannel\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L377>)
+### func \(ApplicationCommandOptionChannel\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L377>)
 
 ```go
 func (o ApplicationCommandOptionChannel) OptionName() string
@@ -1128,7 +1131,7 @@ func (o ApplicationCommandOptionChannel) OptionName() string
 
 
 <a name="ApplicationCommandOptionChannel.Type"></a>
-### func \(ApplicationCommandOptionChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L386>)
+### func \(ApplicationCommandOptionChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L386>)
 
 ```go
 func (ApplicationCommandOptionChannel) Type() ApplicationCommandOptionType
@@ -1137,7 +1140,7 @@ func (ApplicationCommandOptionChannel) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionChoice"></a>
-## type [ApplicationCommandOptionChoice](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L496-L500>)
+## type [ApplicationCommandOptionChoice](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L496-L500>)
 
 
 
@@ -1149,7 +1152,7 @@ type ApplicationCommandOptionChoice interface {
 ```
 
 <a name="ApplicationCommandOptionChoiceFloat"></a>
-## type [ApplicationCommandOptionChoiceFloat](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L532-L536>)
+## type [ApplicationCommandOptionChoiceFloat](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L532-L536>)
 
 
 
@@ -1162,7 +1165,7 @@ type ApplicationCommandOptionChoiceFloat struct {
 ```
 
 <a name="ApplicationCommandOptionChoiceFloat.ChoiceName"></a>
-### func \(ApplicationCommandOptionChoiceFloat\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L538>)
+### func \(ApplicationCommandOptionChoiceFloat\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L538>)
 
 ```go
 func (c ApplicationCommandOptionChoiceFloat) ChoiceName() string
@@ -1171,7 +1174,7 @@ func (c ApplicationCommandOptionChoiceFloat) ChoiceName() string
 
 
 <a name="ApplicationCommandOptionChoiceInt"></a>
-## type [ApplicationCommandOptionChoiceInt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L504-L508>)
+## type [ApplicationCommandOptionChoiceInt](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L504-L508>)
 
 
 
@@ -1184,7 +1187,7 @@ type ApplicationCommandOptionChoiceInt struct {
 ```
 
 <a name="ApplicationCommandOptionChoiceInt.ChoiceName"></a>
-### func \(ApplicationCommandOptionChoiceInt\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L510>)
+### func \(ApplicationCommandOptionChoiceInt\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L510>)
 
 ```go
 func (c ApplicationCommandOptionChoiceInt) ChoiceName() string
@@ -1193,7 +1196,7 @@ func (c ApplicationCommandOptionChoiceInt) ChoiceName() string
 
 
 <a name="ApplicationCommandOptionChoiceString"></a>
-## type [ApplicationCommandOptionChoiceString](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L518-L522>)
+## type [ApplicationCommandOptionChoiceString](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L518-L522>)
 
 
 
@@ -1206,7 +1209,7 @@ type ApplicationCommandOptionChoiceString struct {
 ```
 
 <a name="ApplicationCommandOptionChoiceString.ChoiceName"></a>
-### func \(ApplicationCommandOptionChoiceString\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L524>)
+### func \(ApplicationCommandOptionChoiceString\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L524>)
 
 ```go
 func (c ApplicationCommandOptionChoiceString) ChoiceName() string
@@ -1215,7 +1218,7 @@ func (c ApplicationCommandOptionChoiceString) ChoiceName() string
 
 
 <a name="ApplicationCommandOptionFloat"></a>
-## type [ApplicationCommandOptionFloat](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L460-L470>)
+## type [ApplicationCommandOptionFloat](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L460-L470>)
 
 
 
@@ -1234,7 +1237,7 @@ type ApplicationCommandOptionFloat struct {
 ```
 
 <a name="ApplicationCommandOptionFloat.MarshalJSON"></a>
-### func \(ApplicationCommandOptionFloat\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L472>)
+### func \(ApplicationCommandOptionFloat\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L472>)
 
 ```go
 func (o ApplicationCommandOptionFloat) MarshalJSON() ([]byte, error)
@@ -1243,7 +1246,7 @@ func (o ApplicationCommandOptionFloat) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionFloat.OptionDescription"></a>
-### func \(ApplicationCommandOptionFloat\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L487>)
+### func \(ApplicationCommandOptionFloat\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L487>)
 
 ```go
 func (o ApplicationCommandOptionFloat) OptionDescription() string
@@ -1252,7 +1255,7 @@ func (o ApplicationCommandOptionFloat) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionFloat.OptionName"></a>
-### func \(ApplicationCommandOptionFloat\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L483>)
+### func \(ApplicationCommandOptionFloat\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L483>)
 
 ```go
 func (o ApplicationCommandOptionFloat) OptionName() string
@@ -1261,7 +1264,7 @@ func (o ApplicationCommandOptionFloat) OptionName() string
 
 
 <a name="ApplicationCommandOptionFloat.Type"></a>
-### func \(ApplicationCommandOptionFloat\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L492>)
+### func \(ApplicationCommandOptionFloat\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L492>)
 
 ```go
 func (ApplicationCommandOptionFloat) Type() ApplicationCommandOptionType
@@ -1270,7 +1273,7 @@ func (ApplicationCommandOptionFloat) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionInt"></a>
-## type [ApplicationCommandOptionInt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L251-L261>)
+## type [ApplicationCommandOptionInt](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L251-L261>)
 
 
 
@@ -1289,7 +1292,7 @@ type ApplicationCommandOptionInt struct {
 ```
 
 <a name="ApplicationCommandOptionInt.MarshalJSON"></a>
-### func \(ApplicationCommandOptionInt\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L263>)
+### func \(ApplicationCommandOptionInt\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L263>)
 
 ```go
 func (o ApplicationCommandOptionInt) MarshalJSON() ([]byte, error)
@@ -1298,7 +1301,7 @@ func (o ApplicationCommandOptionInt) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionInt.OptionDescription"></a>
-### func \(ApplicationCommandOptionInt\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L278>)
+### func \(ApplicationCommandOptionInt\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L278>)
 
 ```go
 func (o ApplicationCommandOptionInt) OptionDescription() string
@@ -1307,7 +1310,7 @@ func (o ApplicationCommandOptionInt) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionInt.OptionName"></a>
-### func \(ApplicationCommandOptionInt\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L274>)
+### func \(ApplicationCommandOptionInt\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L274>)
 
 ```go
 func (o ApplicationCommandOptionInt) OptionName() string
@@ -1316,7 +1319,7 @@ func (o ApplicationCommandOptionInt) OptionName() string
 
 
 <a name="ApplicationCommandOptionInt.Type"></a>
-### func \(ApplicationCommandOptionInt\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L283>)
+### func \(ApplicationCommandOptionInt\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L283>)
 
 ```go
 func (ApplicationCommandOptionInt) Type() ApplicationCommandOptionType
@@ -1325,7 +1328,7 @@ func (ApplicationCommandOptionInt) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionMentionable"></a>
-## type [ApplicationCommandOptionMentionable](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L426-L432>)
+## type [ApplicationCommandOptionMentionable](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L426-L432>)
 
 
 
@@ -1340,7 +1343,7 @@ type ApplicationCommandOptionMentionable struct {
 ```
 
 <a name="ApplicationCommandOptionMentionable.MarshalJSON"></a>
-### func \(ApplicationCommandOptionMentionable\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L434>)
+### func \(ApplicationCommandOptionMentionable\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L434>)
 
 ```go
 func (o ApplicationCommandOptionMentionable) MarshalJSON() ([]byte, error)
@@ -1349,7 +1352,7 @@ func (o ApplicationCommandOptionMentionable) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionMentionable.OptionDescription"></a>
-### func \(ApplicationCommandOptionMentionable\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L449>)
+### func \(ApplicationCommandOptionMentionable\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L449>)
 
 ```go
 func (o ApplicationCommandOptionMentionable) OptionDescription() string
@@ -1358,7 +1361,7 @@ func (o ApplicationCommandOptionMentionable) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionMentionable.OptionName"></a>
-### func \(ApplicationCommandOptionMentionable\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L445>)
+### func \(ApplicationCommandOptionMentionable\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L445>)
 
 ```go
 func (o ApplicationCommandOptionMentionable) OptionName() string
@@ -1367,7 +1370,7 @@ func (o ApplicationCommandOptionMentionable) OptionName() string
 
 
 <a name="ApplicationCommandOptionMentionable.Type"></a>
-### func \(ApplicationCommandOptionMentionable\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L454>)
+### func \(ApplicationCommandOptionMentionable\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L454>)
 
 ```go
 func (ApplicationCommandOptionMentionable) Type() ApplicationCommandOptionType
@@ -1376,7 +1379,7 @@ func (ApplicationCommandOptionMentionable) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionRole"></a>
-## type [ApplicationCommandOptionRole](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L392-L398>)
+## type [ApplicationCommandOptionRole](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L392-L398>)
 
 
 
@@ -1391,7 +1394,7 @@ type ApplicationCommandOptionRole struct {
 ```
 
 <a name="ApplicationCommandOptionRole.MarshalJSON"></a>
-### func \(ApplicationCommandOptionRole\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L400>)
+### func \(ApplicationCommandOptionRole\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L400>)
 
 ```go
 func (o ApplicationCommandOptionRole) MarshalJSON() ([]byte, error)
@@ -1400,7 +1403,7 @@ func (o ApplicationCommandOptionRole) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionRole.OptionDescription"></a>
-### func \(ApplicationCommandOptionRole\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L415>)
+### func \(ApplicationCommandOptionRole\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L415>)
 
 ```go
 func (o ApplicationCommandOptionRole) OptionDescription() string
@@ -1409,7 +1412,7 @@ func (o ApplicationCommandOptionRole) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionRole.OptionName"></a>
-### func \(ApplicationCommandOptionRole\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L411>)
+### func \(ApplicationCommandOptionRole\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L411>)
 
 ```go
 func (o ApplicationCommandOptionRole) OptionName() string
@@ -1418,7 +1421,7 @@ func (o ApplicationCommandOptionRole) OptionName() string
 
 
 <a name="ApplicationCommandOptionRole.Type"></a>
-### func \(ApplicationCommandOptionRole\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L420>)
+### func \(ApplicationCommandOptionRole\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L420>)
 
 ```go
 func (ApplicationCommandOptionRole) Type() ApplicationCommandOptionType
@@ -1427,7 +1430,7 @@ func (ApplicationCommandOptionRole) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionString"></a>
-## type [ApplicationCommandOptionString](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L213-L223>)
+## type [ApplicationCommandOptionString](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L213-L223>)
 
 
 
@@ -1446,7 +1449,7 @@ type ApplicationCommandOptionString struct {
 ```
 
 <a name="ApplicationCommandOptionString.MarshalJSON"></a>
-### func \(ApplicationCommandOptionString\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L225>)
+### func \(ApplicationCommandOptionString\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L225>)
 
 ```go
 func (o ApplicationCommandOptionString) MarshalJSON() ([]byte, error)
@@ -1455,7 +1458,7 @@ func (o ApplicationCommandOptionString) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionString.OptionDescription"></a>
-### func \(ApplicationCommandOptionString\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L240>)
+### func \(ApplicationCommandOptionString\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L240>)
 
 ```go
 func (o ApplicationCommandOptionString) OptionDescription() string
@@ -1464,7 +1467,7 @@ func (o ApplicationCommandOptionString) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionString.OptionName"></a>
-### func \(ApplicationCommandOptionString\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L236>)
+### func \(ApplicationCommandOptionString\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L236>)
 
 ```go
 func (o ApplicationCommandOptionString) OptionName() string
@@ -1473,7 +1476,7 @@ func (o ApplicationCommandOptionString) OptionName() string
 
 
 <a name="ApplicationCommandOptionString.Type"></a>
-### func \(ApplicationCommandOptionString\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L245>)
+### func \(ApplicationCommandOptionString\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L245>)
 
 ```go
 func (ApplicationCommandOptionString) Type() ApplicationCommandOptionType
@@ -1482,7 +1485,7 @@ func (ApplicationCommandOptionString) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionSubCommand"></a>
-## type [ApplicationCommandOptionSubCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L123-L129>)
+## type [ApplicationCommandOptionSubCommand](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L123-L129>)
 
 
 
@@ -1497,7 +1500,7 @@ type ApplicationCommandOptionSubCommand struct {
 ```
 
 <a name="ApplicationCommandOptionSubCommand.MarshalJSON"></a>
-### func \(ApplicationCommandOptionSubCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L131>)
+### func \(ApplicationCommandOptionSubCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L131>)
 
 ```go
 func (o ApplicationCommandOptionSubCommand) MarshalJSON() ([]byte, error)
@@ -1506,7 +1509,7 @@ func (o ApplicationCommandOptionSubCommand) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionSubCommand.OptionDescription"></a>
-### func \(ApplicationCommandOptionSubCommand\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L168>)
+### func \(ApplicationCommandOptionSubCommand\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L168>)
 
 ```go
 func (o ApplicationCommandOptionSubCommand) OptionDescription() string
@@ -1515,7 +1518,7 @@ func (o ApplicationCommandOptionSubCommand) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionSubCommand.OptionName"></a>
-### func \(ApplicationCommandOptionSubCommand\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L164>)
+### func \(ApplicationCommandOptionSubCommand\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L164>)
 
 ```go
 func (o ApplicationCommandOptionSubCommand) OptionName() string
@@ -1524,7 +1527,7 @@ func (o ApplicationCommandOptionSubCommand) OptionName() string
 
 
 <a name="ApplicationCommandOptionSubCommand.Type"></a>
-### func \(ApplicationCommandOptionSubCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L173>)
+### func \(ApplicationCommandOptionSubCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L173>)
 
 ```go
 func (ApplicationCommandOptionSubCommand) Type() ApplicationCommandOptionType
@@ -1533,7 +1536,7 @@ func (ApplicationCommandOptionSubCommand) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandOptionSubCommand.UnmarshalJSON"></a>
-### func \(\*ApplicationCommandOptionSubCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L142>)
+### func \(\*ApplicationCommandOptionSubCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L142>)
 
 ```go
 func (o *ApplicationCommandOptionSubCommand) UnmarshalJSON(data []byte) error
@@ -1542,7 +1545,7 @@ func (o *ApplicationCommandOptionSubCommand) UnmarshalJSON(data []byte) error
 
 
 <a name="ApplicationCommandOptionSubCommandGroup"></a>
-## type [ApplicationCommandOptionSubCommandGroup](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L179-L185>)
+## type [ApplicationCommandOptionSubCommandGroup](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L179-L185>)
 
 
 
@@ -1557,7 +1560,7 @@ type ApplicationCommandOptionSubCommandGroup struct {
 ```
 
 <a name="ApplicationCommandOptionSubCommandGroup.MarshalJSON"></a>
-### func \(ApplicationCommandOptionSubCommandGroup\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L187>)
+### func \(ApplicationCommandOptionSubCommandGroup\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L187>)
 
 ```go
 func (o ApplicationCommandOptionSubCommandGroup) MarshalJSON() ([]byte, error)
@@ -1566,7 +1569,7 @@ func (o ApplicationCommandOptionSubCommandGroup) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionSubCommandGroup.OptionDescription"></a>
-### func \(ApplicationCommandOptionSubCommandGroup\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L202>)
+### func \(ApplicationCommandOptionSubCommandGroup\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L202>)
 
 ```go
 func (o ApplicationCommandOptionSubCommandGroup) OptionDescription() string
@@ -1575,7 +1578,7 @@ func (o ApplicationCommandOptionSubCommandGroup) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionSubCommandGroup.OptionName"></a>
-### func \(ApplicationCommandOptionSubCommandGroup\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L198>)
+### func \(ApplicationCommandOptionSubCommandGroup\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L198>)
 
 ```go
 func (o ApplicationCommandOptionSubCommandGroup) OptionName() string
@@ -1584,7 +1587,7 @@ func (o ApplicationCommandOptionSubCommandGroup) OptionName() string
 
 
 <a name="ApplicationCommandOptionSubCommandGroup.Type"></a>
-### func \(ApplicationCommandOptionSubCommandGroup\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L207>)
+### func \(ApplicationCommandOptionSubCommandGroup\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L207>)
 
 ```go
 func (ApplicationCommandOptionSubCommandGroup) Type() ApplicationCommandOptionType
@@ -1593,7 +1596,7 @@ func (ApplicationCommandOptionSubCommandGroup) Type() ApplicationCommandOptionTy
 
 
 <a name="ApplicationCommandOptionType"></a>
-## type [ApplicationCommandOptionType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L10>)
+## type [ApplicationCommandOptionType](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L10>)
 
 ApplicationCommandOptionType specifies the type of the arguments used in ApplicationCommand.Options
 
@@ -1620,7 +1623,7 @@ const (
 ```
 
 <a name="ApplicationCommandOptionUser"></a>
-## type [ApplicationCommandOptionUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L323-L329>)
+## type [ApplicationCommandOptionUser](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L323-L329>)
 
 
 
@@ -1635,7 +1638,7 @@ type ApplicationCommandOptionUser struct {
 ```
 
 <a name="ApplicationCommandOptionUser.MarshalJSON"></a>
-### func \(ApplicationCommandOptionUser\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L331>)
+### func \(ApplicationCommandOptionUser\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L331>)
 
 ```go
 func (o ApplicationCommandOptionUser) MarshalJSON() ([]byte, error)
@@ -1644,7 +1647,7 @@ func (o ApplicationCommandOptionUser) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandOptionUser.OptionDescription"></a>
-### func \(ApplicationCommandOptionUser\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L346>)
+### func \(ApplicationCommandOptionUser\) [OptionDescription](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L346>)
 
 ```go
 func (o ApplicationCommandOptionUser) OptionDescription() string
@@ -1653,7 +1656,7 @@ func (o ApplicationCommandOptionUser) OptionDescription() string
 
 
 <a name="ApplicationCommandOptionUser.OptionName"></a>
-### func \(ApplicationCommandOptionUser\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L342>)
+### func \(ApplicationCommandOptionUser\) [OptionName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L342>)
 
 ```go
 func (o ApplicationCommandOptionUser) OptionName() string
@@ -1662,7 +1665,7 @@ func (o ApplicationCommandOptionUser) OptionName() string
 
 
 <a name="ApplicationCommandOptionUser.Type"></a>
-### func \(ApplicationCommandOptionUser\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L351>)
+### func \(ApplicationCommandOptionUser\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L351>)
 
 ```go
 func (ApplicationCommandOptionUser) Type() ApplicationCommandOptionType
@@ -1671,7 +1674,7 @@ func (ApplicationCommandOptionUser) Type() ApplicationCommandOptionType
 
 
 <a name="ApplicationCommandPermission"></a>
-## type [ApplicationCommandPermission](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L102-L107>)
+## type [ApplicationCommandPermission](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L102-L107>)
 
 ApplicationCommandPermission holds a User or Role and if they are allowed to use the ApplicationCommand
 
@@ -1685,7 +1688,7 @@ type ApplicationCommandPermission interface {
 ```
 
 <a name="ApplicationCommandPermissionChannel"></a>
-## type [ApplicationCommandPermissionChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L157-L160>)
+## type [ApplicationCommandPermissionChannel](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L157-L160>)
 
 
 
@@ -1697,7 +1700,7 @@ type ApplicationCommandPermissionChannel struct {
 ```
 
 <a name="ApplicationCommandPermissionChannel.ID"></a>
-### func \(ApplicationCommandPermissionChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L176>)
+### func \(ApplicationCommandPermissionChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L176>)
 
 ```go
 func (p ApplicationCommandPermissionChannel) ID() snowflake.ID
@@ -1706,7 +1709,7 @@ func (p ApplicationCommandPermissionChannel) ID() snowflake.ID
 
 
 <a name="ApplicationCommandPermissionChannel.MarshalJSON"></a>
-### func \(ApplicationCommandPermissionChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L162>)
+### func \(ApplicationCommandPermissionChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L162>)
 
 ```go
 func (p ApplicationCommandPermissionChannel) MarshalJSON() ([]byte, error)
@@ -1715,7 +1718,7 @@ func (p ApplicationCommandPermissionChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandPermissionChannel.Type"></a>
-### func \(ApplicationCommandPermissionChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L173>)
+### func \(ApplicationCommandPermissionChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L173>)
 
 ```go
 func (ApplicationCommandPermissionChannel) Type() ApplicationCommandPermissionType
@@ -1724,7 +1727,7 @@ func (ApplicationCommandPermissionChannel) Type() ApplicationCommandPermissionTy
 
 
 <a name="ApplicationCommandPermissionRole"></a>
-## type [ApplicationCommandPermissionRole](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L109-L112>)
+## type [ApplicationCommandPermissionRole](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L109-L112>)
 
 
 
@@ -1736,7 +1739,7 @@ type ApplicationCommandPermissionRole struct {
 ```
 
 <a name="ApplicationCommandPermissionRole.ID"></a>
-### func \(ApplicationCommandPermissionRole\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L128>)
+### func \(ApplicationCommandPermissionRole\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L128>)
 
 ```go
 func (p ApplicationCommandPermissionRole) ID() snowflake.ID
@@ -1745,7 +1748,7 @@ func (p ApplicationCommandPermissionRole) ID() snowflake.ID
 
 
 <a name="ApplicationCommandPermissionRole.MarshalJSON"></a>
-### func \(ApplicationCommandPermissionRole\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L114>)
+### func \(ApplicationCommandPermissionRole\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L114>)
 
 ```go
 func (p ApplicationCommandPermissionRole) MarshalJSON() ([]byte, error)
@@ -1754,7 +1757,7 @@ func (p ApplicationCommandPermissionRole) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandPermissionRole.Type"></a>
-### func \(ApplicationCommandPermissionRole\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L125>)
+### func \(ApplicationCommandPermissionRole\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L125>)
 
 ```go
 func (ApplicationCommandPermissionRole) Type() ApplicationCommandPermissionType
@@ -1763,7 +1766,7 @@ func (ApplicationCommandPermissionRole) Type() ApplicationCommandPermissionType
 
 
 <a name="ApplicationCommandPermissionType"></a>
-## type [ApplicationCommandPermissionType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L11>)
+## type [ApplicationCommandPermissionType](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L11>)
 
 ApplicationCommandPermissionType is the type of the ApplicationCommandPermission
 
@@ -1782,7 +1785,7 @@ const (
 ```
 
 <a name="ApplicationCommandPermissionUser"></a>
-## type [ApplicationCommandPermissionUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L131-L134>)
+## type [ApplicationCommandPermissionUser](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L131-L134>)
 
 
 
@@ -1794,7 +1797,7 @@ type ApplicationCommandPermissionUser struct {
 ```
 
 <a name="ApplicationCommandPermissionUser.ID"></a>
-### func \(ApplicationCommandPermissionUser\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L150>)
+### func \(ApplicationCommandPermissionUser\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L150>)
 
 ```go
 func (p ApplicationCommandPermissionUser) ID() snowflake.ID
@@ -1803,7 +1806,7 @@ func (p ApplicationCommandPermissionUser) ID() snowflake.ID
 
 
 <a name="ApplicationCommandPermissionUser.MarshalJSON"></a>
-### func \(ApplicationCommandPermissionUser\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L136>)
+### func \(ApplicationCommandPermissionUser\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L136>)
 
 ```go
 func (p ApplicationCommandPermissionUser) MarshalJSON() ([]byte, error)
@@ -1812,7 +1815,7 @@ func (p ApplicationCommandPermissionUser) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationCommandPermissionUser.Type"></a>
-### func \(ApplicationCommandPermissionUser\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L147>)
+### func \(ApplicationCommandPermissionUser\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L147>)
 
 ```go
 func (ApplicationCommandPermissionUser) Type() ApplicationCommandPermissionType
@@ -1821,7 +1824,7 @@ func (ApplicationCommandPermissionUser) Type() ApplicationCommandPermissionType
 
 
 <a name="ApplicationCommandPermissions"></a>
-## type [ApplicationCommandPermissions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L27-L32>)
+## type [ApplicationCommandPermissions](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L27-L32>)
 
 ApplicationCommandPermissions holds all permissions for an ApplicationCommand
 
@@ -1835,7 +1838,7 @@ type ApplicationCommandPermissions struct {
 ```
 
 <a name="ApplicationCommandPermissions.UnmarshalJSON"></a>
-### func \(\*ApplicationCommandPermissions\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L34>)
+### func \(\*ApplicationCommandPermissions\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L34>)
 
 ```go
 func (p *ApplicationCommandPermissions) UnmarshalJSON(data []byte) error
@@ -1844,7 +1847,7 @@ func (p *ApplicationCommandPermissions) UnmarshalJSON(data []byte) error
 
 
 <a name="ApplicationCommandPermissionsSet"></a>
-## type [ApplicationCommandPermissionsSet](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L21-L24>)
+## type [ApplicationCommandPermissionsSet](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L21-L24>)
 
 ApplicationCommandPermissionsSet is used to bulk overwrite all ApplicationCommandPermissions
 
@@ -1856,7 +1859,7 @@ type ApplicationCommandPermissionsSet struct {
 ```
 
 <a name="ApplicationCommandType"></a>
-## type [ApplicationCommandType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L11>)
+## type [ApplicationCommandType](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L11>)
 
 
 
@@ -1875,7 +1878,7 @@ const (
 ```
 
 <a name="ApplicationCommandUpdate"></a>
-## type [ApplicationCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L5-L10>)
+## type [ApplicationCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L5-L10>)
 
 
 
@@ -1889,7 +1892,7 @@ type ApplicationCommandUpdate interface {
 ```
 
 <a name="ApplicationFlags"></a>
-## type [ApplicationFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L183>)
+## type [ApplicationFlags](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L183>)
 
 ApplicationFlags \(https://discord.com/developers/docs/resources/application#application-object-application-flags\)
 
@@ -1898,7 +1901,7 @@ type ApplicationFlags int
 ```
 
 <a name="ApplicationFlags.Add"></a>
-### func \(ApplicationFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L207>)
+### func \(ApplicationFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L207>)
 
 ```go
 func (f ApplicationFlags) Add(bits ...ApplicationFlags) ApplicationFlags
@@ -1907,7 +1910,7 @@ func (f ApplicationFlags) Add(bits ...ApplicationFlags) ApplicationFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="ApplicationFlags.Has"></a>
-### func \(ApplicationFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L217>)
+### func \(ApplicationFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L217>)
 
 ```go
 func (f ApplicationFlags) Has(bits ...ApplicationFlags) bool
@@ -1916,7 +1919,7 @@ func (f ApplicationFlags) Has(bits ...ApplicationFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="ApplicationFlags.Missing"></a>
-### func \(ApplicationFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L222>)
+### func \(ApplicationFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L222>)
 
 ```go
 func (f ApplicationFlags) Missing(bits ...ApplicationFlags) bool
@@ -1925,7 +1928,7 @@ func (f ApplicationFlags) Missing(bits ...ApplicationFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="ApplicationFlags.Remove"></a>
-### func \(ApplicationFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L212>)
+### func \(ApplicationFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L212>)
 
 ```go
 func (f ApplicationFlags) Remove(bits ...ApplicationFlags) ApplicationFlags
@@ -1934,7 +1937,7 @@ func (f ApplicationFlags) Remove(bits ...ApplicationFlags) ApplicationFlags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="ApplicationIntegrationType"></a>
-## type [ApplicationIntegrationType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L268>)
+## type [ApplicationIntegrationType](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L268>)
 
 
 
@@ -1952,7 +1955,7 @@ const (
 ```
 
 <a name="ApplicationIntegrationTypeConfiguration"></a>
-## type [ApplicationIntegrationTypeConfiguration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L277-L279>)
+## type [ApplicationIntegrationTypeConfiguration](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L277-L279>)
 
 
 
@@ -1963,7 +1966,7 @@ type ApplicationIntegrationTypeConfiguration struct {
 ```
 
 <a name="ApplicationIntegrationTypesConfig"></a>
-## type [ApplicationIntegrationTypesConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L275>)
+## type [ApplicationIntegrationTypesConfig](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L275>)
 
 
 
@@ -1972,7 +1975,7 @@ type ApplicationIntegrationTypesConfig map[ApplicationIntegrationType]Applicatio
 ```
 
 <a name="ApplicationRoleConnection"></a>
-## type [ApplicationRoleConnection](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L190-L194>)
+## type [ApplicationRoleConnection](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L190-L194>)
 
 
 
@@ -1985,7 +1988,7 @@ type ApplicationRoleConnection struct {
 ```
 
 <a name="ApplicationRoleConnectionMetadata"></a>
-## type [ApplicationRoleConnectionMetadata](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_role_connection_metadata.go#L3-L10>)
+## type [ApplicationRoleConnectionMetadata](<https://github.com/disgoorg/disgo/blob/master/discord/application_role_connection_metadata.go#L3-L10>)
 
 
 
@@ -2001,7 +2004,7 @@ type ApplicationRoleConnectionMetadata struct {
 ```
 
 <a name="ApplicationRoleConnectionMetadataType"></a>
-## type [ApplicationRoleConnectionMetadataType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_role_connection_metadata.go#L12>)
+## type [ApplicationRoleConnectionMetadataType](<https://github.com/disgoorg/disgo/blob/master/discord/application_role_connection_metadata.go#L12>)
 
 
 
@@ -2025,7 +2028,7 @@ const (
 ```
 
 <a name="ApplicationRoleConnectionUpdate"></a>
-## type [ApplicationRoleConnectionUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L196-L200>)
+## type [ApplicationRoleConnectionUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L196-L200>)
 
 
 
@@ -2038,7 +2041,7 @@ type ApplicationRoleConnectionUpdate struct {
 ```
 
 <a name="ApplicationUpdate"></a>
-## type [ApplicationUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L65-L76>)
+## type [ApplicationUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L65-L76>)
 
 
 
@@ -2058,7 +2061,7 @@ type ApplicationUpdate struct {
 ```
 
 <a name="ApplicationWebhook"></a>
-## type [ApplicationWebhook](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L254-L259>)
+## type [ApplicationWebhook](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L254-L259>)
 
 
 
@@ -2070,7 +2073,7 @@ type ApplicationWebhook struct {
 ```
 
 <a name="ApplicationWebhook.Avatar"></a>
-### func \(ApplicationWebhook\) [Avatar](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L301>)
+### func \(ApplicationWebhook\) [Avatar](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L301>)
 
 ```go
 func (w ApplicationWebhook) Avatar() *string
@@ -2079,7 +2082,7 @@ func (w ApplicationWebhook) Avatar() *string
 
 
 <a name="ApplicationWebhook.AvatarURL"></a>
-### func \(ApplicationWebhook\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L315>)
+### func \(ApplicationWebhook\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L315>)
 
 ```go
 func (w ApplicationWebhook) AvatarURL(opts ...CDNOpt) *string
@@ -2088,7 +2091,7 @@ func (w ApplicationWebhook) AvatarURL(opts ...CDNOpt) *string
 
 
 <a name="ApplicationWebhook.CreatedAt"></a>
-### func \(ApplicationWebhook\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L327>)
+### func \(ApplicationWebhook\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L327>)
 
 ```go
 func (w ApplicationWebhook) CreatedAt() time.Time
@@ -2097,7 +2100,7 @@ func (w ApplicationWebhook) CreatedAt() time.Time
 
 
 <a name="ApplicationWebhook.DefaultAvatarURL"></a>
-### func \(ApplicationWebhook\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L323>)
+### func \(ApplicationWebhook\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L323>)
 
 ```go
 func (w ApplicationWebhook) DefaultAvatarURL(opts ...CDNOpt) string
@@ -2106,7 +2109,7 @@ func (w ApplicationWebhook) DefaultAvatarURL(opts ...CDNOpt) string
 
 
 <a name="ApplicationWebhook.EffectiveAvatarURL"></a>
-### func \(ApplicationWebhook\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L305>)
+### func \(ApplicationWebhook\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L305>)
 
 ```go
 func (w ApplicationWebhook) EffectiveAvatarURL(opts ...CDNOpt) string
@@ -2115,7 +2118,7 @@ func (w ApplicationWebhook) EffectiveAvatarURL(opts ...CDNOpt) string
 
 
 <a name="ApplicationWebhook.ID"></a>
-### func \(ApplicationWebhook\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L293>)
+### func \(ApplicationWebhook\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L293>)
 
 ```go
 func (w ApplicationWebhook) ID() snowflake.ID
@@ -2124,7 +2127,7 @@ func (w ApplicationWebhook) ID() snowflake.ID
 
 
 <a name="ApplicationWebhook.MarshalJSON"></a>
-### func \(ApplicationWebhook\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L278>)
+### func \(ApplicationWebhook\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L278>)
 
 ```go
 func (w ApplicationWebhook) MarshalJSON() ([]byte, error)
@@ -2133,7 +2136,7 @@ func (w ApplicationWebhook) MarshalJSON() ([]byte, error)
 
 
 <a name="ApplicationWebhook.Name"></a>
-### func \(ApplicationWebhook\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L297>)
+### func \(ApplicationWebhook\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L297>)
 
 ```go
 func (w ApplicationWebhook) Name() string
@@ -2142,7 +2145,7 @@ func (w ApplicationWebhook) Name() string
 
 
 <a name="ApplicationWebhook.Type"></a>
-### func \(ApplicationWebhook\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L289>)
+### func \(ApplicationWebhook\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L289>)
 
 ```go
 func (ApplicationWebhook) Type() WebhookType
@@ -2151,7 +2154,7 @@ func (ApplicationWebhook) Type() WebhookType
 
 
 <a name="ApplicationWebhook.UnmarshalJSON"></a>
-### func \(\*ApplicationWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L261>)
+### func \(\*ApplicationWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L261>)
 
 ```go
 func (w *ApplicationWebhook) UnmarshalJSON(data []byte) error
@@ -2160,7 +2163,7 @@ func (w *ApplicationWebhook) UnmarshalJSON(data []byte) error
 
 
 <a name="Attachment"></a>
-## type [Attachment](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/attachment.go#L10-L24>)
+## type [Attachment](<https://github.com/disgoorg/disgo/blob/master/discord/attachment.go#L10-L24>)
 
 Attachment is used for files sent in a Message
 
@@ -2183,7 +2186,7 @@ type Attachment struct {
 ```
 
 <a name="Attachment.CreatedAt"></a>
-### func \(Attachment\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/attachment.go#L26>)
+### func \(Attachment\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/attachment.go#L26>)
 
 ```go
 func (a Attachment) CreatedAt() time.Time
@@ -2192,7 +2195,7 @@ func (a Attachment) CreatedAt() time.Time
 
 
 <a name="AttachmentCreate"></a>
-## type [AttachmentCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/attachment.go#L49-L52>)
+## type [AttachmentCreate](<https://github.com/disgoorg/disgo/blob/master/discord/attachment.go#L49-L52>)
 
 
 
@@ -2204,7 +2207,7 @@ type AttachmentCreate struct {
 ```
 
 <a name="AttachmentFlags"></a>
-## type [AttachmentFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/attachment.go#L30>)
+## type [AttachmentFlags](<https://github.com/disgoorg/disgo/blob/master/discord/attachment.go#L30>)
 
 
 
@@ -2224,7 +2227,7 @@ const (
 ```
 
 <a name="AttachmentKeep"></a>
-## type [AttachmentKeep](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/attachment.go#L43-L45>)
+## type [AttachmentKeep](<https://github.com/disgoorg/disgo/blob/master/discord/attachment.go#L43-L45>)
 
 
 
@@ -2235,7 +2238,7 @@ type AttachmentKeep struct {
 ```
 
 <a name="AttachmentUpdate"></a>
-## type [AttachmentUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/attachment.go#L39-L41>)
+## type [AttachmentUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/attachment.go#L39-L41>)
 
 
 
@@ -2246,7 +2249,7 @@ type AttachmentUpdate interface {
 ```
 
 <a name="AuditLog"></a>
-## type [AuditLog](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/audit_log.go#L126-L135>)
+## type [AuditLog](<https://github.com/disgoorg/disgo/blob/master/discord/audit_log.go#L126-L135>)
 
 AuditLog \(https://discord.com/developers/docs/resources/audit-log\) These are logs of events that occurred, accessible via the Discord
 
@@ -2264,7 +2267,7 @@ type AuditLog struct {
 ```
 
 <a name="AuditLog.UnmarshalJSON"></a>
-### func \(\*AuditLog\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/audit_log.go#L137>)
+### func \(\*AuditLog\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/audit_log.go#L137>)
 
 ```go
 func (l *AuditLog) UnmarshalJSON(data []byte) error
@@ -2273,7 +2276,7 @@ func (l *AuditLog) UnmarshalJSON(data []byte) error
 
 
 <a name="AuditLogChangeKey"></a>
-## type [AuditLogChangeKey](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/audit_log.go#L186-L242>)
+## type [AuditLogChangeKey](<https://github.com/disgoorg/disgo/blob/master/discord/audit_log.go#L186-L242>)
 
 AuditLogChangeKey \(https://discord.com/developers/docs/resources/audit-log#audit-log-change-object-audit-log-change-key\) is data representing changes values/settings in an audit log.
 
@@ -2338,7 +2341,7 @@ type AuditLogChangeKey struct {
 ```
 
 <a name="AuditLogEntry"></a>
-## type [AuditLogEntry](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/audit_log.go#L175-L183>)
+## type [AuditLogEntry](<https://github.com/disgoorg/disgo/blob/master/discord/audit_log.go#L175-L183>)
 
 AuditLogEntry \(https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object\)
 
@@ -2355,7 +2358,7 @@ type AuditLogEntry struct {
 ```
 
 <a name="AuditLogEvent"></a>
-## type [AuditLogEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/audit_log.go#L9>)
+## type [AuditLogEvent](<https://github.com/disgoorg/disgo/blob/master/discord/audit_log.go#L9>)
 
 AuditLogEvent is an 8\-bit unsigned integer representing an audit log event.
 
@@ -2525,7 +2528,7 @@ const (
 ```
 
 <a name="AuthorizationInformation"></a>
-## type [AuthorizationInformation](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L83-L88>)
+## type [AuthorizationInformation](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L83-L88>)
 
 
 
@@ -2539,7 +2542,7 @@ type AuthorizationInformation struct {
 ```
 
 <a name="AutoArchiveDuration"></a>
-## type [AutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1352>)
+## type [AutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1352>)
 
 
 
@@ -2559,7 +2562,7 @@ const (
 ```
 
 <a name="AutoModerationAction"></a>
-## type [AutoModerationAction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L50-L53>)
+## type [AutoModerationAction](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L50-L53>)
 
 
 
@@ -2571,7 +2574,7 @@ type AutoModerationAction struct {
 ```
 
 <a name="AutoModerationActionMetadata"></a>
-## type [AutoModerationActionMetadata](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L55-L59>)
+## type [AutoModerationActionMetadata](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L55-L59>)
 
 
 
@@ -2584,7 +2587,7 @@ type AutoModerationActionMetadata struct {
 ```
 
 <a name="AutoModerationActionType"></a>
-## type [AutoModerationActionType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L42>)
+## type [AutoModerationActionType](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L42>)
 
 
 
@@ -2603,7 +2606,7 @@ const (
 ```
 
 <a name="AutoModerationEventType"></a>
-## type [AutoModerationEventType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L9>)
+## type [AutoModerationEventType](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L9>)
 
 
 
@@ -2620,7 +2623,7 @@ const (
 ```
 
 <a name="AutoModerationKeywordPreset"></a>
-## type [AutoModerationKeywordPreset](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L34>)
+## type [AutoModerationKeywordPreset](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L34>)
 
 
 
@@ -2639,7 +2642,7 @@ const (
 ```
 
 <a name="AutoModerationRule"></a>
-## type [AutoModerationRule](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L61-L73>)
+## type [AutoModerationRule](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L61-L73>)
 
 
 
@@ -2660,7 +2663,7 @@ type AutoModerationRule struct {
 ```
 
 <a name="AutoModerationRule.CreatedAt"></a>
-### func \(AutoModerationRule\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L75>)
+### func \(AutoModerationRule\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L75>)
 
 ```go
 func (r AutoModerationRule) CreatedAt() time.Time
@@ -2669,7 +2672,7 @@ func (r AutoModerationRule) CreatedAt() time.Time
 
 
 <a name="AutoModerationRuleCreate"></a>
-## type [AutoModerationRuleCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L79-L88>)
+## type [AutoModerationRuleCreate](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L79-L88>)
 
 
 
@@ -2687,7 +2690,7 @@ type AutoModerationRuleCreate struct {
 ```
 
 <a name="AutoModerationRuleUpdate"></a>
-## type [AutoModerationRuleUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L90-L98>)
+## type [AutoModerationRuleUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L90-L98>)
 
 
 
@@ -2704,7 +2707,7 @@ type AutoModerationRuleUpdate struct {
 ```
 
 <a name="AutoModerationTriggerMetadata"></a>
-## type [AutoModerationTriggerMetadata](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L25-L32>)
+## type [AutoModerationTriggerMetadata](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L25-L32>)
 
 
 
@@ -2720,7 +2723,7 @@ type AutoModerationTriggerMetadata struct {
 ```
 
 <a name="AutoModerationTriggerType"></a>
-## type [AutoModerationTriggerType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/auto_moderation.go#L15>)
+## type [AutoModerationTriggerType](<https://github.com/disgoorg/disgo/blob/master/discord/auto_moderation.go#L15>)
 
 
 
@@ -2741,7 +2744,7 @@ const (
 ```
 
 <a name="AutocompleteChoice"></a>
-## type [AutocompleteChoice](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L48-L52>)
+## type [AutocompleteChoice](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L48-L52>)
 
 
 
@@ -2753,7 +2756,7 @@ type AutocompleteChoice interface {
 ```
 
 <a name="AutocompleteChoiceFloat"></a>
-## type [AutocompleteChoiceFloat](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L78-L82>)
+## type [AutocompleteChoiceFloat](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L78-L82>)
 
 
 
@@ -2766,7 +2769,7 @@ type AutocompleteChoiceFloat struct {
 ```
 
 <a name="AutocompleteChoiceFloat.ChoiceName"></a>
-### func \(AutocompleteChoiceFloat\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L84>)
+### func \(AutocompleteChoiceFloat\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L84>)
 
 ```go
 func (c AutocompleteChoiceFloat) ChoiceName() string
@@ -2775,7 +2778,7 @@ func (c AutocompleteChoiceFloat) ChoiceName() string
 
 
 <a name="AutocompleteChoiceInt"></a>
-## type [AutocompleteChoiceInt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L66-L70>)
+## type [AutocompleteChoiceInt](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L66-L70>)
 
 
 
@@ -2788,7 +2791,7 @@ type AutocompleteChoiceInt struct {
 ```
 
 <a name="AutocompleteChoiceInt.ChoiceName"></a>
-### func \(AutocompleteChoiceInt\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L72>)
+### func \(AutocompleteChoiceInt\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L72>)
 
 ```go
 func (c AutocompleteChoiceInt) ChoiceName() string
@@ -2797,7 +2800,7 @@ func (c AutocompleteChoiceInt) ChoiceName() string
 
 
 <a name="AutocompleteChoiceString"></a>
-## type [AutocompleteChoiceString](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L54-L58>)
+## type [AutocompleteChoiceString](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L54-L58>)
 
 
 
@@ -2810,7 +2813,7 @@ type AutocompleteChoiceString struct {
 ```
 
 <a name="AutocompleteChoiceString.ChoiceName"></a>
-### func \(AutocompleteChoiceString\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L60>)
+### func \(AutocompleteChoiceString\) [ChoiceName](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L60>)
 
 ```go
 func (c AutocompleteChoiceString) ChoiceName() string
@@ -2819,7 +2822,7 @@ func (c AutocompleteChoiceString) ChoiceName() string
 
 
 <a name="AutocompleteInteraction"></a>
-## type [AutocompleteInteraction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L12-L15>)
+## type [AutocompleteInteraction](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L12-L15>)
 
 
 
@@ -2831,7 +2834,7 @@ type AutocompleteInteraction struct {
 ```
 
 <a name="AutocompleteInteraction.MarshalJSON"></a>
-### func \(AutocompleteInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L46>)
+### func \(AutocompleteInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L46>)
 
 ```go
 func (i AutocompleteInteraction) MarshalJSON() ([]byte, error)
@@ -2840,7 +2843,7 @@ func (i AutocompleteInteraction) MarshalJSON() ([]byte, error)
 
 
 <a name="AutocompleteInteraction.Type"></a>
-### func \(AutocompleteInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L73>)
+### func \(AutocompleteInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L73>)
 
 ```go
 func (AutocompleteInteraction) Type() InteractionType
@@ -2849,7 +2852,7 @@ func (AutocompleteInteraction) Type() InteractionType
 
 
 <a name="AutocompleteInteraction.UnmarshalJSON"></a>
-### func \(\*AutocompleteInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L17>)
+### func \(\*AutocompleteInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L17>)
 
 ```go
 func (i *AutocompleteInteraction) UnmarshalJSON(data []byte) error
@@ -2858,7 +2861,7 @@ func (i *AutocompleteInteraction) UnmarshalJSON(data []byte) error
 
 
 <a name="AutocompleteInteractionData"></a>
-## type [AutocompleteInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L107-L114>)
+## type [AutocompleteInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L107-L114>)
 
 
 
@@ -2874,7 +2877,7 @@ type AutocompleteInteractionData struct {
 ```
 
 <a name="AutocompleteInteractionData.All"></a>
-### func \(AutocompleteInteractionData\) [All](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L301>)
+### func \(AutocompleteInteractionData\) [All](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L301>)
 
 ```go
 func (d AutocompleteInteractionData) All() []AutocompleteOption
@@ -2883,7 +2886,7 @@ func (d AutocompleteInteractionData) All() []AutocompleteOption
 
 
 <a name="AutocompleteInteractionData.Bool"></a>
-### func \(AutocompleteInteractionData\) [Bool](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L260>)
+### func \(AutocompleteInteractionData\) [Bool](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L260>)
 
 ```go
 func (d AutocompleteInteractionData) Bool(name string) bool
@@ -2892,7 +2895,7 @@ func (d AutocompleteInteractionData) Bool(name string) bool
 
 
 <a name="AutocompleteInteractionData.CommandPath"></a>
-### func \(AutocompleteInteractionData\) [CommandPath](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L193>)
+### func \(AutocompleteInteractionData\) [CommandPath](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L193>)
 
 ```go
 func (d AutocompleteInteractionData) CommandPath() string
@@ -2901,7 +2904,7 @@ func (d AutocompleteInteractionData) CommandPath() string
 
 
 <a name="AutocompleteInteractionData.Find"></a>
-### func \(AutocompleteInteractionData\) [Find](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L317>)
+### func \(AutocompleteInteractionData\) [Find](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L317>)
 
 ```go
 func (d AutocompleteInteractionData) Find(optionFindFunc func(option AutocompleteOption) bool) (AutocompleteOption, bool)
@@ -2910,7 +2913,7 @@ func (d AutocompleteInteractionData) Find(optionFindFunc func(option Autocomplet
 
 
 <a name="AutocompleteInteractionData.FindAll"></a>
-### func \(AutocompleteInteractionData\) [FindAll](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L326>)
+### func \(AutocompleteInteractionData\) [FindAll](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L326>)
 
 ```go
 func (d AutocompleteInteractionData) FindAll(optionFindFunc func(option AutocompleteOption) bool) []AutocompleteOption
@@ -2919,7 +2922,7 @@ func (d AutocompleteInteractionData) FindAll(optionFindFunc func(option Autocomp
 
 
 <a name="AutocompleteInteractionData.Float"></a>
-### func \(AutocompleteInteractionData\) [Float](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L294>)
+### func \(AutocompleteInteractionData\) [Float](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L294>)
 
 ```go
 func (d AutocompleteInteractionData) Float(name string) float64
@@ -2928,7 +2931,7 @@ func (d AutocompleteInteractionData) Float(name string) float64
 
 
 <a name="AutocompleteInteractionData.Focused"></a>
-### func \(AutocompleteInteractionData\) [Focused](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L204>)
+### func \(AutocompleteInteractionData\) [Focused](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L204>)
 
 ```go
 func (d AutocompleteInteractionData) Focused() AutocompleteOption
@@ -2937,7 +2940,7 @@ func (d AutocompleteInteractionData) Focused() AutocompleteOption
 
 
 <a name="AutocompleteInteractionData.GetByType"></a>
-### func \(AutocompleteInteractionData\) [GetByType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L311>)
+### func \(AutocompleteInteractionData\) [GetByType](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L311>)
 
 ```go
 func (d AutocompleteInteractionData) GetByType(optionType ApplicationCommandOptionType) []AutocompleteOption
@@ -2946,7 +2949,7 @@ func (d AutocompleteInteractionData) GetByType(optionType ApplicationCommandOpti
 
 
 <a name="AutocompleteInteractionData.Int"></a>
-### func \(AutocompleteInteractionData\) [Int](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L243>)
+### func \(AutocompleteInteractionData\) [Int](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L243>)
 
 ```go
 func (d AutocompleteInteractionData) Int(name string) int
@@ -2955,7 +2958,7 @@ func (d AutocompleteInteractionData) Int(name string) int
 
 
 <a name="AutocompleteInteractionData.MarshalJSON"></a>
-### func \(AutocompleteInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L155>)
+### func \(AutocompleteInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L155>)
 
 ```go
 func (d AutocompleteInteractionData) MarshalJSON() ([]byte, error)
@@ -2964,7 +2967,7 @@ func (d AutocompleteInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="AutocompleteInteractionData.OptBool"></a>
-### func \(AutocompleteInteractionData\) [OptBool](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L250>)
+### func \(AutocompleteInteractionData\) [OptBool](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L250>)
 
 ```go
 func (d AutocompleteInteractionData) OptBool(name string) (bool, bool)
@@ -2973,7 +2976,7 @@ func (d AutocompleteInteractionData) OptBool(name string) (bool, bool)
 
 
 <a name="AutocompleteInteractionData.OptFloat"></a>
-### func \(AutocompleteInteractionData\) [OptFloat](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L284>)
+### func \(AutocompleteInteractionData\) [OptFloat](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L284>)
 
 ```go
 func (d AutocompleteInteractionData) OptFloat(name string) (float64, bool)
@@ -2982,7 +2985,7 @@ func (d AutocompleteInteractionData) OptFloat(name string) (float64, bool)
 
 
 <a name="AutocompleteInteractionData.OptInt"></a>
-### func \(AutocompleteInteractionData\) [OptInt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L233>)
+### func \(AutocompleteInteractionData\) [OptInt](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L233>)
 
 ```go
 func (d AutocompleteInteractionData) OptInt(name string) (int, bool)
@@ -2991,7 +2994,7 @@ func (d AutocompleteInteractionData) OptInt(name string) (int, bool)
 
 
 <a name="AutocompleteInteractionData.OptSnowflake"></a>
-### func \(AutocompleteInteractionData\) [OptSnowflake](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L267>)
+### func \(AutocompleteInteractionData\) [OptSnowflake](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L267>)
 
 ```go
 func (d AutocompleteInteractionData) OptSnowflake(name string) (snowflake.ID, bool)
@@ -3000,7 +3003,7 @@ func (d AutocompleteInteractionData) OptSnowflake(name string) (snowflake.ID, bo
 
 
 <a name="AutocompleteInteractionData.OptString"></a>
-### func \(AutocompleteInteractionData\) [OptString](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L216>)
+### func \(AutocompleteInteractionData\) [OptString](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L216>)
 
 ```go
 func (d AutocompleteInteractionData) OptString(name string) (string, bool)
@@ -3009,7 +3012,7 @@ func (d AutocompleteInteractionData) OptString(name string) (string, bool)
 
 
 <a name="AutocompleteInteractionData.Option"></a>
-### func \(AutocompleteInteractionData\) [Option](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L211>)
+### func \(AutocompleteInteractionData\) [Option](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L211>)
 
 ```go
 func (d AutocompleteInteractionData) Option(name string) (AutocompleteOption, bool)
@@ -3018,7 +3021,7 @@ func (d AutocompleteInteractionData) Option(name string) (AutocompleteOption, bo
 
 
 <a name="AutocompleteInteractionData.Snowflake"></a>
-### func \(AutocompleteInteractionData\) [Snowflake](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L277>)
+### func \(AutocompleteInteractionData\) [Snowflake](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L277>)
 
 ```go
 func (d AutocompleteInteractionData) Snowflake(name string) snowflake.ID
@@ -3027,7 +3030,7 @@ func (d AutocompleteInteractionData) Snowflake(name string) snowflake.ID
 
 
 <a name="AutocompleteInteractionData.String"></a>
-### func \(AutocompleteInteractionData\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L226>)
+### func \(AutocompleteInteractionData\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L226>)
 
 ```go
 func (d AutocompleteInteractionData) String(name string) string
@@ -3036,7 +3039,7 @@ func (d AutocompleteInteractionData) String(name string) string
 
 
 <a name="AutocompleteInteractionData.UnmarshalJSON"></a>
-### func \(\*AutocompleteInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_autocomplete.go#L116>)
+### func \(\*AutocompleteInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_autocomplete.go#L116>)
 
 ```go
 func (d *AutocompleteInteractionData) UnmarshalJSON(data []byte) error
@@ -3045,7 +3048,7 @@ func (d *AutocompleteInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="AutocompleteOption"></a>
-## type [AutocompleteOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_autocomplete_option.go#L85-L90>)
+## type [AutocompleteOption](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_autocomplete_option.go#L85-L90>)
 
 
 
@@ -3059,7 +3062,7 @@ type AutocompleteOption struct {
 ```
 
 <a name="AutocompleteOptionSubCommand"></a>
-## type [AutocompleteOptionSubCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_autocomplete_option.go#L57-L62>)
+## type [AutocompleteOptionSubCommand](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_autocomplete_option.go#L57-L62>)
 
 
 
@@ -3073,7 +3076,7 @@ type AutocompleteOptionSubCommand struct {
 ```
 
 <a name="AutocompleteOptionSubCommandGroup"></a>
-## type [AutocompleteOptionSubCommandGroup](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_autocomplete_option.go#L71-L76>)
+## type [AutocompleteOptionSubCommandGroup](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_autocomplete_option.go#L71-L76>)
 
 
 
@@ -3087,7 +3090,7 @@ type AutocompleteOptionSubCommandGroup struct {
 ```
 
 <a name="AutocompleteResult"></a>
-## type [AutocompleteResult](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L42-L44>)
+## type [AutocompleteResult](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L42-L44>)
 
 
 
@@ -3098,7 +3101,7 @@ type AutocompleteResult struct {
 ```
 
 <a name="AvatarDecorationData"></a>
-## type [AvatarDecorationData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L202-L205>)
+## type [AvatarDecorationData](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L202-L205>)
 
 
 
@@ -3110,7 +3113,7 @@ type AvatarDecorationData struct {
 ```
 
 <a name="Ban"></a>
-## type [Ban](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/ban.go#L6-L9>)
+## type [Ban](<https://github.com/disgoorg/disgo/blob/master/discord/ban.go#L6-L9>)
 
 Ban represents a banned User from a Guild \(https://discord.com/developers/docs/resources/guild#ban-object\)
 
@@ -3122,7 +3125,7 @@ type Ban struct {
 ```
 
 <a name="BotIntegration"></a>
-## type [BotIntegration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L181-L188>)
+## type [BotIntegration](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L181-L188>)
 
 
 
@@ -3138,7 +3141,7 @@ type BotIntegration struct {
 ```
 
 <a name="BotIntegration.CreatedAt"></a>
-### func \(BotIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L209>)
+### func \(BotIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L209>)
 
 ```go
 func (i BotIntegration) CreatedAt() time.Time
@@ -3147,7 +3150,7 @@ func (i BotIntegration) CreatedAt() time.Time
 
 
 <a name="BotIntegration.ID"></a>
-### func \(BotIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L205>)
+### func \(BotIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L205>)
 
 ```go
 func (i BotIntegration) ID() snowflake.ID
@@ -3156,7 +3159,7 @@ func (i BotIntegration) ID() snowflake.ID
 
 
 <a name="BotIntegration.MarshalJSON"></a>
-### func \(BotIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L190>)
+### func \(BotIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L190>)
 
 ```go
 func (i BotIntegration) MarshalJSON() ([]byte, error)
@@ -3165,7 +3168,7 @@ func (i BotIntegration) MarshalJSON() ([]byte, error)
 
 
 <a name="BotIntegration.Type"></a>
-### func \(BotIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L201>)
+### func \(BotIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L201>)
 
 ```go
 func (BotIntegration) Type() IntegrationType
@@ -3174,7 +3177,7 @@ func (BotIntegration) Type() IntegrationType
 
 
 <a name="BulkBan"></a>
-## type [BulkBan](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/ban.go#L17-L20>)
+## type [BulkBan](<https://github.com/disgoorg/disgo/blob/master/discord/ban.go#L17-L20>)
 
 BulkBan is used to bulk ban Users
 
@@ -3186,7 +3189,7 @@ type BulkBan struct {
 ```
 
 <a name="BulkBanResult"></a>
-## type [BulkBanResult](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/ban.go#L23-L26>)
+## type [BulkBanResult](<https://github.com/disgoorg/disgo/blob/master/discord/ban.go#L23-L26>)
 
 BulkBanResult is the result of a BulkBan request
 
@@ -3198,7 +3201,7 @@ type BulkBanResult struct {
 ```
 
 <a name="ButtonComponent"></a>
-## type [ButtonComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L279-L286>)
+## type [ButtonComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L279-L286>)
 
 
 
@@ -3214,7 +3217,7 @@ type ButtonComponent struct {
 ```
 
 <a name="NewButton"></a>
-### func [NewButton](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L240>)
+### func [NewButton](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L240>)
 
 ```go
 func NewButton(style ButtonStyle, label string, customID string, url string) ButtonComponent
@@ -3223,7 +3226,7 @@ func NewButton(style ButtonStyle, label string, customID string, url string) But
 NewButton creates a new ButtonComponent with the provided parameters. Link ButtonComponent\(s\) need a URL and other ButtonComponent\(s\) need a customID
 
 <a name="NewDangerButton"></a>
-### func [NewDangerButton](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L265>)
+### func [NewDangerButton](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L265>)
 
 ```go
 func NewDangerButton(label string, customID string) ButtonComponent
@@ -3232,7 +3235,7 @@ func NewDangerButton(label string, customID string) ButtonComponent
 NewDangerButton creates a new ButtonComponent with ButtonStyleDanger & the provided parameters
 
 <a name="NewLinkButton"></a>
-### func [NewLinkButton](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L270>)
+### func [NewLinkButton](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L270>)
 
 ```go
 func NewLinkButton(label string, url string) ButtonComponent
@@ -3241,7 +3244,7 @@ func NewLinkButton(label string, url string) ButtonComponent
 NewLinkButton creates a new link ButtonComponent with ButtonStyleLink & the provided parameters
 
 <a name="NewPrimaryButton"></a>
-### func [NewPrimaryButton](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L250>)
+### func [NewPrimaryButton](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L250>)
 
 ```go
 func NewPrimaryButton(label string, customID string) ButtonComponent
@@ -3250,7 +3253,7 @@ func NewPrimaryButton(label string, customID string) ButtonComponent
 NewPrimaryButton creates a new ButtonComponent with ButtonStylePrimary & the provided parameters
 
 <a name="NewSecondaryButton"></a>
-### func [NewSecondaryButton](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L255>)
+### func [NewSecondaryButton](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L255>)
 
 ```go
 func NewSecondaryButton(label string, customID string) ButtonComponent
@@ -3259,7 +3262,7 @@ func NewSecondaryButton(label string, customID string) ButtonComponent
 NewSecondaryButton creates a new ButtonComponent with ButtonStyleSecondary & the provided parameters
 
 <a name="NewSuccessButton"></a>
-### func [NewSuccessButton](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L260>)
+### func [NewSuccessButton](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L260>)
 
 ```go
 func NewSuccessButton(label string, customID string) ButtonComponent
@@ -3268,7 +3271,7 @@ func NewSuccessButton(label string, customID string) ButtonComponent
 NewSuccessButton creates a new ButtonComponent with ButtonStyleSuccess & the provided parameters
 
 <a name="ButtonComponent.AsDisabled"></a>
-### func \(ButtonComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L352>)
+### func \(ButtonComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L352>)
 
 ```go
 func (c ButtonComponent) AsDisabled() ButtonComponent
@@ -3277,7 +3280,7 @@ func (c ButtonComponent) AsDisabled() ButtonComponent
 AsDisabled returns a new ButtonComponent but disabled
 
 <a name="ButtonComponent.AsEnabled"></a>
-### func \(ButtonComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L346>)
+### func \(ButtonComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L346>)
 
 ```go
 func (c ButtonComponent) AsEnabled() ButtonComponent
@@ -3286,7 +3289,7 @@ func (c ButtonComponent) AsEnabled() ButtonComponent
 AsEnabled returns a new ButtonComponent but enabled
 
 <a name="ButtonComponent.ID"></a>
-### func \(ButtonComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L303>)
+### func \(ButtonComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L303>)
 
 ```go
 func (c ButtonComponent) ID() string
@@ -3295,7 +3298,7 @@ func (c ButtonComponent) ID() string
 
 
 <a name="ButtonComponent.MarshalJSON"></a>
-### func \(ButtonComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L288>)
+### func \(ButtonComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L288>)
 
 ```go
 func (c ButtonComponent) MarshalJSON() ([]byte, error)
@@ -3304,7 +3307,7 @@ func (c ButtonComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="ButtonComponent.SetID"></a>
-### func \(ButtonComponent\) [SetID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L307>)
+### func \(ButtonComponent\) [SetID](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L307>)
 
 ```go
 func (c ButtonComponent) SetID(id string) InteractiveComponent
@@ -3313,7 +3316,7 @@ func (c ButtonComponent) SetID(id string) InteractiveComponent
 
 
 <a name="ButtonComponent.Type"></a>
-### func \(ButtonComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L299>)
+### func \(ButtonComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L299>)
 
 ```go
 func (ButtonComponent) Type() ComponentType
@@ -3322,7 +3325,7 @@ func (ButtonComponent) Type() ComponentType
 
 
 <a name="ButtonComponent.WithCustomID"></a>
-### func \(ButtonComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L334>)
+### func \(ButtonComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L334>)
 
 ```go
 func (c ButtonComponent) WithCustomID(customID string) ButtonComponent
@@ -3331,7 +3334,7 @@ func (c ButtonComponent) WithCustomID(customID string) ButtonComponent
 WithCustomID returns a new ButtonComponent with the provided custom id
 
 <a name="ButtonComponent.WithDisabled"></a>
-### func \(ButtonComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L358>)
+### func \(ButtonComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L358>)
 
 ```go
 func (c ButtonComponent) WithDisabled(disabled bool) ButtonComponent
@@ -3340,7 +3343,7 @@ func (c ButtonComponent) WithDisabled(disabled bool) ButtonComponent
 WithDisabled returns a new ButtonComponent but disabled/enabled
 
 <a name="ButtonComponent.WithEmoji"></a>
-### func \(ButtonComponent\) [WithEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L328>)
+### func \(ButtonComponent\) [WithEmoji](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L328>)
 
 ```go
 func (c ButtonComponent) WithEmoji(emoji ComponentEmoji) ButtonComponent
@@ -3349,7 +3352,7 @@ func (c ButtonComponent) WithEmoji(emoji ComponentEmoji) ButtonComponent
 WithEmoji returns a new ButtonComponent with the provided Emoji
 
 <a name="ButtonComponent.WithLabel"></a>
-### func \(ButtonComponent\) [WithLabel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L322>)
+### func \(ButtonComponent\) [WithLabel](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L322>)
 
 ```go
 func (c ButtonComponent) WithLabel(label string) ButtonComponent
@@ -3358,7 +3361,7 @@ func (c ButtonComponent) WithLabel(label string) ButtonComponent
 WithLabel returns a new ButtonComponent with the provided label
 
 <a name="ButtonComponent.WithStyle"></a>
-### func \(ButtonComponent\) [WithStyle](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L316>)
+### func \(ButtonComponent\) [WithStyle](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L316>)
 
 ```go
 func (c ButtonComponent) WithStyle(style ButtonStyle) ButtonComponent
@@ -3367,7 +3370,7 @@ func (c ButtonComponent) WithStyle(style ButtonStyle) ButtonComponent
 WithStyle returns a new ButtonComponent with the provided style
 
 <a name="ButtonComponent.WithURL"></a>
-### func \(ButtonComponent\) [WithURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L340>)
+### func \(ButtonComponent\) [WithURL](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L340>)
 
 ```go
 func (c ButtonComponent) WithURL(url string) ButtonComponent
@@ -3376,7 +3379,7 @@ func (c ButtonComponent) WithURL(url string) ButtonComponent
 WithURL returns a new ButtonComponent with the provided URL
 
 <a name="ButtonInteractionData"></a>
-## type [ButtonInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L176-L178>)
+## type [ButtonInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L176-L178>)
 
 
 
@@ -3387,7 +3390,7 @@ type ButtonInteractionData struct {
 ```
 
 <a name="ButtonInteractionData.CustomID"></a>
-### func \(ButtonInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L199>)
+### func \(ButtonInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L199>)
 
 ```go
 func (d ButtonInteractionData) CustomID() string
@@ -3396,7 +3399,7 @@ func (d ButtonInteractionData) CustomID() string
 
 
 <a name="ButtonInteractionData.MarshalJSON"></a>
-### func \(\*ButtonInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L189>)
+### func \(\*ButtonInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L189>)
 
 ```go
 func (d *ButtonInteractionData) MarshalJSON() ([]byte, error)
@@ -3405,7 +3408,7 @@ func (d *ButtonInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="ButtonInteractionData.Type"></a>
-### func \(ButtonInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L195>)
+### func \(ButtonInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L195>)
 
 ```go
 func (ButtonInteractionData) Type() ComponentType
@@ -3414,7 +3417,7 @@ func (ButtonInteractionData) Type() ComponentType
 
 
 <a name="ButtonInteractionData.UnmarshalJSON"></a>
-### func \(\*ButtonInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L180>)
+### func \(\*ButtonInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L180>)
 
 ```go
 func (d *ButtonInteractionData) UnmarshalJSON(data []byte) error
@@ -3423,7 +3426,7 @@ func (d *ButtonInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="ButtonStyle"></a>
-## type [ButtonStyle](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L228>)
+## type [ButtonStyle](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L228>)
 
 ButtonStyle defines how the ButtonComponent looks like \(https://discord.com/assets/7bb017ce52cfd6575e21c058feb3883b.png\)
 
@@ -3444,7 +3447,7 @@ const (
 ```
 
 <a name="CDNConfig"></a>
-## type [CDNConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L111-L114>)
+## type [CDNConfig](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L111-L114>)
 
 
 
@@ -3456,7 +3459,7 @@ type CDNConfig struct {
 ```
 
 <a name="DefaultCDNConfig"></a>
-### func [DefaultCDNConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L104>)
+### func [DefaultCDNConfig](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L104>)
 
 ```go
 func DefaultCDNConfig() *CDNConfig
@@ -3465,7 +3468,7 @@ func DefaultCDNConfig() *CDNConfig
 
 
 <a name="CDNConfig.Apply"></a>
-### func \(\*CDNConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L117>)
+### func \(\*CDNConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L117>)
 
 ```go
 func (c *CDNConfig) Apply(opts []CDNOpt)
@@ -3474,7 +3477,7 @@ func (c *CDNConfig) Apply(opts []CDNOpt)
 Apply applies the given ConfigOpt\(s\) to the Config
 
 <a name="CDNEndpoint"></a>
-## type [CDNEndpoint](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L85-L88>)
+## type [CDNEndpoint](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L85-L88>)
 
 
 
@@ -3486,7 +3489,7 @@ type CDNEndpoint struct {
 ```
 
 <a name="NewCDN"></a>
-### func [NewCDN](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L78>)
+### func [NewCDN](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L78>)
 
 ```go
 func NewCDN(route string, fileFormats ...FileFormat) *CDNEndpoint
@@ -3495,7 +3498,7 @@ func NewCDN(route string, fileFormats ...FileFormat) *CDNEndpoint
 
 
 <a name="CDNEndpoint.URL"></a>
-### func \(CDNEndpoint\) [URL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L90>)
+### func \(CDNEndpoint\) [URL](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L90>)
 
 ```go
 func (e CDNEndpoint) URL(format FileFormat, values QueryValues, params ...any) string
@@ -3504,7 +3507,7 @@ func (e CDNEndpoint) URL(format FileFormat, values QueryValues, params ...any) s
 
 
 <a name="CDNOpt"></a>
-## type [CDNOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L123>)
+## type [CDNOpt](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L123>)
 
 
 
@@ -3513,7 +3516,7 @@ type CDNOpt func(config *CDNConfig)
 ```
 
 <a name="WithFormat"></a>
-### func [WithFormat](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L131>)
+### func [WithFormat](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L131>)
 
 ```go
 func WithFormat(format FileFormat) CDNOpt
@@ -3522,7 +3525,7 @@ func WithFormat(format FileFormat) CDNOpt
 
 
 <a name="WithSize"></a>
-### func [WithSize](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L125>)
+### func [WithSize](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L125>)
 
 ```go
 func WithSize(size int) CDNOpt
@@ -3531,7 +3534,7 @@ func WithSize(size int) CDNOpt
 
 
 <a name="Channel"></a>
-## type [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L68-L85>)
+## type [Channel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L68-L85>)
 
 
 
@@ -3556,7 +3559,7 @@ type Channel interface {
 ```
 
 <a name="ChannelCreate"></a>
-## type [ChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L8-L12>)
+## type [ChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L8-L12>)
 
 
 
@@ -3569,7 +3572,7 @@ type ChannelCreate interface {
 ```
 
 <a name="ChannelFlags"></a>
-## type [ChannelFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L37>)
+## type [ChannelFlags](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L37>)
 
 
 
@@ -3590,7 +3593,7 @@ const (
 ```
 
 <a name="ChannelFlags.Add"></a>
-### func \(ChannelFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L49>)
+### func \(ChannelFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L49>)
 
 ```go
 func (f ChannelFlags) Add(bits ...ChannelFlags) ChannelFlags
@@ -3599,7 +3602,7 @@ func (f ChannelFlags) Add(bits ...ChannelFlags) ChannelFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="ChannelFlags.Has"></a>
-### func \(ChannelFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L59>)
+### func \(ChannelFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L59>)
 
 ```go
 func (f ChannelFlags) Has(bits ...ChannelFlags) bool
@@ -3608,7 +3611,7 @@ func (f ChannelFlags) Has(bits ...ChannelFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="ChannelFlags.Missing"></a>
-### func \(ChannelFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L64>)
+### func \(ChannelFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L64>)
 
 ```go
 func (f ChannelFlags) Missing(bits ...ChannelFlags) bool
@@ -3617,7 +3620,7 @@ func (f ChannelFlags) Missing(bits ...ChannelFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="ChannelFlags.Remove"></a>
-### func \(ChannelFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L54>)
+### func \(ChannelFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L54>)
 
 ```go
 func (f ChannelFlags) Remove(bits ...ChannelFlags) ChannelFlags
@@ -3626,7 +3629,7 @@ func (f ChannelFlags) Remove(bits ...ChannelFlags) ChannelFlags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="ChannelFollowerWebhook"></a>
-## type [ChannelFollowerWebhook](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L168-L177>)
+## type [ChannelFollowerWebhook](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L168-L177>)
 
 
 
@@ -3642,7 +3645,7 @@ type ChannelFollowerWebhook struct {
 ```
 
 <a name="ChannelFollowerWebhook.Avatar"></a>
-### func \(ChannelFollowerWebhook\) [Avatar](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L220>)
+### func \(ChannelFollowerWebhook\) [Avatar](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L220>)
 
 ```go
 func (w ChannelFollowerWebhook) Avatar() *string
@@ -3651,7 +3654,7 @@ func (w ChannelFollowerWebhook) Avatar() *string
 
 
 <a name="ChannelFollowerWebhook.AvatarURL"></a>
-### func \(ChannelFollowerWebhook\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L234>)
+### func \(ChannelFollowerWebhook\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L234>)
 
 ```go
 func (w ChannelFollowerWebhook) AvatarURL(opts ...CDNOpt) *string
@@ -3660,7 +3663,7 @@ func (w ChannelFollowerWebhook) AvatarURL(opts ...CDNOpt) *string
 
 
 <a name="ChannelFollowerWebhook.CreatedAt"></a>
-### func \(ChannelFollowerWebhook\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L246>)
+### func \(ChannelFollowerWebhook\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L246>)
 
 ```go
 func (w ChannelFollowerWebhook) CreatedAt() time.Time
@@ -3669,7 +3672,7 @@ func (w ChannelFollowerWebhook) CreatedAt() time.Time
 
 
 <a name="ChannelFollowerWebhook.DefaultAvatarURL"></a>
-### func \(ChannelFollowerWebhook\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L242>)
+### func \(ChannelFollowerWebhook\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L242>)
 
 ```go
 func (w ChannelFollowerWebhook) DefaultAvatarURL(opts ...CDNOpt) string
@@ -3678,7 +3681,7 @@ func (w ChannelFollowerWebhook) DefaultAvatarURL(opts ...CDNOpt) string
 
 
 <a name="ChannelFollowerWebhook.EffectiveAvatarURL"></a>
-### func \(ChannelFollowerWebhook\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L224>)
+### func \(ChannelFollowerWebhook\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L224>)
 
 ```go
 func (w ChannelFollowerWebhook) EffectiveAvatarURL(opts ...CDNOpt) string
@@ -3687,7 +3690,7 @@ func (w ChannelFollowerWebhook) EffectiveAvatarURL(opts ...CDNOpt) string
 
 
 <a name="ChannelFollowerWebhook.ID"></a>
-### func \(ChannelFollowerWebhook\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L212>)
+### func \(ChannelFollowerWebhook\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L212>)
 
 ```go
 func (w ChannelFollowerWebhook) ID() snowflake.ID
@@ -3696,7 +3699,7 @@ func (w ChannelFollowerWebhook) ID() snowflake.ID
 
 
 <a name="ChannelFollowerWebhook.MarshalJSON"></a>
-### func \(ChannelFollowerWebhook\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L197>)
+### func \(ChannelFollowerWebhook\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L197>)
 
 ```go
 func (w ChannelFollowerWebhook) MarshalJSON() ([]byte, error)
@@ -3705,7 +3708,7 @@ func (w ChannelFollowerWebhook) MarshalJSON() ([]byte, error)
 
 
 <a name="ChannelFollowerWebhook.Name"></a>
-### func \(ChannelFollowerWebhook\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L216>)
+### func \(ChannelFollowerWebhook\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L216>)
 
 ```go
 func (w ChannelFollowerWebhook) Name() string
@@ -3714,7 +3717,7 @@ func (w ChannelFollowerWebhook) Name() string
 
 
 <a name="ChannelFollowerWebhook.Type"></a>
-### func \(ChannelFollowerWebhook\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L208>)
+### func \(ChannelFollowerWebhook\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L208>)
 
 ```go
 func (ChannelFollowerWebhook) Type() WebhookType
@@ -3723,7 +3726,7 @@ func (ChannelFollowerWebhook) Type() WebhookType
 
 
 <a name="ChannelFollowerWebhook.UnmarshalJSON"></a>
-### func \(\*ChannelFollowerWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L179>)
+### func \(\*ChannelFollowerWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L179>)
 
 ```go
 func (w *ChannelFollowerWebhook) UnmarshalJSON(data []byte) error
@@ -3732,7 +3735,7 @@ func (w *ChannelFollowerWebhook) UnmarshalJSON(data []byte) error
 
 
 <a name="ChannelSelectMenuComponent"></a>
-## type [ChannelSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L527-L535>)
+## type [ChannelSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L527-L535>)
 
 
 
@@ -3749,7 +3752,7 @@ type ChannelSelectMenuComponent struct {
 ```
 
 <a name="NewChannelSelectMenu"></a>
-### func [NewChannelSelectMenu](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L520>)
+### func [NewChannelSelectMenu](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L520>)
 
 ```go
 func NewChannelSelectMenu(customID string, placeholder string) ChannelSelectMenuComponent
@@ -3758,7 +3761,7 @@ func NewChannelSelectMenu(customID string, placeholder string) ChannelSelectMenu
 NewChannelSelectMenu builds a new SelectMenuComponent from the provided values
 
 <a name="ChannelSelectMenuComponent.AddDefaultValue"></a>
-### func \(ChannelSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L619>)
+### func \(ChannelSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L619>)
 
 ```go
 func (c ChannelSelectMenuComponent) AddDefaultValue(defaultValue snowflake.ID) ChannelSelectMenuComponent
@@ -3767,7 +3770,7 @@ func (c ChannelSelectMenuComponent) AddDefaultValue(defaultValue snowflake.ID) C
 AddDefaultValue returns a new ChannelSelectMenuComponent with the provided default value added
 
 <a name="ChannelSelectMenuComponent.AsDisabled"></a>
-### func \(ChannelSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L591>)
+### func \(ChannelSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L591>)
 
 ```go
 func (c ChannelSelectMenuComponent) AsDisabled() ChannelSelectMenuComponent
@@ -3776,7 +3779,7 @@ func (c ChannelSelectMenuComponent) AsDisabled() ChannelSelectMenuComponent
 AsDisabled returns a new ChannelSelectMenuComponent but disabled
 
 <a name="ChannelSelectMenuComponent.AsEnabled"></a>
-### func \(ChannelSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L585>)
+### func \(ChannelSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L585>)
 
 ```go
 func (c ChannelSelectMenuComponent) AsEnabled() ChannelSelectMenuComponent
@@ -3785,7 +3788,7 @@ func (c ChannelSelectMenuComponent) AsEnabled() ChannelSelectMenuComponent
 AsEnabled returns a new ChannelSelectMenuComponent but enabled
 
 <a name="ChannelSelectMenuComponent.ID"></a>
-### func \(ChannelSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L552>)
+### func \(ChannelSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L552>)
 
 ```go
 func (c ChannelSelectMenuComponent) ID() string
@@ -3794,7 +3797,7 @@ func (c ChannelSelectMenuComponent) ID() string
 
 
 <a name="ChannelSelectMenuComponent.MarshalJSON"></a>
-### func \(ChannelSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L537>)
+### func \(ChannelSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L537>)
 
 ```go
 func (c ChannelSelectMenuComponent) MarshalJSON() ([]byte, error)
@@ -3803,7 +3806,7 @@ func (c ChannelSelectMenuComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="ChannelSelectMenuComponent.RemoveDefaultValue"></a>
-### func \(ChannelSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L625>)
+### func \(ChannelSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L625>)
 
 ```go
 func (c ChannelSelectMenuComponent) RemoveDefaultValue(index int) ChannelSelectMenuComponent
@@ -3812,7 +3815,7 @@ func (c ChannelSelectMenuComponent) RemoveDefaultValue(index int) ChannelSelectM
 RemoveDefaultValue returns a new ChannelSelectMenuComponent with the provided default value at the index removed
 
 <a name="ChannelSelectMenuComponent.SetDefaultValues"></a>
-### func \(ChannelSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L609>)
+### func \(ChannelSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L609>)
 
 ```go
 func (c ChannelSelectMenuComponent) SetDefaultValues(defaultValues ...snowflake.ID) ChannelSelectMenuComponent
@@ -3821,7 +3824,7 @@ func (c ChannelSelectMenuComponent) SetDefaultValues(defaultValues ...snowflake.
 SetDefaultValues returns a new ChannelSelectMenuComponent with the provided default values
 
 <a name="ChannelSelectMenuComponent.Type"></a>
-### func \(ChannelSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L548>)
+### func \(ChannelSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L548>)
 
 ```go
 func (ChannelSelectMenuComponent) Type() ComponentType
@@ -3830,7 +3833,7 @@ func (ChannelSelectMenuComponent) Type() ComponentType
 
 
 <a name="ChannelSelectMenuComponent.WithChannelTypes"></a>
-### func \(ChannelSelectMenuComponent\) [WithChannelTypes](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L603>)
+### func \(ChannelSelectMenuComponent\) [WithChannelTypes](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L603>)
 
 ```go
 func (c ChannelSelectMenuComponent) WithChannelTypes(channelTypes ...ChannelType) ChannelSelectMenuComponent
@@ -3839,7 +3842,7 @@ func (c ChannelSelectMenuComponent) WithChannelTypes(channelTypes ...ChannelType
 WithChannelTypes returns a new ChannelSelectMenuComponent with the provided channelTypes
 
 <a name="ChannelSelectMenuComponent.WithCustomID"></a>
-### func \(ChannelSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L561>)
+### func \(ChannelSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L561>)
 
 ```go
 func (c ChannelSelectMenuComponent) WithCustomID(customID string) ChannelSelectMenuComponent
@@ -3848,7 +3851,7 @@ func (c ChannelSelectMenuComponent) WithCustomID(customID string) ChannelSelectM
 WithCustomID returns a new ChannelSelectMenuComponent with the provided customID
 
 <a name="ChannelSelectMenuComponent.WithDisabled"></a>
-### func \(ChannelSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L597>)
+### func \(ChannelSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L597>)
 
 ```go
 func (c ChannelSelectMenuComponent) WithDisabled(disabled bool) ChannelSelectMenuComponent
@@ -3857,7 +3860,7 @@ func (c ChannelSelectMenuComponent) WithDisabled(disabled bool) ChannelSelectMen
 WithDisabled returns a new ChannelSelectMenuComponent with the provided disabled
 
 <a name="ChannelSelectMenuComponent.WithMaxValues"></a>
-### func \(ChannelSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L579>)
+### func \(ChannelSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L579>)
 
 ```go
 func (c ChannelSelectMenuComponent) WithMaxValues(maxValue int) ChannelSelectMenuComponent
@@ -3866,7 +3869,7 @@ func (c ChannelSelectMenuComponent) WithMaxValues(maxValue int) ChannelSelectMen
 WithMaxValues returns a new ChannelSelectMenuComponent with the provided maxValue
 
 <a name="ChannelSelectMenuComponent.WithMinValues"></a>
-### func \(ChannelSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L573>)
+### func \(ChannelSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L573>)
 
 ```go
 func (c ChannelSelectMenuComponent) WithMinValues(minValue int) ChannelSelectMenuComponent
@@ -3875,7 +3878,7 @@ func (c ChannelSelectMenuComponent) WithMinValues(minValue int) ChannelSelectMen
 WithMinValues returns a new ChannelSelectMenuComponent with the provided minValue
 
 <a name="ChannelSelectMenuComponent.WithPlaceholder"></a>
-### func \(ChannelSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L567>)
+### func \(ChannelSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L567>)
 
 ```go
 func (c ChannelSelectMenuComponent) WithPlaceholder(placeholder string) ChannelSelectMenuComponent
@@ -3884,7 +3887,7 @@ func (c ChannelSelectMenuComponent) WithPlaceholder(placeholder string) ChannelS
 WithPlaceholder returns a new ChannelSelectMenuComponent with the provided placeholder
 
 <a name="ChannelSelectMenuInteractionData"></a>
-## type [ChannelSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L468-L472>)
+## type [ChannelSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L468-L472>)
 
 
 
@@ -3897,7 +3900,7 @@ type ChannelSelectMenuInteractionData struct {
 ```
 
 <a name="ChannelSelectMenuInteractionData.Channels"></a>
-### func \(ChannelSelectMenuInteractionData\) [Channels](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L500>)
+### func \(ChannelSelectMenuInteractionData\) [Channels](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L500>)
 
 ```go
 func (d ChannelSelectMenuInteractionData) Channels() []ResolvedChannel
@@ -3906,7 +3909,7 @@ func (d ChannelSelectMenuInteractionData) Channels() []ResolvedChannel
 
 
 <a name="ChannelSelectMenuInteractionData.CustomID"></a>
-### func \(ChannelSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L514>)
+### func \(ChannelSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L514>)
 
 ```go
 func (d ChannelSelectMenuInteractionData) CustomID() string
@@ -3915,7 +3918,7 @@ func (d ChannelSelectMenuInteractionData) CustomID() string
 
 
 <a name="ChannelSelectMenuInteractionData.MarshalJSON"></a>
-### func \(ChannelSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L489>)
+### func \(ChannelSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L489>)
 
 ```go
 func (d ChannelSelectMenuInteractionData) MarshalJSON() ([]byte, error)
@@ -3924,7 +3927,7 @@ func (d ChannelSelectMenuInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="ChannelSelectMenuInteractionData.Type"></a>
-### func \(ChannelSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L510>)
+### func \(ChannelSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L510>)
 
 ```go
 func (ChannelSelectMenuInteractionData) Type() ComponentType
@@ -3933,7 +3936,7 @@ func (ChannelSelectMenuInteractionData) Type() ComponentType
 
 
 <a name="ChannelSelectMenuInteractionData.UnmarshalJSON"></a>
-### func \(\*ChannelSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L478>)
+### func \(\*ChannelSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L478>)
 
 ```go
 func (d *ChannelSelectMenuInteractionData) UnmarshalJSON(data []byte) error
@@ -3942,7 +3945,7 @@ func (d *ChannelSelectMenuInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="ChannelSelectMenuResolved"></a>
-## type [ChannelSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L474-L476>)
+## type [ChannelSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L474-L476>)
 
 
 
@@ -3953,7 +3956,7 @@ type ChannelSelectMenuResolved struct {
 ```
 
 <a name="ChannelTag"></a>
-## type [ChannelTag](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1324-L1330>)
+## type [ChannelTag](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1324-L1330>)
 
 
 
@@ -3968,7 +3971,7 @@ type ChannelTag struct {
 ```
 
 <a name="ChannelType"></a>
-## type [ChannelType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L14>)
+## type [ChannelType](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L14>)
 
 ChannelType for interacting with discord's channels
 
@@ -3998,7 +4001,7 @@ const (
 ```
 
 <a name="ChannelUpdate"></a>
-## type [ChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L8-L10>)
+## type [ChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L8-L10>)
 
 
 
@@ -4009,7 +4012,7 @@ type ChannelUpdate interface {
 ```
 
 <a name="ClientStatus"></a>
-## type [ClientStatus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/presence.go#L32-L36>)
+## type [ClientStatus](<https://github.com/disgoorg/disgo/blob/master/discord/presence.go#L32-L36>)
 
 ClientStatus \(https://discord.com/developers/docs/topics/gateway#client-status-object\)
 
@@ -4022,7 +4025,7 @@ type ClientStatus struct {
 ```
 
 <a name="Component"></a>
-## type [Component](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L25-L29>)
+## type [Component](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L25-L29>)
 
 
 
@@ -4035,7 +4038,7 @@ type Component interface {
 ```
 
 <a name="ComponentEmoji"></a>
-## type [ComponentEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L113-L117>)
+## type [ComponentEmoji](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L113-L117>)
 
 
 
@@ -4048,7 +4051,7 @@ type ComponentEmoji struct {
 ```
 
 <a name="ComponentInteraction"></a>
-## type [ComponentInteraction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L14-L18>)
+## type [ComponentInteraction](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L14-L18>)
 
 
 
@@ -4061,7 +4064,7 @@ type ComponentInteraction struct {
 ```
 
 <a name="ComponentInteraction.ButtonInteractionData"></a>
-### func \(ComponentInteraction\) [ButtonInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L134>)
+### func \(ComponentInteraction\) [ButtonInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L134>)
 
 ```go
 func (i ComponentInteraction) ButtonInteractionData() ButtonInteractionData
@@ -4070,7 +4073,7 @@ func (i ComponentInteraction) ButtonInteractionData() ButtonInteractionData
 
 
 <a name="ComponentInteraction.ChannelSelectMenuInteractionData"></a>
-### func \(ComponentInteraction\) [ChannelSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L158>)
+### func \(ComponentInteraction\) [ChannelSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L158>)
 
 ```go
 func (i ComponentInteraction) ChannelSelectMenuInteractionData() ChannelSelectMenuInteractionData
@@ -4079,7 +4082,7 @@ func (i ComponentInteraction) ChannelSelectMenuInteractionData() ChannelSelectMe
 
 
 <a name="ComponentInteraction.MarshalJSON"></a>
-### func \(ComponentInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L101>)
+### func \(ComponentInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L101>)
 
 ```go
 func (i ComponentInteraction) MarshalJSON() ([]byte, error)
@@ -4088,7 +4091,7 @@ func (i ComponentInteraction) MarshalJSON() ([]byte, error)
 
 
 <a name="ComponentInteraction.MentionableSelectMenuInteractionData"></a>
-### func \(ComponentInteraction\) [MentionableSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L154>)
+### func \(ComponentInteraction\) [MentionableSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L154>)
 
 ```go
 func (i ComponentInteraction) MentionableSelectMenuInteractionData() MentionableSelectMenuInteractionData
@@ -4097,7 +4100,7 @@ func (i ComponentInteraction) MentionableSelectMenuInteractionData() Mentionable
 
 
 <a name="ComponentInteraction.RoleSelectMenuInteractionData"></a>
-### func \(ComponentInteraction\) [RoleSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L150>)
+### func \(ComponentInteraction\) [RoleSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L150>)
 
 ```go
 func (i ComponentInteraction) RoleSelectMenuInteractionData() RoleSelectMenuInteractionData
@@ -4106,7 +4109,7 @@ func (i ComponentInteraction) RoleSelectMenuInteractionData() RoleSelectMenuInte
 
 
 <a name="ComponentInteraction.SelectMenuInteractionData"></a>
-### func \(ComponentInteraction\) [SelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L138>)
+### func \(ComponentInteraction\) [SelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L138>)
 
 ```go
 func (i ComponentInteraction) SelectMenuInteractionData() SelectMenuInteractionData
@@ -4115,7 +4118,7 @@ func (i ComponentInteraction) SelectMenuInteractionData() SelectMenuInteractionD
 
 
 <a name="ComponentInteraction.StringSelectMenuInteractionData"></a>
-### func \(ComponentInteraction\) [StringSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L142>)
+### func \(ComponentInteraction\) [StringSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L142>)
 
 ```go
 func (i ComponentInteraction) StringSelectMenuInteractionData() StringSelectMenuInteractionData
@@ -4124,7 +4127,7 @@ func (i ComponentInteraction) StringSelectMenuInteractionData() StringSelectMenu
 
 
 <a name="ComponentInteraction.Type"></a>
-### func \(ComponentInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L130>)
+### func \(ComponentInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L130>)
 
 ```go
 func (ComponentInteraction) Type() InteractionType
@@ -4133,7 +4136,7 @@ func (ComponentInteraction) Type() InteractionType
 
 
 <a name="ComponentInteraction.UnmarshalJSON"></a>
-### func \(\*ComponentInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L20>)
+### func \(\*ComponentInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L20>)
 
 ```go
 func (i *ComponentInteraction) UnmarshalJSON(data []byte) error
@@ -4142,7 +4145,7 @@ func (i *ComponentInteraction) UnmarshalJSON(data []byte) error
 
 
 <a name="ComponentInteraction.UserSelectMenuInteractionData"></a>
-### func \(ComponentInteraction\) [UserSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L146>)
+### func \(ComponentInteraction\) [UserSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L146>)
 
 ```go
 func (i ComponentInteraction) UserSelectMenuInteractionData() UserSelectMenuInteractionData
@@ -4151,7 +4154,7 @@ func (i ComponentInteraction) UserSelectMenuInteractionData() UserSelectMenuInte
 
 
 <a name="ComponentInteractionData"></a>
-## type [ComponentInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L164-L169>)
+## type [ComponentInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L164-L169>)
 
 
 
@@ -4164,7 +4167,7 @@ type ComponentInteractionData interface {
 ```
 
 <a name="ComponentType"></a>
-## type [ComponentType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L11>)
+## type [ComponentType](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L11>)
 
 ComponentType defines different Component\(s\)
 
@@ -4188,7 +4191,7 @@ const (
 ```
 
 <a name="Connection"></a>
-## type [Connection](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/connection.go#L3-L13>)
+## type [Connection](<https://github.com/disgoorg/disgo/blob/master/discord/connection.go#L3-L13>)
 
 
 
@@ -4207,7 +4210,7 @@ type Connection struct {
 ```
 
 <a name="ConnectionType"></a>
-## type [ConnectionType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/connection.go#L15>)
+## type [ConnectionType](<https://github.com/disgoorg/disgo/blob/master/discord/connection.go#L15>)
 
 
 
@@ -4243,7 +4246,7 @@ const (
 ```
 
 <a name="ContainerComponent"></a>
-## type [ContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L31-L35>)
+## type [ContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L31-L35>)
 
 
 
@@ -4256,7 +4259,7 @@ type ContainerComponent interface {
 ```
 
 <a name="ContextCommandInteractionData"></a>
-## type [ContextCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L507-L512>)
+## type [ContextCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L507-L512>)
 
 
 
@@ -4269,7 +4272,7 @@ type ContextCommandInteractionData interface {
 ```
 
 <a name="CurrentMemberUpdate"></a>
-## type [CurrentMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L105-L107>)
+## type [CurrentMemberUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L105-L107>)
 
 CurrentMemberUpdate is used to update the current member
 
@@ -4280,7 +4283,7 @@ type CurrentMemberUpdate struct {
 ```
 
 <a name="CurrentUserVoiceStateUpdate"></a>
-## type [CurrentUserVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/voice_state.go#L26-L30>)
+## type [CurrentUserVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/voice_state.go#L26-L30>)
 
 
 
@@ -4293,7 +4296,7 @@ type CurrentUserVoiceStateUpdate struct {
 ```
 
 <a name="DMChannel"></a>
-## type [DMChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L365-L370>)
+## type [DMChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L365-L370>)
 
 
 
@@ -4304,7 +4307,7 @@ type DMChannel struct {
 ```
 
 <a name="DMChannel.CreatedAt"></a>
-### func \(DMChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L419>)
+### func \(DMChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L419>)
 
 ```go
 func (c DMChannel) CreatedAt() time.Time
@@ -4313,7 +4316,7 @@ func (c DMChannel) CreatedAt() time.Time
 
 
 <a name="DMChannel.ID"></a>
-### func \(DMChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L399>)
+### func \(DMChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L399>)
 
 ```go
 func (c DMChannel) ID() snowflake.ID
@@ -4322,7 +4325,7 @@ func (c DMChannel) ID() snowflake.ID
 
 
 <a name="DMChannel.LastMessageID"></a>
-### func \(DMChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L411>)
+### func \(DMChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L411>)
 
 ```go
 func (c DMChannel) LastMessageID() *snowflake.ID
@@ -4331,7 +4334,7 @@ func (c DMChannel) LastMessageID() *snowflake.ID
 
 
 <a name="DMChannel.LastPinTimestamp"></a>
-### func \(DMChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L415>)
+### func \(DMChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L415>)
 
 ```go
 func (c DMChannel) LastPinTimestamp() *time.Time
@@ -4340,7 +4343,7 @@ func (c DMChannel) LastPinTimestamp() *time.Time
 
 
 <a name="DMChannel.MarshalJSON"></a>
-### func \(DMChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L385>)
+### func \(DMChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L385>)
 
 ```go
 func (c DMChannel) MarshalJSON() ([]byte, error)
@@ -4349,7 +4352,7 @@ func (c DMChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="DMChannel.Name"></a>
-### func \(DMChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L407>)
+### func \(DMChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L407>)
 
 ```go
 func (c DMChannel) Name() string
@@ -4358,7 +4361,7 @@ func (c DMChannel) Name() string
 
 
 <a name="DMChannel.String"></a>
-### func \(DMChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L395>)
+### func \(DMChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L395>)
 
 ```go
 func (c DMChannel) String() string
@@ -4367,7 +4370,7 @@ func (c DMChannel) String() string
 
 
 <a name="DMChannel.Type"></a>
-### func \(DMChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L403>)
+### func \(DMChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L403>)
 
 ```go
 func (DMChannel) Type() ChannelType
@@ -4376,7 +4379,7 @@ func (DMChannel) Type() ChannelType
 
 
 <a name="DMChannel.UnmarshalJSON"></a>
-### func \(\*DMChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L372>)
+### func \(\*DMChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L372>)
 
 ```go
 func (c *DMChannel) UnmarshalJSON(data []byte) error
@@ -4385,7 +4388,7 @@ func (c *DMChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="DMChannelCreate"></a>
-## type [DMChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L254-L256>)
+## type [DMChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L254-L256>)
 
 
 
@@ -4396,7 +4399,7 @@ type DMChannelCreate struct {
 ```
 
 <a name="DefaultForumLayout"></a>
-## type [DefaultForumLayout](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1344>)
+## type [DefaultForumLayout](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1344>)
 
 
 
@@ -4415,7 +4418,7 @@ const (
 ```
 
 <a name="DefaultReactionEmoji"></a>
-## type [DefaultReactionEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1332-L1335>)
+## type [DefaultReactionEmoji](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1332-L1335>)
 
 
 
@@ -4427,7 +4430,7 @@ type DefaultReactionEmoji struct {
 ```
 
 <a name="DefaultSortOrder"></a>
-## type [DefaultSortOrder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1337>)
+## type [DefaultSortOrder](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1337>)
 
 
 
@@ -4445,7 +4448,7 @@ const (
 ```
 
 <a name="Embed"></a>
-## type [Embed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed.go#L19-L33>)
+## type [Embed](<https://github.com/disgoorg/disgo/blob/master/discord/embed.go#L19-L33>)
 
 Embed allows you to send embeds to discord
 
@@ -4468,7 +4471,7 @@ type Embed struct {
 ```
 
 <a name="EmbedAuthor"></a>
-## type [EmbedAuthor](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed.go#L50-L55>)
+## type [EmbedAuthor](<https://github.com/disgoorg/disgo/blob/master/discord/embed.go#L50-L55>)
 
 The EmbedAuthor of an Embed
 
@@ -4482,7 +4485,7 @@ type EmbedAuthor struct {
 ```
 
 <a name="EmbedBuilder"></a>
-## type [EmbedBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L14-L16>)
+## type [EmbedBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L14-L16>)
 
 EmbedBuilder allows you to create embeds and use methods to set values
 
@@ -4493,7 +4496,7 @@ type EmbedBuilder struct {
 ```
 
 <a name="NewEmbedBuilder"></a>
-### func [NewEmbedBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L9>)
+### func [NewEmbedBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L9>)
 
 ```go
 func NewEmbedBuilder() *EmbedBuilder
@@ -4502,7 +4505,7 @@ func NewEmbedBuilder() *EmbedBuilder
 NewEmbedBuilder returns a new embed builder
 
 <a name="EmbedBuilder.AddField"></a>
-### func \(\*EmbedBuilder\) [AddField](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L195>)
+### func \(\*EmbedBuilder\) [AddField](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L195>)
 
 ```go
 func (b *EmbedBuilder) AddField(name string, value string, inline bool) *EmbedBuilder
@@ -4511,7 +4514,7 @@ func (b *EmbedBuilder) AddField(name string, value string, inline bool) *EmbedBu
 AddField adds a field to the EmbedBuilder by name and value
 
 <a name="EmbedBuilder.AddFields"></a>
-### func \(\*EmbedBuilder\) [AddFields](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L209>)
+### func \(\*EmbedBuilder\) [AddFields](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L209>)
 
 ```go
 func (b *EmbedBuilder) AddFields(fields ...EmbedField) *EmbedBuilder
@@ -4520,7 +4523,7 @@ func (b *EmbedBuilder) AddFields(fields ...EmbedField) *EmbedBuilder
 AddFields adds multiple fields to the EmbedBuilder
 
 <a name="EmbedBuilder.Build"></a>
-### func \(\*EmbedBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L235>)
+### func \(\*EmbedBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L235>)
 
 ```go
 func (b *EmbedBuilder) Build() Embed
@@ -4529,7 +4532,7 @@ func (b *EmbedBuilder) Build() Embed
 Build returns your built Embed
 
 <a name="EmbedBuilder.ClearFields"></a>
-### func \(\*EmbedBuilder\) [ClearFields](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L221>)
+### func \(\*EmbedBuilder\) [ClearFields](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L221>)
 
 ```go
 func (b *EmbedBuilder) ClearFields() *EmbedBuilder
@@ -4538,7 +4541,7 @@ func (b *EmbedBuilder) ClearFields() *EmbedBuilder
 ClearFields removes all the fields from the EmbedBuilder
 
 <a name="EmbedBuilder.RemoveField"></a>
-### func \(\*EmbedBuilder\) [RemoveField](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L227>)
+### func \(\*EmbedBuilder\) [RemoveField](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L227>)
 
 ```go
 func (b *EmbedBuilder) RemoveField(i int) *EmbedBuilder
@@ -4547,7 +4550,7 @@ func (b *EmbedBuilder) RemoveField(i int) *EmbedBuilder
 RemoveField removes a field from the EmbedBuilder
 
 <a name="EmbedBuilder.SetAuthor"></a>
-### func \(\*EmbedBuilder\) [SetAuthor](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L47>)
+### func \(\*EmbedBuilder\) [SetAuthor](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L47>)
 
 ```go
 func (b *EmbedBuilder) SetAuthor(name string, url string, iconURL string) *EmbedBuilder
@@ -4556,7 +4559,7 @@ func (b *EmbedBuilder) SetAuthor(name string, url string, iconURL string) *Embed
 SetAuthor sets the author of the EmbedBuilder with all properties
 
 <a name="EmbedBuilder.SetAuthorIcon"></a>
-### func \(\*EmbedBuilder\) [SetAuthorIcon](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L86>)
+### func \(\*EmbedBuilder\) [SetAuthorIcon](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L86>)
 
 ```go
 func (b *EmbedBuilder) SetAuthorIcon(iconURL string) *EmbedBuilder
@@ -4565,7 +4568,7 @@ func (b *EmbedBuilder) SetAuthorIcon(iconURL string) *EmbedBuilder
 SetAuthorIcon sets the author icon of the EmbedBuilder
 
 <a name="EmbedBuilder.SetAuthorIconf"></a>
-### func \(\*EmbedBuilder\) [SetAuthorIconf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L95>)
+### func \(\*EmbedBuilder\) [SetAuthorIconf](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L95>)
 
 ```go
 func (b *EmbedBuilder) SetAuthorIconf(iconURL string, a ...any) *EmbedBuilder
@@ -4574,7 +4577,7 @@ func (b *EmbedBuilder) SetAuthorIconf(iconURL string, a ...any) *EmbedBuilder
 SetAuthorIconf sets the author icon of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetAuthorName"></a>
-### func \(\*EmbedBuilder\) [SetAuthorName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L58>)
+### func \(\*EmbedBuilder\) [SetAuthorName](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L58>)
 
 ```go
 func (b *EmbedBuilder) SetAuthorName(name string) *EmbedBuilder
@@ -4583,7 +4586,7 @@ func (b *EmbedBuilder) SetAuthorName(name string) *EmbedBuilder
 SetAuthorName sets the author name of the EmbedBuilder
 
 <a name="EmbedBuilder.SetAuthorNamef"></a>
-### func \(\*EmbedBuilder\) [SetAuthorNamef](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L67>)
+### func \(\*EmbedBuilder\) [SetAuthorNamef](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L67>)
 
 ```go
 func (b *EmbedBuilder) SetAuthorNamef(name string, a ...any) *EmbedBuilder
@@ -4592,7 +4595,7 @@ func (b *EmbedBuilder) SetAuthorNamef(name string, a ...any) *EmbedBuilder
 SetAuthorNamef sets the author name of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetAuthorURL"></a>
-### func \(\*EmbedBuilder\) [SetAuthorURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L72>)
+### func \(\*EmbedBuilder\) [SetAuthorURL](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L72>)
 
 ```go
 func (b *EmbedBuilder) SetAuthorURL(url string) *EmbedBuilder
@@ -4601,7 +4604,7 @@ func (b *EmbedBuilder) SetAuthorURL(url string) *EmbedBuilder
 SetAuthorURL sets the author URL of the EmbedBuilder
 
 <a name="EmbedBuilder.SetAuthorURLf"></a>
-### func \(\*EmbedBuilder\) [SetAuthorURLf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L81>)
+### func \(\*EmbedBuilder\) [SetAuthorURLf](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L81>)
 
 ```go
 func (b *EmbedBuilder) SetAuthorURLf(url string, a ...any) *EmbedBuilder
@@ -4610,7 +4613,7 @@ func (b *EmbedBuilder) SetAuthorURLf(url string, a ...any) *EmbedBuilder
 SetAuthorURLf sets the author URL of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetColor"></a>
-### func \(\*EmbedBuilder\) [SetColor](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L100>)
+### func \(\*EmbedBuilder\) [SetColor](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L100>)
 
 ```go
 func (b *EmbedBuilder) SetColor(color int) *EmbedBuilder
@@ -4619,7 +4622,7 @@ func (b *EmbedBuilder) SetColor(color int) *EmbedBuilder
 SetColor sets the color of the EmbedBuilder
 
 <a name="EmbedBuilder.SetDescription"></a>
-### func \(\*EmbedBuilder\) [SetDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L30>)
+### func \(\*EmbedBuilder\) [SetDescription](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L30>)
 
 ```go
 func (b *EmbedBuilder) SetDescription(description string) *EmbedBuilder
@@ -4628,7 +4631,7 @@ func (b *EmbedBuilder) SetDescription(description string) *EmbedBuilder
 SetDescription sets the description of the EmbedBuilder
 
 <a name="EmbedBuilder.SetDescriptionf"></a>
-### func \(\*EmbedBuilder\) [SetDescriptionf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L36>)
+### func \(\*EmbedBuilder\) [SetDescriptionf](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L36>)
 
 ```go
 func (b *EmbedBuilder) SetDescriptionf(description string, a ...any) *EmbedBuilder
@@ -4637,7 +4640,7 @@ func (b *EmbedBuilder) SetDescriptionf(description string, a ...any) *EmbedBuild
 SetDescriptionf sets the description of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetEmbedAuthor"></a>
-### func \(\*EmbedBuilder\) [SetEmbedAuthor](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L41>)
+### func \(\*EmbedBuilder\) [SetEmbedAuthor](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L41>)
 
 ```go
 func (b *EmbedBuilder) SetEmbedAuthor(author *EmbedAuthor) *EmbedBuilder
@@ -4646,7 +4649,7 @@ func (b *EmbedBuilder) SetEmbedAuthor(author *EmbedAuthor) *EmbedBuilder
 SetEmbedAuthor sets the author of the EmbedBuilder using an EmbedAuthor struct
 
 <a name="EmbedBuilder.SetEmbedFooter"></a>
-### func \(\*EmbedBuilder\) [SetEmbedFooter](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L106>)
+### func \(\*EmbedBuilder\) [SetEmbedFooter](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L106>)
 
 ```go
 func (b *EmbedBuilder) SetEmbedFooter(footer *EmbedFooter) *EmbedBuilder
@@ -4655,7 +4658,7 @@ func (b *EmbedBuilder) SetEmbedFooter(footer *EmbedFooter) *EmbedBuilder
 SetEmbedFooter sets the footer of the EmbedBuilder
 
 <a name="EmbedBuilder.SetField"></a>
-### func \(\*EmbedBuilder\) [SetField](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L201>)
+### func \(\*EmbedBuilder\) [SetField](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L201>)
 
 ```go
 func (b *EmbedBuilder) SetField(i int, name string, value string, inline bool) *EmbedBuilder
@@ -4664,7 +4667,7 @@ func (b *EmbedBuilder) SetField(i int, name string, value string, inline bool) *
 SetField sets a field to the EmbedBuilder by name and value
 
 <a name="EmbedBuilder.SetFields"></a>
-### func \(\*EmbedBuilder\) [SetFields](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L215>)
+### func \(\*EmbedBuilder\) [SetFields](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L215>)
 
 ```go
 func (b *EmbedBuilder) SetFields(fields ...EmbedField) *EmbedBuilder
@@ -4673,7 +4676,7 @@ func (b *EmbedBuilder) SetFields(fields ...EmbedField) *EmbedBuilder
 SetFields sets fields of the EmbedBuilder
 
 <a name="EmbedBuilder.SetFooter"></a>
-### func \(\*EmbedBuilder\) [SetFooter](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L112>)
+### func \(\*EmbedBuilder\) [SetFooter](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L112>)
 
 ```go
 func (b *EmbedBuilder) SetFooter(text string, iconURL string) *EmbedBuilder
@@ -4682,7 +4685,7 @@ func (b *EmbedBuilder) SetFooter(text string, iconURL string) *EmbedBuilder
 SetFooter sets the footer icon of the EmbedBuilder
 
 <a name="EmbedBuilder.SetFooterIcon"></a>
-### func \(\*EmbedBuilder\) [SetFooterIcon](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L136>)
+### func \(\*EmbedBuilder\) [SetFooterIcon](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L136>)
 
 ```go
 func (b *EmbedBuilder) SetFooterIcon(iconURL string) *EmbedBuilder
@@ -4691,7 +4694,7 @@ func (b *EmbedBuilder) SetFooterIcon(iconURL string) *EmbedBuilder
 SetFooterIcon sets the footer icon of the EmbedBuilder
 
 <a name="EmbedBuilder.SetFooterIconf"></a>
-### func \(\*EmbedBuilder\) [SetFooterIconf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L145>)
+### func \(\*EmbedBuilder\) [SetFooterIconf](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L145>)
 
 ```go
 func (b *EmbedBuilder) SetFooterIconf(iconURL string, a ...any) *EmbedBuilder
@@ -4700,7 +4703,7 @@ func (b *EmbedBuilder) SetFooterIconf(iconURL string, a ...any) *EmbedBuilder
 SetFooterIconf sets the footer icon of the EmbedBuilder
 
 <a name="EmbedBuilder.SetFooterText"></a>
-### func \(\*EmbedBuilder\) [SetFooterText](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L122>)
+### func \(\*EmbedBuilder\) [SetFooterText](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L122>)
 
 ```go
 func (b *EmbedBuilder) SetFooterText(text string) *EmbedBuilder
@@ -4709,7 +4712,7 @@ func (b *EmbedBuilder) SetFooterText(text string) *EmbedBuilder
 SetFooterText sets the footer text of the EmbedBuilder
 
 <a name="EmbedBuilder.SetFooterTextf"></a>
-### func \(\*EmbedBuilder\) [SetFooterTextf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L131>)
+### func \(\*EmbedBuilder\) [SetFooterTextf](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L131>)
 
 ```go
 func (b *EmbedBuilder) SetFooterTextf(text string, a ...any) *EmbedBuilder
@@ -4718,7 +4721,7 @@ func (b *EmbedBuilder) SetFooterTextf(text string, a ...any) *EmbedBuilder
 SetFooterTextf sets the footer text of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetImage"></a>
-### func \(\*EmbedBuilder\) [SetImage](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L150>)
+### func \(\*EmbedBuilder\) [SetImage](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L150>)
 
 ```go
 func (b *EmbedBuilder) SetImage(url string) *EmbedBuilder
@@ -4727,7 +4730,7 @@ func (b *EmbedBuilder) SetImage(url string) *EmbedBuilder
 SetImage sets the image of the EmbedBuilder
 
 <a name="EmbedBuilder.SetImagef"></a>
-### func \(\*EmbedBuilder\) [SetImagef](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L159>)
+### func \(\*EmbedBuilder\) [SetImagef](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L159>)
 
 ```go
 func (b *EmbedBuilder) SetImagef(url string, a ...any) *EmbedBuilder
@@ -4736,7 +4739,7 @@ func (b *EmbedBuilder) SetImagef(url string, a ...any) *EmbedBuilder
 SetImagef sets the image of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetThumbnail"></a>
-### func \(\*EmbedBuilder\) [SetThumbnail](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L164>)
+### func \(\*EmbedBuilder\) [SetThumbnail](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L164>)
 
 ```go
 func (b *EmbedBuilder) SetThumbnail(url string) *EmbedBuilder
@@ -4745,7 +4748,7 @@ func (b *EmbedBuilder) SetThumbnail(url string) *EmbedBuilder
 SetThumbnail sets the thumbnail of the EmbedBuilder
 
 <a name="EmbedBuilder.SetThumbnailf"></a>
-### func \(\*EmbedBuilder\) [SetThumbnailf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L173>)
+### func \(\*EmbedBuilder\) [SetThumbnailf](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L173>)
 
 ```go
 func (b *EmbedBuilder) SetThumbnailf(url string, a ...any) *EmbedBuilder
@@ -4754,7 +4757,7 @@ func (b *EmbedBuilder) SetThumbnailf(url string, a ...any) *EmbedBuilder
 SetThumbnailf sets the thumbnail of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetTimestamp"></a>
-### func \(\*EmbedBuilder\) [SetTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L189>)
+### func \(\*EmbedBuilder\) [SetTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L189>)
 
 ```go
 func (b *EmbedBuilder) SetTimestamp(time time.Time) *EmbedBuilder
@@ -4763,7 +4766,7 @@ func (b *EmbedBuilder) SetTimestamp(time time.Time) *EmbedBuilder
 SetTimestamp sets the timestamp of the EmbedBuilder
 
 <a name="EmbedBuilder.SetTitle"></a>
-### func \(\*EmbedBuilder\) [SetTitle](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L19>)
+### func \(\*EmbedBuilder\) [SetTitle](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L19>)
 
 ```go
 func (b *EmbedBuilder) SetTitle(title string) *EmbedBuilder
@@ -4772,7 +4775,7 @@ func (b *EmbedBuilder) SetTitle(title string) *EmbedBuilder
 SetTitle sets the title of the EmbedBuilder
 
 <a name="EmbedBuilder.SetTitlef"></a>
-### func \(\*EmbedBuilder\) [SetTitlef](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L25>)
+### func \(\*EmbedBuilder\) [SetTitlef](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L25>)
 
 ```go
 func (b *EmbedBuilder) SetTitlef(title string, a ...any) *EmbedBuilder
@@ -4781,7 +4784,7 @@ func (b *EmbedBuilder) SetTitlef(title string, a ...any) *EmbedBuilder
 SetTitlef sets the title of the EmbedBuilder with format
 
 <a name="EmbedBuilder.SetURL"></a>
-### func \(\*EmbedBuilder\) [SetURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L178>)
+### func \(\*EmbedBuilder\) [SetURL](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L178>)
 
 ```go
 func (b *EmbedBuilder) SetURL(url string) *EmbedBuilder
@@ -4790,7 +4793,7 @@ func (b *EmbedBuilder) SetURL(url string) *EmbedBuilder
 SetURL sets the URL of the EmbedBuilder
 
 <a name="EmbedBuilder.SetURLf"></a>
-### func \(\*EmbedBuilder\) [SetURLf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed_builder.go#L184>)
+### func \(\*EmbedBuilder\) [SetURLf](<https://github.com/disgoorg/disgo/blob/master/discord/embed_builder.go#L184>)
 
 ```go
 func (b *EmbedBuilder) SetURLf(url string, a ...any) *EmbedBuilder
@@ -4799,7 +4802,7 @@ func (b *EmbedBuilder) SetURLf(url string, a ...any) *EmbedBuilder
 SetURLf sets the URL of the EmbedBuilder with format
 
 <a name="EmbedField"></a>
-## type [EmbedField](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed.go#L65-L69>)
+## type [EmbedField](<https://github.com/disgoorg/disgo/blob/master/discord/embed.go#L65-L69>)
 
 EmbedField \(s\) of an Embed
 
@@ -4812,7 +4815,7 @@ type EmbedField struct {
 ```
 
 <a name="EmbedFooter"></a>
-## type [EmbedFooter](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed.go#L58-L62>)
+## type [EmbedFooter](<https://github.com/disgoorg/disgo/blob/master/discord/embed.go#L58-L62>)
 
 The EmbedFooter of an Embed
 
@@ -4825,7 +4828,7 @@ type EmbedFooter struct {
 ```
 
 <a name="EmbedProvider"></a>
-## type [EmbedProvider](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed.go#L44-L47>)
+## type [EmbedProvider](<https://github.com/disgoorg/disgo/blob/master/discord/embed.go#L44-L47>)
 
 The EmbedProvider of an Embed
 
@@ -4837,7 +4840,7 @@ type EmbedProvider struct {
 ```
 
 <a name="EmbedResource"></a>
-## type [EmbedResource](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed.go#L36-L41>)
+## type [EmbedResource](<https://github.com/disgoorg/disgo/blob/master/discord/embed.go#L36-L41>)
 
 The EmbedResource of an Embed.Image/Embed.Thumbnail/Embed.Video
 
@@ -4851,7 +4854,7 @@ type EmbedResource struct {
 ```
 
 <a name="EmbedType"></a>
-## type [EmbedType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/embed.go#L6>)
+## type [EmbedType](<https://github.com/disgoorg/disgo/blob/master/discord/embed.go#L6>)
 
 EmbedType is the type of Embed
 
@@ -4873,7 +4876,7 @@ const (
 ```
 
 <a name="Emoji"></a>
-## type [Emoji](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L13-L23>)
+## type [Emoji](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L13-L23>)
 
 Emoji allows you to interact with emojis & emotes
 
@@ -4892,7 +4895,7 @@ type Emoji struct {
 ```
 
 <a name="Emoji.CreatedAt"></a>
-### func \(Emoji\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L50>)
+### func \(Emoji\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L50>)
 
 ```go
 func (e Emoji) CreatedAt() time.Time
@@ -4901,7 +4904,7 @@ func (e Emoji) CreatedAt() time.Time
 
 
 <a name="Emoji.Mention"></a>
-### func \(Emoji\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L34>)
+### func \(Emoji\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L34>)
 
 ```go
 func (e Emoji) Mention() string
@@ -4910,7 +4913,7 @@ func (e Emoji) Mention() string
 Mention returns the string used to send the Emoji
 
 <a name="Emoji.Reaction"></a>
-### func \(Emoji\) [Reaction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L26>)
+### func \(Emoji\) [Reaction](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L26>)
 
 ```go
 func (e Emoji) Reaction() string
@@ -4919,7 +4922,7 @@ func (e Emoji) Reaction() string
 Reaction returns a string used for manipulating with reactions. May be empty if the Name is empty
 
 <a name="Emoji.String"></a>
-### func \(Emoji\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L42>)
+### func \(Emoji\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L42>)
 
 ```go
 func (e Emoji) String() string
@@ -4928,7 +4931,7 @@ func (e Emoji) String() string
 String formats the Emoji as string
 
 <a name="Emoji.URL"></a>
-### func \(Emoji\) [URL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L46>)
+### func \(Emoji\) [URL](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L46>)
 
 ```go
 func (e Emoji) URL(opts ...CDNOpt) string
@@ -4937,7 +4940,7 @@ func (e Emoji) URL(opts ...CDNOpt) string
 
 
 <a name="EmojiCreate"></a>
-## type [EmojiCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L57-L61>)
+## type [EmojiCreate](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L57-L61>)
 
 
 
@@ -4950,7 +4953,7 @@ type EmojiCreate struct {
 ```
 
 <a name="EmojiUpdate"></a>
-## type [EmojiUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L63-L66>)
+## type [EmojiUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L63-L66>)
 
 
 
@@ -4962,7 +4965,7 @@ type EmojiUpdate struct {
 ```
 
 <a name="Entitlement"></a>
-## type [Entitlement](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/entitlement.go#L9-L20>)
+## type [Entitlement](<https://github.com/disgoorg/disgo/blob/master/discord/entitlement.go#L9-L20>)
 
 
 
@@ -4982,7 +4985,7 @@ type Entitlement struct {
 ```
 
 <a name="EntitlementOwnerType"></a>
-## type [EntitlementOwnerType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/entitlement.go#L41>)
+## type [EntitlementOwnerType](<https://github.com/disgoorg/disgo/blob/master/discord/entitlement.go#L41>)
 
 
 
@@ -5000,7 +5003,7 @@ const (
 ```
 
 <a name="EntitlementType"></a>
-## type [EntitlementType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/entitlement.go#L22>)
+## type [EntitlementType](<https://github.com/disgoorg/disgo/blob/master/discord/entitlement.go#L22>)
 
 
 
@@ -5024,7 +5027,7 @@ const (
 ```
 
 <a name="EntityMetaData"></a>
-## type [EntityMetaData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L102-L104>)
+## type [EntityMetaData](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L102-L104>)
 
 EntityMetaData additional metadata for the scheduled event \(https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-object-guild-scheduled-event-entity-metadata\)
 
@@ -5035,7 +5038,7 @@ type EntityMetaData struct {
 ```
 
 <a name="ExplicitContentFilterLevel"></a>
-## type [ExplicitContentFilterLevel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L78>)
+## type [ExplicitContentFilterLevel](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L78>)
 
 The ExplicitContentFilterLevel of a Guild
 
@@ -5054,7 +5057,7 @@ const (
 ```
 
 <a name="ExtendedInvite"></a>
-## type [ExtendedInvite](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L38-L45>)
+## type [ExtendedInvite](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L38-L45>)
 
 
 
@@ -5070,7 +5073,7 @@ type ExtendedInvite struct {
 ```
 
 <a name="File"></a>
-## type [File](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L103-L108>)
+## type [File](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L103-L108>)
 
 File holds all information about a given io.Reader
 
@@ -5084,7 +5087,7 @@ type File struct {
 ```
 
 <a name="NewFile"></a>
-### func [NewFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L93>)
+### func [NewFile](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L93>)
 
 ```go
 func NewFile(name string, description string, reader io.Reader, flags ...FileFlags) *File
@@ -5093,7 +5096,7 @@ func NewFile(name string, description string, reader io.Reader, flags ...FileFla
 NewFile returns a new File struct with the given name, io.Reader & FileFlags
 
 <a name="FileFlags"></a>
-## type [FileFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L111>)
+## type [FileFlags](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L111>)
 
 FileFlags are used to mark Attachments as Spoiler
 
@@ -5111,7 +5114,7 @@ const (
 ```
 
 <a name="FileFlags.Add"></a>
-### func \(FileFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L120>)
+### func \(FileFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L120>)
 
 ```go
 func (f FileFlags) Add(bits ...FileFlags) FileFlags
@@ -5120,7 +5123,7 @@ func (f FileFlags) Add(bits ...FileFlags) FileFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="FileFlags.Has"></a>
-### func \(FileFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L130>)
+### func \(FileFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L130>)
 
 ```go
 func (f FileFlags) Has(bits ...FileFlags) bool
@@ -5129,7 +5132,7 @@ func (f FileFlags) Has(bits ...FileFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="FileFlags.Missing"></a>
-### func \(FileFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L135>)
+### func \(FileFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L135>)
 
 ```go
 func (f FileFlags) Missing(bits ...FileFlags) bool
@@ -5138,7 +5141,7 @@ func (f FileFlags) Missing(bits ...FileFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="FileFlags.Remove"></a>
-### func \(FileFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L125>)
+### func \(FileFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L125>)
 
 ```go
 func (f FileFlags) Remove(bits ...FileFlags) FileFlags
@@ -5147,7 +5150,7 @@ func (f FileFlags) Remove(bits ...FileFlags) FileFlags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="FileFormat"></a>
-## type [FileFormat](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L51>)
+## type [FileFormat](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L51>)
 
 FileFormat is the type of file on Discord's CDN \(https://discord.com/developers/docs/reference#image-formatting-image-formats\)
 
@@ -5169,7 +5172,7 @@ const (
 ```
 
 <a name="FileFormat.Animated"></a>
-### func \(FileFormat\) [Animated](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L69>)
+### func \(FileFormat\) [Animated](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L69>)
 
 ```go
 func (f FileFormat) Animated() bool
@@ -5178,7 +5181,7 @@ func (f FileFormat) Animated() bool
 Animated returns true if the FileFormat is animated
 
 <a name="FileFormat.String"></a>
-### func \(FileFormat\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/cdn_endpoints.go#L64>)
+### func \(FileFormat\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/cdn_endpoints.go#L64>)
 
 ```go
 func (f FileFormat) String() string
@@ -5187,7 +5190,7 @@ func (f FileFormat) String() string
 String returns the string representation of the FileFormat
 
 <a name="FollowChannel"></a>
-## type [FollowChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1298-L1300>)
+## type [FollowChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1298-L1300>)
 
 
 
@@ -5198,7 +5201,7 @@ type FollowChannel struct {
 ```
 
 <a name="FollowedChannel"></a>
-## type [FollowedChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1293-L1296>)
+## type [FollowedChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1293-L1296>)
 
 
 
@@ -5210,7 +5213,7 @@ type FollowedChannel struct {
 ```
 
 <a name="Gateway"></a>
-## type [Gateway](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/gateway.go#L3-L5>)
+## type [Gateway](<https://github.com/disgoorg/disgo/blob/master/discord/gateway.go#L3-L5>)
 
 
 
@@ -5221,7 +5224,7 @@ type Gateway struct {
 ```
 
 <a name="GatewayBot"></a>
-## type [GatewayBot](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/gateway.go#L7-L11>)
+## type [GatewayBot](<https://github.com/disgoorg/disgo/blob/master/discord/gateway.go#L7-L11>)
 
 
 
@@ -5234,7 +5237,7 @@ type GatewayBot struct {
 ```
 
 <a name="GatewayGuild"></a>
-## type [GatewayGuild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L216-L227>)
+## type [GatewayGuild](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L216-L227>)
 
 
 
@@ -5254,7 +5257,7 @@ type GatewayGuild struct {
 ```
 
 <a name="GatewayGuild.UnmarshalJSON"></a>
-### func \(\*GatewayGuild\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L229>)
+### func \(\*GatewayGuild\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L229>)
 
 ```go
 func (g *GatewayGuild) UnmarshalJSON(data []byte) error
@@ -5263,7 +5266,7 @@ func (g *GatewayGuild) UnmarshalJSON(data []byte) error
 
 
 <a name="GetAllThreads"></a>
-## type [GetAllThreads](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L107-L110>)
+## type [GetAllThreads](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L107-L110>)
 
 
 
@@ -5275,7 +5278,7 @@ type GetAllThreads struct {
 ```
 
 <a name="GetThreads"></a>
-## type [GetThreads](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L101-L105>)
+## type [GetThreads](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L101-L105>)
 
 
 
@@ -5288,7 +5291,7 @@ type GetThreads struct {
 ```
 
 <a name="GrantType"></a>
-## type [GrantType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/access_token.go#L54>)
+## type [GrantType](<https://github.com/disgoorg/disgo/blob/master/discord/access_token.go#L54>)
 
 GrantType defines what type of request is being made.
 
@@ -5306,7 +5309,7 @@ const (
 ```
 
 <a name="GrantType.String"></a>
-### func \(GrantType\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/access_token.go#L63>)
+### func \(GrantType\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/access_token.go#L63>)
 
 ```go
 func (t GrantType) String() string
@@ -5315,7 +5318,7 @@ func (t GrantType) String() string
 String returns the GrantType as a string.
 
 <a name="Guild"></a>
-## type [Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L130-L171>)
+## type [Guild](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L130-L171>)
 
 Guild represents a discord Guild
 
@@ -5365,7 +5368,7 @@ type Guild struct {
 ```
 
 <a name="Guild.BannerURL"></a>
-### func \(Guild\) [BannerURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L197>)
+### func \(Guild\) [BannerURL](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L197>)
 
 ```go
 func (g Guild) BannerURL(opts ...CDNOpt) *string
@@ -5374,7 +5377,7 @@ func (g Guild) BannerURL(opts ...CDNOpt) *string
 
 
 <a name="Guild.CreatedAt"></a>
-### func \(Guild\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L205>)
+### func \(Guild\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L205>)
 
 ```go
 func (g Guild) CreatedAt() time.Time
@@ -5383,7 +5386,7 @@ func (g Guild) CreatedAt() time.Time
 
 
 <a name="Guild.DiscoverySplashURL"></a>
-### func \(Guild\) [DiscoverySplashURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L189>)
+### func \(Guild\) [DiscoverySplashURL](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L189>)
 
 ```go
 func (g Guild) DiscoverySplashURL(opts ...CDNOpt) *string
@@ -5392,7 +5395,7 @@ func (g Guild) DiscoverySplashURL(opts ...CDNOpt) *string
 
 
 <a name="Guild.IconURL"></a>
-### func \(Guild\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L173>)
+### func \(Guild\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L173>)
 
 ```go
 func (g Guild) IconURL(opts ...CDNOpt) *string
@@ -5401,7 +5404,7 @@ func (g Guild) IconURL(opts ...CDNOpt) *string
 
 
 <a name="Guild.SplashURL"></a>
-### func \(Guild\) [SplashURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L181>)
+### func \(Guild\) [SplashURL](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L181>)
 
 ```go
 func (g Guild) SplashURL(opts ...CDNOpt) *string
@@ -5410,7 +5413,7 @@ func (g Guild) SplashURL(opts ...CDNOpt) *string
 
 
 <a name="GuildAudioChannel"></a>
-## type [GuildAudioChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L142-L152>)
+## type [GuildAudioChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L142-L152>)
 
 
 
@@ -5428,7 +5431,7 @@ type GuildAudioChannel interface {
 ```
 
 <a name="GuildCategoryChannel"></a>
-## type [GuildCategoryChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L576-L582>)
+## type [GuildCategoryChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L576-L582>)
 
 
 
@@ -5439,7 +5442,7 @@ type GuildCategoryChannel struct {
 ```
 
 <a name="GuildCategoryChannel.CreatedAt"></a>
-### func \(GuildCategoryChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L646>)
+### func \(GuildCategoryChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L646>)
 
 ```go
 func (c GuildCategoryChannel) CreatedAt() time.Time
@@ -5448,7 +5451,7 @@ func (c GuildCategoryChannel) CreatedAt() time.Time
 
 
 <a name="GuildCategoryChannel.GuildID"></a>
-### func \(GuildCategoryChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L629>)
+### func \(GuildCategoryChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L629>)
 
 ```go
 func (c GuildCategoryChannel) GuildID() snowflake.ID
@@ -5457,7 +5460,7 @@ func (c GuildCategoryChannel) GuildID() snowflake.ID
 
 
 <a name="GuildCategoryChannel.ID"></a>
-### func \(GuildCategoryChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L621>)
+### func \(GuildCategoryChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L621>)
 
 ```go
 func (c GuildCategoryChannel) ID() snowflake.ID
@@ -5466,7 +5469,7 @@ func (c GuildCategoryChannel) ID() snowflake.ID
 
 
 <a name="GuildCategoryChannel.MarshalJSON"></a>
-### func \(GuildCategoryChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L598>)
+### func \(GuildCategoryChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L598>)
 
 ```go
 func (c GuildCategoryChannel) MarshalJSON() ([]byte, error)
@@ -5475,7 +5478,7 @@ func (c GuildCategoryChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildCategoryChannel.Mention"></a>
-### func \(GuildCategoryChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L613>)
+### func \(GuildCategoryChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L613>)
 
 ```go
 func (c GuildCategoryChannel) Mention() string
@@ -5484,7 +5487,7 @@ func (c GuildCategoryChannel) Mention() string
 
 
 <a name="GuildCategoryChannel.Name"></a>
-### func \(GuildCategoryChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L625>)
+### func \(GuildCategoryChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L625>)
 
 ```go
 func (c GuildCategoryChannel) Name() string
@@ -5493,7 +5496,7 @@ func (c GuildCategoryChannel) Name() string
 
 
 <a name="GuildCategoryChannel.ParentID"></a>
-### func \(GuildCategoryChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L642>)
+### func \(GuildCategoryChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L642>)
 
 ```go
 func (c GuildCategoryChannel) ParentID() *snowflake.ID
@@ -5502,7 +5505,7 @@ func (c GuildCategoryChannel) ParentID() *snowflake.ID
 ParentID always returns nil for GuildCategoryChannel as they can't be nested.
 
 <a name="GuildCategoryChannel.PermissionOverwrites"></a>
-### func \(GuildCategoryChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L633>)
+### func \(GuildCategoryChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L633>)
 
 ```go
 func (c GuildCategoryChannel) PermissionOverwrites() PermissionOverwrites
@@ -5511,7 +5514,7 @@ func (c GuildCategoryChannel) PermissionOverwrites() PermissionOverwrites
 
 
 <a name="GuildCategoryChannel.Position"></a>
-### func \(GuildCategoryChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L637>)
+### func \(GuildCategoryChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L637>)
 
 ```go
 func (c GuildCategoryChannel) Position() int
@@ -5520,7 +5523,7 @@ func (c GuildCategoryChannel) Position() int
 
 
 <a name="GuildCategoryChannel.String"></a>
-### func \(GuildCategoryChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L609>)
+### func \(GuildCategoryChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L609>)
 
 ```go
 func (c GuildCategoryChannel) String() string
@@ -5529,7 +5532,7 @@ func (c GuildCategoryChannel) String() string
 
 
 <a name="GuildCategoryChannel.Type"></a>
-### func \(GuildCategoryChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L617>)
+### func \(GuildCategoryChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L617>)
 
 ```go
 func (GuildCategoryChannel) Type() ChannelType
@@ -5538,7 +5541,7 @@ func (GuildCategoryChannel) Type() ChannelType
 
 
 <a name="GuildCategoryChannel.UnmarshalJSON"></a>
-### func \(\*GuildCategoryChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L584>)
+### func \(\*GuildCategoryChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L584>)
 
 ```go
 func (c *GuildCategoryChannel) UnmarshalJSON(data []byte) error
@@ -5547,7 +5550,7 @@ func (c *GuildCategoryChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildCategoryChannelCreate"></a>
-## type [GuildCategoryChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L95-L100>)
+## type [GuildCategoryChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L95-L100>)
 
 
 
@@ -5561,7 +5564,7 @@ type GuildCategoryChannelCreate struct {
 ```
 
 <a name="GuildCategoryChannelCreate.MarshalJSON"></a>
-### func \(GuildCategoryChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L106>)
+### func \(GuildCategoryChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L106>)
 
 ```go
 func (c GuildCategoryChannelCreate) MarshalJSON() ([]byte, error)
@@ -5570,7 +5573,7 @@ func (c GuildCategoryChannelCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildCategoryChannelCreate.Type"></a>
-### func \(GuildCategoryChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L102>)
+### func \(GuildCategoryChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L102>)
 
 ```go
 func (c GuildCategoryChannelCreate) Type() ChannelType
@@ -5579,7 +5582,7 @@ func (c GuildCategoryChannelCreate) Type() ChannelType
 
 
 <a name="GuildCategoryChannelUpdate"></a>
-## type [GuildCategoryChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L49-L53>)
+## type [GuildCategoryChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L49-L53>)
 
 
 
@@ -5592,7 +5595,7 @@ type GuildCategoryChannelUpdate struct {
 ```
 
 <a name="GuildChannel"></a>
-## type [GuildChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L101-L121>)
+## type [GuildChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L101-L121>)
 
 
 
@@ -5620,7 +5623,7 @@ type GuildChannel interface {
 ```
 
 <a name="ApplyGuildIDToChannel"></a>
-### func [ApplyGuildIDToChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1370>)
+### func [ApplyGuildIDToChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1370>)
 
 ```go
 func ApplyGuildIDToChannel(channel GuildChannel, guildID snowflake.ID) GuildChannel
@@ -5629,7 +5632,7 @@ func ApplyGuildIDToChannel(channel GuildChannel, guildID snowflake.ID) GuildChan
 
 
 <a name="GuildChannelCreate"></a>
-## type [GuildChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L14-L17>)
+## type [GuildChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L14-L17>)
 
 
 
@@ -5641,7 +5644,7 @@ type GuildChannelCreate interface {
 ```
 
 <a name="GuildChannelPositionUpdate"></a>
-## type [GuildChannelPositionUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L151-L156>)
+## type [GuildChannelPositionUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L151-L156>)
 
 
 
@@ -5655,7 +5658,7 @@ type GuildChannelPositionUpdate struct {
 ```
 
 <a name="GuildChannelUpdate"></a>
-## type [GuildChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L12-L15>)
+## type [GuildChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L12-L15>)
 
 
 
@@ -5667,7 +5670,7 @@ type GuildChannelUpdate interface {
 ```
 
 <a name="GuildCreate"></a>
-## type [GuildCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L303-L315>)
+## type [GuildCreate](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L303-L315>)
 
 GuildCreate is the payload used to create a Guild
 
@@ -5688,7 +5691,7 @@ type GuildCreate struct {
 ```
 
 <a name="GuildCreateChannel"></a>
-## type [GuildCreateChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L355-L359>)
+## type [GuildCreateChannel](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L355-L359>)
 
 
 
@@ -5701,7 +5704,7 @@ type GuildCreateChannel struct {
 ```
 
 <a name="GuildCreateRole"></a>
-## type [GuildCreateRole](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L350-L353>)
+## type [GuildCreateRole](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L350-L353>)
 
 
 
@@ -5713,7 +5716,7 @@ type GuildCreateRole struct {
 ```
 
 <a name="GuildFeature"></a>
-## type [GuildFeature](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L97>)
+## type [GuildFeature](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L97>)
 
 The GuildFeature \(s\) that a Guild contains
 
@@ -5755,7 +5758,7 @@ const (
 ```
 
 <a name="GuildForumChannel"></a>
-## type [GuildForumChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1073-L1090>)
+## type [GuildForumChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1073-L1090>)
 
 
 
@@ -5776,7 +5779,7 @@ type GuildForumChannel struct {
 ```
 
 <a name="GuildForumChannel.CreatedAt"></a>
-### func \(GuildForumChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1175>)
+### func \(GuildForumChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1175>)
 
 ```go
 func (c GuildForumChannel) CreatedAt() time.Time
@@ -5785,7 +5788,7 @@ func (c GuildForumChannel) CreatedAt() time.Time
 
 
 <a name="GuildForumChannel.GuildID"></a>
-### func \(GuildForumChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1159>)
+### func \(GuildForumChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1159>)
 
 ```go
 func (c GuildForumChannel) GuildID() snowflake.ID
@@ -5794,7 +5797,7 @@ func (c GuildForumChannel) GuildID() snowflake.ID
 
 
 <a name="GuildForumChannel.ID"></a>
-### func \(GuildForumChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1151>)
+### func \(GuildForumChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1151>)
 
 ```go
 func (c GuildForumChannel) ID() snowflake.ID
@@ -5803,7 +5806,7 @@ func (c GuildForumChannel) ID() snowflake.ID
 
 
 <a name="GuildForumChannel.MarshalJSON"></a>
-### func \(GuildForumChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1117>)
+### func \(GuildForumChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1117>)
 
 ```go
 func (c GuildForumChannel) MarshalJSON() ([]byte, error)
@@ -5812,7 +5815,7 @@ func (c GuildForumChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildForumChannel.Mention"></a>
-### func \(GuildForumChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1143>)
+### func \(GuildForumChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1143>)
 
 ```go
 func (c GuildForumChannel) Mention() string
@@ -5821,7 +5824,7 @@ func (c GuildForumChannel) Mention() string
 
 
 <a name="GuildForumChannel.Name"></a>
-### func \(GuildForumChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1155>)
+### func \(GuildForumChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1155>)
 
 ```go
 func (c GuildForumChannel) Name() string
@@ -5830,7 +5833,7 @@ func (c GuildForumChannel) Name() string
 
 
 <a name="GuildForumChannel.ParentID"></a>
-### func \(GuildForumChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1171>)
+### func \(GuildForumChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1171>)
 
 ```go
 func (c GuildForumChannel) ParentID() *snowflake.ID
@@ -5839,7 +5842,7 @@ func (c GuildForumChannel) ParentID() *snowflake.ID
 
 
 <a name="GuildForumChannel.PermissionOverwrites"></a>
-### func \(GuildForumChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1163>)
+### func \(GuildForumChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1163>)
 
 ```go
 func (c GuildForumChannel) PermissionOverwrites() PermissionOverwrites
@@ -5848,7 +5851,7 @@ func (c GuildForumChannel) PermissionOverwrites() PermissionOverwrites
 
 
 <a name="GuildForumChannel.Position"></a>
-### func \(GuildForumChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1167>)
+### func \(GuildForumChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1167>)
 
 ```go
 func (c GuildForumChannel) Position() int
@@ -5857,7 +5860,7 @@ func (c GuildForumChannel) Position() int
 
 
 <a name="GuildForumChannel.String"></a>
-### func \(GuildForumChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1139>)
+### func \(GuildForumChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1139>)
 
 ```go
 func (c GuildForumChannel) String() string
@@ -5866,7 +5869,7 @@ func (c GuildForumChannel) String() string
 
 
 <a name="GuildForumChannel.Type"></a>
-### func \(GuildForumChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1147>)
+### func \(GuildForumChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1147>)
 
 ```go
 func (GuildForumChannel) Type() ChannelType
@@ -5875,7 +5878,7 @@ func (GuildForumChannel) Type() ChannelType
 
 
 <a name="GuildForumChannel.UnmarshalJSON"></a>
-### func \(\*GuildForumChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1092>)
+### func \(\*GuildForumChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1092>)
 
 ```go
 func (c *GuildForumChannel) UnmarshalJSON(data []byte) error
@@ -5884,7 +5887,7 @@ func (c *GuildForumChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildForumChannelCreate"></a>
-## type [GuildForumChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L191-L203>)
+## type [GuildForumChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L191-L203>)
 
 
 
@@ -5905,7 +5908,7 @@ type GuildForumChannelCreate struct {
 ```
 
 <a name="GuildForumChannelCreate.MarshalJSON"></a>
-### func \(GuildForumChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L209>)
+### func \(GuildForumChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L209>)
 
 ```go
 func (c GuildForumChannelCreate) MarshalJSON() ([]byte, error)
@@ -5914,7 +5917,7 @@ func (c GuildForumChannelCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildForumChannelCreate.Type"></a>
-### func \(GuildForumChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L205>)
+### func \(GuildForumChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L205>)
 
 ```go
 func (c GuildForumChannelCreate) Type() ChannelType
@@ -5923,7 +5926,7 @@ func (c GuildForumChannelCreate) Type() ChannelType
 
 
 <a name="GuildForumChannelUpdate"></a>
-## type [GuildForumChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L100-L114>)
+## type [GuildForumChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L100-L114>)
 
 
 
@@ -5946,7 +5949,7 @@ type GuildForumChannelUpdate struct {
 ```
 
 <a name="GuildFromTemplateCreate"></a>
-## type [GuildFromTemplateCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_template.go#L53-L56>)
+## type [GuildFromTemplateCreate](<https://github.com/disgoorg/disgo/blob/master/discord/guild_template.go#L53-L56>)
 
 GuildFromTemplateCreate is the data used to create a Guild from a GuildTemplate
 
@@ -5958,7 +5961,7 @@ type GuildFromTemplateCreate struct {
 ```
 
 <a name="GuildMediaChannel"></a>
-## type [GuildMediaChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1187-L1203>)
+## type [GuildMediaChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1187-L1203>)
 
 
 
@@ -5978,7 +5981,7 @@ type GuildMediaChannel struct {
 ```
 
 <a name="GuildMediaChannel.CreatedAt"></a>
-### func \(GuildMediaChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1286>)
+### func \(GuildMediaChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1286>)
 
 ```go
 func (c GuildMediaChannel) CreatedAt() time.Time
@@ -5987,7 +5990,7 @@ func (c GuildMediaChannel) CreatedAt() time.Time
 
 
 <a name="GuildMediaChannel.GuildID"></a>
-### func \(GuildMediaChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1270>)
+### func \(GuildMediaChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1270>)
 
 ```go
 func (c GuildMediaChannel) GuildID() snowflake.ID
@@ -5996,7 +5999,7 @@ func (c GuildMediaChannel) GuildID() snowflake.ID
 
 
 <a name="GuildMediaChannel.ID"></a>
-### func \(GuildMediaChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1262>)
+### func \(GuildMediaChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1262>)
 
 ```go
 func (c GuildMediaChannel) ID() snowflake.ID
@@ -6005,7 +6008,7 @@ func (c GuildMediaChannel) ID() snowflake.ID
 
 
 <a name="GuildMediaChannel.MarshalJSON"></a>
-### func \(GuildMediaChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1229>)
+### func \(GuildMediaChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1229>)
 
 ```go
 func (c GuildMediaChannel) MarshalJSON() ([]byte, error)
@@ -6014,7 +6017,7 @@ func (c GuildMediaChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildMediaChannel.Mention"></a>
-### func \(GuildMediaChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1254>)
+### func \(GuildMediaChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1254>)
 
 ```go
 func (c GuildMediaChannel) Mention() string
@@ -6023,7 +6026,7 @@ func (c GuildMediaChannel) Mention() string
 
 
 <a name="GuildMediaChannel.Name"></a>
-### func \(GuildMediaChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1266>)
+### func \(GuildMediaChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1266>)
 
 ```go
 func (c GuildMediaChannel) Name() string
@@ -6032,7 +6035,7 @@ func (c GuildMediaChannel) Name() string
 
 
 <a name="GuildMediaChannel.ParentID"></a>
-### func \(GuildMediaChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1282>)
+### func \(GuildMediaChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1282>)
 
 ```go
 func (c GuildMediaChannel) ParentID() *snowflake.ID
@@ -6041,7 +6044,7 @@ func (c GuildMediaChannel) ParentID() *snowflake.ID
 
 
 <a name="GuildMediaChannel.PermissionOverwrites"></a>
-### func \(GuildMediaChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1274>)
+### func \(GuildMediaChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1274>)
 
 ```go
 func (c GuildMediaChannel) PermissionOverwrites() PermissionOverwrites
@@ -6050,7 +6053,7 @@ func (c GuildMediaChannel) PermissionOverwrites() PermissionOverwrites
 
 
 <a name="GuildMediaChannel.Position"></a>
-### func \(GuildMediaChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1278>)
+### func \(GuildMediaChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1278>)
 
 ```go
 func (c GuildMediaChannel) Position() int
@@ -6059,7 +6062,7 @@ func (c GuildMediaChannel) Position() int
 
 
 <a name="GuildMediaChannel.String"></a>
-### func \(GuildMediaChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1250>)
+### func \(GuildMediaChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1250>)
 
 ```go
 func (c GuildMediaChannel) String() string
@@ -6068,7 +6071,7 @@ func (c GuildMediaChannel) String() string
 
 
 <a name="GuildMediaChannel.Type"></a>
-### func \(GuildMediaChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1258>)
+### func \(GuildMediaChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1258>)
 
 ```go
 func (GuildMediaChannel) Type() ChannelType
@@ -6077,7 +6080,7 @@ func (GuildMediaChannel) Type() ChannelType
 
 
 <a name="GuildMediaChannel.UnmarshalJSON"></a>
-### func \(\*GuildMediaChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1205>)
+### func \(\*GuildMediaChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1205>)
 
 ```go
 func (c *GuildMediaChannel) UnmarshalJSON(data []byte) error
@@ -6086,7 +6089,7 @@ func (c *GuildMediaChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildMediaChannelCreate"></a>
-## type [GuildMediaChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L223-L234>)
+## type [GuildMediaChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L223-L234>)
 
 
 
@@ -6106,7 +6109,7 @@ type GuildMediaChannelCreate struct {
 ```
 
 <a name="GuildMediaChannelCreate.MarshalJSON"></a>
-### func \(GuildMediaChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L240>)
+### func \(GuildMediaChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L240>)
 
 ```go
 func (c GuildMediaChannelCreate) MarshalJSON() ([]byte, error)
@@ -6115,7 +6118,7 @@ func (c GuildMediaChannelCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildMediaChannelCreate.Type"></a>
-### func \(GuildMediaChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L236>)
+### func \(GuildMediaChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L236>)
 
 ```go
 func (c GuildMediaChannelCreate) Type() ChannelType
@@ -6124,7 +6127,7 @@ func (c GuildMediaChannelCreate) Type() ChannelType
 
 
 <a name="GuildMediaChannelUpdate"></a>
-## type [GuildMediaChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L119-L132>)
+## type [GuildMediaChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L119-L132>)
 
 
 
@@ -6146,7 +6149,7 @@ type GuildMediaChannelUpdate struct {
 ```
 
 <a name="GuildMessageChannel"></a>
-## type [GuildMessageChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L123-L140>)
+## type [GuildMessageChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L123-L140>)
 
 
 
@@ -6171,7 +6174,7 @@ type GuildMessageChannel interface {
 ```
 
 <a name="ApplyLastMessageIDToChannel"></a>
-### func [ApplyLastMessageIDToChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1401>)
+### func [ApplyLastMessageIDToChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1401>)
 
 ```go
 func ApplyLastMessageIDToChannel(channel GuildMessageChannel, lastMessageID snowflake.ID) GuildMessageChannel
@@ -6180,7 +6183,7 @@ func ApplyLastMessageIDToChannel(channel GuildMessageChannel, lastMessageID snow
 
 
 <a name="ApplyLastPinTimestampToChannel"></a>
-### func [ApplyLastPinTimestampToChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1420>)
+### func [ApplyLastPinTimestampToChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1420>)
 
 ```go
 func ApplyLastPinTimestampToChannel(channel GuildMessageChannel, lastPinTimestamp *time.Time) GuildMessageChannel
@@ -6189,7 +6192,7 @@ func ApplyLastPinTimestampToChannel(channel GuildMessageChannel, lastPinTimestam
 
 
 <a name="GuildNewsChannel"></a>
-## type [GuildNewsChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L660-L673>)
+## type [GuildNewsChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L660-L673>)
 
 
 
@@ -6200,7 +6203,7 @@ type GuildNewsChannel struct {
 ```
 
 <a name="GuildNewsChannel.CreatedAt"></a>
-### func \(GuildNewsChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L774>)
+### func \(GuildNewsChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L774>)
 
 ```go
 func (c GuildNewsChannel) CreatedAt() time.Time
@@ -6209,7 +6212,7 @@ func (c GuildNewsChannel) CreatedAt() time.Time
 
 
 <a name="GuildNewsChannel.DefaultAutoArchiveDuration"></a>
-### func \(GuildNewsChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L750>)
+### func \(GuildNewsChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L750>)
 
 ```go
 func (c GuildNewsChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
@@ -6218,7 +6221,7 @@ func (c GuildNewsChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
 
 
 <a name="GuildNewsChannel.GuildID"></a>
-### func \(GuildNewsChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L734>)
+### func \(GuildNewsChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L734>)
 
 ```go
 func (c GuildNewsChannel) GuildID() snowflake.ID
@@ -6227,7 +6230,7 @@ func (c GuildNewsChannel) GuildID() snowflake.ID
 
 
 <a name="GuildNewsChannel.ID"></a>
-### func \(GuildNewsChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L726>)
+### func \(GuildNewsChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L726>)
 
 ```go
 func (c GuildNewsChannel) ID() snowflake.ID
@@ -6236,7 +6239,7 @@ func (c GuildNewsChannel) ID() snowflake.ID
 
 
 <a name="GuildNewsChannel.LastMessageID"></a>
-### func \(GuildNewsChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L754>)
+### func \(GuildNewsChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L754>)
 
 ```go
 func (c GuildNewsChannel) LastMessageID() *snowflake.ID
@@ -6245,7 +6248,7 @@ func (c GuildNewsChannel) LastMessageID() *snowflake.ID
 
 
 <a name="GuildNewsChannel.LastPinTimestamp"></a>
-### func \(GuildNewsChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L762>)
+### func \(GuildNewsChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L762>)
 
 ```go
 func (c GuildNewsChannel) LastPinTimestamp() *time.Time
@@ -6254,7 +6257,7 @@ func (c GuildNewsChannel) LastPinTimestamp() *time.Time
 
 
 <a name="GuildNewsChannel.MarshalJSON"></a>
-### func \(GuildNewsChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L696>)
+### func \(GuildNewsChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L696>)
 
 ```go
 func (c GuildNewsChannel) MarshalJSON() ([]byte, error)
@@ -6263,7 +6266,7 @@ func (c GuildNewsChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildNewsChannel.Mention"></a>
-### func \(GuildNewsChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L718>)
+### func \(GuildNewsChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L718>)
 
 ```go
 func (c GuildNewsChannel) Mention() string
@@ -6272,7 +6275,7 @@ func (c GuildNewsChannel) Mention() string
 
 
 <a name="GuildNewsChannel.NSFW"></a>
-### func \(GuildNewsChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L746>)
+### func \(GuildNewsChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L746>)
 
 ```go
 func (c GuildNewsChannel) NSFW() bool
@@ -6281,7 +6284,7 @@ func (c GuildNewsChannel) NSFW() bool
 
 
 <a name="GuildNewsChannel.Name"></a>
-### func \(GuildNewsChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L730>)
+### func \(GuildNewsChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L730>)
 
 ```go
 func (c GuildNewsChannel) Name() string
@@ -6290,7 +6293,7 @@ func (c GuildNewsChannel) Name() string
 
 
 <a name="GuildNewsChannel.ParentID"></a>
-### func \(GuildNewsChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L770>)
+### func \(GuildNewsChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L770>)
 
 ```go
 func (c GuildNewsChannel) ParentID() *snowflake.ID
@@ -6299,7 +6302,7 @@ func (c GuildNewsChannel) ParentID() *snowflake.ID
 
 
 <a name="GuildNewsChannel.PermissionOverwrites"></a>
-### func \(GuildNewsChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L738>)
+### func \(GuildNewsChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L738>)
 
 ```go
 func (c GuildNewsChannel) PermissionOverwrites() PermissionOverwrites
@@ -6308,7 +6311,7 @@ func (c GuildNewsChannel) PermissionOverwrites() PermissionOverwrites
 
 
 <a name="GuildNewsChannel.Position"></a>
-### func \(GuildNewsChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L766>)
+### func \(GuildNewsChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L766>)
 
 ```go
 func (c GuildNewsChannel) Position() int
@@ -6317,7 +6320,7 @@ func (c GuildNewsChannel) Position() int
 
 
 <a name="GuildNewsChannel.RateLimitPerUser"></a>
-### func \(GuildNewsChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L758>)
+### func \(GuildNewsChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L758>)
 
 ```go
 func (c GuildNewsChannel) RateLimitPerUser() int
@@ -6326,7 +6329,7 @@ func (c GuildNewsChannel) RateLimitPerUser() int
 
 
 <a name="GuildNewsChannel.String"></a>
-### func \(GuildNewsChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L714>)
+### func \(GuildNewsChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L714>)
 
 ```go
 func (c GuildNewsChannel) String() string
@@ -6335,7 +6338,7 @@ func (c GuildNewsChannel) String() string
 
 
 <a name="GuildNewsChannel.Topic"></a>
-### func \(GuildNewsChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L742>)
+### func \(GuildNewsChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L742>)
 
 ```go
 func (c GuildNewsChannel) Topic() *string
@@ -6344,7 +6347,7 @@ func (c GuildNewsChannel) Topic() *string
 
 
 <a name="GuildNewsChannel.Type"></a>
-### func \(GuildNewsChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L722>)
+### func \(GuildNewsChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L722>)
 
 ```go
 func (GuildNewsChannel) Type() ChannelType
@@ -6353,7 +6356,7 @@ func (GuildNewsChannel) Type() ChannelType
 
 
 <a name="GuildNewsChannel.UnmarshalJSON"></a>
-### func \(\*GuildNewsChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L675>)
+### func \(\*GuildNewsChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L675>)
 
 ```go
 func (c *GuildNewsChannel) UnmarshalJSON(data []byte) error
@@ -6362,7 +6365,7 @@ func (c *GuildNewsChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildNewsChannelCreate"></a>
-## type [GuildNewsChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L125-L135>)
+## type [GuildNewsChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L125-L135>)
 
 
 
@@ -6381,7 +6384,7 @@ type GuildNewsChannelCreate struct {
 ```
 
 <a name="GuildNewsChannelCreate.MarshalJSON"></a>
-### func \(GuildNewsChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L141>)
+### func \(GuildNewsChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L141>)
 
 ```go
 func (c GuildNewsChannelCreate) MarshalJSON() ([]byte, error)
@@ -6390,7 +6393,7 @@ func (c GuildNewsChannelCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildNewsChannelCreate.Type"></a>
-### func \(GuildNewsChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L137>)
+### func \(GuildNewsChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L137>)
 
 ```go
 func (c GuildNewsChannelCreate) Type() ChannelType
@@ -6399,7 +6402,7 @@ func (c GuildNewsChannelCreate) Type() ChannelType
 
 
 <a name="GuildNewsChannelUpdate"></a>
-## type [GuildNewsChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L58-L67>)
+## type [GuildNewsChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L58-L67>)
 
 
 
@@ -6417,7 +6420,7 @@ type GuildNewsChannelUpdate struct {
 ```
 
 <a name="GuildNewsThreadCreate"></a>
-## type [GuildNewsThreadCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L40-L43>)
+## type [GuildNewsThreadCreate](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L40-L43>)
 
 
 
@@ -6429,7 +6432,7 @@ type GuildNewsThreadCreate struct {
 ```
 
 <a name="GuildNewsThreadCreate.MarshalJSON"></a>
-### func \(GuildNewsThreadCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L45>)
+### func \(GuildNewsThreadCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L45>)
 
 ```go
 func (c GuildNewsThreadCreate) MarshalJSON() ([]byte, error)
@@ -6438,7 +6441,7 @@ func (c GuildNewsThreadCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildNewsThreadCreate.Type"></a>
-### func \(GuildNewsThreadCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L56>)
+### func \(GuildNewsThreadCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L56>)
 
 ```go
 func (GuildNewsThreadCreate) Type() ChannelType
@@ -6447,7 +6450,7 @@ func (GuildNewsThreadCreate) Type() ChannelType
 
 
 <a name="GuildOnboarding"></a>
-## type [GuildOnboarding](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_onboarding.go#L8-L14>)
+## type [GuildOnboarding](<https://github.com/disgoorg/disgo/blob/master/discord/guild_onboarding.go#L8-L14>)
 
 
 
@@ -6462,7 +6465,7 @@ type GuildOnboarding struct {
 ```
 
 <a name="GuildOnboardingMode"></a>
-## type [GuildOnboardingMode](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_onboarding.go#L58>)
+## type [GuildOnboardingMode](<https://github.com/disgoorg/disgo/blob/master/discord/guild_onboarding.go#L58>)
 
 
 
@@ -6480,7 +6483,7 @@ const (
 ```
 
 <a name="GuildOnboardingPrompt"></a>
-## type [GuildOnboardingPrompt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_onboarding.go#L16-L24>)
+## type [GuildOnboardingPrompt](<https://github.com/disgoorg/disgo/blob/master/discord/guild_onboarding.go#L16-L24>)
 
 
 
@@ -6497,7 +6500,7 @@ type GuildOnboardingPrompt struct {
 ```
 
 <a name="GuildOnboardingPromptOption"></a>
-## type [GuildOnboardingPromptOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_onboarding.go#L26-L34>)
+## type [GuildOnboardingPromptOption](<https://github.com/disgoorg/disgo/blob/master/discord/guild_onboarding.go#L26-L34>)
 
 
 
@@ -6514,7 +6517,7 @@ type GuildOnboardingPromptOption struct {
 ```
 
 <a name="GuildOnboardingPromptOption.MarshalJSON"></a>
-### func \(GuildOnboardingPromptOption\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_onboarding.go#L36>)
+### func \(GuildOnboardingPromptOption\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/guild_onboarding.go#L36>)
 
 ```go
 func (o GuildOnboardingPromptOption) MarshalJSON() ([]byte, error)
@@ -6523,7 +6526,7 @@ func (o GuildOnboardingPromptOption) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildOnboardingPromptType"></a>
-## type [GuildOnboardingPromptType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_onboarding.go#L51>)
+## type [GuildOnboardingPromptType](<https://github.com/disgoorg/disgo/blob/master/discord/guild_onboarding.go#L51>)
 
 
 
@@ -6541,7 +6544,7 @@ const (
 ```
 
 <a name="GuildOnboardingUpdate"></a>
-## type [GuildOnboardingUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_onboarding.go#L65-L70>)
+## type [GuildOnboardingUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/guild_onboarding.go#L65-L70>)
 
 
 
@@ -6555,7 +6558,7 @@ type GuildOnboardingUpdate struct {
 ```
 
 <a name="GuildPostUpdate"></a>
-## type [GuildPostUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L137-L146>)
+## type [GuildPostUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L137-L146>)
 
 
 
@@ -6573,7 +6576,7 @@ type GuildPostUpdate struct {
 ```
 
 <a name="GuildPreview"></a>
-## type [GuildPreview](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L288-L300>)
+## type [GuildPreview](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L288-L300>)
 
 GuildPreview is used for previewing public Guild\(s\) before joining them
 
@@ -6594,7 +6597,7 @@ type GuildPreview struct {
 ```
 
 <a name="GuildPrivateThreadCreate"></a>
-## type [GuildPrivateThreadCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L80-L84>)
+## type [GuildPrivateThreadCreate](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L80-L84>)
 
 
 
@@ -6607,7 +6610,7 @@ type GuildPrivateThreadCreate struct {
 ```
 
 <a name="GuildPrivateThreadCreate.MarshalJSON"></a>
-### func \(GuildPrivateThreadCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L86>)
+### func \(GuildPrivateThreadCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L86>)
 
 ```go
 func (c GuildPrivateThreadCreate) MarshalJSON() ([]byte, error)
@@ -6616,7 +6619,7 @@ func (c GuildPrivateThreadCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildPrivateThreadCreate.Type"></a>
-### func \(GuildPrivateThreadCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L97>)
+### func \(GuildPrivateThreadCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L97>)
 
 ```go
 func (GuildPrivateThreadCreate) Type() ChannelType
@@ -6625,7 +6628,7 @@ func (GuildPrivateThreadCreate) Type() ChannelType
 
 
 <a name="GuildPrune"></a>
-## type [GuildPrune](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L361-L365>)
+## type [GuildPrune](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L361-L365>)
 
 
 
@@ -6638,7 +6641,7 @@ type GuildPrune struct {
 ```
 
 <a name="GuildPruneResult"></a>
-## type [GuildPruneResult](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L367-L369>)
+## type [GuildPruneResult](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L367-L369>)
 
 
 
@@ -6649,7 +6652,7 @@ type GuildPruneResult struct {
 ```
 
 <a name="GuildPublicThreadCreate"></a>
-## type [GuildPublicThreadCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L60-L63>)
+## type [GuildPublicThreadCreate](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L60-L63>)
 
 
 
@@ -6661,7 +6664,7 @@ type GuildPublicThreadCreate struct {
 ```
 
 <a name="GuildPublicThreadCreate.MarshalJSON"></a>
-### func \(GuildPublicThreadCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L65>)
+### func \(GuildPublicThreadCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L65>)
 
 ```go
 func (c GuildPublicThreadCreate) MarshalJSON() ([]byte, error)
@@ -6670,7 +6673,7 @@ func (c GuildPublicThreadCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildPublicThreadCreate.Type"></a>
-### func \(GuildPublicThreadCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L76>)
+### func \(GuildPublicThreadCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L76>)
 
 ```go
 func (GuildPublicThreadCreate) Type() ChannelType
@@ -6679,7 +6682,7 @@ func (GuildPublicThreadCreate) Type() ChannelType
 
 
 <a name="GuildScheduledEvent"></a>
-## type [GuildScheduledEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L11-L28>)
+## type [GuildScheduledEvent](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L11-L28>)
 
 GuildScheduledEvent a representation of a scheduled event in a Guild \(https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-object\)
 
@@ -6705,7 +6708,7 @@ type GuildScheduledEvent struct {
 ```
 
 <a name="GuildScheduledEvent.CoverURL"></a>
-### func \(GuildScheduledEvent\) [CoverURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L35>)
+### func \(GuildScheduledEvent\) [CoverURL](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L35>)
 
 ```go
 func (e GuildScheduledEvent) CoverURL(opts ...CDNOpt) *string
@@ -6714,7 +6717,7 @@ func (e GuildScheduledEvent) CoverURL(opts ...CDNOpt) *string
 CoverURL returns the cover URL if set or nil
 
 <a name="GuildScheduledEvent.CreatedAt"></a>
-### func \(GuildScheduledEvent\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L30>)
+### func \(GuildScheduledEvent\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L30>)
 
 ```go
 func (e GuildScheduledEvent) CreatedAt() time.Time
@@ -6723,7 +6726,7 @@ func (e GuildScheduledEvent) CreatedAt() time.Time
 
 
 <a name="GuildScheduledEventCreate"></a>
-## type [GuildScheduledEventCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L43-L53>)
+## type [GuildScheduledEventCreate](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L43-L53>)
 
 
 
@@ -6742,7 +6745,7 @@ type GuildScheduledEventCreate struct {
 ```
 
 <a name="GuildScheduledEventUpdate"></a>
-## type [GuildScheduledEventUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L55-L66>)
+## type [GuildScheduledEventUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L55-L66>)
 
 
 
@@ -6762,7 +6765,7 @@ type GuildScheduledEventUpdate struct {
 ```
 
 <a name="GuildScheduledEventUser"></a>
-## type [GuildScheduledEventUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L68-L72>)
+## type [GuildScheduledEventUser](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L68-L72>)
 
 
 
@@ -6775,7 +6778,7 @@ type GuildScheduledEventUser struct {
 ```
 
 <a name="GuildStageVoiceChannel"></a>
-## type [GuildStageVoiceChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L933-L946>)
+## type [GuildStageVoiceChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L933-L946>)
 
 
 
@@ -6787,7 +6790,7 @@ type GuildStageVoiceChannel struct {
 ```
 
 <a name="GuildStageVoiceChannel.Bitrate"></a>
-### func \(GuildStageVoiceChannel\) [Bitrate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1015>)
+### func \(GuildStageVoiceChannel\) [Bitrate](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1015>)
 
 ```go
 func (c GuildStageVoiceChannel) Bitrate() int
@@ -6796,7 +6799,7 @@ func (c GuildStageVoiceChannel) Bitrate() int
 
 
 <a name="GuildStageVoiceChannel.CreatedAt"></a>
-### func \(GuildStageVoiceChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1058>)
+### func \(GuildStageVoiceChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1058>)
 
 ```go
 func (c GuildStageVoiceChannel) CreatedAt() time.Time
@@ -6805,7 +6808,7 @@ func (c GuildStageVoiceChannel) CreatedAt() time.Time
 
 
 <a name="GuildStageVoiceChannel.DefaultAutoArchiveDuration"></a>
-### func \(GuildStageVoiceChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1050>)
+### func \(GuildStageVoiceChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1050>)
 
 ```go
 func (c GuildStageVoiceChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
@@ -6814,7 +6817,7 @@ func (c GuildStageVoiceChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
 DefaultAutoArchiveDuration is always 0 for GuildStageVoiceChannel\(s\) as they do not have their own AutoArchiveDuration.
 
 <a name="GuildStageVoiceChannel.GuildID"></a>
-### func \(GuildStageVoiceChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1007>)
+### func \(GuildStageVoiceChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1007>)
 
 ```go
 func (c GuildStageVoiceChannel) GuildID() snowflake.ID
@@ -6823,7 +6826,7 @@ func (c GuildStageVoiceChannel) GuildID() snowflake.ID
 
 
 <a name="GuildStageVoiceChannel.ID"></a>
-### func \(GuildStageVoiceChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L999>)
+### func \(GuildStageVoiceChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L999>)
 
 ```go
 func (c GuildStageVoiceChannel) ID() snowflake.ID
@@ -6832,7 +6835,7 @@ func (c GuildStageVoiceChannel) ID() snowflake.ID
 
 
 <a name="GuildStageVoiceChannel.LastMessageID"></a>
-### func \(GuildStageVoiceChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1031>)
+### func \(GuildStageVoiceChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1031>)
 
 ```go
 func (c GuildStageVoiceChannel) LastMessageID() *snowflake.ID
@@ -6841,7 +6844,7 @@ func (c GuildStageVoiceChannel) LastMessageID() *snowflake.ID
 
 
 <a name="GuildStageVoiceChannel.LastPinTimestamp"></a>
-### func \(GuildStageVoiceChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1036>)
+### func \(GuildStageVoiceChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1036>)
 
 ```go
 func (c GuildStageVoiceChannel) LastPinTimestamp() *time.Time
@@ -6850,7 +6853,7 @@ func (c GuildStageVoiceChannel) LastPinTimestamp() *time.Time
 LastPinTimestamp always returns nil for GuildStageVoiceChannel\(s\) as they cannot have pinned messages.
 
 <a name="GuildStageVoiceChannel.MarshalJSON"></a>
-### func \(GuildStageVoiceChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L969>)
+### func \(GuildStageVoiceChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L969>)
 
 ```go
 func (c GuildStageVoiceChannel) MarshalJSON() ([]byte, error)
@@ -6859,7 +6862,7 @@ func (c GuildStageVoiceChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildStageVoiceChannel.Mention"></a>
-### func \(GuildStageVoiceChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L991>)
+### func \(GuildStageVoiceChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L991>)
 
 ```go
 func (c GuildStageVoiceChannel) Mention() string
@@ -6868,7 +6871,7 @@ func (c GuildStageVoiceChannel) Mention() string
 
 
 <a name="GuildStageVoiceChannel.NSFW"></a>
-### func \(GuildStageVoiceChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1045>)
+### func \(GuildStageVoiceChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1045>)
 
 ```go
 func (c GuildStageVoiceChannel) NSFW() bool
@@ -6877,7 +6880,7 @@ func (c GuildStageVoiceChannel) NSFW() bool
 
 
 <a name="GuildStageVoiceChannel.Name"></a>
-### func \(GuildStageVoiceChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1003>)
+### func \(GuildStageVoiceChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1003>)
 
 ```go
 func (c GuildStageVoiceChannel) Name() string
@@ -6886,7 +6889,7 @@ func (c GuildStageVoiceChannel) Name() string
 
 
 <a name="GuildStageVoiceChannel.ParentID"></a>
-### func \(GuildStageVoiceChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1027>)
+### func \(GuildStageVoiceChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1027>)
 
 ```go
 func (c GuildStageVoiceChannel) ParentID() *snowflake.ID
@@ -6895,7 +6898,7 @@ func (c GuildStageVoiceChannel) ParentID() *snowflake.ID
 
 
 <a name="GuildStageVoiceChannel.PermissionOverwrites"></a>
-### func \(GuildStageVoiceChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1011>)
+### func \(GuildStageVoiceChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1011>)
 
 ```go
 func (c GuildStageVoiceChannel) PermissionOverwrites() PermissionOverwrites
@@ -6904,7 +6907,7 @@ func (c GuildStageVoiceChannel) PermissionOverwrites() PermissionOverwrites
 
 
 <a name="GuildStageVoiceChannel.Position"></a>
-### func \(GuildStageVoiceChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1023>)
+### func \(GuildStageVoiceChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1023>)
 
 ```go
 func (c GuildStageVoiceChannel) Position() int
@@ -6913,7 +6916,7 @@ func (c GuildStageVoiceChannel) Position() int
 
 
 <a name="GuildStageVoiceChannel.RTCRegion"></a>
-### func \(GuildStageVoiceChannel\) [RTCRegion](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1019>)
+### func \(GuildStageVoiceChannel\) [RTCRegion](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1019>)
 
 ```go
 func (c GuildStageVoiceChannel) RTCRegion() string
@@ -6922,7 +6925,7 @@ func (c GuildStageVoiceChannel) RTCRegion() string
 
 
 <a name="GuildStageVoiceChannel.RateLimitPerUser"></a>
-### func \(GuildStageVoiceChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1054>)
+### func \(GuildStageVoiceChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1054>)
 
 ```go
 func (c GuildStageVoiceChannel) RateLimitPerUser() int
@@ -6931,7 +6934,7 @@ func (c GuildStageVoiceChannel) RateLimitPerUser() int
 
 
 <a name="GuildStageVoiceChannel.String"></a>
-### func \(GuildStageVoiceChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L987>)
+### func \(GuildStageVoiceChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L987>)
 
 ```go
 func (c GuildStageVoiceChannel) String() string
@@ -6940,7 +6943,7 @@ func (c GuildStageVoiceChannel) String() string
 
 
 <a name="GuildStageVoiceChannel.Topic"></a>
-### func \(GuildStageVoiceChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1041>)
+### func \(GuildStageVoiceChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1041>)
 
 ```go
 func (c GuildStageVoiceChannel) Topic() *string
@@ -6949,7 +6952,7 @@ func (c GuildStageVoiceChannel) Topic() *string
 Topic always returns nil for GuildStageVoiceChannel\(s\) as they do not have their own topic.
 
 <a name="GuildStageVoiceChannel.Type"></a>
-### func \(GuildStageVoiceChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L995>)
+### func \(GuildStageVoiceChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L995>)
 
 ```go
 func (GuildStageVoiceChannel) Type() ChannelType
@@ -6958,7 +6961,7 @@ func (GuildStageVoiceChannel) Type() ChannelType
 
 
 <a name="GuildStageVoiceChannel.UnmarshalJSON"></a>
-### func \(\*GuildStageVoiceChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L948>)
+### func \(\*GuildStageVoiceChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L948>)
 
 ```go
 func (c *GuildStageVoiceChannel) UnmarshalJSON(data []byte) error
@@ -6967,7 +6970,7 @@ func (c *GuildStageVoiceChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildStageVoiceChannelCreate"></a>
-## type [GuildStageVoiceChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L160-L171>)
+## type [GuildStageVoiceChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L160-L171>)
 
 
 
@@ -6987,7 +6990,7 @@ type GuildStageVoiceChannelCreate struct {
 ```
 
 <a name="GuildStageVoiceChannelCreate.MarshalJSON"></a>
-### func \(GuildStageVoiceChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L177>)
+### func \(GuildStageVoiceChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L177>)
 
 ```go
 func (c GuildStageVoiceChannelCreate) MarshalJSON() ([]byte, error)
@@ -6996,7 +6999,7 @@ func (c GuildStageVoiceChannelCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildStageVoiceChannelCreate.Type"></a>
-### func \(GuildStageVoiceChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L173>)
+### func \(GuildStageVoiceChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L173>)
 
 ```go
 func (c GuildStageVoiceChannelCreate) Type() ChannelType
@@ -7005,7 +7008,7 @@ func (c GuildStageVoiceChannelCreate) Type() ChannelType
 
 
 <a name="GuildStageVoiceChannelUpdate"></a>
-## type [GuildStageVoiceChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L84-L95>)
+## type [GuildStageVoiceChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L84-L95>)
 
 
 
@@ -7025,7 +7028,7 @@ type GuildStageVoiceChannelUpdate struct {
 ```
 
 <a name="GuildSubscriptionIntegration"></a>
-## type [GuildSubscriptionIntegration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L213-L218>)
+## type [GuildSubscriptionIntegration](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L213-L218>)
 
 
 
@@ -7039,7 +7042,7 @@ type GuildSubscriptionIntegration struct {
 ```
 
 <a name="GuildSubscriptionIntegration.CreatedAt"></a>
-### func \(GuildSubscriptionIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L239>)
+### func \(GuildSubscriptionIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L239>)
 
 ```go
 func (i GuildSubscriptionIntegration) CreatedAt() time.Time
@@ -7048,7 +7051,7 @@ func (i GuildSubscriptionIntegration) CreatedAt() time.Time
 
 
 <a name="GuildSubscriptionIntegration.ID"></a>
-### func \(GuildSubscriptionIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L235>)
+### func \(GuildSubscriptionIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L235>)
 
 ```go
 func (i GuildSubscriptionIntegration) ID() snowflake.ID
@@ -7057,7 +7060,7 @@ func (i GuildSubscriptionIntegration) ID() snowflake.ID
 
 
 <a name="GuildSubscriptionIntegration.MarshalJSON"></a>
-### func \(GuildSubscriptionIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L220>)
+### func \(GuildSubscriptionIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L220>)
 
 ```go
 func (i GuildSubscriptionIntegration) MarshalJSON() ([]byte, error)
@@ -7066,7 +7069,7 @@ func (i GuildSubscriptionIntegration) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildSubscriptionIntegration.Type"></a>
-### func \(GuildSubscriptionIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L231>)
+### func \(GuildSubscriptionIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L231>)
 
 ```go
 func (GuildSubscriptionIntegration) Type() IntegrationType
@@ -7075,7 +7078,7 @@ func (GuildSubscriptionIntegration) Type() IntegrationType
 
 
 <a name="GuildTemplate"></a>
-## type [GuildTemplate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_template.go#L10-L22>)
+## type [GuildTemplate](<https://github.com/disgoorg/disgo/blob/master/discord/guild_template.go#L10-L22>)
 
 GuildTemplate is a template used for copying guilds https://discord.com/developers/docs/resources/guild-template
 
@@ -7096,7 +7099,7 @@ type GuildTemplate struct {
 ```
 
 <a name="GuildTemplateCreate"></a>
-## type [GuildTemplateCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_template.go#L41-L44>)
+## type [GuildTemplateCreate](<https://github.com/disgoorg/disgo/blob/master/discord/guild_template.go#L41-L44>)
 
 GuildTemplateCreate is the data used to create a GuildTemplate
 
@@ -7108,7 +7111,7 @@ type GuildTemplateCreate struct {
 ```
 
 <a name="GuildTemplateUpdate"></a>
-## type [GuildTemplateUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_template.go#L47-L50>)
+## type [GuildTemplateUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/guild_template.go#L47-L50>)
 
 GuildTemplateUpdate is the data used to update a GuildTemplate
 
@@ -7120,7 +7123,7 @@ type GuildTemplateUpdate struct {
 ```
 
 <a name="GuildTextChannel"></a>
-## type [GuildTextChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L237-L250>)
+## type [GuildTextChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L237-L250>)
 
 
 
@@ -7131,7 +7134,7 @@ type GuildTextChannel struct {
 ```
 
 <a name="GuildTextChannel.CreatedAt"></a>
-### func \(GuildTextChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L351>)
+### func \(GuildTextChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L351>)
 
 ```go
 func (c GuildTextChannel) CreatedAt() time.Time
@@ -7140,7 +7143,7 @@ func (c GuildTextChannel) CreatedAt() time.Time
 
 
 <a name="GuildTextChannel.DefaultAutoArchiveDuration"></a>
-### func \(GuildTextChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L347>)
+### func \(GuildTextChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L347>)
 
 ```go
 func (c GuildTextChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
@@ -7149,7 +7152,7 @@ func (c GuildTextChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
 
 
 <a name="GuildTextChannel.GuildID"></a>
-### func \(GuildTextChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L311>)
+### func \(GuildTextChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L311>)
 
 ```go
 func (c GuildTextChannel) GuildID() snowflake.ID
@@ -7158,7 +7161,7 @@ func (c GuildTextChannel) GuildID() snowflake.ID
 
 
 <a name="GuildTextChannel.ID"></a>
-### func \(GuildTextChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L299>)
+### func \(GuildTextChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L299>)
 
 ```go
 func (c GuildTextChannel) ID() snowflake.ID
@@ -7167,7 +7170,7 @@ func (c GuildTextChannel) ID() snowflake.ID
 
 
 <a name="GuildTextChannel.LastMessageID"></a>
-### func \(GuildTextChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L327>)
+### func \(GuildTextChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L327>)
 
 ```go
 func (c GuildTextChannel) LastMessageID() *snowflake.ID
@@ -7176,7 +7179,7 @@ func (c GuildTextChannel) LastMessageID() *snowflake.ID
 
 
 <a name="GuildTextChannel.LastPinTimestamp"></a>
-### func \(GuildTextChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L335>)
+### func \(GuildTextChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L335>)
 
 ```go
 func (c GuildTextChannel) LastPinTimestamp() *time.Time
@@ -7185,7 +7188,7 @@ func (c GuildTextChannel) LastPinTimestamp() *time.Time
 
 
 <a name="GuildTextChannel.MarshalJSON"></a>
-### func \(GuildTextChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L273>)
+### func \(GuildTextChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L273>)
 
 ```go
 func (c GuildTextChannel) MarshalJSON() ([]byte, error)
@@ -7194,7 +7197,7 @@ func (c GuildTextChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildTextChannel.Mention"></a>
-### func \(GuildTextChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L295>)
+### func \(GuildTextChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L295>)
 
 ```go
 func (c GuildTextChannel) Mention() string
@@ -7203,7 +7206,7 @@ func (c GuildTextChannel) Mention() string
 
 
 <a name="GuildTextChannel.NSFW"></a>
-### func \(GuildTextChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L343>)
+### func \(GuildTextChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L343>)
 
 ```go
 func (c GuildTextChannel) NSFW() bool
@@ -7212,7 +7215,7 @@ func (c GuildTextChannel) NSFW() bool
 
 
 <a name="GuildTextChannel.Name"></a>
-### func \(GuildTextChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L307>)
+### func \(GuildTextChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L307>)
 
 ```go
 func (c GuildTextChannel) Name() string
@@ -7221,7 +7224,7 @@ func (c GuildTextChannel) Name() string
 
 
 <a name="GuildTextChannel.ParentID"></a>
-### func \(GuildTextChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L323>)
+### func \(GuildTextChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L323>)
 
 ```go
 func (c GuildTextChannel) ParentID() *snowflake.ID
@@ -7230,7 +7233,7 @@ func (c GuildTextChannel) ParentID() *snowflake.ID
 
 
 <a name="GuildTextChannel.PermissionOverwrites"></a>
-### func \(GuildTextChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L315>)
+### func \(GuildTextChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L315>)
 
 ```go
 func (c GuildTextChannel) PermissionOverwrites() PermissionOverwrites
@@ -7239,7 +7242,7 @@ func (c GuildTextChannel) PermissionOverwrites() PermissionOverwrites
 
 
 <a name="GuildTextChannel.Position"></a>
-### func \(GuildTextChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L319>)
+### func \(GuildTextChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L319>)
 
 ```go
 func (c GuildTextChannel) Position() int
@@ -7248,7 +7251,7 @@ func (c GuildTextChannel) Position() int
 
 
 <a name="GuildTextChannel.RateLimitPerUser"></a>
-### func \(GuildTextChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L331>)
+### func \(GuildTextChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L331>)
 
 ```go
 func (c GuildTextChannel) RateLimitPerUser() int
@@ -7257,7 +7260,7 @@ func (c GuildTextChannel) RateLimitPerUser() int
 
 
 <a name="GuildTextChannel.String"></a>
-### func \(GuildTextChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L291>)
+### func \(GuildTextChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L291>)
 
 ```go
 func (c GuildTextChannel) String() string
@@ -7266,7 +7269,7 @@ func (c GuildTextChannel) String() string
 
 
 <a name="GuildTextChannel.Topic"></a>
-### func \(GuildTextChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L339>)
+### func \(GuildTextChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L339>)
 
 ```go
 func (c GuildTextChannel) Topic() *string
@@ -7275,7 +7278,7 @@ func (c GuildTextChannel) Topic() *string
 
 
 <a name="GuildTextChannel.Type"></a>
-### func \(GuildTextChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L303>)
+### func \(GuildTextChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L303>)
 
 ```go
 func (GuildTextChannel) Type() ChannelType
@@ -7284,7 +7287,7 @@ func (GuildTextChannel) Type() ChannelType
 
 
 <a name="GuildTextChannel.UnmarshalJSON"></a>
-### func \(\*GuildTextChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L252>)
+### func \(\*GuildTextChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L252>)
 
 ```go
 func (c *GuildTextChannel) UnmarshalJSON(data []byte) error
@@ -7293,7 +7296,7 @@ func (c *GuildTextChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildTextChannelCreate"></a>
-## type [GuildTextChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L24-L34>)
+## type [GuildTextChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L24-L34>)
 
 
 
@@ -7312,7 +7315,7 @@ type GuildTextChannelCreate struct {
 ```
 
 <a name="GuildTextChannelCreate.MarshalJSON"></a>
-### func \(GuildTextChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L40>)
+### func \(GuildTextChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L40>)
 
 ```go
 func (c GuildTextChannelCreate) MarshalJSON() ([]byte, error)
@@ -7321,7 +7324,7 @@ func (c GuildTextChannelCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildTextChannelCreate.Type"></a>
-### func \(GuildTextChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L36>)
+### func \(GuildTextChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L36>)
 
 ```go
 func (c GuildTextChannelCreate) Type() ChannelType
@@ -7330,7 +7333,7 @@ func (c GuildTextChannelCreate) Type() ChannelType
 
 
 <a name="GuildTextChannelUpdate"></a>
-## type [GuildTextChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L17-L28>)
+## type [GuildTextChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L17-L28>)
 
 
 
@@ -7350,7 +7353,7 @@ type GuildTextChannelUpdate struct {
 ```
 
 <a name="GuildThread"></a>
-## type [GuildThread](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L790-L806>)
+## type [GuildThread](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L790-L806>)
 
 
 
@@ -7368,7 +7371,7 @@ type GuildThread struct {
 ```
 
 <a name="ApplyGuildIDToThread"></a>
-### func [ApplyGuildIDToThread](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1365>)
+### func [ApplyGuildIDToThread](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1365>)
 
 ```go
 func ApplyGuildIDToThread(guildThread GuildThread, guildID snowflake.ID) GuildThread
@@ -7377,7 +7380,7 @@ func ApplyGuildIDToThread(guildThread GuildThread, guildID snowflake.ID) GuildTh
 
 
 <a name="GuildThread.CreatedAt"></a>
-### func \(GuildThread\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L917>)
+### func \(GuildThread\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L917>)
 
 ```go
 func (c GuildThread) CreatedAt() time.Time
@@ -7386,7 +7389,7 @@ func (c GuildThread) CreatedAt() time.Time
 
 
 <a name="GuildThread.DefaultAutoArchiveDuration"></a>
-### func \(GuildThread\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L913>)
+### func \(GuildThread\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L913>)
 
 ```go
 func (c GuildThread) DefaultAutoArchiveDuration() AutoArchiveDuration
@@ -7395,7 +7398,7 @@ func (c GuildThread) DefaultAutoArchiveDuration() AutoArchiveDuration
 DefaultAutoArchiveDuration is always 0 for GuildThread\(s\) as they do not have their own AutoArchiveDuration.
 
 <a name="GuildThread.GuildID"></a>
-### func \(GuildThread\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L886>)
+### func \(GuildThread\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L886>)
 
 ```go
 func (c GuildThread) GuildID() snowflake.ID
@@ -7404,7 +7407,7 @@ func (c GuildThread) GuildID() snowflake.ID
 
 
 <a name="GuildThread.ID"></a>
-### func \(GuildThread\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L864>)
+### func \(GuildThread\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L864>)
 
 ```go
 func (c GuildThread) ID() snowflake.ID
@@ -7413,7 +7416,7 @@ func (c GuildThread) ID() snowflake.ID
 
 
 <a name="GuildThread.LastMessageID"></a>
-### func \(GuildThread\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L890>)
+### func \(GuildThread\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L890>)
 
 ```go
 func (c GuildThread) LastMessageID() *snowflake.ID
@@ -7422,7 +7425,7 @@ func (c GuildThread) LastMessageID() *snowflake.ID
 
 
 <a name="GuildThread.LastPinTimestamp"></a>
-### func \(GuildThread\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L898>)
+### func \(GuildThread\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L898>)
 
 ```go
 func (c GuildThread) LastPinTimestamp() *time.Time
@@ -7431,7 +7434,7 @@ func (c GuildThread) LastPinTimestamp() *time.Time
 
 
 <a name="GuildThread.MarshalJSON"></a>
-### func \(GuildThread\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L832>)
+### func \(GuildThread\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L832>)
 
 ```go
 func (c GuildThread) MarshalJSON() ([]byte, error)
@@ -7440,7 +7443,7 @@ func (c GuildThread) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildThread.Mention"></a>
-### func \(GuildThread\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L856>)
+### func \(GuildThread\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L856>)
 
 ```go
 func (c GuildThread) Mention() string
@@ -7449,7 +7452,7 @@ func (c GuildThread) Mention() string
 
 
 <a name="GuildThread.NSFW"></a>
-### func \(GuildThread\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L878>)
+### func \(GuildThread\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L878>)
 
 ```go
 func (c GuildThread) NSFW() bool
@@ -7458,7 +7461,7 @@ func (c GuildThread) NSFW() bool
 
 
 <a name="GuildThread.Name"></a>
-### func \(GuildThread\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L882>)
+### func \(GuildThread\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L882>)
 
 ```go
 func (c GuildThread) Name() string
@@ -7467,7 +7470,7 @@ func (c GuildThread) Name() string
 
 
 <a name="GuildThread.ParentID"></a>
-### func \(GuildThread\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L908>)
+### func \(GuildThread\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L908>)
 
 ```go
 func (c GuildThread) ParentID() *snowflake.ID
@@ -7476,7 +7479,7 @@ func (c GuildThread) ParentID() *snowflake.ID
 ParentID is never nil for GuildThread\(s\).
 
 <a name="GuildThread.PermissionOverwrites"></a>
-### func \(GuildThread\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L869>)
+### func \(GuildThread\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L869>)
 
 ```go
 func (c GuildThread) PermissionOverwrites() PermissionOverwrites
@@ -7485,7 +7488,7 @@ func (c GuildThread) PermissionOverwrites() PermissionOverwrites
 PermissionOverwrites always returns nil for GuildThread\(s\) as they do not have their own PermissionOverwrites.
 
 <a name="GuildThread.Position"></a>
-### func \(GuildThread\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L903>)
+### func \(GuildThread\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L903>)
 
 ```go
 func (c GuildThread) Position() int
@@ -7494,7 +7497,7 @@ func (c GuildThread) Position() int
 Position always returns 0 for GuildThread\(s\) as they do not have their own position.
 
 <a name="GuildThread.RateLimitPerUser"></a>
-### func \(GuildThread\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L894>)
+### func \(GuildThread\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L894>)
 
 ```go
 func (c GuildThread) RateLimitPerUser() int
@@ -7503,7 +7506,7 @@ func (c GuildThread) RateLimitPerUser() int
 
 
 <a name="GuildThread.String"></a>
-### func \(GuildThread\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L852>)
+### func \(GuildThread\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L852>)
 
 ```go
 func (c GuildThread) String() string
@@ -7512,7 +7515,7 @@ func (c GuildThread) String() string
 
 
 <a name="GuildThread.Topic"></a>
-### func \(GuildThread\) [Topic](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L874>)
+### func \(GuildThread\) [Topic](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L874>)
 
 ```go
 func (c GuildThread) Topic() *string
@@ -7521,7 +7524,7 @@ func (c GuildThread) Topic() *string
 Topic always returns nil for GuildThread\(s\) as they do not have their own topic.
 
 <a name="GuildThread.Type"></a>
-### func \(GuildThread\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L860>)
+### func \(GuildThread\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L860>)
 
 ```go
 func (c GuildThread) Type() ChannelType
@@ -7530,7 +7533,7 @@ func (c GuildThread) Type() ChannelType
 
 
 <a name="GuildThread.UnmarshalJSON"></a>
-### func \(\*GuildThread\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L808>)
+### func \(\*GuildThread\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L808>)
 
 ```go
 func (c *GuildThread) UnmarshalJSON(data []byte) error
@@ -7539,7 +7542,7 @@ func (c *GuildThread) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildThreadUpdate"></a>
-## type [GuildThreadUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L72-L79>)
+## type [GuildThreadUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L72-L79>)
 
 
 
@@ -7555,7 +7558,7 @@ type GuildThreadUpdate struct {
 ```
 
 <a name="GuildUpdate"></a>
-## type [GuildUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L318-L339>)
+## type [GuildUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L318-L339>)
 
 GuildUpdate is the payload used to update a Guild
 
@@ -7585,7 +7588,7 @@ type GuildUpdate struct {
 ```
 
 <a name="GuildVoiceChannel"></a>
-## type [GuildVoiceChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L433-L447>)
+## type [GuildVoiceChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L433-L447>)
 
 
 
@@ -7599,7 +7602,7 @@ type GuildVoiceChannel struct {
 ```
 
 <a name="GuildVoiceChannel.Bitrate"></a>
-### func \(GuildVoiceChannel\) [Bitrate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L518>)
+### func \(GuildVoiceChannel\) [Bitrate](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L518>)
 
 ```go
 func (c GuildVoiceChannel) Bitrate() int
@@ -7608,7 +7611,7 @@ func (c GuildVoiceChannel) Bitrate() int
 
 
 <a name="GuildVoiceChannel.CreatedAt"></a>
-### func \(GuildVoiceChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L561>)
+### func \(GuildVoiceChannel\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L561>)
 
 ```go
 func (c GuildVoiceChannel) CreatedAt() time.Time
@@ -7617,7 +7620,7 @@ func (c GuildVoiceChannel) CreatedAt() time.Time
 
 
 <a name="GuildVoiceChannel.DefaultAutoArchiveDuration"></a>
-### func \(GuildVoiceChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L553>)
+### func \(GuildVoiceChannel\) [DefaultAutoArchiveDuration](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L553>)
 
 ```go
 func (c GuildVoiceChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
@@ -7626,7 +7629,7 @@ func (c GuildVoiceChannel) DefaultAutoArchiveDuration() AutoArchiveDuration
 DefaultAutoArchiveDuration is always 0 for GuildVoiceChannel\(s\) as they do not have their own AutoArchiveDuration.
 
 <a name="GuildVoiceChannel.GuildID"></a>
-### func \(GuildVoiceChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L510>)
+### func \(GuildVoiceChannel\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L510>)
 
 ```go
 func (c GuildVoiceChannel) GuildID() snowflake.ID
@@ -7635,7 +7638,7 @@ func (c GuildVoiceChannel) GuildID() snowflake.ID
 
 
 <a name="GuildVoiceChannel.ID"></a>
-### func \(GuildVoiceChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L502>)
+### func \(GuildVoiceChannel\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L502>)
 
 ```go
 func (c GuildVoiceChannel) ID() snowflake.ID
@@ -7644,7 +7647,7 @@ func (c GuildVoiceChannel) ID() snowflake.ID
 
 
 <a name="GuildVoiceChannel.LastMessageID"></a>
-### func \(GuildVoiceChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L534>)
+### func \(GuildVoiceChannel\) [LastMessageID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L534>)
 
 ```go
 func (c GuildVoiceChannel) LastMessageID() *snowflake.ID
@@ -7653,7 +7656,7 @@ func (c GuildVoiceChannel) LastMessageID() *snowflake.ID
 
 
 <a name="GuildVoiceChannel.LastPinTimestamp"></a>
-### func \(GuildVoiceChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L539>)
+### func \(GuildVoiceChannel\) [LastPinTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L539>)
 
 ```go
 func (c GuildVoiceChannel) LastPinTimestamp() *time.Time
@@ -7662,7 +7665,7 @@ func (c GuildVoiceChannel) LastPinTimestamp() *time.Time
 LastPinTimestamp always returns nil for GuildVoiceChannel\(s\) as they cannot have pinned messages.
 
 <a name="GuildVoiceChannel.MarshalJSON"></a>
-### func \(GuildVoiceChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L471>)
+### func \(GuildVoiceChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L471>)
 
 ```go
 func (c GuildVoiceChannel) MarshalJSON() ([]byte, error)
@@ -7671,7 +7674,7 @@ func (c GuildVoiceChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildVoiceChannel.Mention"></a>
-### func \(GuildVoiceChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L494>)
+### func \(GuildVoiceChannel\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L494>)
 
 ```go
 func (c GuildVoiceChannel) Mention() string
@@ -7680,7 +7683,7 @@ func (c GuildVoiceChannel) Mention() string
 
 
 <a name="GuildVoiceChannel.NSFW"></a>
-### func \(GuildVoiceChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L548>)
+### func \(GuildVoiceChannel\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L548>)
 
 ```go
 func (c GuildVoiceChannel) NSFW() bool
@@ -7689,7 +7692,7 @@ func (c GuildVoiceChannel) NSFW() bool
 
 
 <a name="GuildVoiceChannel.Name"></a>
-### func \(GuildVoiceChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L506>)
+### func \(GuildVoiceChannel\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L506>)
 
 ```go
 func (c GuildVoiceChannel) Name() string
@@ -7698,7 +7701,7 @@ func (c GuildVoiceChannel) Name() string
 
 
 <a name="GuildVoiceChannel.ParentID"></a>
-### func \(GuildVoiceChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L530>)
+### func \(GuildVoiceChannel\) [ParentID](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L530>)
 
 ```go
 func (c GuildVoiceChannel) ParentID() *snowflake.ID
@@ -7707,7 +7710,7 @@ func (c GuildVoiceChannel) ParentID() *snowflake.ID
 
 
 <a name="GuildVoiceChannel.PermissionOverwrites"></a>
-### func \(GuildVoiceChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L514>)
+### func \(GuildVoiceChannel\) [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L514>)
 
 ```go
 func (c GuildVoiceChannel) PermissionOverwrites() PermissionOverwrites
@@ -7716,7 +7719,7 @@ func (c GuildVoiceChannel) PermissionOverwrites() PermissionOverwrites
 
 
 <a name="GuildVoiceChannel.Position"></a>
-### func \(GuildVoiceChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L526>)
+### func \(GuildVoiceChannel\) [Position](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L526>)
 
 ```go
 func (c GuildVoiceChannel) Position() int
@@ -7725,7 +7728,7 @@ func (c GuildVoiceChannel) Position() int
 
 
 <a name="GuildVoiceChannel.RTCRegion"></a>
-### func \(GuildVoiceChannel\) [RTCRegion](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L522>)
+### func \(GuildVoiceChannel\) [RTCRegion](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L522>)
 
 ```go
 func (c GuildVoiceChannel) RTCRegion() string
@@ -7734,7 +7737,7 @@ func (c GuildVoiceChannel) RTCRegion() string
 
 
 <a name="GuildVoiceChannel.RateLimitPerUser"></a>
-### func \(GuildVoiceChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L557>)
+### func \(GuildVoiceChannel\) [RateLimitPerUser](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L557>)
 
 ```go
 func (c GuildVoiceChannel) RateLimitPerUser() int
@@ -7743,7 +7746,7 @@ func (c GuildVoiceChannel) RateLimitPerUser() int
 
 
 <a name="GuildVoiceChannel.String"></a>
-### func \(GuildVoiceChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L490>)
+### func \(GuildVoiceChannel\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L490>)
 
 ```go
 func (c GuildVoiceChannel) String() string
@@ -7752,7 +7755,7 @@ func (c GuildVoiceChannel) String() string
 
 
 <a name="GuildVoiceChannel.Topic"></a>
-### func \(GuildVoiceChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L544>)
+### func \(GuildVoiceChannel\) [Topic](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L544>)
 
 ```go
 func (c GuildVoiceChannel) Topic() *string
@@ -7761,7 +7764,7 @@ func (c GuildVoiceChannel) Topic() *string
 Topic always returns nil for GuildVoiceChannel\(s\) as they do not have their own topic.
 
 <a name="GuildVoiceChannel.Type"></a>
-### func \(GuildVoiceChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L498>)
+### func \(GuildVoiceChannel\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L498>)
 
 ```go
 func (GuildVoiceChannel) Type() ChannelType
@@ -7770,7 +7773,7 @@ func (GuildVoiceChannel) Type() ChannelType
 
 
 <a name="GuildVoiceChannel.UnmarshalJSON"></a>
-### func \(\*GuildVoiceChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L449>)
+### func \(\*GuildVoiceChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L449>)
 
 ```go
 func (c *GuildVoiceChannel) UnmarshalJSON(data []byte) error
@@ -7779,7 +7782,7 @@ func (c *GuildVoiceChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="GuildVoiceChannelCreate"></a>
-## type [GuildVoiceChannelCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L59-L70>)
+## type [GuildVoiceChannelCreate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L59-L70>)
 
 
 
@@ -7799,7 +7802,7 @@ type GuildVoiceChannelCreate struct {
 ```
 
 <a name="GuildVoiceChannelCreate.MarshalJSON"></a>
-### func \(GuildVoiceChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L76>)
+### func \(GuildVoiceChannelCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L76>)
 
 ```go
 func (c GuildVoiceChannelCreate) MarshalJSON() ([]byte, error)
@@ -7808,7 +7811,7 @@ func (c GuildVoiceChannelCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="GuildVoiceChannelCreate.Type"></a>
-### func \(GuildVoiceChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_create.go#L72>)
+### func \(GuildVoiceChannelCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/channel_create.go#L72>)
 
 ```go
 func (c GuildVoiceChannelCreate) Type() ChannelType
@@ -7817,7 +7820,7 @@ func (c GuildVoiceChannelCreate) Type() ChannelType
 
 
 <a name="GuildVoiceChannelUpdate"></a>
-## type [GuildVoiceChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel_update.go#L33-L44>)
+## type [GuildVoiceChannelUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/channel_update.go#L33-L44>)
 
 
 
@@ -7837,7 +7840,7 @@ type GuildVoiceChannelUpdate struct {
 ```
 
 <a name="GuildWelcomeChannel"></a>
-## type [GuildWelcomeChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L273-L278>)
+## type [GuildWelcomeChannel](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L273-L278>)
 
 GuildWelcomeChannel is one of the channels in a GuildWelcomeScreen
 
@@ -7851,7 +7854,7 @@ type GuildWelcomeChannel struct {
 ```
 
 <a name="GuildWelcomeScreen"></a>
-## type [GuildWelcomeScreen](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L267-L270>)
+## type [GuildWelcomeScreen](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L267-L270>)
 
 GuildWelcomeScreen is the Welcome Screen of a Guild
 
@@ -7863,7 +7866,7 @@ type GuildWelcomeScreen struct {
 ```
 
 <a name="GuildWelcomeScreenUpdate"></a>
-## type [GuildWelcomeScreenUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L281-L285>)
+## type [GuildWelcomeScreenUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L281-L285>)
 
 GuildWelcomeScreenUpdate is used to update the GuildWelcomeScreen of a Guild
 
@@ -7876,7 +7879,7 @@ type GuildWelcomeScreenUpdate struct {
 ```
 
 <a name="Icon"></a>
-## type [Icon](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L46-L49>)
+## type [Icon](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L46-L49>)
 
 
 
@@ -7888,7 +7891,7 @@ type Icon struct {
 ```
 
 <a name="NewIcon"></a>
-### func [NewIcon](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L32>)
+### func [NewIcon](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L32>)
 
 ```go
 func NewIcon(iconType IconType, reader io.Reader) (*Icon, error)
@@ -7897,7 +7900,7 @@ func NewIcon(iconType IconType, reader io.Reader) (*Icon, error)
 
 
 <a name="NewIconRaw"></a>
-### func [NewIconRaw](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L40>)
+### func [NewIconRaw](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L40>)
 
 ```go
 func NewIconRaw(iconType IconType, src []byte) *Icon
@@ -7906,7 +7909,7 @@ func NewIconRaw(iconType IconType, src []byte) *Icon
 
 
 <a name="Icon.MarshalJSON"></a>
-### func \(Icon\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L51>)
+### func \(Icon\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L51>)
 
 ```go
 func (i Icon) MarshalJSON() ([]byte, error)
@@ -7915,7 +7918,7 @@ func (i Icon) MarshalJSON() ([]byte, error)
 
 
 <a name="Icon.String"></a>
-### func \(Icon\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L55>)
+### func \(Icon\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L55>)
 
 ```go
 func (i Icon) String() string
@@ -7924,7 +7927,7 @@ func (i Icon) String() string
 
 
 <a name="IconType"></a>
-## type [IconType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L11>)
+## type [IconType](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L11>)
 
 
 
@@ -7945,7 +7948,7 @@ const (
 ```
 
 <a name="IconType.GetHeader"></a>
-### func \(IconType\) [GetHeader](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L25>)
+### func \(IconType\) [GetHeader](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L25>)
 
 ```go
 func (t IconType) GetHeader() string
@@ -7954,7 +7957,7 @@ func (t IconType) GetHeader() string
 
 
 <a name="IconType.GetMIME"></a>
-### func \(IconType\) [GetMIME](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/icon.go#L21>)
+### func \(IconType\) [GetMIME](<https://github.com/disgoorg/disgo/blob/master/discord/icon.go#L21>)
 
 ```go
 func (t IconType) GetMIME() string
@@ -7963,7 +7966,7 @@ func (t IconType) GetMIME() string
 
 
 <a name="IncomingWebhook"></a>
-## type [IncomingWebhook](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L81-L90>)
+## type [IncomingWebhook](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L81-L90>)
 
 
 
@@ -7979,7 +7982,7 @@ type IncomingWebhook struct {
 ```
 
 <a name="IncomingWebhook.Avatar"></a>
-### func \(IncomingWebhook\) [Avatar](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L133>)
+### func \(IncomingWebhook\) [Avatar](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L133>)
 
 ```go
 func (w IncomingWebhook) Avatar() *string
@@ -7988,7 +7991,7 @@ func (w IncomingWebhook) Avatar() *string
 
 
 <a name="IncomingWebhook.AvatarURL"></a>
-### func \(IncomingWebhook\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L144>)
+### func \(IncomingWebhook\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L144>)
 
 ```go
 func (w IncomingWebhook) AvatarURL(opts ...CDNOpt) *string
@@ -7997,7 +8000,7 @@ func (w IncomingWebhook) AvatarURL(opts ...CDNOpt) *string
 
 
 <a name="IncomingWebhook.CreatedAt"></a>
-### func \(IncomingWebhook\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L160>)
+### func \(IncomingWebhook\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L160>)
 
 ```go
 func (w IncomingWebhook) CreatedAt() time.Time
@@ -8006,7 +8009,7 @@ func (w IncomingWebhook) CreatedAt() time.Time
 
 
 <a name="IncomingWebhook.DefaultAvatarURL"></a>
-### func \(IncomingWebhook\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L152>)
+### func \(IncomingWebhook\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L152>)
 
 ```go
 func (w IncomingWebhook) DefaultAvatarURL(opts ...CDNOpt) string
@@ -8015,7 +8018,7 @@ func (w IncomingWebhook) DefaultAvatarURL(opts ...CDNOpt) string
 
 
 <a name="IncomingWebhook.EffectiveAvatarURL"></a>
-### func \(IncomingWebhook\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L137>)
+### func \(IncomingWebhook\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L137>)
 
 ```go
 func (w IncomingWebhook) EffectiveAvatarURL(opts ...CDNOpt) string
@@ -8024,7 +8027,7 @@ func (w IncomingWebhook) EffectiveAvatarURL(opts ...CDNOpt) string
 
 
 <a name="IncomingWebhook.ID"></a>
-### func \(IncomingWebhook\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L125>)
+### func \(IncomingWebhook\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L125>)
 
 ```go
 func (w IncomingWebhook) ID() snowflake.ID
@@ -8033,7 +8036,7 @@ func (w IncomingWebhook) ID() snowflake.ID
 
 
 <a name="IncomingWebhook.MarshalJSON"></a>
-### func \(IncomingWebhook\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L110>)
+### func \(IncomingWebhook\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L110>)
 
 ```go
 func (w IncomingWebhook) MarshalJSON() ([]byte, error)
@@ -8042,7 +8045,7 @@ func (w IncomingWebhook) MarshalJSON() ([]byte, error)
 
 
 <a name="IncomingWebhook.Name"></a>
-### func \(IncomingWebhook\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L129>)
+### func \(IncomingWebhook\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L129>)
 
 ```go
 func (w IncomingWebhook) Name() string
@@ -8051,7 +8054,7 @@ func (w IncomingWebhook) Name() string
 
 
 <a name="IncomingWebhook.Type"></a>
-### func \(IncomingWebhook\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L121>)
+### func \(IncomingWebhook\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L121>)
 
 ```go
 func (IncomingWebhook) Type() WebhookType
@@ -8060,7 +8063,7 @@ func (IncomingWebhook) Type() WebhookType
 
 
 <a name="IncomingWebhook.URL"></a>
-### func \(IncomingWebhook\) [URL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L156>)
+### func \(IncomingWebhook\) [URL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L156>)
 
 ```go
 func (w IncomingWebhook) URL() string
@@ -8069,7 +8072,7 @@ func (w IncomingWebhook) URL() string
 
 
 <a name="IncomingWebhook.UnmarshalJSON"></a>
-### func \(\*IncomingWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L92>)
+### func \(\*IncomingWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L92>)
 
 ```go
 func (w *IncomingWebhook) UnmarshalJSON(data []byte) error
@@ -8078,7 +8081,7 @@ func (w *IncomingWebhook) UnmarshalJSON(data []byte) error
 
 
 <a name="InstallParams"></a>
-## type [InstallParams](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L90-L93>)
+## type [InstallParams](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L90-L93>)
 
 
 
@@ -8090,7 +8093,7 @@ type InstallParams struct {
 ```
 
 <a name="Integration"></a>
-## type [Integration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L39-L44>)
+## type [Integration](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L39-L44>)
 
 Integration \(https://discord.com/developers/docs/resources/guild#integration-object\)
 
@@ -8104,7 +8107,7 @@ type Integration interface {
 ```
 
 <a name="IntegrationAccount"></a>
-## type [IntegrationAccount](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L23-L26>)
+## type [IntegrationAccount](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L23-L26>)
 
 IntegrationAccount \(https://discord.com/developers/docs/resources/guild#integration-account-object\)
 
@@ -8116,7 +8119,7 @@ type IntegrationAccount struct {
 ```
 
 <a name="IntegrationApplication"></a>
-## type [IntegrationApplication](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L29-L36>)
+## type [IntegrationApplication](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L29-L36>)
 
 IntegrationApplication \(https://discord.com/developers/docs/resources/guild#integration-application-object\)
 
@@ -8132,7 +8135,7 @@ type IntegrationApplication struct {
 ```
 
 <a name="IntegrationExpireBehavior"></a>
-## type [IntegrationExpireBehavior](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L174>)
+## type [IntegrationExpireBehavior](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L174>)
 
 
 
@@ -8150,7 +8153,7 @@ const (
 ```
 
 <a name="IntegrationType"></a>
-## type [IntegrationType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L12>)
+## type [IntegrationType](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L12>)
 
 IntegrationType the type of Integration
 
@@ -8170,7 +8173,7 @@ const (
 ```
 
 <a name="Interaction"></a>
-## type [Interaction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L52-L73>)
+## type [Interaction](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L52-L73>)
 
 Interaction is used for easier unmarshalling of different Interaction\(s\)
 
@@ -8199,7 +8202,7 @@ type Interaction interface {
 ```
 
 <a name="UnmarshalInteraction"></a>
-### func [UnmarshalInteraction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L75>)
+### func [UnmarshalInteraction](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L75>)
 
 ```go
 func UnmarshalInteraction(data []byte) (Interaction, error)
@@ -8208,7 +8211,7 @@ func UnmarshalInteraction(data []byte) (Interaction, error)
 
 
 <a name="InteractionChannel"></a>
-## type [InteractionChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L163-L166>)
+## type [InteractionChannel](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L163-L166>)
 
 
 
@@ -8220,7 +8223,7 @@ type InteractionChannel struct {
 ```
 
 <a name="InteractionChannel.MarshalJSON"></a>
-### func \(InteractionChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L189>)
+### func \(InteractionChannel\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L189>)
 
 ```go
 func (c InteractionChannel) MarshalJSON() ([]byte, error)
@@ -8229,7 +8232,7 @@ func (c InteractionChannel) MarshalJSON() ([]byte, error)
 
 
 <a name="InteractionChannel.UnmarshalJSON"></a>
-### func \(\*InteractionChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L168>)
+### func \(\*InteractionChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L168>)
 
 ```go
 func (c *InteractionChannel) UnmarshalJSON(data []byte) error
@@ -8238,7 +8241,7 @@ func (c *InteractionChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="InteractionContextType"></a>
-## type [InteractionContextType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L23>)
+## type [InteractionContextType](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L23>)
 
 
 
@@ -8257,7 +8260,7 @@ const (
 ```
 
 <a name="InteractionMetadata"></a>
-## type [InteractionMetadata](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L469-L478>)
+## type [InteractionMetadata](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L469-L478>)
 
 
 
@@ -8275,7 +8278,7 @@ type InteractionMetadata struct {
 ```
 
 <a name="InteractionResponse"></a>
-## type [InteractionResponse](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L21-L24>)
+## type [InteractionResponse](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L21-L24>)
 
 InteractionResponse is how you answer interactions. If an answer is not sent within 3 seconds of receiving it, the interaction is failed, and you will be unable to respond to it.
 
@@ -8287,7 +8290,7 @@ type InteractionResponse struct {
 ```
 
 <a name="InteractionResponse.ToBody"></a>
-### func \(InteractionResponse\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L27>)
+### func \(InteractionResponse\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L27>)
 
 ```go
 func (r InteractionResponse) ToBody() (any, error)
@@ -8296,7 +8299,7 @@ func (r InteractionResponse) ToBody() (any, error)
 ToBody returns the InteractionResponse ready for body
 
 <a name="InteractionResponseCreator"></a>
-## type [InteractionResponseCreator](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L38-L40>)
+## type [InteractionResponseCreator](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L38-L40>)
 
 
 
@@ -8307,7 +8310,7 @@ type InteractionResponseCreator interface {
 ```
 
 <a name="InteractionResponseData"></a>
-## type [InteractionResponseData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L34-L36>)
+## type [InteractionResponseData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L34-L36>)
 
 
 
@@ -8318,7 +8321,7 @@ type InteractionResponseData interface {
 ```
 
 <a name="InteractionResponseType"></a>
-## type [InteractionResponseType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_response.go#L4>)
+## type [InteractionResponseType](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_response.go#L4>)
 
 InteractionResponseType indicates the type of slash command response, whether it's responding immediately or deferring to edit your response later
 
@@ -8343,7 +8346,7 @@ const (
 ```
 
 <a name="InteractionType"></a>
-## type [InteractionType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L12>)
+## type [InteractionType](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L12>)
 
 InteractionType is the type of Interaction
 
@@ -8364,7 +8367,7 @@ const (
 ```
 
 <a name="InteractiveComponent"></a>
-## type [InteractiveComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L37-L41>)
+## type [InteractiveComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L37-L41>)
 
 
 
@@ -8377,7 +8380,7 @@ type InteractiveComponent interface {
 ```
 
 <a name="Invite"></a>
-## type [Invite](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L20-L32>)
+## type [Invite](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L20-L32>)
 
 Invite is a partial invite struct
 
@@ -8398,7 +8401,7 @@ type Invite struct {
 ```
 
 <a name="Invite.URL"></a>
-### func \(Invite\) [URL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L34>)
+### func \(Invite\) [URL](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L34>)
 
 ```go
 func (i Invite) URL() string
@@ -8407,7 +8410,7 @@ func (i Invite) URL() string
 
 
 <a name="InviteChannel"></a>
-## type [InviteChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L52-L57>)
+## type [InviteChannel](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L52-L57>)
 
 
 
@@ -8421,7 +8424,7 @@ type InviteChannel struct {
 ```
 
 <a name="InviteChannel.IconURL"></a>
-### func \(InviteChannel\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L61>)
+### func \(InviteChannel\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L61>)
 
 ```go
 func (c InviteChannel) IconURL(opts ...CDNOpt) *string
@@ -8430,7 +8433,7 @@ func (c InviteChannel) IconURL(opts ...CDNOpt) *string
 IconURL returns the Icon URL of this channel. This will be nil for every ChannelType except ChannelTypeGroupDM
 
 <a name="InviteCreate"></a>
-## type [InviteCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L82-L90>)
+## type [InviteCreate](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L82-L90>)
 
 
 
@@ -8447,7 +8450,7 @@ type InviteCreate struct {
 ```
 
 <a name="InviteGuild"></a>
-## type [InviteGuild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L70-L80>)
+## type [InviteGuild](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L70-L80>)
 
 An InviteGuild is the Guild of an Invite
 
@@ -8466,7 +8469,7 @@ type InviteGuild struct {
 ```
 
 <a name="InviteTargetType"></a>
-## type [InviteTargetType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L10>)
+## type [InviteTargetType](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L10>)
 
 InviteTargetType is type of target an Invite uses
 
@@ -8485,7 +8488,7 @@ const (
 ```
 
 <a name="Locale"></a>
-## type [Locale](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/locale.go#L3>)
+## type [Locale](<https://github.com/disgoorg/disgo/blob/master/discord/locale.go#L3>)
 
 
 
@@ -8533,7 +8536,7 @@ const (
 ```
 
 <a name="Locale.Code"></a>
-### func \(Locale\) [Code](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/locale.go#L12>)
+### func \(Locale\) [Code](<https://github.com/disgoorg/disgo/blob/master/discord/locale.go#L12>)
 
 ```go
 func (l Locale) Code() string
@@ -8542,7 +8545,7 @@ func (l Locale) Code() string
 
 
 <a name="Locale.String"></a>
-### func \(Locale\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/locale.go#L5>)
+### func \(Locale\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/locale.go#L5>)
 
 ```go
 func (l Locale) String() string
@@ -8551,7 +8554,7 @@ func (l Locale) String() string
 
 
 <a name="MFALevel"></a>
-## type [MFALevel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L88>)
+## type [MFALevel](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L88>)
 
 The MFALevel of a Guild
 
@@ -8569,7 +8572,7 @@ const (
 ```
 
 <a name="Member"></a>
-## type [Member](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L15-L31>)
+## type [Member](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L15-L31>)
 
 Member is a discord GuildMember
 
@@ -8594,7 +8597,7 @@ type Member struct {
 ```
 
 <a name="Member.AvatarDecorationURL"></a>
-### func \(Member\) [AvatarDecorationURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L72>)
+### func \(Member\) [AvatarDecorationURL](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L72>)
 
 ```go
 func (m Member) AvatarDecorationURL(opts ...CDNOpt) *string
@@ -8603,7 +8606,7 @@ func (m Member) AvatarDecorationURL(opts ...CDNOpt) *string
 AvatarDecorationURL returns the avatar decoration URL if set or nil
 
 <a name="Member.AvatarURL"></a>
-### func \(Member\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L63>)
+### func \(Member\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L63>)
 
 ```go
 func (m Member) AvatarURL(opts ...CDNOpt) *string
@@ -8612,7 +8615,7 @@ func (m Member) AvatarURL(opts ...CDNOpt) *string
 AvatarURL returns the guild\-specific avatar URL of the user if set or nil
 
 <a name="Member.CreatedAt"></a>
-### func \(Member\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L80>)
+### func \(Member\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L80>)
 
 ```go
 func (m Member) CreatedAt() time.Time
@@ -8621,7 +8624,7 @@ func (m Member) CreatedAt() time.Time
 
 
 <a name="Member.EffectiveAvatarURL"></a>
-### func \(Member\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L52>)
+### func \(Member\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L52>)
 
 ```go
 func (m Member) EffectiveAvatarURL(opts ...CDNOpt) string
@@ -8630,7 +8633,7 @@ func (m Member) EffectiveAvatarURL(opts ...CDNOpt) string
 EffectiveAvatarURL returns the guild\-specific avatar URL of the user if set, falling back to the effective avatar URL of the user
 
 <a name="Member.EffectiveName"></a>
-### func \(Member\) [EffectiveName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L44>)
+### func \(Member\) [EffectiveName](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L44>)
 
 ```go
 func (m Member) EffectiveName() string
@@ -8639,7 +8642,7 @@ func (m Member) EffectiveName() string
 EffectiveName returns the nickname of the member if set, falling back to User.EffectiveName\(\)
 
 <a name="Member.Mention"></a>
-### func \(Member\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L39>)
+### func \(Member\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L39>)
 
 ```go
 func (m Member) Mention() string
@@ -8648,7 +8651,7 @@ func (m Member) Mention() string
 Mention returns a mention of the user
 
 <a name="Member.String"></a>
-### func \(Member\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L34>)
+### func \(Member\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L34>)
 
 ```go
 func (m Member) String() string
@@ -8657,7 +8660,7 @@ func (m Member) String() string
 String returns a mention of the user
 
 <a name="MemberAdd"></a>
-## type [MemberAdd](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L85-L91>)
+## type [MemberAdd](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L85-L91>)
 
 MemberAdd is used to add a member via the oauth2 access token to a guild
 
@@ -8672,7 +8675,7 @@ type MemberAdd struct {
 ```
 
 <a name="MemberFlags"></a>
-## type [MemberFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L109>)
+## type [MemberFlags](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L109>)
 
 
 
@@ -8693,7 +8696,7 @@ const (
 ```
 
 <a name="MemberFlags.Add"></a>
-### func \(MemberFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L120>)
+### func \(MemberFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L120>)
 
 ```go
 func (f MemberFlags) Add(bits ...MemberFlags) MemberFlags
@@ -8702,7 +8705,7 @@ func (f MemberFlags) Add(bits ...MemberFlags) MemberFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="MemberFlags.Has"></a>
-### func \(MemberFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L130>)
+### func \(MemberFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L130>)
 
 ```go
 func (f MemberFlags) Has(bits ...MemberFlags) bool
@@ -8711,7 +8714,7 @@ func (f MemberFlags) Has(bits ...MemberFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="MemberFlags.Missing"></a>
-### func \(MemberFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L135>)
+### func \(MemberFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L135>)
 
 ```go
 func (f MemberFlags) Missing(bits ...MemberFlags) bool
@@ -8720,7 +8723,7 @@ func (f MemberFlags) Missing(bits ...MemberFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="MemberFlags.Remove"></a>
-### func \(MemberFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L125>)
+### func \(MemberFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L125>)
 
 ```go
 func (f MemberFlags) Remove(bits ...MemberFlags) MemberFlags
@@ -8729,7 +8732,7 @@ func (f MemberFlags) Remove(bits ...MemberFlags) MemberFlags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="MemberPermissionOverwrite"></a>
-## type [MemberPermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L116-L120>)
+## type [MemberPermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L116-L120>)
 
 
 
@@ -8742,7 +8745,7 @@ type MemberPermissionOverwrite struct {
 ```
 
 <a name="MemberPermissionOverwrite.ID"></a>
-### func \(MemberPermissionOverwrite\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L122>)
+### func \(MemberPermissionOverwrite\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L122>)
 
 ```go
 func (o MemberPermissionOverwrite) ID() snowflake.ID
@@ -8751,7 +8754,7 @@ func (o MemberPermissionOverwrite) ID() snowflake.ID
 
 
 <a name="MemberPermissionOverwrite.MarshalJSON"></a>
-### func \(MemberPermissionOverwrite\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L126>)
+### func \(MemberPermissionOverwrite\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L126>)
 
 ```go
 func (o MemberPermissionOverwrite) MarshalJSON() ([]byte, error)
@@ -8760,7 +8763,7 @@ func (o MemberPermissionOverwrite) MarshalJSON() ([]byte, error)
 
 
 <a name="MemberPermissionOverwrite.Type"></a>
-### func \(MemberPermissionOverwrite\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L137>)
+### func \(MemberPermissionOverwrite\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L137>)
 
 ```go
 func (o MemberPermissionOverwrite) Type() PermissionOverwriteType
@@ -8769,7 +8772,7 @@ func (o MemberPermissionOverwrite) Type() PermissionOverwriteType
 
 
 <a name="MemberPermissionOverwriteUpdate"></a>
-## type [MemberPermissionOverwriteUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L165-L168>)
+## type [MemberPermissionOverwriteUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L165-L168>)
 
 
 
@@ -8781,7 +8784,7 @@ type MemberPermissionOverwriteUpdate struct {
 ```
 
 <a name="MemberPermissionOverwriteUpdate.MarshalJSON"></a>
-### func \(MemberPermissionOverwriteUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L170>)
+### func \(MemberPermissionOverwriteUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L170>)
 
 ```go
 func (u MemberPermissionOverwriteUpdate) MarshalJSON() ([]byte, error)
@@ -8790,7 +8793,7 @@ func (u MemberPermissionOverwriteUpdate) MarshalJSON() ([]byte, error)
 
 
 <a name="MemberPermissionOverwriteUpdate.Type"></a>
-### func \(MemberPermissionOverwriteUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L181>)
+### func \(MemberPermissionOverwriteUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L181>)
 
 ```go
 func (MemberPermissionOverwriteUpdate) Type() PermissionOverwriteType
@@ -8799,7 +8802,7 @@ func (MemberPermissionOverwriteUpdate) Type() PermissionOverwriteType
 
 
 <a name="MemberUpdate"></a>
-## type [MemberUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/member.go#L94-L102>)
+## type [MemberUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/member.go#L94-L102>)
 
 MemberUpdate is used to modify a member
 
@@ -8816,7 +8819,7 @@ type MemberUpdate struct {
 ```
 
 <a name="MembershipState"></a>
-## type [MembershipState](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L253>)
+## type [MembershipState](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L253>)
 
 
 
@@ -8834,7 +8837,7 @@ const (
 ```
 
 <a name="MentionChannel"></a>
-## type [MentionChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L340-L345>)
+## type [MentionChannel](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L340-L345>)
 
 
 
@@ -8848,7 +8851,7 @@ type MentionChannel struct {
 ```
 
 <a name="MentionType"></a>
-## type [MentionType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L10-L12>)
+## type [MentionType](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L10-L12>)
 
 
 
@@ -8859,7 +8862,7 @@ type MentionType struct {
 ```
 
 <a name="Mentionable"></a>
-## type [Mentionable](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/mentionable.go#L26-L29>)
+## type [Mentionable](<https://github.com/disgoorg/disgo/blob/master/discord/mentionable.go#L26-L29>)
 
 
 
@@ -8871,7 +8874,7 @@ type Mentionable interface {
 ```
 
 <a name="MentionableSelectMenuComponent"></a>
-## type [MentionableSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L418-L425>)
+## type [MentionableSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L418-L425>)
 
 
 
@@ -8887,7 +8890,7 @@ type MentionableSelectMenuComponent struct {
 ```
 
 <a name="NewMentionableSelectMenu"></a>
-### func [NewMentionableSelectMenu](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L411>)
+### func [NewMentionableSelectMenu](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L411>)
 
 ```go
 func NewMentionableSelectMenu(customID string, placeholder string) MentionableSelectMenuComponent
@@ -8896,7 +8899,7 @@ func NewMentionableSelectMenu(customID string, placeholder string) MentionableSe
 NewMentionableSelectMenu builds a new SelectMenuComponent from the provided values
 
 <a name="MentionableSelectMenuComponent.AddDefaultValue"></a>
-### func \(MentionableSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L500>)
+### func \(MentionableSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L500>)
 
 ```go
 func (c MentionableSelectMenuComponent) AddDefaultValue(value SelectMenuDefaultValue) MentionableSelectMenuComponent
@@ -8905,7 +8908,7 @@ func (c MentionableSelectMenuComponent) AddDefaultValue(value SelectMenuDefaultV
 AddDefaultValue returns a new MentionableSelectMenuComponent with the provided default value added. SelectMenuDefaultValue can easily be constructed using helpers like NewSelectMenuDefaultUser or NewSelectMenuDefaultRole
 
 <a name="MentionableSelectMenuComponent.AsDisabled"></a>
-### func \(MentionableSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L481>)
+### func \(MentionableSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L481>)
 
 ```go
 func (c MentionableSelectMenuComponent) AsDisabled() MentionableSelectMenuComponent
@@ -8914,7 +8917,7 @@ func (c MentionableSelectMenuComponent) AsDisabled() MentionableSelectMenuCompon
 AsDisabled returns a new MentionableSelectMenuComponent but disabled
 
 <a name="MentionableSelectMenuComponent.AsEnabled"></a>
-### func \(MentionableSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L475>)
+### func \(MentionableSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L475>)
 
 ```go
 func (c MentionableSelectMenuComponent) AsEnabled() MentionableSelectMenuComponent
@@ -8923,7 +8926,7 @@ func (c MentionableSelectMenuComponent) AsEnabled() MentionableSelectMenuCompone
 AsEnabled returns a new MentionableSelectMenuComponent but enabled
 
 <a name="MentionableSelectMenuComponent.ID"></a>
-### func \(MentionableSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L442>)
+### func \(MentionableSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L442>)
 
 ```go
 func (c MentionableSelectMenuComponent) ID() string
@@ -8932,7 +8935,7 @@ func (c MentionableSelectMenuComponent) ID() string
 
 
 <a name="MentionableSelectMenuComponent.MarshalJSON"></a>
-### func \(MentionableSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L427>)
+### func \(MentionableSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L427>)
 
 ```go
 func (c MentionableSelectMenuComponent) MarshalJSON() ([]byte, error)
@@ -8941,7 +8944,7 @@ func (c MentionableSelectMenuComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="MentionableSelectMenuComponent.RemoveDefaultValue"></a>
-### func \(MentionableSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L506>)
+### func \(MentionableSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L506>)
 
 ```go
 func (c MentionableSelectMenuComponent) RemoveDefaultValue(index int) MentionableSelectMenuComponent
@@ -8950,7 +8953,7 @@ func (c MentionableSelectMenuComponent) RemoveDefaultValue(index int) Mentionabl
 RemoveDefaultValue returns a new MentionableSelectMenuComponent with the provided default value at the index removed
 
 <a name="MentionableSelectMenuComponent.SetDefaultValues"></a>
-### func \(MentionableSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L493>)
+### func \(MentionableSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L493>)
 
 ```go
 func (c MentionableSelectMenuComponent) SetDefaultValues(defaultValues ...SelectMenuDefaultValue) MentionableSelectMenuComponent
@@ -8959,7 +8962,7 @@ func (c MentionableSelectMenuComponent) SetDefaultValues(defaultValues ...Select
 SetDefaultValues returns a new MentionableSelectMenuComponent with the provided default values
 
 <a name="MentionableSelectMenuComponent.Type"></a>
-### func \(MentionableSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L438>)
+### func \(MentionableSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L438>)
 
 ```go
 func (MentionableSelectMenuComponent) Type() ComponentType
@@ -8968,7 +8971,7 @@ func (MentionableSelectMenuComponent) Type() ComponentType
 
 
 <a name="MentionableSelectMenuComponent.WithCustomID"></a>
-### func \(MentionableSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L451>)
+### func \(MentionableSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L451>)
 
 ```go
 func (c MentionableSelectMenuComponent) WithCustomID(customID string) MentionableSelectMenuComponent
@@ -8977,7 +8980,7 @@ func (c MentionableSelectMenuComponent) WithCustomID(customID string) Mentionabl
 WithCustomID returns a new MentionableSelectMenuComponent with the provided customID
 
 <a name="MentionableSelectMenuComponent.WithDisabled"></a>
-### func \(MentionableSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L487>)
+### func \(MentionableSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L487>)
 
 ```go
 func (c MentionableSelectMenuComponent) WithDisabled(disabled bool) MentionableSelectMenuComponent
@@ -8986,7 +8989,7 @@ func (c MentionableSelectMenuComponent) WithDisabled(disabled bool) MentionableS
 WithDisabled returns a new MentionableSelectMenuComponent with the provided disabled
 
 <a name="MentionableSelectMenuComponent.WithMaxValues"></a>
-### func \(MentionableSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L469>)
+### func \(MentionableSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L469>)
 
 ```go
 func (c MentionableSelectMenuComponent) WithMaxValues(maxValue int) MentionableSelectMenuComponent
@@ -8995,7 +8998,7 @@ func (c MentionableSelectMenuComponent) WithMaxValues(maxValue int) MentionableS
 WithMaxValues returns a new MentionableSelectMenuComponent with the provided maxValue
 
 <a name="MentionableSelectMenuComponent.WithMinValues"></a>
-### func \(MentionableSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L463>)
+### func \(MentionableSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L463>)
 
 ```go
 func (c MentionableSelectMenuComponent) WithMinValues(minValue int) MentionableSelectMenuComponent
@@ -9004,7 +9007,7 @@ func (c MentionableSelectMenuComponent) WithMinValues(minValue int) MentionableS
 WithMinValues returns a new MentionableSelectMenuComponent with the provided minValue
 
 <a name="MentionableSelectMenuComponent.WithPlaceholder"></a>
-### func \(MentionableSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L457>)
+### func \(MentionableSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L457>)
 
 ```go
 func (c MentionableSelectMenuComponent) WithPlaceholder(placeholder string) MentionableSelectMenuComponent
@@ -9013,7 +9016,7 @@ func (c MentionableSelectMenuComponent) WithPlaceholder(placeholder string) Ment
 WithPlaceholder returns a new MentionableSelectMenuComponent with the provided placeholder
 
 <a name="MentionableSelectMenuInteractionData"></a>
-## type [MentionableSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L387-L391>)
+## type [MentionableSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L387-L391>)
 
 
 
@@ -9026,7 +9029,7 @@ type MentionableSelectMenuInteractionData struct {
 ```
 
 <a name="MentionableSelectMenuInteractionData.CustomID"></a>
-### func \(MentionableSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L461>)
+### func \(MentionableSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L461>)
 
 ```go
 func (d MentionableSelectMenuInteractionData) CustomID() string
@@ -9035,7 +9038,7 @@ func (d MentionableSelectMenuInteractionData) CustomID() string
 
 
 <a name="MentionableSelectMenuInteractionData.MarshalJSON"></a>
-### func \(MentionableSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L414>)
+### func \(MentionableSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L414>)
 
 ```go
 func (d MentionableSelectMenuInteractionData) MarshalJSON() ([]byte, error)
@@ -9044,7 +9047,7 @@ func (d MentionableSelectMenuInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="MentionableSelectMenuInteractionData.Members"></a>
-### func \(MentionableSelectMenuInteractionData\) [Members](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L437>)
+### func \(MentionableSelectMenuInteractionData\) [Members](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L437>)
 
 ```go
 func (d MentionableSelectMenuInteractionData) Members() []ResolvedMember
@@ -9053,7 +9056,7 @@ func (d MentionableSelectMenuInteractionData) Members() []ResolvedMember
 
 
 <a name="MentionableSelectMenuInteractionData.Roles"></a>
-### func \(MentionableSelectMenuInteractionData\) [Roles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L447>)
+### func \(MentionableSelectMenuInteractionData\) [Roles](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L447>)
 
 ```go
 func (d MentionableSelectMenuInteractionData) Roles() []Role
@@ -9062,7 +9065,7 @@ func (d MentionableSelectMenuInteractionData) Roles() []Role
 
 
 <a name="MentionableSelectMenuInteractionData.Type"></a>
-### func \(MentionableSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L457>)
+### func \(MentionableSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L457>)
 
 ```go
 func (MentionableSelectMenuInteractionData) Type() ComponentType
@@ -9071,7 +9074,7 @@ func (MentionableSelectMenuInteractionData) Type() ComponentType
 
 
 <a name="MentionableSelectMenuInteractionData.UnmarshalJSON"></a>
-### func \(\*MentionableSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L399>)
+### func \(\*MentionableSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L399>)
 
 ```go
 func (d *MentionableSelectMenuInteractionData) UnmarshalJSON(data []byte) error
@@ -9080,7 +9083,7 @@ func (d *MentionableSelectMenuInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="MentionableSelectMenuInteractionData.Users"></a>
-### func \(MentionableSelectMenuInteractionData\) [Users](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L427>)
+### func \(MentionableSelectMenuInteractionData\) [Users](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L427>)
 
 ```go
 func (d MentionableSelectMenuInteractionData) Users() []User
@@ -9089,7 +9092,7 @@ func (d MentionableSelectMenuInteractionData) Users() []User
 
 
 <a name="MentionableSelectMenuResolved"></a>
-## type [MentionableSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L393-L397>)
+## type [MentionableSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L393-L397>)
 
 
 
@@ -9102,7 +9105,7 @@ type MentionableSelectMenuResolved struct {
 ```
 
 <a name="Message"></a>
-## type [Message](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L83-L119>)
+## type [Message](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L83-L119>)
 
 Message is a struct for messages sent in discord text\-based channels
 
@@ -9147,7 +9150,7 @@ type Message struct {
 ```
 
 <a name="Message.ActionRows"></a>
-### func \(Message\) [ActionRows](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L149>)
+### func \(Message\) [ActionRows](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L149>)
 
 ```go
 func (m Message) ActionRows() []ActionRowComponent
@@ -9156,7 +9159,7 @@ func (m Message) ActionRows() []ActionRowComponent
 ActionRows returns all ActionRowComponent\(s\) from this Message
 
 <a name="Message.ButtonByID"></a>
-### func \(Message\) [ButtonByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L196>)
+### func \(Message\) [ButtonByID](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L196>)
 
 ```go
 func (m Message) ButtonByID(customID string) (ButtonComponent, bool)
@@ -9165,7 +9168,7 @@ func (m Message) ButtonByID(customID string) (ButtonComponent, bool)
 ButtonByID returns a ButtonComponent with the specific customID from this Message
 
 <a name="Message.Buttons"></a>
-### func \(Message\) [Buttons](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L183>)
+### func \(Message\) [Buttons](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L183>)
 
 ```go
 func (m Message) Buttons() []ButtonComponent
@@ -9174,7 +9177,7 @@ func (m Message) Buttons() []ButtonComponent
 Buttons returns all ButtonComponent\(s\) from this Message
 
 <a name="Message.ChannelSelectMenuByID"></a>
-### func \(Message\) [ChannelSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L321>)
+### func \(Message\) [ChannelSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L321>)
 
 ```go
 func (m Message) ChannelSelectMenuByID(customID string) (ChannelSelectMenuComponent, bool)
@@ -9183,7 +9186,7 @@ func (m Message) ChannelSelectMenuByID(customID string) (ChannelSelectMenuCompon
 ChannelSelectMenuByID returns a ChannelSelectMenuComponent with the specific customID from this Message
 
 <a name="Message.ChannelSelectMenus"></a>
-### func \(Message\) [ChannelSelectMenus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L308>)
+### func \(Message\) [ChannelSelectMenus](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L308>)
 
 ```go
 func (m Message) ChannelSelectMenus() []ChannelSelectMenuComponent
@@ -9192,7 +9195,7 @@ func (m Message) ChannelSelectMenus() []ChannelSelectMenuComponent
 ChannelSelectMenus returns all ChannelSelectMenuComponent\(s\) from this Message
 
 <a name="Message.ComponentByID"></a>
-### func \(Message\) [ComponentByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L171>)
+### func \(Message\) [ComponentByID](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L171>)
 
 ```go
 func (m Message) ComponentByID(customID string) InteractiveComponent
@@ -9201,7 +9204,7 @@ func (m Message) ComponentByID(customID string) InteractiveComponent
 ComponentByID returns the Component with the specific CustomID
 
 <a name="Message.InteractiveComponents"></a>
-### func \(Message\) [InteractiveComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L160>)
+### func \(Message\) [InteractiveComponents](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L160>)
 
 ```go
 func (m Message) InteractiveComponents() []InteractiveComponent
@@ -9210,7 +9213,7 @@ func (m Message) InteractiveComponents() []InteractiveComponent
 InteractiveComponents returns the InteractiveComponent\(s\) from this Message
 
 <a name="Message.JumpURL"></a>
-### func \(Message\) [JumpURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L332>)
+### func \(Message\) [JumpURL](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L332>)
 
 ```go
 func (m Message) JumpURL() string
@@ -9219,7 +9222,7 @@ func (m Message) JumpURL() string
 
 
 <a name="Message.MentionableSelectMenuByID"></a>
-### func \(Message\) [MentionableSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L296>)
+### func \(Message\) [MentionableSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L296>)
 
 ```go
 func (m Message) MentionableSelectMenuByID(customID string) (MentionableSelectMenuComponent, bool)
@@ -9228,7 +9231,7 @@ func (m Message) MentionableSelectMenuByID(customID string) (MentionableSelectMe
 MentionableSelectMenuByID returns a MentionableSelectMenuComponent with the specific customID from this Message
 
 <a name="Message.MentionableSelectMenus"></a>
-### func \(Message\) [MentionableSelectMenus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L283>)
+### func \(Message\) [MentionableSelectMenus](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L283>)
 
 ```go
 func (m Message) MentionableSelectMenus() []MentionableSelectMenuComponent
@@ -9237,7 +9240,7 @@ func (m Message) MentionableSelectMenus() []MentionableSelectMenuComponent
 MentionableSelectMenus returns all MentionableSelectMenuComponent\(s\) from this Message
 
 <a name="Message.RoleSelectMenuByID"></a>
-### func \(Message\) [RoleSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L271>)
+### func \(Message\) [RoleSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L271>)
 
 ```go
 func (m Message) RoleSelectMenuByID(customID string) (RoleSelectMenuComponent, bool)
@@ -9246,7 +9249,7 @@ func (m Message) RoleSelectMenuByID(customID string) (RoleSelectMenuComponent, b
 RoleSelectMenuByID returns a RoleSelectMenuComponent with the specific customID from this Message
 
 <a name="Message.RoleSelectMenus"></a>
-### func \(Message\) [RoleSelectMenus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L258>)
+### func \(Message\) [RoleSelectMenus](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L258>)
 
 ```go
 func (m Message) RoleSelectMenus() []RoleSelectMenuComponent
@@ -9255,7 +9258,7 @@ func (m Message) RoleSelectMenus() []RoleSelectMenuComponent
 RoleSelectMenus returns all RoleSelectMenuComponent\(s\) from this Message
 
 <a name="Message.SelectMenuByID"></a>
-### func \(Message\) [SelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L221>)
+### func \(Message\) [SelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L221>)
 
 ```go
 func (m Message) SelectMenuByID(customID string) (SelectMenuComponent, bool)
@@ -9264,7 +9267,7 @@ func (m Message) SelectMenuByID(customID string) (SelectMenuComponent, bool)
 SelectMenuByID returns a SelectMenuComponent with the specific customID from this Message
 
 <a name="Message.SelectMenus"></a>
-### func \(Message\) [SelectMenus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L208>)
+### func \(Message\) [SelectMenus](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L208>)
 
 ```go
 func (m Message) SelectMenus() []SelectMenuComponent
@@ -9273,7 +9276,7 @@ func (m Message) SelectMenus() []SelectMenuComponent
 SelectMenus returns all SelectMenuComponent\(s\) from this Message
 
 <a name="Message.UnmarshalJSON"></a>
-### func \(\*Message\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L121>)
+### func \(\*Message\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L121>)
 
 ```go
 func (m *Message) UnmarshalJSON(data []byte) error
@@ -9282,7 +9285,7 @@ func (m *Message) UnmarshalJSON(data []byte) error
 
 
 <a name="Message.UserSelectMenuByID"></a>
-### func \(Message\) [UserSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L246>)
+### func \(Message\) [UserSelectMenuByID](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L246>)
 
 ```go
 func (m Message) UserSelectMenuByID(customID string) (UserSelectMenuComponent, bool)
@@ -9291,7 +9294,7 @@ func (m Message) UserSelectMenuByID(customID string) (UserSelectMenuComponent, b
 UserSelectMenuByID returns a UserSelectMenuComponent with the specific customID from this Message
 
 <a name="Message.UserSelectMenus"></a>
-### func \(Message\) [UserSelectMenus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L233>)
+### func \(Message\) [UserSelectMenus](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L233>)
 
 ```go
 func (m Message) UserSelectMenus() []UserSelectMenuComponent
@@ -9300,7 +9303,7 @@ func (m Message) UserSelectMenus() []UserSelectMenuComponent
 UserSelectMenus returns all UserSelectMenuComponent\(s\) from this Message
 
 <a name="MessageActivity"></a>
-## type [MessageActivity](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L386-L389>)
+## type [MessageActivity](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L386-L389>)
 
 MessageActivity is used for rich presence\-related chat embeds in a Message
 
@@ -9312,7 +9315,7 @@ type MessageActivity struct {
 ```
 
 <a name="MessageActivityType"></a>
-## type [MessageActivityType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L374>)
+## type [MessageActivityType](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L374>)
 
 MessageActivityType is the type of MessageActivity https://com/developers/docs/resources/channel#message-object-message-activity-types
 
@@ -9333,7 +9336,7 @@ const (
 ```
 
 <a name="MessageApplication"></a>
-## type [MessageApplication](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L392-L398>)
+## type [MessageApplication](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L392-L398>)
 
 MessageApplication is used for rich presence\-related chat embeds in a Message
 
@@ -9348,7 +9351,7 @@ type MessageApplication struct {
 ```
 
 <a name="MessageBulkDelete"></a>
-## type [MessageBulkDelete](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L416-L418>)
+## type [MessageBulkDelete](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L416-L418>)
 
 
 
@@ -9359,7 +9362,7 @@ type MessageBulkDelete struct {
 ```
 
 <a name="MessageChannel"></a>
-## type [MessageChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L87-L99>)
+## type [MessageChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L87-L99>)
 
 
 
@@ -9379,7 +9382,7 @@ type MessageChannel interface {
 ```
 
 <a name="MessageCommand"></a>
-## type [MessageCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L328-L341>)
+## type [MessageCommand](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L328-L341>)
 
 
 
@@ -9390,7 +9393,7 @@ type MessageCommand struct {
 ```
 
 <a name="MessageCommand.ApplicationID"></a>
-### func \(MessageCommand\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L390>)
+### func \(MessageCommand\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L390>)
 
 ```go
 func (c MessageCommand) ApplicationID() snowflake.ID
@@ -9399,7 +9402,7 @@ func (c MessageCommand) ApplicationID() snowflake.ID
 
 
 <a name="MessageCommand.Contexts"></a>
-### func \(MessageCommand\) [Contexts](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L425>)
+### func \(MessageCommand\) [Contexts](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L425>)
 
 ```go
 func (c MessageCommand) Contexts() []InteractionContextType
@@ -9408,7 +9411,7 @@ func (c MessageCommand) Contexts() []InteractionContextType
 
 
 <a name="MessageCommand.CreatedAt"></a>
-### func \(MessageCommand\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L433>)
+### func \(MessageCommand\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L433>)
 
 ```go
 func (c MessageCommand) CreatedAt() time.Time
@@ -9417,7 +9420,7 @@ func (c MessageCommand) CreatedAt() time.Time
 
 
 <a name="MessageCommand.DMPermission"></a>
-### func \(MessageCommand\) [DMPermission](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L413>)
+### func \(MessageCommand\) [DMPermission](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L413>)
 
 ```go
 func (c MessageCommand) DMPermission() bool
@@ -9426,7 +9429,7 @@ func (c MessageCommand) DMPermission() bool
 
 
 <a name="MessageCommand.DefaultMemberPermissions"></a>
-### func \(MessageCommand\) [DefaultMemberPermissions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L410>)
+### func \(MessageCommand\) [DefaultMemberPermissions](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L410>)
 
 ```go
 func (c MessageCommand) DefaultMemberPermissions() Permissions
@@ -9435,7 +9438,7 @@ func (c MessageCommand) DefaultMemberPermissions() Permissions
 
 
 <a name="MessageCommand.GuildID"></a>
-### func \(MessageCommand\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L394>)
+### func \(MessageCommand\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L394>)
 
 ```go
 func (c MessageCommand) GuildID() *snowflake.ID
@@ -9444,7 +9447,7 @@ func (c MessageCommand) GuildID() *snowflake.ID
 
 
 <a name="MessageCommand.ID"></a>
-### func \(MessageCommand\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L382>)
+### func \(MessageCommand\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L382>)
 
 ```go
 func (c MessageCommand) ID() snowflake.ID
@@ -9453,7 +9456,7 @@ func (c MessageCommand) ID() snowflake.ID
 
 
 <a name="MessageCommand.IntegrationTypes"></a>
-### func \(MessageCommand\) [IntegrationTypes](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L421>)
+### func \(MessageCommand\) [IntegrationTypes](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L421>)
 
 ```go
 func (c MessageCommand) IntegrationTypes() []ApplicationIntegrationType
@@ -9462,7 +9465,7 @@ func (c MessageCommand) IntegrationTypes() []ApplicationIntegrationType
 
 
 <a name="MessageCommand.MarshalJSON"></a>
-### func \(MessageCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L364>)
+### func \(MessageCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L364>)
 
 ```go
 func (c MessageCommand) MarshalJSON() ([]byte, error)
@@ -9471,7 +9474,7 @@ func (c MessageCommand) MarshalJSON() ([]byte, error)
 
 
 <a name="MessageCommand.NSFW"></a>
-### func \(MessageCommand\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L417>)
+### func \(MessageCommand\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L417>)
 
 ```go
 func (c MessageCommand) NSFW() bool
@@ -9480,7 +9483,7 @@ func (c MessageCommand) NSFW() bool
 
 
 <a name="MessageCommand.Name"></a>
-### func \(MessageCommand\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L398>)
+### func \(MessageCommand\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L398>)
 
 ```go
 func (c MessageCommand) Name() string
@@ -9489,7 +9492,7 @@ func (c MessageCommand) Name() string
 
 
 <a name="MessageCommand.NameLocalizations"></a>
-### func \(MessageCommand\) [NameLocalizations](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L402>)
+### func \(MessageCommand\) [NameLocalizations](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L402>)
 
 ```go
 func (c MessageCommand) NameLocalizations() map[Locale]string
@@ -9498,7 +9501,7 @@ func (c MessageCommand) NameLocalizations() map[Locale]string
 
 
 <a name="MessageCommand.NameLocalized"></a>
-### func \(MessageCommand\) [NameLocalized](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L406>)
+### func \(MessageCommand\) [NameLocalized](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L406>)
 
 ```go
 func (c MessageCommand) NameLocalized() string
@@ -9507,7 +9510,7 @@ func (c MessageCommand) NameLocalized() string
 
 
 <a name="MessageCommand.Type"></a>
-### func \(MessageCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L386>)
+### func \(MessageCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L386>)
 
 ```go
 func (MessageCommand) Type() ApplicationCommandType
@@ -9516,7 +9519,7 @@ func (MessageCommand) Type() ApplicationCommandType
 
 
 <a name="MessageCommand.UnmarshalJSON"></a>
-### func \(\*MessageCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L343>)
+### func \(\*MessageCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L343>)
 
 ```go
 func (c *MessageCommand) UnmarshalJSON(data []byte) error
@@ -9525,7 +9528,7 @@ func (c *MessageCommand) UnmarshalJSON(data []byte) error
 
 
 <a name="MessageCommand.Version"></a>
-### func \(MessageCommand\) [Version](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L429>)
+### func \(MessageCommand\) [Version](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L429>)
 
 ```go
 func (c MessageCommand) Version() snowflake.ID
@@ -9534,7 +9537,7 @@ func (c MessageCommand) Version() snowflake.ID
 
 
 <a name="MessageCommandCreate"></a>
-## type [MessageCommandCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L79-L88>)
+## type [MessageCommandCreate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L79-L88>)
 
 
 
@@ -9552,7 +9555,7 @@ type MessageCommandCreate struct {
 ```
 
 <a name="MessageCommandCreate.CommandName"></a>
-### func \(MessageCommandCreate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L105>)
+### func \(MessageCommandCreate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L105>)
 
 ```go
 func (c MessageCommandCreate) CommandName() string
@@ -9561,7 +9564,7 @@ func (c MessageCommandCreate) CommandName() string
 
 
 <a name="MessageCommandCreate.MarshalJSON"></a>
-### func \(MessageCommandCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L90>)
+### func \(MessageCommandCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L90>)
 
 ```go
 func (c MessageCommandCreate) MarshalJSON() ([]byte, error)
@@ -9570,7 +9573,7 @@ func (c MessageCommandCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="MessageCommandCreate.Type"></a>
-### func \(MessageCommandCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L101>)
+### func \(MessageCommandCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L101>)
 
 ```go
 func (MessageCommandCreate) Type() ApplicationCommandType
@@ -9579,7 +9582,7 @@ func (MessageCommandCreate) Type() ApplicationCommandType
 
 
 <a name="MessageCommandInteractionData"></a>
-## type [MessageCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L626-L632>)
+## type [MessageCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L626-L632>)
 
 
 
@@ -9591,7 +9594,7 @@ type MessageCommandInteractionData struct {
 ```
 
 <a name="MessageCommandInteractionData.CommandID"></a>
-### func \(MessageCommandInteractionData\) [CommandID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L662>)
+### func \(MessageCommandInteractionData\) [CommandID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L662>)
 
 ```go
 func (d MessageCommandInteractionData) CommandID() snowflake.ID
@@ -9600,7 +9603,7 @@ func (d MessageCommandInteractionData) CommandID() snowflake.ID
 
 
 <a name="MessageCommandInteractionData.CommandName"></a>
-### func \(MessageCommandInteractionData\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L666>)
+### func \(MessageCommandInteractionData\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L666>)
 
 ```go
 func (d MessageCommandInteractionData) CommandName() string
@@ -9609,7 +9612,7 @@ func (d MessageCommandInteractionData) CommandName() string
 
 
 <a name="MessageCommandInteractionData.GuildID"></a>
-### func \(MessageCommandInteractionData\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L670>)
+### func \(MessageCommandInteractionData\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L670>)
 
 ```go
 func (d MessageCommandInteractionData) GuildID() *snowflake.ID
@@ -9618,7 +9621,7 @@ func (d MessageCommandInteractionData) GuildID() *snowflake.ID
 
 
 <a name="MessageCommandInteractionData.MarshalJSON"></a>
-### func \(\*MessageCommandInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L647>)
+### func \(\*MessageCommandInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L647>)
 
 ```go
 func (d *MessageCommandInteractionData) MarshalJSON() ([]byte, error)
@@ -9627,7 +9630,7 @@ func (d *MessageCommandInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="MessageCommandInteractionData.TargetID"></a>
-### func \(MessageCommandInteractionData\) [TargetID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L674>)
+### func \(MessageCommandInteractionData\) [TargetID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L674>)
 
 ```go
 func (d MessageCommandInteractionData) TargetID() snowflake.ID
@@ -9636,7 +9639,7 @@ func (d MessageCommandInteractionData) TargetID() snowflake.ID
 
 
 <a name="MessageCommandInteractionData.TargetMessage"></a>
-### func \(MessageCommandInteractionData\) [TargetMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L678>)
+### func \(MessageCommandInteractionData\) [TargetMessage](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L678>)
 
 ```go
 func (d MessageCommandInteractionData) TargetMessage() Message
@@ -9645,7 +9648,7 @@ func (d MessageCommandInteractionData) TargetMessage() Message
 
 
 <a name="MessageCommandInteractionData.Type"></a>
-### func \(MessageCommandInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L658>)
+### func \(MessageCommandInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L658>)
 
 ```go
 func (MessageCommandInteractionData) Type() ApplicationCommandType
@@ -9654,7 +9657,7 @@ func (MessageCommandInteractionData) Type() ApplicationCommandType
 
 
 <a name="MessageCommandInteractionData.UnmarshalJSON"></a>
-### func \(\*MessageCommandInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L634>)
+### func \(\*MessageCommandInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L634>)
 
 ```go
 func (d *MessageCommandInteractionData) UnmarshalJSON(data []byte) error
@@ -9663,7 +9666,7 @@ func (d *MessageCommandInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="MessageCommandResolved"></a>
-## type [MessageCommandResolved](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L685-L687>)
+## type [MessageCommandResolved](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L685-L687>)
 
 
 
@@ -9674,7 +9677,7 @@ type MessageCommandResolved struct {
 ```
 
 <a name="MessageCommandUpdate"></a>
-## type [MessageCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L79-L88>)
+## type [MessageCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L79-L88>)
 
 
 
@@ -9692,7 +9695,7 @@ type MessageCommandUpdate struct {
 ```
 
 <a name="MessageCommandUpdate.CommandName"></a>
-### func \(MessageCommandUpdate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L105>)
+### func \(MessageCommandUpdate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L105>)
 
 ```go
 func (c MessageCommandUpdate) CommandName() *string
@@ -9701,7 +9704,7 @@ func (c MessageCommandUpdate) CommandName() *string
 
 
 <a name="MessageCommandUpdate.MarshalJSON"></a>
-### func \(MessageCommandUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L90>)
+### func \(MessageCommandUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L90>)
 
 ```go
 func (c MessageCommandUpdate) MarshalJSON() ([]byte, error)
@@ -9710,7 +9713,7 @@ func (c MessageCommandUpdate) MarshalJSON() ([]byte, error)
 
 
 <a name="MessageCommandUpdate.Type"></a>
-### func \(MessageCommandUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L101>)
+### func \(MessageCommandUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L101>)
 
 ```go
 func (MessageCommandUpdate) Type() ApplicationCommandType
@@ -9719,7 +9722,7 @@ func (MessageCommandUpdate) Type() ApplicationCommandType
 
 
 <a name="MessageCreate"></a>
-## type [MessageCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create.go#L8-L22>)
+## type [MessageCreate](<https://github.com/disgoorg/disgo/blob/master/discord/message_create.go#L8-L22>)
 
 MessageCreate is the struct to create a new Message with
 
@@ -9742,7 +9745,7 @@ type MessageCreate struct {
 ```
 
 <a name="MessageCreate.ToBody"></a>
-### func \(MessageCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create.go#L27>)
+### func \(MessageCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/discord/message_create.go#L27>)
 
 ```go
 func (m MessageCreate) ToBody() (any, error)
@@ -9751,7 +9754,7 @@ func (m MessageCreate) ToBody() (any, error)
 ToBody returns the MessageCreate ready for body
 
 <a name="MessageCreate.ToResponseBody"></a>
-### func \(MessageCreate\) [ToResponseBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create.go#L35>)
+### func \(MessageCreate\) [ToResponseBody](<https://github.com/disgoorg/disgo/blob/master/discord/message_create.go#L35>)
 
 ```go
 func (m MessageCreate) ToResponseBody(response InteractionResponse) (any, error)
@@ -9760,7 +9763,7 @@ func (m MessageCreate) ToResponseBody(response InteractionResponse) (any, error)
 
 
 <a name="MessageCreateBuilder"></a>
-## type [MessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L11-L13>)
+## type [MessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L11-L13>)
 
 MessageCreateBuilder helper to build Message\(s\) easier
 
@@ -9771,7 +9774,7 @@ type MessageCreateBuilder struct {
 ```
 
 <a name="NewMessageCreateBuilder"></a>
-### func [NewMessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L16>)
+### func [NewMessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L16>)
 
 ```go
 func NewMessageCreateBuilder() *MessageCreateBuilder
@@ -9780,7 +9783,7 @@ func NewMessageCreateBuilder() *MessageCreateBuilder
 NewMessageCreateBuilder creates a new MessageCreateBuilder to be built later
 
 <a name="MessageCreateBuilder.AddActionRow"></a>
-### func \(\*MessageCreateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L102>)
+### func \(\*MessageCreateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L102>)
 
 ```go
 func (b *MessageCreateBuilder) AddActionRow(components ...InteractiveComponent) *MessageCreateBuilder
@@ -9789,7 +9792,7 @@ func (b *MessageCreateBuilder) AddActionRow(components ...InteractiveComponent) 
 AddActionRow adds a new discord.ActionRowComponent with the provided discord.InteractiveComponent\(s\) to the Message
 
 <a name="MessageCreateBuilder.AddContainerComponents"></a>
-### func \(\*MessageCreateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L108>)
+### func \(\*MessageCreateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L108>)
 
 ```go
 func (b *MessageCreateBuilder) AddContainerComponents(containers ...ContainerComponent) *MessageCreateBuilder
@@ -9798,7 +9801,7 @@ func (b *MessageCreateBuilder) AddContainerComponents(containers ...ContainerCom
 AddContainerComponents adds the discord.ContainerComponent\(s\) to the Message
 
 <a name="MessageCreateBuilder.AddEmbeds"></a>
-### func \(\*MessageCreateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L68>)
+### func \(\*MessageCreateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L68>)
 
 ```go
 func (b *MessageCreateBuilder) AddEmbeds(embeds ...Embed) *MessageCreateBuilder
@@ -9807,7 +9810,7 @@ func (b *MessageCreateBuilder) AddEmbeds(embeds ...Embed) *MessageCreateBuilder
 AddEmbeds adds multiple embeds to the Message
 
 <a name="MessageCreateBuilder.AddFile"></a>
-### func \(\*MessageCreateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L166>)
+### func \(\*MessageCreateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L166>)
 
 ```go
 func (b *MessageCreateBuilder) AddFile(name string, description string, reader io.Reader, flags ...FileFlags) *MessageCreateBuilder
@@ -9816,7 +9819,7 @@ func (b *MessageCreateBuilder) AddFile(name string, description string, reader i
 AddFile adds a discord.File to the discord.MessageCreate
 
 <a name="MessageCreateBuilder.AddFiles"></a>
-### func \(\*MessageCreateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L160>)
+### func \(\*MessageCreateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L160>)
 
 ```go
 func (b *MessageCreateBuilder) AddFiles(files ...*File) *MessageCreateBuilder
@@ -9825,7 +9828,7 @@ func (b *MessageCreateBuilder) AddFiles(files ...*File) *MessageCreateBuilder
 AddFiles adds the discord.File\(s\) to the discord.MessageCreate
 
 <a name="MessageCreateBuilder.AddFlags"></a>
-### func \(\*MessageCreateBuilder\) [AddFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L218>)
+### func \(\*MessageCreateBuilder\) [AddFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L218>)
 
 ```go
 func (b *MessageCreateBuilder) AddFlags(flags ...MessageFlags) *MessageCreateBuilder
@@ -9834,7 +9837,7 @@ func (b *MessageCreateBuilder) AddFlags(flags ...MessageFlags) *MessageCreateBui
 AddFlags adds the MessageFlags of the Message
 
 <a name="MessageCreateBuilder.AddStickers"></a>
-### func \(\*MessageCreateBuilder\) [AddStickers](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L128>)
+### func \(\*MessageCreateBuilder\) [AddStickers](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L128>)
 
 ```go
 func (b *MessageCreateBuilder) AddStickers(stickerIds ...snowflake.ID) *MessageCreateBuilder
@@ -9843,7 +9846,7 @@ func (b *MessageCreateBuilder) AddStickers(stickerIds ...snowflake.ID) *MessageC
 AddStickers adds provided stickers to the Message
 
 <a name="MessageCreateBuilder.Build"></a>
-### func \(\*MessageCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L267>)
+### func \(\*MessageCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L267>)
 
 ```go
 func (b *MessageCreateBuilder) Build() MessageCreate
@@ -9852,7 +9855,7 @@ func (b *MessageCreateBuilder) Build() MessageCreate
 Build builds the MessageCreateBuilder to a MessageCreate struct
 
 <a name="MessageCreateBuilder.ClearAllowedMentions"></a>
-### func \(\*MessageCreateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L192>)
+### func \(\*MessageCreateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L192>)
 
 ```go
 func (b *MessageCreateBuilder) ClearAllowedMentions() *MessageCreateBuilder
@@ -9861,7 +9864,7 @@ func (b *MessageCreateBuilder) ClearAllowedMentions() *MessageCreateBuilder
 ClearAllowedMentions clears the discord.AllowedMentions of the Message
 
 <a name="MessageCreateBuilder.ClearContainerComponents"></a>
-### func \(\*MessageCreateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L122>)
+### func \(\*MessageCreateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L122>)
 
 ```go
 func (b *MessageCreateBuilder) ClearContainerComponents() *MessageCreateBuilder
@@ -9870,7 +9873,7 @@ func (b *MessageCreateBuilder) ClearContainerComponents() *MessageCreateBuilder
 ClearContainerComponents removes all the discord.ContainerComponent\(s\) of the Message
 
 <a name="MessageCreateBuilder.ClearEmbeds"></a>
-### func \(\*MessageCreateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L74>)
+### func \(\*MessageCreateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L74>)
 
 ```go
 func (b *MessageCreateBuilder) ClearEmbeds() *MessageCreateBuilder
@@ -9879,7 +9882,7 @@ func (b *MessageCreateBuilder) ClearEmbeds() *MessageCreateBuilder
 ClearEmbeds removes all the embeds from the Message
 
 <a name="MessageCreateBuilder.ClearFiles"></a>
-### func \(\*MessageCreateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L172>)
+### func \(\*MessageCreateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L172>)
 
 ```go
 func (b *MessageCreateBuilder) ClearFiles() *MessageCreateBuilder
@@ -9888,7 +9891,7 @@ func (b *MessageCreateBuilder) ClearFiles() *MessageCreateBuilder
 ClearFiles removes all discord.File\(s\) of this discord.MessageCreate
 
 <a name="MessageCreateBuilder.ClearFlags"></a>
-### func \(\*MessageCreateBuilder\) [ClearFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L230>)
+### func \(\*MessageCreateBuilder\) [ClearFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L230>)
 
 ```go
 func (b *MessageCreateBuilder) ClearFlags() *MessageCreateBuilder
@@ -9897,7 +9900,7 @@ func (b *MessageCreateBuilder) ClearFlags() *MessageCreateBuilder
 ClearFlags clears the discord.MessageFlags of the Message
 
 <a name="MessageCreateBuilder.ClearPoll"></a>
-### func \(\*MessageCreateBuilder\) [ClearPoll](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L261>)
+### func \(\*MessageCreateBuilder\) [ClearPoll](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L261>)
 
 ```go
 func (b *MessageCreateBuilder) ClearPoll() *MessageCreateBuilder
@@ -9906,7 +9909,7 @@ func (b *MessageCreateBuilder) ClearPoll() *MessageCreateBuilder
 ClearPoll clears the Poll of the Message
 
 <a name="MessageCreateBuilder.ClearStickers"></a>
-### func \(\*MessageCreateBuilder\) [ClearStickers](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L140>)
+### func \(\*MessageCreateBuilder\) [ClearStickers](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L140>)
 
 ```go
 func (b *MessageCreateBuilder) ClearStickers() *MessageCreateBuilder
@@ -9915,7 +9918,7 @@ func (b *MessageCreateBuilder) ClearStickers() *MessageCreateBuilder
 ClearStickers removes all Sticker\(s\) from the Message
 
 <a name="MessageCreateBuilder.RemoveContainerComponent"></a>
-### func \(\*MessageCreateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L114>)
+### func \(\*MessageCreateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L114>)
 
 ```go
 func (b *MessageCreateBuilder) RemoveContainerComponent(i int) *MessageCreateBuilder
@@ -9924,7 +9927,7 @@ func (b *MessageCreateBuilder) RemoveContainerComponent(i int) *MessageCreateBui
 RemoveContainerComponent removes a discord.ActionRowComponent from the Message
 
 <a name="MessageCreateBuilder.RemoveEmbed"></a>
-### func \(\*MessageCreateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L80>)
+### func \(\*MessageCreateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L80>)
 
 ```go
 func (b *MessageCreateBuilder) RemoveEmbed(i int) *MessageCreateBuilder
@@ -9933,7 +9936,7 @@ func (b *MessageCreateBuilder) RemoveEmbed(i int) *MessageCreateBuilder
 RemoveEmbed removes an embed from the Message
 
 <a name="MessageCreateBuilder.RemoveFile"></a>
-### func \(\*MessageCreateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L178>)
+### func \(\*MessageCreateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L178>)
 
 ```go
 func (b *MessageCreateBuilder) RemoveFile(i int) *MessageCreateBuilder
@@ -9942,7 +9945,7 @@ func (b *MessageCreateBuilder) RemoveFile(i int) *MessageCreateBuilder
 RemoveFile removes the discord.File at this index
 
 <a name="MessageCreateBuilder.RemoveFlags"></a>
-### func \(\*MessageCreateBuilder\) [RemoveFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L224>)
+### func \(\*MessageCreateBuilder\) [RemoveFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L224>)
 
 ```go
 func (b *MessageCreateBuilder) RemoveFlags(flags ...MessageFlags) *MessageCreateBuilder
@@ -9951,7 +9954,7 @@ func (b *MessageCreateBuilder) RemoveFlags(flags ...MessageFlags) *MessageCreate
 RemoveFlags removes the MessageFlags of the Message
 
 <a name="MessageCreateBuilder.SetAllowedMentions"></a>
-### func \(\*MessageCreateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L186>)
+### func \(\*MessageCreateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L186>)
 
 ```go
 func (b *MessageCreateBuilder) SetAllowedMentions(allowedMentions *AllowedMentions) *MessageCreateBuilder
@@ -9960,7 +9963,7 @@ func (b *MessageCreateBuilder) SetAllowedMentions(allowedMentions *AllowedMentio
 SetAllowedMentions sets the AllowedMentions of the Message
 
 <a name="MessageCreateBuilder.SetContainerComponent"></a>
-### func \(\*MessageCreateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L94>)
+### func \(\*MessageCreateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L94>)
 
 ```go
 func (b *MessageCreateBuilder) SetContainerComponent(i int, container ContainerComponent) *MessageCreateBuilder
@@ -9969,7 +9972,7 @@ func (b *MessageCreateBuilder) SetContainerComponent(i int, container ContainerC
 SetContainerComponent sets the provided discord.InteractiveComponent at the index of discord.InteractiveComponent\(s\)
 
 <a name="MessageCreateBuilder.SetContainerComponents"></a>
-### func \(\*MessageCreateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L88>)
+### func \(\*MessageCreateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L88>)
 
 ```go
 func (b *MessageCreateBuilder) SetContainerComponents(containerComponents ...ContainerComponent) *MessageCreateBuilder
@@ -9978,7 +9981,7 @@ func (b *MessageCreateBuilder) SetContainerComponents(containerComponents ...Con
 SetContainerComponents sets the discord.ContainerComponent\(s\) of the Message
 
 <a name="MessageCreateBuilder.SetContent"></a>
-### func \(\*MessageCreateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L25>)
+### func \(\*MessageCreateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L25>)
 
 ```go
 func (b *MessageCreateBuilder) SetContent(content string) *MessageCreateBuilder
@@ -9987,7 +9990,7 @@ func (b *MessageCreateBuilder) SetContent(content string) *MessageCreateBuilder
 SetContent sets the content of the Message
 
 <a name="MessageCreateBuilder.SetContentf"></a>
-### func \(\*MessageCreateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L31>)
+### func \(\*MessageCreateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L31>)
 
 ```go
 func (b *MessageCreateBuilder) SetContentf(content string, a ...any) *MessageCreateBuilder
@@ -9996,7 +9999,7 @@ func (b *MessageCreateBuilder) SetContentf(content string, a ...any) *MessageCre
 SetContentf sets the content of the Message but with format
 
 <a name="MessageCreateBuilder.SetEmbed"></a>
-### func \(\*MessageCreateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L60>)
+### func \(\*MessageCreateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L60>)
 
 ```go
 func (b *MessageCreateBuilder) SetEmbed(i int, embed Embed) *MessageCreateBuilder
@@ -10005,7 +10008,7 @@ func (b *MessageCreateBuilder) SetEmbed(i int, embed Embed) *MessageCreateBuilde
 SetEmbed sets the provided Embed at the index of the Message
 
 <a name="MessageCreateBuilder.SetEmbeds"></a>
-### func \(\*MessageCreateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L54>)
+### func \(\*MessageCreateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L54>)
 
 ```go
 func (b *MessageCreateBuilder) SetEmbeds(embeds ...Embed) *MessageCreateBuilder
@@ -10014,7 +10017,7 @@ func (b *MessageCreateBuilder) SetEmbeds(embeds ...Embed) *MessageCreateBuilder
 SetEmbeds sets the Embed\(s\) of the Message
 
 <a name="MessageCreateBuilder.SetEnforceNonce"></a>
-### func \(\*MessageCreateBuilder\) [SetEnforceNonce](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L42>)
+### func \(\*MessageCreateBuilder\) [SetEnforceNonce](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L42>)
 
 ```go
 func (b *MessageCreateBuilder) SetEnforceNonce(enforce bool) *MessageCreateBuilder
@@ -10023,7 +10026,7 @@ func (b *MessageCreateBuilder) SetEnforceNonce(enforce bool) *MessageCreateBuild
 SetEnforceNonce sets whether the Message should be checked for uniqueness \(use with SetNonce\)
 
 <a name="MessageCreateBuilder.SetEphemeral"></a>
-### func \(\*MessageCreateBuilder\) [SetEphemeral](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L235>)
+### func \(\*MessageCreateBuilder\) [SetEphemeral](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L235>)
 
 ```go
 func (b *MessageCreateBuilder) SetEphemeral(ephemeral bool) *MessageCreateBuilder
@@ -10032,7 +10035,7 @@ func (b *MessageCreateBuilder) SetEphemeral(ephemeral bool) *MessageCreateBuilde
 SetEphemeral adds/removes discord.MessageFlagEphemeral to the Message flags
 
 <a name="MessageCreateBuilder.SetFile"></a>
-### func \(\*MessageCreateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L152>)
+### func \(\*MessageCreateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L152>)
 
 ```go
 func (b *MessageCreateBuilder) SetFile(i int, file *File) *MessageCreateBuilder
@@ -10041,7 +10044,7 @@ func (b *MessageCreateBuilder) SetFile(i int, file *File) *MessageCreateBuilder
 SetFile sets the discord.File at the index for this discord.MessageCreate
 
 <a name="MessageCreateBuilder.SetFiles"></a>
-### func \(\*MessageCreateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L146>)
+### func \(\*MessageCreateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L146>)
 
 ```go
 func (b *MessageCreateBuilder) SetFiles(files ...*File) *MessageCreateBuilder
@@ -10050,7 +10053,7 @@ func (b *MessageCreateBuilder) SetFiles(files ...*File) *MessageCreateBuilder
 SetFiles sets the File\(s\) for this MessageCreate
 
 <a name="MessageCreateBuilder.SetFlags"></a>
-### func \(\*MessageCreateBuilder\) [SetFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L212>)
+### func \(\*MessageCreateBuilder\) [SetFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L212>)
 
 ```go
 func (b *MessageCreateBuilder) SetFlags(flags MessageFlags) *MessageCreateBuilder
@@ -10059,7 +10062,7 @@ func (b *MessageCreateBuilder) SetFlags(flags MessageFlags) *MessageCreateBuilde
 SetFlags sets the message flags of the Message
 
 <a name="MessageCreateBuilder.SetMessageReference"></a>
-### func \(\*MessageCreateBuilder\) [SetMessageReference](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L197>)
+### func \(\*MessageCreateBuilder\) [SetMessageReference](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L197>)
 
 ```go
 func (b *MessageCreateBuilder) SetMessageReference(messageReference *MessageReference) *MessageCreateBuilder
@@ -10068,7 +10071,7 @@ func (b *MessageCreateBuilder) SetMessageReference(messageReference *MessageRefe
 SetMessageReference allows you to specify a MessageReference to reply to
 
 <a name="MessageCreateBuilder.SetMessageReferenceByID"></a>
-### func \(\*MessageCreateBuilder\) [SetMessageReferenceByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L203>)
+### func \(\*MessageCreateBuilder\) [SetMessageReferenceByID](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L203>)
 
 ```go
 func (b *MessageCreateBuilder) SetMessageReferenceByID(messageID snowflake.ID) *MessageCreateBuilder
@@ -10077,7 +10080,7 @@ func (b *MessageCreateBuilder) SetMessageReferenceByID(messageID snowflake.ID) *
 SetMessageReferenceByID allows you to specify a Message CommandID to reply to
 
 <a name="MessageCreateBuilder.SetNonce"></a>
-### func \(\*MessageCreateBuilder\) [SetNonce](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L36>)
+### func \(\*MessageCreateBuilder\) [SetNonce](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L36>)
 
 ```go
 func (b *MessageCreateBuilder) SetNonce(nonce string) *MessageCreateBuilder
@@ -10086,7 +10089,7 @@ func (b *MessageCreateBuilder) SetNonce(nonce string) *MessageCreateBuilder
 SetNonce sets the Message nonce
 
 <a name="MessageCreateBuilder.SetPoll"></a>
-### func \(\*MessageCreateBuilder\) [SetPoll](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L255>)
+### func \(\*MessageCreateBuilder\) [SetPoll](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L255>)
 
 ```go
 func (b *MessageCreateBuilder) SetPoll(poll PollCreate) *MessageCreateBuilder
@@ -10095,7 +10098,7 @@ func (b *MessageCreateBuilder) SetPoll(poll PollCreate) *MessageCreateBuilder
 SetPoll sets the Poll of the Message
 
 <a name="MessageCreateBuilder.SetStickers"></a>
-### func \(\*MessageCreateBuilder\) [SetStickers](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L134>)
+### func \(\*MessageCreateBuilder\) [SetStickers](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L134>)
 
 ```go
 func (b *MessageCreateBuilder) SetStickers(stickerIds ...snowflake.ID) *MessageCreateBuilder
@@ -10104,7 +10107,7 @@ func (b *MessageCreateBuilder) SetStickers(stickerIds ...snowflake.ID) *MessageC
 SetStickers sets the stickers of the Message
 
 <a name="MessageCreateBuilder.SetSuppressEmbeds"></a>
-### func \(\*MessageCreateBuilder\) [SetSuppressEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L245>)
+### func \(\*MessageCreateBuilder\) [SetSuppressEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L245>)
 
 ```go
 func (b *MessageCreateBuilder) SetSuppressEmbeds(suppressEmbeds bool) *MessageCreateBuilder
@@ -10113,7 +10116,7 @@ func (b *MessageCreateBuilder) SetSuppressEmbeds(suppressEmbeds bool) *MessageCr
 SetSuppressEmbeds adds/removes discord.MessageFlagSuppressEmbeds to the Message flags
 
 <a name="MessageCreateBuilder.SetTTS"></a>
-### func \(\*MessageCreateBuilder\) [SetTTS](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_create_builder.go#L48>)
+### func \(\*MessageCreateBuilder\) [SetTTS](<https://github.com/disgoorg/disgo/blob/master/discord/message_create_builder.go#L48>)
 
 ```go
 func (b *MessageCreateBuilder) SetTTS(tts bool) *MessageCreateBuilder
@@ -10122,7 +10125,7 @@ func (b *MessageCreateBuilder) SetTTS(tts bool) *MessageCreateBuilder
 SetTTS sets whether the Message should be text to speech
 
 <a name="MessageFlags"></a>
-## type [MessageFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L421>)
+## type [MessageFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L421>)
 
 The MessageFlags of a Message
 
@@ -10151,7 +10154,7 @@ const (
 ```
 
 <a name="MessageFlags.Add"></a>
-### func \(MessageFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L443>)
+### func \(MessageFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L443>)
 
 ```go
 func (f MessageFlags) Add(bits ...MessageFlags) MessageFlags
@@ -10160,7 +10163,7 @@ func (f MessageFlags) Add(bits ...MessageFlags) MessageFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="MessageFlags.Has"></a>
-### func \(MessageFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L453>)
+### func \(MessageFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L453>)
 
 ```go
 func (f MessageFlags) Has(bits ...MessageFlags) bool
@@ -10169,7 +10172,7 @@ func (f MessageFlags) Has(bits ...MessageFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="MessageFlags.Missing"></a>
-### func \(MessageFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L458>)
+### func \(MessageFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L458>)
 
 ```go
 func (f MessageFlags) Missing(bits ...MessageFlags) bool
@@ -10178,7 +10181,7 @@ func (f MessageFlags) Missing(bits ...MessageFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="MessageFlags.Remove"></a>
-### func \(MessageFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L448>)
+### func \(MessageFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L448>)
 
 ```go
 func (f MessageFlags) Remove(bits ...MessageFlags) MessageFlags
@@ -10187,7 +10190,7 @@ func (f MessageFlags) Remove(bits ...MessageFlags) MessageFlags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="MessageInteraction"></a>
-## type [MessageInteraction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L409-L414>)
+## type [MessageInteraction](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L409-L414>)
 
 MessageInteraction is sent on the Message object when the message is a response to an interaction
 
@@ -10201,7 +10204,7 @@ type MessageInteraction struct {
 ```
 
 <a name="MessageNotificationsLevel"></a>
-## type [MessageNotificationsLevel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L69>)
+## type [MessageNotificationsLevel](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L69>)
 
 MessageNotificationsLevel indicates whether users receive @ mentions on a new message
 
@@ -10219,7 +10222,7 @@ const (
 ```
 
 <a name="MessageReaction"></a>
-## type [MessageReaction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L359-L366>)
+## type [MessageReaction](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L359-L366>)
 
 MessageReaction contains information about the reactions of a message
 
@@ -10235,7 +10238,7 @@ type MessageReaction struct {
 ```
 
 <a name="MessageReference"></a>
-## type [MessageReference](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L401-L406>)
+## type [MessageReference](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L401-L406>)
 
 MessageReference is a reference to another message
 
@@ -10249,7 +10252,7 @@ type MessageReference struct {
 ```
 
 <a name="MessageSticker"></a>
-## type [MessageSticker](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L352-L356>)
+## type [MessageSticker](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L352-L356>)
 
 
 
@@ -10262,7 +10265,7 @@ type MessageSticker struct {
 ```
 
 <a name="MessageThread"></a>
-## type [MessageThread](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L347-L350>)
+## type [MessageThread](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L347-L350>)
 
 
 
@@ -10274,7 +10277,7 @@ type MessageThread struct {
 ```
 
 <a name="MessageType"></a>
-## type [MessageType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L14>)
+## type [MessageType](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L14>)
 
 The MessageType indicates the Message type
 
@@ -10323,7 +10326,7 @@ const (
 ```
 
 <a name="MessageType.Deleteable"></a>
-### func \(MessageType\) [Deleteable](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L63>)
+### func \(MessageType\) [Deleteable](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L63>)
 
 ```go
 func (t MessageType) Deleteable() bool
@@ -10332,7 +10335,7 @@ func (t MessageType) Deleteable() bool
 
 
 <a name="MessageType.System"></a>
-### func \(MessageType\) [System](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L53>)
+### func \(MessageType\) [System](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L53>)
 
 ```go
 func (t MessageType) System() bool
@@ -10341,7 +10344,7 @@ func (t MessageType) System() bool
 
 
 <a name="MessageUpdate"></a>
-## type [MessageUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update.go#L4-L12>)
+## type [MessageUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/message_update.go#L4-L12>)
 
 MessageUpdate is used to edit a Message
 
@@ -10358,7 +10361,7 @@ type MessageUpdate struct {
 ```
 
 <a name="MessageUpdate.ToBody"></a>
-### func \(MessageUpdate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update.go#L17>)
+### func \(MessageUpdate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/discord/message_update.go#L17>)
 
 ```go
 func (m MessageUpdate) ToBody() (any, error)
@@ -10367,7 +10370,7 @@ func (m MessageUpdate) ToBody() (any, error)
 ToBody returns the MessageUpdate ready for body
 
 <a name="MessageUpdate.ToResponseBody"></a>
-### func \(MessageUpdate\) [ToResponseBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update.go#L30>)
+### func \(MessageUpdate\) [ToResponseBody](<https://github.com/disgoorg/disgo/blob/master/discord/message_update.go#L30>)
 
 ```go
 func (m MessageUpdate) ToResponseBody(response InteractionResponse) (any, error)
@@ -10376,7 +10379,7 @@ func (m MessageUpdate) ToResponseBody(response InteractionResponse) (any, error)
 
 
 <a name="MessageUpdateBuilder"></a>
-## type [MessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L11-L13>)
+## type [MessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L11-L13>)
 
 MessageUpdateBuilder helper to build MessageUpdate easier
 
@@ -10387,7 +10390,7 @@ type MessageUpdateBuilder struct {
 ```
 
 <a name="NewMessageUpdateBuilder"></a>
-### func [NewMessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L16>)
+### func [NewMessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L16>)
 
 ```go
 func NewMessageUpdateBuilder() *MessageUpdateBuilder
@@ -10396,7 +10399,7 @@ func NewMessageUpdateBuilder() *MessageUpdateBuilder
 NewMessageUpdateBuilder creates a new MessageUpdateBuilder to be built later
 
 <a name="MessageUpdateBuilder.AddActionRow"></a>
-### func \(\*MessageUpdateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L103>)
+### func \(\*MessageUpdateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L103>)
 
 ```go
 func (b *MessageUpdateBuilder) AddActionRow(components ...InteractiveComponent) *MessageUpdateBuilder
@@ -10405,7 +10408,7 @@ func (b *MessageUpdateBuilder) AddActionRow(components ...InteractiveComponent) 
 AddActionRow adds a new discord.ActionRowComponent with the provided discord.InteractiveComponent\(s\) to the Message
 
 <a name="MessageUpdateBuilder.AddContainerComponents"></a>
-### func \(\*MessageUpdateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L112>)
+### func \(\*MessageUpdateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L112>)
 
 ```go
 func (b *MessageUpdateBuilder) AddContainerComponents(containers ...ContainerComponent) *MessageUpdateBuilder
@@ -10414,7 +10417,7 @@ func (b *MessageUpdateBuilder) AddContainerComponents(containers ...ContainerCom
 AddContainerComponents adds the discord.ContainerComponent\(s\) to the Message
 
 <a name="MessageUpdateBuilder.AddEmbeds"></a>
-### func \(\*MessageUpdateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L57>)
+### func \(\*MessageUpdateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L57>)
 
 ```go
 func (b *MessageUpdateBuilder) AddEmbeds(embeds ...Embed) *MessageUpdateBuilder
@@ -10423,7 +10426,7 @@ func (b *MessageUpdateBuilder) AddEmbeds(embeds ...Embed) *MessageUpdateBuilder
 AddEmbeds adds multiple embeds to the Message
 
 <a name="MessageUpdateBuilder.AddFile"></a>
-### func \(\*MessageUpdateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L158>)
+### func \(\*MessageUpdateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L158>)
 
 ```go
 func (b *MessageUpdateBuilder) AddFile(name string, description string, reader io.Reader, flags ...FileFlags) *MessageUpdateBuilder
@@ -10432,7 +10435,7 @@ func (b *MessageUpdateBuilder) AddFile(name string, description string, reader i
 AddFile adds a new discord.File to the discord.MessageUpdate
 
 <a name="MessageUpdateBuilder.AddFiles"></a>
-### func \(\*MessageUpdateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L152>)
+### func \(\*MessageUpdateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L152>)
 
 ```go
 func (b *MessageUpdateBuilder) AddFiles(files ...*File) *MessageUpdateBuilder
@@ -10441,7 +10444,7 @@ func (b *MessageUpdateBuilder) AddFiles(files ...*File) *MessageUpdateBuilder
 AddFiles adds the new discord.File\(s\) to the discord.MessageUpdate
 
 <a name="MessageUpdateBuilder.AddFlags"></a>
-### func \(\*MessageUpdateBuilder\) [AddFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L220>)
+### func \(\*MessageUpdateBuilder\) [AddFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L220>)
 
 ```go
 func (b *MessageUpdateBuilder) AddFlags(flags ...MessageFlags) *MessageUpdateBuilder
@@ -10450,7 +10453,7 @@ func (b *MessageUpdateBuilder) AddFlags(flags ...MessageFlags) *MessageUpdateBui
 AddFlags adds the MessageFlags of the Message
 
 <a name="MessageUpdateBuilder.Build"></a>
-### func \(\*MessageUpdateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L256>)
+### func \(\*MessageUpdateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L256>)
 
 ```go
 func (b *MessageUpdateBuilder) Build() MessageUpdate
@@ -10459,7 +10462,7 @@ func (b *MessageUpdateBuilder) Build() MessageUpdate
 Build builds the MessageUpdateBuilder to a MessageUpdate struct
 
 <a name="MessageUpdateBuilder.ClearAllowedMentions"></a>
-### func \(\*MessageUpdateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L206>)
+### func \(\*MessageUpdateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L206>)
 
 ```go
 func (b *MessageUpdateBuilder) ClearAllowedMentions() *MessageUpdateBuilder
@@ -10468,7 +10471,7 @@ func (b *MessageUpdateBuilder) ClearAllowedMentions() *MessageUpdateBuilder
 ClearAllowedMentions clears the allowed mentions of the Message
 
 <a name="MessageUpdateBuilder.ClearContainerComponents"></a>
-### func \(\*MessageUpdateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L132>)
+### func \(\*MessageUpdateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L132>)
 
 ```go
 func (b *MessageUpdateBuilder) ClearContainerComponents() *MessageUpdateBuilder
@@ -10477,7 +10480,7 @@ func (b *MessageUpdateBuilder) ClearContainerComponents() *MessageUpdateBuilder
 ClearContainerComponents removes all the discord.ContainerComponent\(s\) of the Message
 
 <a name="MessageUpdateBuilder.ClearContent"></a>
-### func \(\*MessageUpdateBuilder\) [ClearContent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L32>)
+### func \(\*MessageUpdateBuilder\) [ClearContent](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L32>)
 
 ```go
 func (b *MessageUpdateBuilder) ClearContent() *MessageUpdateBuilder
@@ -10486,7 +10489,7 @@ func (b *MessageUpdateBuilder) ClearContent() *MessageUpdateBuilder
 ClearContent removes content of the Message
 
 <a name="MessageUpdateBuilder.ClearEmbeds"></a>
-### func \(\*MessageUpdateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L66>)
+### func \(\*MessageUpdateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L66>)
 
 ```go
 func (b *MessageUpdateBuilder) ClearEmbeds() *MessageUpdateBuilder
@@ -10495,7 +10498,7 @@ func (b *MessageUpdateBuilder) ClearEmbeds() *MessageUpdateBuilder
 ClearEmbeds removes all the embeds from the Message
 
 <a name="MessageUpdateBuilder.ClearFiles"></a>
-### func \(\*MessageUpdateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L164>)
+### func \(\*MessageUpdateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L164>)
 
 ```go
 func (b *MessageUpdateBuilder) ClearFiles() *MessageUpdateBuilder
@@ -10504,7 +10507,7 @@ func (b *MessageUpdateBuilder) ClearFiles() *MessageUpdateBuilder
 ClearFiles removes all new files of this discord.MessageUpdate
 
 <a name="MessageUpdateBuilder.ClearFlags"></a>
-### func \(\*MessageUpdateBuilder\) [ClearFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L238>)
+### func \(\*MessageUpdateBuilder\) [ClearFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L238>)
 
 ```go
 func (b *MessageUpdateBuilder) ClearFlags() *MessageUpdateBuilder
@@ -10513,7 +10516,7 @@ func (b *MessageUpdateBuilder) ClearFlags() *MessageUpdateBuilder
 ClearFlags clears the MessageFlags of the Message
 
 <a name="MessageUpdateBuilder.RemoveContainerComponent"></a>
-### func \(\*MessageUpdateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L121>)
+### func \(\*MessageUpdateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L121>)
 
 ```go
 func (b *MessageUpdateBuilder) RemoveContainerComponent(i int) *MessageUpdateBuilder
@@ -10522,7 +10525,7 @@ func (b *MessageUpdateBuilder) RemoveContainerComponent(i int) *MessageUpdateBui
 RemoveContainerComponent removes a discord.ContainerComponent from the Message
 
 <a name="MessageUpdateBuilder.RemoveEmbed"></a>
-### func \(\*MessageUpdateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L72>)
+### func \(\*MessageUpdateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L72>)
 
 ```go
 func (b *MessageUpdateBuilder) RemoveEmbed(i int) *MessageUpdateBuilder
@@ -10531,7 +10534,7 @@ func (b *MessageUpdateBuilder) RemoveEmbed(i int) *MessageUpdateBuilder
 RemoveEmbed removes an embed from the Message
 
 <a name="MessageUpdateBuilder.RemoveFile"></a>
-### func \(\*MessageUpdateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L170>)
+### func \(\*MessageUpdateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L170>)
 
 ```go
 func (b *MessageUpdateBuilder) RemoveFile(i int) *MessageUpdateBuilder
@@ -10540,7 +10543,7 @@ func (b *MessageUpdateBuilder) RemoveFile(i int) *MessageUpdateBuilder
 RemoveFile removes the new discord.File at this index
 
 <a name="MessageUpdateBuilder.RemoveFlags"></a>
-### func \(\*MessageUpdateBuilder\) [RemoveFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L229>)
+### func \(\*MessageUpdateBuilder\) [RemoveFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L229>)
 
 ```go
 func (b *MessageUpdateBuilder) RemoveFlags(flags ...MessageFlags) *MessageUpdateBuilder
@@ -10549,7 +10552,7 @@ func (b *MessageUpdateBuilder) RemoveFlags(flags ...MessageFlags) *MessageUpdate
 RemoveFlags removes the MessageFlags of the Message
 
 <a name="MessageUpdateBuilder.RetainAttachments"></a>
-### func \(\*MessageUpdateBuilder\) [RetainAttachments](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L178>)
+### func \(\*MessageUpdateBuilder\) [RetainAttachments](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L178>)
 
 ```go
 func (b *MessageUpdateBuilder) RetainAttachments(attachments ...Attachment) *MessageUpdateBuilder
@@ -10558,7 +10561,7 @@ func (b *MessageUpdateBuilder) RetainAttachments(attachments ...Attachment) *Mes
 RetainAttachments removes all Attachment\(s\) from this Message except the ones provided
 
 <a name="MessageUpdateBuilder.RetainAttachmentsByID"></a>
-### func \(\*MessageUpdateBuilder\) [RetainAttachmentsByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L189>)
+### func \(\*MessageUpdateBuilder\) [RetainAttachmentsByID](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L189>)
 
 ```go
 func (b *MessageUpdateBuilder) RetainAttachmentsByID(attachmentIDs ...snowflake.ID) *MessageUpdateBuilder
@@ -10567,7 +10570,7 @@ func (b *MessageUpdateBuilder) RetainAttachmentsByID(attachmentIDs ...snowflake.
 RetainAttachmentsByID removes all Attachment\(s\) from this Message except the ones provided
 
 <a name="MessageUpdateBuilder.SetAllowedMentions"></a>
-### func \(\*MessageUpdateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L200>)
+### func \(\*MessageUpdateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L200>)
 
 ```go
 func (b *MessageUpdateBuilder) SetAllowedMentions(allowedMentions *AllowedMentions) *MessageUpdateBuilder
@@ -10576,7 +10579,7 @@ func (b *MessageUpdateBuilder) SetAllowedMentions(allowedMentions *AllowedMentio
 SetAllowedMentions sets the AllowedMentions of the Message
 
 <a name="MessageUpdateBuilder.SetContainerComponent"></a>
-### func \(\*MessageUpdateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L92>)
+### func \(\*MessageUpdateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L92>)
 
 ```go
 func (b *MessageUpdateBuilder) SetContainerComponent(i int, container ContainerComponent) *MessageUpdateBuilder
@@ -10585,7 +10588,7 @@ func (b *MessageUpdateBuilder) SetContainerComponent(i int, container ContainerC
 SetContainerComponent sets the provided discord.InteractiveComponent at the index of discord.InteractiveComponent\(s\)
 
 <a name="MessageUpdateBuilder.SetContainerComponents"></a>
-### func \(\*MessageUpdateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L83>)
+### func \(\*MessageUpdateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L83>)
 
 ```go
 func (b *MessageUpdateBuilder) SetContainerComponents(containerComponents ...ContainerComponent) *MessageUpdateBuilder
@@ -10594,7 +10597,7 @@ func (b *MessageUpdateBuilder) SetContainerComponents(containerComponents ...Con
 SetContainerComponents sets the discord.ContainerComponent\(s\) of the Message
 
 <a name="MessageUpdateBuilder.SetContent"></a>
-### func \(\*MessageUpdateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L21>)
+### func \(\*MessageUpdateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L21>)
 
 ```go
 func (b *MessageUpdateBuilder) SetContent(content string) *MessageUpdateBuilder
@@ -10603,7 +10606,7 @@ func (b *MessageUpdateBuilder) SetContent(content string) *MessageUpdateBuilder
 SetContent sets content of the Message
 
 <a name="MessageUpdateBuilder.SetContentf"></a>
-### func \(\*MessageUpdateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L27>)
+### func \(\*MessageUpdateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L27>)
 
 ```go
 func (b *MessageUpdateBuilder) SetContentf(content string, a ...any) *MessageUpdateBuilder
@@ -10612,7 +10615,7 @@ func (b *MessageUpdateBuilder) SetContentf(content string, a ...any) *MessageUpd
 SetContentf sets content of the Message
 
 <a name="MessageUpdateBuilder.SetEmbed"></a>
-### func \(\*MessageUpdateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L46>)
+### func \(\*MessageUpdateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L46>)
 
 ```go
 func (b *MessageUpdateBuilder) SetEmbed(i int, embed Embed) *MessageUpdateBuilder
@@ -10621,7 +10624,7 @@ func (b *MessageUpdateBuilder) SetEmbed(i int, embed Embed) *MessageUpdateBuilde
 SetEmbed sets the provided discord.Embed at the index of the Message
 
 <a name="MessageUpdateBuilder.SetEmbeds"></a>
-### func \(\*MessageUpdateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L37>)
+### func \(\*MessageUpdateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L37>)
 
 ```go
 func (b *MessageUpdateBuilder) SetEmbeds(embeds ...Embed) *MessageUpdateBuilder
@@ -10630,7 +10633,7 @@ func (b *MessageUpdateBuilder) SetEmbeds(embeds ...Embed) *MessageUpdateBuilder
 SetEmbeds sets the discord.Embed\(s\) of the Message
 
 <a name="MessageUpdateBuilder.SetFile"></a>
-### func \(\*MessageUpdateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L144>)
+### func \(\*MessageUpdateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L144>)
 
 ```go
 func (b *MessageUpdateBuilder) SetFile(i int, file *File) *MessageUpdateBuilder
@@ -10639,7 +10642,7 @@ func (b *MessageUpdateBuilder) SetFile(i int, file *File) *MessageUpdateBuilder
 SetFile sets the new discord.File at the index for this discord.MessageUpdate
 
 <a name="MessageUpdateBuilder.SetFiles"></a>
-### func \(\*MessageUpdateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L138>)
+### func \(\*MessageUpdateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L138>)
 
 ```go
 func (b *MessageUpdateBuilder) SetFiles(files ...*File) *MessageUpdateBuilder
@@ -10648,7 +10651,7 @@ func (b *MessageUpdateBuilder) SetFiles(files ...*File) *MessageUpdateBuilder
 SetFiles sets the new discord.File\(s\) for this discord.MessageUpdate
 
 <a name="MessageUpdateBuilder.SetFlags"></a>
-### func \(\*MessageUpdateBuilder\) [SetFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L211>)
+### func \(\*MessageUpdateBuilder\) [SetFlags](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L211>)
 
 ```go
 func (b *MessageUpdateBuilder) SetFlags(flags MessageFlags) *MessageUpdateBuilder
@@ -10657,7 +10660,7 @@ func (b *MessageUpdateBuilder) SetFlags(flags MessageFlags) *MessageUpdateBuilde
 SetFlags sets the message flags of the Message
 
 <a name="MessageUpdateBuilder.SetSuppressEmbeds"></a>
-### func \(\*MessageUpdateBuilder\) [SetSuppressEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message_update_builder.go#L243>)
+### func \(\*MessageUpdateBuilder\) [SetSuppressEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/message_update_builder.go#L243>)
 
 ```go
 func (b *MessageUpdateBuilder) SetSuppressEmbeds(suppressEmbeds bool) *MessageUpdateBuilder
@@ -10666,7 +10669,7 @@ func (b *MessageUpdateBuilder) SetSuppressEmbeds(suppressEmbeds bool) *MessageUp
 SetSuppressEmbeds adds/removes discord.MessageFlagSuppressEmbeds to the Message flags
 
 <a name="ModalCreate"></a>
-## type [ModalCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L5-L9>)
+## type [ModalCreate](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L5-L9>)
 
 
 
@@ -10679,7 +10682,7 @@ type ModalCreate struct {
 ```
 
 <a name="ModalCreateBuilder"></a>
-## type [ModalCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L18-L20>)
+## type [ModalCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L18-L20>)
 
 
 
@@ -10690,7 +10693,7 @@ type ModalCreateBuilder struct {
 ```
 
 <a name="NewModalCreateBuilder"></a>
-### func [NewModalCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L14>)
+### func [NewModalCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L14>)
 
 ```go
 func NewModalCreateBuilder() *ModalCreateBuilder
@@ -10699,7 +10702,7 @@ func NewModalCreateBuilder() *ModalCreateBuilder
 NewModalCreateBuilder creates a new ModalCreateBuilder to be built later
 
 <a name="ModalCreateBuilder.AddActionRow"></a>
-### func \(\*ModalCreateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L49>)
+### func \(\*ModalCreateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L49>)
 
 ```go
 func (b *ModalCreateBuilder) AddActionRow(components ...InteractiveComponent) *ModalCreateBuilder
@@ -10708,7 +10711,7 @@ func (b *ModalCreateBuilder) AddActionRow(components ...InteractiveComponent) *M
 AddActionRow adds a new discord.ActionRowComponent with the provided discord.InteractiveComponent\(s\) to the ModalCreate
 
 <a name="ModalCreateBuilder.AddContainerComponents"></a>
-### func \(\*ModalCreateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L55>)
+### func \(\*ModalCreateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L55>)
 
 ```go
 func (b *ModalCreateBuilder) AddContainerComponents(containers ...ContainerComponent) *ModalCreateBuilder
@@ -10717,7 +10720,7 @@ func (b *ModalCreateBuilder) AddContainerComponents(containers ...ContainerCompo
 AddContainerComponents adds the discord.ContainerComponent\(s\) to the ModalCreate
 
 <a name="ModalCreateBuilder.Build"></a>
-### func \(\*ModalCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L75>)
+### func \(\*ModalCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L75>)
 
 ```go
 func (b *ModalCreateBuilder) Build() ModalCreate
@@ -10726,7 +10729,7 @@ func (b *ModalCreateBuilder) Build() ModalCreate
 Build builds the ModalCreateBuilder to a ModalCreate struct
 
 <a name="ModalCreateBuilder.ClearContainerComponents"></a>
-### func \(\*ModalCreateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L69>)
+### func \(\*ModalCreateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L69>)
 
 ```go
 func (b *ModalCreateBuilder) ClearContainerComponents() *ModalCreateBuilder
@@ -10735,7 +10738,7 @@ func (b *ModalCreateBuilder) ClearContainerComponents() *ModalCreateBuilder
 ClearContainerComponents removes all the discord.ContainerComponent\(s\) of the ModalCreate
 
 <a name="ModalCreateBuilder.RemoveContainerComponent"></a>
-### func \(\*ModalCreateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L61>)
+### func \(\*ModalCreateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L61>)
 
 ```go
 func (b *ModalCreateBuilder) RemoveContainerComponent(i int) *ModalCreateBuilder
@@ -10744,7 +10747,7 @@ func (b *ModalCreateBuilder) RemoveContainerComponent(i int) *ModalCreateBuilder
 RemoveContainerComponent removes a discord.ActionRowComponent from the ModalCreate
 
 <a name="ModalCreateBuilder.SetContainerComponent"></a>
-### func \(\*ModalCreateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L41>)
+### func \(\*ModalCreateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L41>)
 
 ```go
 func (b *ModalCreateBuilder) SetContainerComponent(i int, container ContainerComponent) *ModalCreateBuilder
@@ -10753,7 +10756,7 @@ func (b *ModalCreateBuilder) SetContainerComponent(i int, container ContainerCom
 SetContainerComponent sets the provided discord.InteractiveComponent at the index of discord.InteractiveComponent\(s\)
 
 <a name="ModalCreateBuilder.SetContainerComponents"></a>
-### func \(\*ModalCreateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L35>)
+### func \(\*ModalCreateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L35>)
 
 ```go
 func (b *ModalCreateBuilder) SetContainerComponents(containerComponents ...ContainerComponent) *ModalCreateBuilder
@@ -10762,7 +10765,7 @@ func (b *ModalCreateBuilder) SetContainerComponents(containerComponents ...Conta
 SetContainerComponents sets the discord.ContainerComponent\(s\) of the ModalCreate
 
 <a name="ModalCreateBuilder.SetCustomID"></a>
-### func \(\*ModalCreateBuilder\) [SetCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L23>)
+### func \(\*ModalCreateBuilder\) [SetCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L23>)
 
 ```go
 func (b *ModalCreateBuilder) SetCustomID(customID string) *ModalCreateBuilder
@@ -10771,7 +10774,7 @@ func (b *ModalCreateBuilder) SetCustomID(customID string) *ModalCreateBuilder
 SetCustomID sets the CustomID of the ModalCreate
 
 <a name="ModalCreateBuilder.SetTitle"></a>
-### func \(\*ModalCreateBuilder\) [SetTitle](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/modal_create.go#L29>)
+### func \(\*ModalCreateBuilder\) [SetTitle](<https://github.com/disgoorg/disgo/blob/master/discord/modal_create.go#L29>)
 
 ```go
 func (b *ModalCreateBuilder) SetTitle(title string) *ModalCreateBuilder
@@ -10780,7 +10783,7 @@ func (b *ModalCreateBuilder) SetTitle(title string) *ModalCreateBuilder
 SetTitle sets the title of the ModalCreate
 
 <a name="ModalSubmitInteraction"></a>
-## type [ModalSubmitInteraction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L9-L12>)
+## type [ModalSubmitInteraction](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L9-L12>)
 
 
 
@@ -10792,7 +10795,7 @@ type ModalSubmitInteraction struct {
 ```
 
 <a name="ModalSubmitInteraction.MarshalJSON"></a>
-### func \(ModalSubmitInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L43>)
+### func \(ModalSubmitInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L43>)
 
 ```go
 func (i ModalSubmitInteraction) MarshalJSON() ([]byte, error)
@@ -10801,7 +10804,7 @@ func (i ModalSubmitInteraction) MarshalJSON() ([]byte, error)
 
 
 <a name="ModalSubmitInteraction.Type"></a>
-### func \(ModalSubmitInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L70>)
+### func \(ModalSubmitInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L70>)
 
 ```go
 func (ModalSubmitInteraction) Type() InteractionType
@@ -10810,7 +10813,7 @@ func (ModalSubmitInteraction) Type() InteractionType
 
 
 <a name="ModalSubmitInteraction.UnmarshalJSON"></a>
-### func \(\*ModalSubmitInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L14>)
+### func \(\*ModalSubmitInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L14>)
 
 ```go
 func (i *ModalSubmitInteraction) UnmarshalJSON(data []byte) error
@@ -10819,7 +10822,7 @@ func (i *ModalSubmitInteraction) UnmarshalJSON(data []byte) error
 
 
 <a name="ModalSubmitInteractionData"></a>
-## type [ModalSubmitInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L76-L79>)
+## type [ModalSubmitInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L76-L79>)
 
 
 
@@ -10831,7 +10834,7 @@ type ModalSubmitInteractionData struct {
 ```
 
 <a name="ModalSubmitInteractionData.Component"></a>
-### func \(ModalSubmitInteractionData\) [Component](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L105>)
+### func \(ModalSubmitInteractionData\) [Component](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L105>)
 
 ```go
 func (d ModalSubmitInteractionData) Component(customID string) (InteractiveComponent, bool)
@@ -10840,7 +10843,7 @@ func (d ModalSubmitInteractionData) Component(customID string) (InteractiveCompo
 
 
 <a name="ModalSubmitInteractionData.OptText"></a>
-### func \(ModalSubmitInteractionData\) [OptText](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L118>)
+### func \(ModalSubmitInteractionData\) [OptText](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L118>)
 
 ```go
 func (d ModalSubmitInteractionData) OptText(customID string) (string, bool)
@@ -10849,7 +10852,7 @@ func (d ModalSubmitInteractionData) OptText(customID string) (string, bool)
 
 
 <a name="ModalSubmitInteractionData.Text"></a>
-### func \(ModalSubmitInteractionData\) [Text](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L125>)
+### func \(ModalSubmitInteractionData\) [Text](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L125>)
 
 ```go
 func (d ModalSubmitInteractionData) Text(customID string) string
@@ -10858,7 +10861,7 @@ func (d ModalSubmitInteractionData) Text(customID string) string
 
 
 <a name="ModalSubmitInteractionData.TextInputComponent"></a>
-### func \(ModalSubmitInteractionData\) [TextInputComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L110>)
+### func \(ModalSubmitInteractionData\) [TextInputComponent](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L110>)
 
 ```go
 func (d ModalSubmitInteractionData) TextInputComponent(customID string) (TextInputComponent, bool)
@@ -10867,7 +10870,7 @@ func (d ModalSubmitInteractionData) TextInputComponent(customID string) (TextInp
 
 
 <a name="ModalSubmitInteractionData.UnmarshalJSON"></a>
-### func \(\*ModalSubmitInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_modal_submit.go#L81>)
+### func \(\*ModalSubmitInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_modal_submit.go#L81>)
 
 ```go
 func (d *ModalSubmitInteractionData) UnmarshalJSON(data []byte) error
@@ -10876,7 +10879,7 @@ func (d *ModalSubmitInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="MultipartBuffer"></a>
-## type [MultipartBuffer](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L20-L23>)
+## type [MultipartBuffer](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L20-L23>)
 
 MultipartBuffer holds the Body & ContentType of the multipart body
 
@@ -10888,7 +10891,7 @@ type MultipartBuffer struct {
 ```
 
 <a name="PayloadWithFiles"></a>
-### func [PayloadWithFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L26>)
+### func [PayloadWithFiles](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L26>)
 
 ```go
 func PayloadWithFiles(v any, files ...*File) (*MultipartBuffer, error)
@@ -10897,7 +10900,7 @@ func PayloadWithFiles(v any, files ...*File) (*MultipartBuffer, error)
 PayloadWithFiles returns the given payload as multipart body with all files in it
 
 <a name="NSFWLevel"></a>
-## type [NSFWLevel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L341>)
+## type [NSFWLevel](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L341>)
 
 
 
@@ -10917,7 +10920,7 @@ const (
 ```
 
 <a name="OAuth2Guild"></a>
-## type [OAuth2Guild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L255-L264>)
+## type [OAuth2Guild](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L255-L264>)
 
 OAuth2Guild is returned on the GetGuilds route
 
@@ -10935,7 +10938,7 @@ type OAuth2Guild struct {
 ```
 
 <a name="OAuth2Scope"></a>
-## type [OAuth2Scope](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L96>)
+## type [OAuth2Scope](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L96>)
 
 OAuth2Scope are the scopes you can request in the OAuth2 flow.
 
@@ -10986,7 +10989,7 @@ const (
 ```
 
 <a name="SplitScopes"></a>
-### func [SplitScopes](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L150>)
+### func [SplitScopes](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L150>)
 
 ```go
 func SplitScopes(joinedScopes string) []OAuth2Scope
@@ -10995,7 +10998,7 @@ func SplitScopes(joinedScopes string) []OAuth2Scope
 
 
 <a name="OAuth2Scope.String"></a>
-### func \(OAuth2Scope\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L136>)
+### func \(OAuth2Scope\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L136>)
 
 ```go
 func (s OAuth2Scope) String() string
@@ -11004,7 +11007,7 @@ func (s OAuth2Scope) String() string
 
 
 <a name="OAuth2User"></a>
-## type [OAuth2User](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L160-L171>)
+## type [OAuth2User](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L160-L171>)
 
 OAuth2User represents a full User returned by the oauth2 endpoints
 
@@ -11024,7 +11027,7 @@ type OAuth2User struct {
 ```
 
 <a name="OnlineStatus"></a>
-## type [OnlineStatus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/presence.go#L21>)
+## type [OnlineStatus](<https://github.com/disgoorg/disgo/blob/master/discord/presence.go#L21>)
 
 OnlineStatus \(https://discord.com/developers/docs/topics/gateway#update-presence-status-types\)
 
@@ -11045,7 +11048,7 @@ const (
 ```
 
 <a name="OptionalAuditLogEntryInfo"></a>
-## type [OptionalAuditLogEntryInfo](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/audit_log.go#L245-L258>)
+## type [OptionalAuditLogEntryInfo](<https://github.com/disgoorg/disgo/blob/master/discord/audit_log.go#L245-L258>)
 
 OptionalAuditLogEntryInfo \(https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-optional-audit-entry-info\)
 
@@ -11067,7 +11070,7 @@ type OptionalAuditLogEntryInfo struct {
 ```
 
 <a name="PartialApplication"></a>
-## type [PartialApplication](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L78-L81>)
+## type [PartialApplication](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L78-L81>)
 
 
 
@@ -11079,7 +11082,7 @@ type PartialApplication struct {
 ```
 
 <a name="PartialChannel"></a>
-## type [PartialChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1302-L1305>)
+## type [PartialChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1302-L1305>)
 
 
 
@@ -11091,7 +11094,7 @@ type PartialChannel struct {
 ```
 
 <a name="PartialEmoji"></a>
-## type [PartialEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L68-L72>)
+## type [PartialEmoji](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L68-L72>)
 
 
 
@@ -11104,7 +11107,7 @@ type PartialEmoji struct {
 ```
 
 <a name="PartialEmoji.Reaction"></a>
-### func \(PartialEmoji\) [Reaction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/emoji.go#L75>)
+### func \(PartialEmoji\) [Reaction](<https://github.com/disgoorg/disgo/blob/master/discord/emoji.go#L75>)
 
 ```go
 func (e PartialEmoji) Reaction() string
@@ -11113,7 +11116,7 @@ func (e PartialEmoji) Reaction() string
 Reaction returns a string used for manipulating with reactions. May be empty if the Name is nil
 
 <a name="PartialInvite"></a>
-## type [PartialInvite](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/invite.go#L47-L50>)
+## type [PartialInvite](<https://github.com/disgoorg/disgo/blob/master/discord/invite.go#L47-L50>)
 
 
 
@@ -11125,7 +11128,7 @@ type PartialInvite struct {
 ```
 
 <a name="PartialRole"></a>
-## type [PartialRole](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L96-L99>)
+## type [PartialRole](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L96-L99>)
 
 PartialRole holds basic info about a Role
 
@@ -11137,7 +11140,7 @@ type PartialRole struct {
 ```
 
 <a name="Payload"></a>
-## type [Payload](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/file.go#L15-L17>)
+## type [Payload](<https://github.com/disgoorg/disgo/blob/master/discord/file.go#L15-L17>)
 
 
 
@@ -11148,7 +11151,7 @@ type Payload interface {
 ```
 
 <a name="PermissionOverwrite"></a>
-## type [PermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L45-L48>)
+## type [PermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L45-L48>)
 
 PermissionOverwrite is used to determine who can perform particular actions in a GetGuildChannel
 
@@ -11160,7 +11163,7 @@ type PermissionOverwrite interface {
 ```
 
 <a name="PermissionOverwriteType"></a>
-## type [PermissionOverwriteType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L11>)
+## type [PermissionOverwriteType](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L11>)
 
 PermissionOverwriteType is the type of PermissionOverwrite
 
@@ -11178,7 +11181,7 @@ const (
 ```
 
 <a name="PermissionOverwriteUpdate"></a>
-## type [PermissionOverwriteUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L141-L143>)
+## type [PermissionOverwriteUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L141-L143>)
 
 
 
@@ -11189,7 +11192,7 @@ type PermissionOverwriteUpdate interface {
 ```
 
 <a name="PermissionOverwrites"></a>
-## type [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L19>)
+## type [PermissionOverwrites](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L19>)
 
 
 
@@ -11198,7 +11201,7 @@ type PermissionOverwrites []PermissionOverwrite
 ```
 
 <a name="PermissionOverwrites.Get"></a>
-### func \(PermissionOverwrites\) [Get](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L21>)
+### func \(PermissionOverwrites\) [Get](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L21>)
 
 ```go
 func (p PermissionOverwrites) Get(overwriteType PermissionOverwriteType, id snowflake.ID) (PermissionOverwrite, bool)
@@ -11207,7 +11210,7 @@ func (p PermissionOverwrites) Get(overwriteType PermissionOverwriteType, id snow
 
 
 <a name="PermissionOverwrites.Member"></a>
-### func \(PermissionOverwrites\) [Member](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L37>)
+### func \(PermissionOverwrites\) [Member](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L37>)
 
 ```go
 func (p PermissionOverwrites) Member(id snowflake.ID) (MemberPermissionOverwrite, bool)
@@ -11216,7 +11219,7 @@ func (p PermissionOverwrites) Member(id snowflake.ID) (MemberPermissionOverwrite
 
 
 <a name="PermissionOverwrites.Role"></a>
-### func \(PermissionOverwrites\) [Role](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L30>)
+### func \(PermissionOverwrites\) [Role](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L30>)
 
 ```go
 func (p PermissionOverwrites) Role(id snowflake.ID) (RolePermissionOverwrite, bool)
@@ -11225,7 +11228,7 @@ func (p PermissionOverwrites) Role(id snowflake.ID) (RolePermissionOverwrite, bo
 
 
 <a name="Permissions"></a>
-## type [Permissions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L16>)
+## type [Permissions](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L16>)
 
 Permissions extends the Bit structure, and is used within roles and channels \(https://discord.com/developers/docs/topics/permissions#permissions\)
 
@@ -11350,7 +11353,7 @@ const (
 ```
 
 <a name="Permissions.Add"></a>
-### func \(Permissions\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L216>)
+### func \(Permissions\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L216>)
 
 ```go
 func (p Permissions) Add(bits ...Permissions) Permissions
@@ -11359,7 +11362,7 @@ func (p Permissions) Add(bits ...Permissions) Permissions
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="Permissions.Has"></a>
-### func \(Permissions\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L226>)
+### func \(Permissions\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L226>)
 
 ```go
 func (p Permissions) Has(bits ...Permissions) bool
@@ -11368,7 +11371,7 @@ func (p Permissions) Has(bits ...Permissions) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="Permissions.MarshalJSON"></a>
-### func \(Permissions\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L195>)
+### func \(Permissions\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L195>)
 
 ```go
 func (p Permissions) MarshalJSON() ([]byte, error)
@@ -11377,7 +11380,7 @@ func (p Permissions) MarshalJSON() ([]byte, error)
 MarshalJSON marshals permissions into a string
 
 <a name="Permissions.Missing"></a>
-### func \(Permissions\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L231>)
+### func \(Permissions\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L231>)
 
 ```go
 func (p Permissions) Missing(bits ...Permissions) bool
@@ -11386,7 +11389,7 @@ func (p Permissions) Missing(bits ...Permissions) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="Permissions.Remove"></a>
-### func \(Permissions\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L221>)
+### func \(Permissions\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L221>)
 
 ```go
 func (p Permissions) Remove(bits ...Permissions) Permissions
@@ -11395,7 +11398,7 @@ func (p Permissions) Remove(bits ...Permissions) Permissions
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="Permissions.String"></a>
-### func \(Permissions\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L180>)
+### func \(Permissions\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L180>)
 
 ```go
 func (p Permissions) String() string
@@ -11404,7 +11407,7 @@ func (p Permissions) String() string
 
 
 <a name="Permissions.UnmarshalJSON"></a>
-### func \(\*Permissions\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permissions.go#L200>)
+### func \(\*Permissions\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/permissions.go#L200>)
 
 ```go
 func (p *Permissions) UnmarshalJSON(data []byte) error
@@ -11413,7 +11416,7 @@ func (p *Permissions) UnmarshalJSON(data []byte) error
 UnmarshalJSON unmarshalls permissions into an int64
 
 <a name="PingInteraction"></a>
-## type [PingInteraction](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L12-L17>)
+## type [PingInteraction](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L12-L17>)
 
 
 
@@ -11424,7 +11427,7 @@ type PingInteraction struct {
 ```
 
 <a name="PingInteraction.AppPermissions"></a>
-### func \(PingInteraction\) [AppPermissions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L95>)
+### func \(PingInteraction\) [AppPermissions](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L95>)
 
 ```go
 func (PingInteraction) AppPermissions() *Permissions
@@ -11433,7 +11436,7 @@ func (PingInteraction) AppPermissions() *Permissions
 
 
 <a name="PingInteraction.ApplicationID"></a>
-### func \(PingInteraction\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L51>)
+### func \(PingInteraction\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L51>)
 
 ```go
 func (i PingInteraction) ApplicationID() snowflake.ID
@@ -11442,7 +11445,7 @@ func (i PingInteraction) ApplicationID() snowflake.ID
 
 
 <a name="PingInteraction.AuthorizingIntegrationOwners"></a>
-### func \(PingInteraction\) [AuthorizingIntegrationOwners](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L103>)
+### func \(PingInteraction\) [AuthorizingIntegrationOwners](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L103>)
 
 ```go
 func (PingInteraction) AuthorizingIntegrationOwners() map[ApplicationIntegrationType]snowflake.ID
@@ -11451,7 +11454,7 @@ func (PingInteraction) AuthorizingIntegrationOwners() map[ApplicationIntegration
 
 
 <a name="PingInteraction.Channel"></a>
-### func \(PingInteraction\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L75>)
+### func \(PingInteraction\) [Channel](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L75>)
 
 ```go
 func (PingInteraction) Channel() InteractionChannel
@@ -11460,7 +11463,7 @@ func (PingInteraction) Channel() InteractionChannel
 
 
 <a name="PingInteraction.ChannelID"></a>
-### func \(PingInteraction\) [ChannelID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L71>)
+### func \(PingInteraction\) [ChannelID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L71>)
 
 ```go
 func (PingInteraction) ChannelID() snowflake.ID
@@ -11469,7 +11472,7 @@ func (PingInteraction) ChannelID() snowflake.ID
 
 
 <a name="PingInteraction.Context"></a>
-### func \(PingInteraction\) [Context](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L107>)
+### func \(PingInteraction\) [Context](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L107>)
 
 ```go
 func (PingInteraction) Context() InteractionContextType
@@ -11478,7 +11481,7 @@ func (PingInteraction) Context() InteractionContextType
 
 
 <a name="PingInteraction.CreatedAt"></a>
-### func \(PingInteraction\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L63>)
+### func \(PingInteraction\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L63>)
 
 ```go
 func (i PingInteraction) CreatedAt() time.Time
@@ -11487,7 +11490,7 @@ func (i PingInteraction) CreatedAt() time.Time
 
 
 <a name="PingInteraction.Entitlements"></a>
-### func \(PingInteraction\) [Entitlements](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L99>)
+### func \(PingInteraction\) [Entitlements](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L99>)
 
 ```go
 func (PingInteraction) Entitlements() []Entitlement
@@ -11496,7 +11499,7 @@ func (PingInteraction) Entitlements() []Entitlement
 
 
 <a name="PingInteraction.GuildID"></a>
-### func \(PingInteraction\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L67>)
+### func \(PingInteraction\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L67>)
 
 ```go
 func (PingInteraction) GuildID() *snowflake.ID
@@ -11505,7 +11508,7 @@ func (PingInteraction) GuildID() *snowflake.ID
 
 
 <a name="PingInteraction.GuildLocale"></a>
-### func \(PingInteraction\) [GuildLocale](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L83>)
+### func \(PingInteraction\) [GuildLocale](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L83>)
 
 ```go
 func (PingInteraction) GuildLocale() *Locale
@@ -11514,7 +11517,7 @@ func (PingInteraction) GuildLocale() *Locale
 
 
 <a name="PingInteraction.ID"></a>
-### func \(PingInteraction\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L47>)
+### func \(PingInteraction\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L47>)
 
 ```go
 func (i PingInteraction) ID() snowflake.ID
@@ -11523,7 +11526,7 @@ func (i PingInteraction) ID() snowflake.ID
 
 
 <a name="PingInteraction.Locale"></a>
-### func \(PingInteraction\) [Locale](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L79>)
+### func \(PingInteraction\) [Locale](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L79>)
 
 ```go
 func (PingInteraction) Locale() Locale
@@ -11532,7 +11535,7 @@ func (PingInteraction) Locale() Locale
 
 
 <a name="PingInteraction.MarshalJSON"></a>
-### func \(PingInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L33>)
+### func \(PingInteraction\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L33>)
 
 ```go
 func (i PingInteraction) MarshalJSON() ([]byte, error)
@@ -11541,7 +11544,7 @@ func (i PingInteraction) MarshalJSON() ([]byte, error)
 
 
 <a name="PingInteraction.Member"></a>
-### func \(PingInteraction\) [Member](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L87>)
+### func \(PingInteraction\) [Member](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L87>)
 
 ```go
 func (PingInteraction) Member() *ResolvedMember
@@ -11550,7 +11553,7 @@ func (PingInteraction) Member() *ResolvedMember
 
 
 <a name="PingInteraction.Token"></a>
-### func \(PingInteraction\) [Token](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L55>)
+### func \(PingInteraction\) [Token](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L55>)
 
 ```go
 func (i PingInteraction) Token() string
@@ -11559,7 +11562,7 @@ func (i PingInteraction) Token() string
 
 
 <a name="PingInteraction.Type"></a>
-### func \(PingInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L43>)
+### func \(PingInteraction\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L43>)
 
 ```go
 func (PingInteraction) Type() InteractionType
@@ -11568,7 +11571,7 @@ func (PingInteraction) Type() InteractionType
 
 
 <a name="PingInteraction.UnmarshalJSON"></a>
-### func \(\*PingInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L19>)
+### func \(\*PingInteraction\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L19>)
 
 ```go
 func (i *PingInteraction) UnmarshalJSON(data []byte) error
@@ -11577,7 +11580,7 @@ func (i *PingInteraction) UnmarshalJSON(data []byte) error
 
 
 <a name="PingInteraction.User"></a>
-### func \(PingInteraction\) [User](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L91>)
+### func \(PingInteraction\) [User](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L91>)
 
 ```go
 func (PingInteraction) User() User
@@ -11586,7 +11589,7 @@ func (PingInteraction) User() User
 
 
 <a name="PingInteraction.Version"></a>
-### func \(PingInteraction\) [Version](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_ping.go#L59>)
+### func \(PingInteraction\) [Version](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_ping.go#L59>)
 
 ```go
 func (i PingInteraction) Version() int
@@ -11595,7 +11598,7 @@ func (i PingInteraction) Version() int
 
 
 <a name="Poll"></a>
-## type [Poll](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L10-L17>)
+## type [Poll](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L10-L17>)
 
 
 
@@ -11611,7 +11614,7 @@ type Poll struct {
 ```
 
 <a name="PollAnswer"></a>
-## type [PollAnswer](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L50-L53>)
+## type [PollAnswer](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L50-L53>)
 
 
 
@@ -11623,7 +11626,7 @@ type PollAnswer struct {
 ```
 
 <a name="PollAnswerCount"></a>
-## type [PollAnswerCount](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L60-L64>)
+## type [PollAnswerCount](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L60-L64>)
 
 
 
@@ -11636,7 +11639,7 @@ type PollAnswerCount struct {
 ```
 
 <a name="PollCreate"></a>
-## type [PollCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L19-L25>)
+## type [PollCreate](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L19-L25>)
 
 
 
@@ -11651,7 +11654,7 @@ type PollCreate struct {
 ```
 
 <a name="PollCreate.MarshalJSON"></a>
-### func \(PollCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L27>)
+### func \(PollCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L27>)
 
 ```go
 func (p PollCreate) MarshalJSON() ([]byte, error)
@@ -11660,7 +11663,7 @@ func (p PollCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="PollCreateBuilder"></a>
-## type [PollCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L4-L6>)
+## type [PollCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L4-L6>)
 
 PollCreateBuilder helps create PollCreate structs easier
 
@@ -11671,7 +11674,7 @@ type PollCreateBuilder struct {
 ```
 
 <a name="PollCreateBuilder.AddAnswer"></a>
-### func \(\*PollCreateBuilder\) [AddAnswer](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L23>)
+### func \(\*PollCreateBuilder\) [AddAnswer](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L23>)
 
 ```go
 func (b *PollCreateBuilder) AddAnswer(text string, emoji *PartialEmoji) *PollCreateBuilder
@@ -11680,7 +11683,7 @@ func (b *PollCreateBuilder) AddAnswer(text string, emoji *PartialEmoji) *PollCre
 AddAnswer adds an answer to the Poll
 
 <a name="PollCreateBuilder.Build"></a>
-### func \(\*PollCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L64>)
+### func \(\*PollCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L64>)
 
 ```go
 func (b *PollCreateBuilder) Build() PollCreate
@@ -11689,7 +11692,7 @@ func (b *PollCreateBuilder) Build() PollCreate
 Build builds the PollCreateBuilder to a PollCreate struct
 
 <a name="PollCreateBuilder.ClearAnswers"></a>
-### func \(\*PollCreateBuilder\) [ClearAnswers](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L40>)
+### func \(\*PollCreateBuilder\) [ClearAnswers](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L40>)
 
 ```go
 func (b *PollCreateBuilder) ClearAnswers() *PollCreateBuilder
@@ -11698,7 +11701,7 @@ func (b *PollCreateBuilder) ClearAnswers() *PollCreateBuilder
 ClearAnswers removes all answers of the Poll
 
 <a name="PollCreateBuilder.RemoveAnswer"></a>
-### func \(\*PollCreateBuilder\) [RemoveAnswer](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L32>)
+### func \(\*PollCreateBuilder\) [RemoveAnswer](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L32>)
 
 ```go
 func (b *PollCreateBuilder) RemoveAnswer(i int) *PollCreateBuilder
@@ -11707,7 +11710,7 @@ func (b *PollCreateBuilder) RemoveAnswer(i int) *PollCreateBuilder
 RemoveAnswer removes an answer from the Poll
 
 <a name="PollCreateBuilder.SetAllowMultiselect"></a>
-### func \(\*PollCreateBuilder\) [SetAllowMultiselect](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L52>)
+### func \(\*PollCreateBuilder\) [SetAllowMultiselect](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L52>)
 
 ```go
 func (b *PollCreateBuilder) SetAllowMultiselect(multiselect bool) *PollCreateBuilder
@@ -11716,7 +11719,7 @@ func (b *PollCreateBuilder) SetAllowMultiselect(multiselect bool) *PollCreateBui
 SetAllowMultiselect sets whether users will be able to vote for more than one answer of the Poll
 
 <a name="PollCreateBuilder.SetAnswers"></a>
-### func \(\*PollCreateBuilder\) [SetAnswers](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L17>)
+### func \(\*PollCreateBuilder\) [SetAnswers](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L17>)
 
 ```go
 func (b *PollCreateBuilder) SetAnswers(answers ...PollMedia) *PollCreateBuilder
@@ -11725,7 +11728,7 @@ func (b *PollCreateBuilder) SetAnswers(answers ...PollMedia) *PollCreateBuilder
 SetAnswers sets the answers of the Poll
 
 <a name="PollCreateBuilder.SetDuration"></a>
-### func \(\*PollCreateBuilder\) [SetDuration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L46>)
+### func \(\*PollCreateBuilder\) [SetDuration](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L46>)
 
 ```go
 func (b *PollCreateBuilder) SetDuration(duration int) *PollCreateBuilder
@@ -11734,7 +11737,7 @@ func (b *PollCreateBuilder) SetDuration(duration int) *PollCreateBuilder
 SetDuration sets the duration of the Poll \(in hours\)
 
 <a name="PollCreateBuilder.SetLayoutType"></a>
-### func \(\*PollCreateBuilder\) [SetLayoutType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L58>)
+### func \(\*PollCreateBuilder\) [SetLayoutType](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L58>)
 
 ```go
 func (b *PollCreateBuilder) SetLayoutType(layout PollLayoutType) *PollCreateBuilder
@@ -11743,7 +11746,7 @@ func (b *PollCreateBuilder) SetLayoutType(layout PollLayoutType) *PollCreateBuil
 SetLayoutType sets the layout of the Poll
 
 <a name="PollCreateBuilder.SetQuestion"></a>
-### func \(\*PollCreateBuilder\) [SetQuestion](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll_create_builder.go#L9>)
+### func \(\*PollCreateBuilder\) [SetQuestion](<https://github.com/disgoorg/disgo/blob/master/discord/poll_create_builder.go#L9>)
 
 ```go
 func (b *PollCreateBuilder) SetQuestion(text string) *PollCreateBuilder
@@ -11752,7 +11755,7 @@ func (b *PollCreateBuilder) SetQuestion(text string) *PollCreateBuilder
 SetQuestion sets the question of the Poll
 
 <a name="PollLayoutType"></a>
-## type [PollLayoutType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L66>)
+## type [PollLayoutType](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L66>)
 
 
 
@@ -11769,7 +11772,7 @@ const (
 ```
 
 <a name="PollMedia"></a>
-## type [PollMedia](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L45-L48>)
+## type [PollMedia](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L45-L48>)
 
 
 
@@ -11781,7 +11784,7 @@ type PollMedia struct {
 ```
 
 <a name="PollResults"></a>
-## type [PollResults](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/poll.go#L55-L58>)
+## type [PollResults](<https://github.com/disgoorg/disgo/blob/master/discord/poll.go#L55-L58>)
 
 
 
@@ -11793,7 +11796,7 @@ type PollResults struct {
 ```
 
 <a name="PremiumTier"></a>
-## type [PremiumTier](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L13>)
+## type [PremiumTier](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L13>)
 
 PremiumTier tells you the boost level of a Guild
 
@@ -11813,7 +11816,7 @@ const (
 ```
 
 <a name="PremiumType"></a>
-## type [PremiumType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L174>)
+## type [PremiumType](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L174>)
 
 PremiumType defines the different discord nitro tiers a user can have \(https://discord.com/developers/docs/resources/user#user-object-premium-types\)
 
@@ -11833,7 +11836,7 @@ const (
 ```
 
 <a name="Presence"></a>
-## type [Presence](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/presence.go#L8-L14>)
+## type [Presence](<https://github.com/disgoorg/disgo/blob/master/discord/presence.go#L8-L14>)
 
 Presence \(https://discord.com/developers/docs/topics/gateway#presence-update\)
 
@@ -11848,7 +11851,7 @@ type Presence struct {
 ```
 
 <a name="PresenceUser"></a>
-## type [PresenceUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/presence.go#L16-L18>)
+## type [PresenceUser](<https://github.com/disgoorg/disgo/blob/master/discord/presence.go#L16-L18>)
 
 
 
@@ -11859,7 +11862,7 @@ type PresenceUser struct {
 ```
 
 <a name="QueryValues"></a>
-## type [QueryValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/url.go#L12>)
+## type [QueryValues](<https://github.com/disgoorg/disgo/blob/master/discord/url.go#L12>)
 
 QueryValues holds key value pairs of query values
 
@@ -11868,7 +11871,7 @@ type QueryValues map[string]any
 ```
 
 <a name="QueryValues.Encode"></a>
-### func \(QueryValues\) [Encode](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/url.go#L15>)
+### func \(QueryValues\) [Encode](<https://github.com/disgoorg/disgo/blob/master/discord/url.go#L15>)
 
 ```go
 func (q QueryValues) Encode() string
@@ -11877,7 +11880,7 @@ func (q QueryValues) Encode() string
 Encode encodes the QueryValues into a string to append to the url
 
 <a name="ReactionCountDetails"></a>
-## type [ReactionCountDetails](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L368-L371>)
+## type [ReactionCountDetails](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L368-L371>)
 
 
 
@@ -11889,7 +11892,7 @@ type ReactionCountDetails struct {
 ```
 
 <a name="ResolvedChannel"></a>
-## type [ResolvedChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L154-L161>)
+## type [ResolvedChannel](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L154-L161>)
 
 
 
@@ -11905,7 +11908,7 @@ type ResolvedChannel struct {
 ```
 
 <a name="ResolvedData"></a>
-## type [ResolvedData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L125-L131>)
+## type [ResolvedData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L125-L131>)
 
 
 
@@ -11920,7 +11923,7 @@ type ResolvedData struct {
 ```
 
 <a name="ResolvedData.UnmarshalJSON"></a>
-### func \(\*ResolvedData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L133>)
+### func \(\*ResolvedData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L133>)
 
 ```go
 func (r *ResolvedData) UnmarshalJSON(data []byte) error
@@ -11929,7 +11932,7 @@ func (r *ResolvedData) UnmarshalJSON(data []byte) error
 
 
 <a name="ResolvedMember"></a>
-## type [ResolvedMember](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction.go#L149-L152>)
+## type [ResolvedMember](<https://github.com/disgoorg/disgo/blob/master/discord/interaction.go#L149-L152>)
 
 
 
@@ -11941,7 +11944,7 @@ type ResolvedMember struct {
 ```
 
 <a name="RestGuild"></a>
-## type [RestGuild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L209-L214>)
+## type [RestGuild](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L209-L214>)
 
 
 
@@ -11955,7 +11958,7 @@ type RestGuild struct {
 ```
 
 <a name="Role"></a>
-## type [Role](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L13-L28>)
+## type [Role](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L13-L28>)
 
 Role is a Guild Role object
 
@@ -11979,7 +11982,7 @@ type Role struct {
 ```
 
 <a name="Role.CreatedAt"></a>
-### func \(Role\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L46>)
+### func \(Role\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L46>)
 
 ```go
 func (r Role) CreatedAt() time.Time
@@ -11988,7 +11991,7 @@ func (r Role) CreatedAt() time.Time
 
 
 <a name="Role.IconURL"></a>
-### func \(Role\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L38>)
+### func \(Role\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L38>)
 
 ```go
 func (r Role) IconURL(opts ...CDNOpt) *string
@@ -11997,7 +12000,7 @@ func (r Role) IconURL(opts ...CDNOpt) *string
 
 
 <a name="Role.Mention"></a>
-### func \(Role\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L34>)
+### func \(Role\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L34>)
 
 ```go
 func (r Role) Mention() string
@@ -12006,7 +12009,7 @@ func (r Role) Mention() string
 
 
 <a name="Role.String"></a>
-### func \(Role\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L30>)
+### func \(Role\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L30>)
 
 ```go
 func (r Role) String() string
@@ -12015,7 +12018,7 @@ func (r Role) String() string
 
 
 <a name="RoleCreate"></a>
-## type [RoleCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L68-L76>)
+## type [RoleCreate](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L68-L76>)
 
 RoleCreate is the payload to create a Role
 
@@ -12032,7 +12035,7 @@ type RoleCreate struct {
 ```
 
 <a name="RoleFlags"></a>
-## type [RoleFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L60>)
+## type [RoleFlags](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L60>)
 
 
 
@@ -12050,7 +12053,7 @@ const (
 ```
 
 <a name="RolePermissionOverwrite"></a>
-## type [RolePermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L91-L95>)
+## type [RolePermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L91-L95>)
 
 
 
@@ -12063,7 +12066,7 @@ type RolePermissionOverwrite struct {
 ```
 
 <a name="RolePermissionOverwrite.ID"></a>
-### func \(RolePermissionOverwrite\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L97>)
+### func \(RolePermissionOverwrite\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L97>)
 
 ```go
 func (o RolePermissionOverwrite) ID() snowflake.ID
@@ -12072,7 +12075,7 @@ func (o RolePermissionOverwrite) ID() snowflake.ID
 
 
 <a name="RolePermissionOverwrite.MarshalJSON"></a>
-### func \(RolePermissionOverwrite\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L101>)
+### func \(RolePermissionOverwrite\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L101>)
 
 ```go
 func (o RolePermissionOverwrite) MarshalJSON() ([]byte, error)
@@ -12081,7 +12084,7 @@ func (o RolePermissionOverwrite) MarshalJSON() ([]byte, error)
 
 
 <a name="RolePermissionOverwrite.Type"></a>
-### func \(RolePermissionOverwrite\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L112>)
+### func \(RolePermissionOverwrite\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L112>)
 
 ```go
 func (o RolePermissionOverwrite) Type() PermissionOverwriteType
@@ -12090,7 +12093,7 @@ func (o RolePermissionOverwrite) Type() PermissionOverwriteType
 
 
 <a name="RolePermissionOverwriteUpdate"></a>
-## type [RolePermissionOverwriteUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L145-L148>)
+## type [RolePermissionOverwriteUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L145-L148>)
 
 
 
@@ -12102,7 +12105,7 @@ type RolePermissionOverwriteUpdate struct {
 ```
 
 <a name="RolePermissionOverwriteUpdate.MarshalJSON"></a>
-### func \(RolePermissionOverwriteUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L150>)
+### func \(RolePermissionOverwriteUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L150>)
 
 ```go
 func (u RolePermissionOverwriteUpdate) MarshalJSON() ([]byte, error)
@@ -12111,7 +12114,7 @@ func (u RolePermissionOverwriteUpdate) MarshalJSON() ([]byte, error)
 
 
 <a name="RolePermissionOverwriteUpdate.Type"></a>
-### func \(RolePermissionOverwriteUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L161>)
+### func \(RolePermissionOverwriteUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L161>)
 
 ```go
 func (RolePermissionOverwriteUpdate) Type() PermissionOverwriteType
@@ -12120,7 +12123,7 @@ func (RolePermissionOverwriteUpdate) Type() PermissionOverwriteType
 
 
 <a name="RolePositionUpdate"></a>
-## type [RolePositionUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L90-L93>)
+## type [RolePositionUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L90-L93>)
 
 RolePositionUpdate is the payload to update a Role\(s\) position
 
@@ -12132,7 +12135,7 @@ type RolePositionUpdate struct {
 ```
 
 <a name="RoleSelectMenuComponent"></a>
-## type [RoleSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L306-L313>)
+## type [RoleSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L306-L313>)
 
 
 
@@ -12148,7 +12151,7 @@ type RoleSelectMenuComponent struct {
 ```
 
 <a name="NewRoleSelectMenu"></a>
-### func [NewRoleSelectMenu](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L299>)
+### func [NewRoleSelectMenu](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L299>)
 
 ```go
 func NewRoleSelectMenu(customID string, placeholder string) RoleSelectMenuComponent
@@ -12157,7 +12160,7 @@ func NewRoleSelectMenu(customID string, placeholder string) RoleSelectMenuCompon
 NewRoleSelectMenu builds a new SelectMenuComponent from the provided values
 
 <a name="RoleSelectMenuComponent.AddDefaultValue"></a>
-### func \(RoleSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L391>)
+### func \(RoleSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L391>)
 
 ```go
 func (c RoleSelectMenuComponent) AddDefaultValue(defaultValue snowflake.ID) RoleSelectMenuComponent
@@ -12166,7 +12169,7 @@ func (c RoleSelectMenuComponent) AddDefaultValue(defaultValue snowflake.ID) Role
 AddDefaultValue returns a new RoleSelectMenuComponent with the provided default value added
 
 <a name="RoleSelectMenuComponent.AsDisabled"></a>
-### func \(RoleSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L369>)
+### func \(RoleSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L369>)
 
 ```go
 func (c RoleSelectMenuComponent) AsDisabled() RoleSelectMenuComponent
@@ -12175,7 +12178,7 @@ func (c RoleSelectMenuComponent) AsDisabled() RoleSelectMenuComponent
 AsDisabled returns a new RoleSelectMenuComponent but disabled
 
 <a name="RoleSelectMenuComponent.AsEnabled"></a>
-### func \(RoleSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L363>)
+### func \(RoleSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L363>)
 
 ```go
 func (c RoleSelectMenuComponent) AsEnabled() RoleSelectMenuComponent
@@ -12184,7 +12187,7 @@ func (c RoleSelectMenuComponent) AsEnabled() RoleSelectMenuComponent
 AsEnabled returns a new RoleSelectMenuComponent but enabled
 
 <a name="RoleSelectMenuComponent.ID"></a>
-### func \(RoleSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L330>)
+### func \(RoleSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L330>)
 
 ```go
 func (c RoleSelectMenuComponent) ID() string
@@ -12193,7 +12196,7 @@ func (c RoleSelectMenuComponent) ID() string
 
 
 <a name="RoleSelectMenuComponent.MarshalJSON"></a>
-### func \(RoleSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L315>)
+### func \(RoleSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L315>)
 
 ```go
 func (c RoleSelectMenuComponent) MarshalJSON() ([]byte, error)
@@ -12202,7 +12205,7 @@ func (c RoleSelectMenuComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="RoleSelectMenuComponent.RemoveDefaultValue"></a>
-### func \(RoleSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L397>)
+### func \(RoleSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L397>)
 
 ```go
 func (c RoleSelectMenuComponent) RemoveDefaultValue(index int) RoleSelectMenuComponent
@@ -12211,7 +12214,7 @@ func (c RoleSelectMenuComponent) RemoveDefaultValue(index int) RoleSelectMenuCom
 RemoveDefaultValue returns a new RoleSelectMenuComponent with the provided default value at the index removed
 
 <a name="RoleSelectMenuComponent.SetDefaultValues"></a>
-### func \(RoleSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L381>)
+### func \(RoleSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L381>)
 
 ```go
 func (c RoleSelectMenuComponent) SetDefaultValues(defaultValues ...snowflake.ID) RoleSelectMenuComponent
@@ -12220,7 +12223,7 @@ func (c RoleSelectMenuComponent) SetDefaultValues(defaultValues ...snowflake.ID)
 SetDefaultValues returns a new RoleSelectMenuComponent with the provided default values
 
 <a name="RoleSelectMenuComponent.Type"></a>
-### func \(RoleSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L326>)
+### func \(RoleSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L326>)
 
 ```go
 func (RoleSelectMenuComponent) Type() ComponentType
@@ -12229,7 +12232,7 @@ func (RoleSelectMenuComponent) Type() ComponentType
 
 
 <a name="RoleSelectMenuComponent.WithCustomID"></a>
-### func \(RoleSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L339>)
+### func \(RoleSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L339>)
 
 ```go
 func (c RoleSelectMenuComponent) WithCustomID(customID string) RoleSelectMenuComponent
@@ -12238,7 +12241,7 @@ func (c RoleSelectMenuComponent) WithCustomID(customID string) RoleSelectMenuCom
 WithCustomID returns a new RoleSelectMenuComponent with the provided customID
 
 <a name="RoleSelectMenuComponent.WithDisabled"></a>
-### func \(RoleSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L375>)
+### func \(RoleSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L375>)
 
 ```go
 func (c RoleSelectMenuComponent) WithDisabled(disabled bool) RoleSelectMenuComponent
@@ -12247,7 +12250,7 @@ func (c RoleSelectMenuComponent) WithDisabled(disabled bool) RoleSelectMenuCompo
 WithDisabled returns a new RoleSelectMenuComponent with the provided disabled
 
 <a name="RoleSelectMenuComponent.WithMaxValues"></a>
-### func \(RoleSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L357>)
+### func \(RoleSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L357>)
 
 ```go
 func (c RoleSelectMenuComponent) WithMaxValues(maxValue int) RoleSelectMenuComponent
@@ -12256,7 +12259,7 @@ func (c RoleSelectMenuComponent) WithMaxValues(maxValue int) RoleSelectMenuCompo
 WithMaxValues returns a new RoleSelectMenuComponent with the provided maxValue
 
 <a name="RoleSelectMenuComponent.WithMinValues"></a>
-### func \(RoleSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L351>)
+### func \(RoleSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L351>)
 
 ```go
 func (c RoleSelectMenuComponent) WithMinValues(minValue int) RoleSelectMenuComponent
@@ -12265,7 +12268,7 @@ func (c RoleSelectMenuComponent) WithMinValues(minValue int) RoleSelectMenuCompo
 WithMinValues returns a new RoleSelectMenuComponent with the provided minValue
 
 <a name="RoleSelectMenuComponent.WithPlaceholder"></a>
-### func \(RoleSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L345>)
+### func \(RoleSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L345>)
 
 ```go
 func (c RoleSelectMenuComponent) WithPlaceholder(placeholder string) RoleSelectMenuComponent
@@ -12274,7 +12277,7 @@ func (c RoleSelectMenuComponent) WithPlaceholder(placeholder string) RoleSelectM
 WithPlaceholder returns a new RoleSelectMenuComponent with the provided placeholder
 
 <a name="RoleSelectMenuInteractionData"></a>
-## type [RoleSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L332-L336>)
+## type [RoleSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L332-L336>)
 
 
 
@@ -12287,7 +12290,7 @@ type RoleSelectMenuInteractionData struct {
 ```
 
 <a name="RoleSelectMenuInteractionData.CustomID"></a>
-### func \(RoleSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L380>)
+### func \(RoleSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L380>)
 
 ```go
 func (d RoleSelectMenuInteractionData) CustomID() string
@@ -12296,7 +12299,7 @@ func (d RoleSelectMenuInteractionData) CustomID() string
 
 
 <a name="RoleSelectMenuInteractionData.MarshalJSON"></a>
-### func \(RoleSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L355>)
+### func \(RoleSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L355>)
 
 ```go
 func (d RoleSelectMenuInteractionData) MarshalJSON() ([]byte, error)
@@ -12305,7 +12308,7 @@ func (d RoleSelectMenuInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="RoleSelectMenuInteractionData.Roles"></a>
-### func \(RoleSelectMenuInteractionData\) [Roles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L366>)
+### func \(RoleSelectMenuInteractionData\) [Roles](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L366>)
 
 ```go
 func (d RoleSelectMenuInteractionData) Roles() []Role
@@ -12314,7 +12317,7 @@ func (d RoleSelectMenuInteractionData) Roles() []Role
 
 
 <a name="RoleSelectMenuInteractionData.Type"></a>
-### func \(RoleSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L376>)
+### func \(RoleSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L376>)
 
 ```go
 func (RoleSelectMenuInteractionData) Type() ComponentType
@@ -12323,7 +12326,7 @@ func (RoleSelectMenuInteractionData) Type() ComponentType
 
 
 <a name="RoleSelectMenuInteractionData.UnmarshalJSON"></a>
-### func \(\*RoleSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L342>)
+### func \(\*RoleSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L342>)
 
 ```go
 func (d *RoleSelectMenuInteractionData) UnmarshalJSON(data []byte) error
@@ -12332,7 +12335,7 @@ func (d *RoleSelectMenuInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="RoleSelectMenuResolved"></a>
-## type [RoleSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L338-L340>)
+## type [RoleSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L338-L340>)
 
 
 
@@ -12343,7 +12346,7 @@ type RoleSelectMenuResolved struct {
 ```
 
 <a name="RoleSubscriptionData"></a>
-## type [RoleSubscriptionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/message.go#L462-L467>)
+## type [RoleSubscriptionData](<https://github.com/disgoorg/disgo/blob/master/discord/message.go#L462-L467>)
 
 
 
@@ -12357,7 +12360,7 @@ type RoleSubscriptionData struct {
 ```
 
 <a name="RoleTag"></a>
-## type [RoleTag](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L51-L58>)
+## type [RoleTag](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L51-L58>)
 
 RoleTag are tags a Role has
 
@@ -12373,7 +12376,7 @@ type RoleTag struct {
 ```
 
 <a name="RoleUpdate"></a>
-## type [RoleUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/role.go#L79-L87>)
+## type [RoleUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/role.go#L79-L87>)
 
 RoleUpdate is the payload to update a Role
 
@@ -12390,7 +12393,7 @@ type RoleUpdate struct {
 ```
 
 <a name="SKU"></a>
-## type [SKU](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sku.go#L9-L22>)
+## type [SKU](<https://github.com/disgoorg/disgo/blob/master/discord/sku.go#L9-L22>)
 
 
 
@@ -12412,7 +12415,7 @@ type SKU struct {
 ```
 
 <a name="SKUFlags"></a>
-## type [SKUFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sku.go#L34>)
+## type [SKUFlags](<https://github.com/disgoorg/disgo/blob/master/discord/sku.go#L34>)
 
 
 
@@ -12432,7 +12435,7 @@ const (
 ```
 
 <a name="SKUType"></a>
-## type [SKUType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sku.go#L24>)
+## type [SKUType](<https://github.com/disgoorg/disgo/blob/master/discord/sku.go#L24>)
 
 
 
@@ -12453,7 +12456,7 @@ const (
 ```
 
 <a name="ScheduledEventEntityType"></a>
-## type [ScheduledEventEntityType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L93>)
+## type [ScheduledEventEntityType](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L93>)
 
 ScheduledEventEntityType the type of the scheduled event \(https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-object-guild-scheduled-event-entity-types\)
 
@@ -12472,7 +12475,7 @@ const (
 ```
 
 <a name="ScheduledEventPrivacyLevel"></a>
-## type [ScheduledEventPrivacyLevel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L75>)
+## type [ScheduledEventPrivacyLevel](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L75>)
 
 ScheduledEventPrivacyLevel the privacy level of the ScheduledEventPrivacyLevel \(https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-object-guild-scheduled-event-privacy-level\)
 
@@ -12481,7 +12484,7 @@ type ScheduledEventPrivacyLevel int
 ```
 
 <a name="ScheduledEventStatus"></a>
-## type [ScheduledEventStatus](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_scheduled_event.go#L83>)
+## type [ScheduledEventStatus](<https://github.com/disgoorg/disgo/blob/master/discord/guild_scheduled_event.go#L83>)
 
 ScheduledEventStatus the status of the scheduled event \(https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-object-guild-scheduled-event-status\)
 
@@ -12501,7 +12504,7 @@ const (
 ```
 
 <a name="SelectMenuComponent"></a>
-## type [SelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L8-L11>)
+## type [SelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L8-L11>)
 
 
 
@@ -12513,7 +12516,7 @@ type SelectMenuComponent interface {
 ```
 
 <a name="SelectMenuDefaultValue"></a>
-## type [SelectMenuDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L632-L635>)
+## type [SelectMenuDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L632-L635>)
 
 
 
@@ -12525,7 +12528,7 @@ type SelectMenuDefaultValue struct {
 ```
 
 <a name="NewSelectMenuDefaultChannel"></a>
-### func [NewSelectMenuDefaultChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L662>)
+### func [NewSelectMenuDefaultChannel](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L662>)
 
 ```go
 func NewSelectMenuDefaultChannel(id snowflake.ID) SelectMenuDefaultValue
@@ -12534,7 +12537,7 @@ func NewSelectMenuDefaultChannel(id snowflake.ID) SelectMenuDefaultValue
 NewSelectMenuDefaultChannel returns a new SelectMenuDefaultValue of type SelectMenuDefaultValueTypeChannel
 
 <a name="NewSelectMenuDefaultRole"></a>
-### func [NewSelectMenuDefaultRole](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L654>)
+### func [NewSelectMenuDefaultRole](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L654>)
 
 ```go
 func NewSelectMenuDefaultRole(id snowflake.ID) SelectMenuDefaultValue
@@ -12543,7 +12546,7 @@ func NewSelectMenuDefaultRole(id snowflake.ID) SelectMenuDefaultValue
 NewSelectMenuDefaultRole returns a new SelectMenuDefaultValue of type SelectMenuDefaultValueTypeRole
 
 <a name="NewSelectMenuDefaultUser"></a>
-### func [NewSelectMenuDefaultUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L646>)
+### func [NewSelectMenuDefaultUser](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L646>)
 
 ```go
 func NewSelectMenuDefaultUser(id snowflake.ID) SelectMenuDefaultValue
@@ -12552,7 +12555,7 @@ func NewSelectMenuDefaultUser(id snowflake.ID) SelectMenuDefaultValue
 NewSelectMenuDefaultUser returns a new SelectMenuDefaultValue of type SelectMenuDefaultValueTypeUser
 
 <a name="SelectMenuDefaultValueType"></a>
-## type [SelectMenuDefaultValueType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L637>)
+## type [SelectMenuDefaultValueType](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L637>)
 
 
 
@@ -12571,7 +12574,7 @@ const (
 ```
 
 <a name="SelectMenuInteractionData"></a>
-## type [SelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L225-L228>)
+## type [SelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L225-L228>)
 
 
 
@@ -12583,7 +12586,7 @@ type SelectMenuInteractionData interface {
 ```
 
 <a name="SessionStartLimit"></a>
-## type [SessionStartLimit](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/gateway.go#L13-L18>)
+## type [SessionStartLimit](<https://github.com/disgoorg/disgo/blob/master/discord/gateway.go#L13-L18>)
 
 
 
@@ -12597,7 +12600,7 @@ type SessionStartLimit struct {
 ```
 
 <a name="SlashCommand"></a>
-## type [SlashCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L86-L103>)
+## type [SlashCommand](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L86-L103>)
 
 
 
@@ -12612,7 +12615,7 @@ type SlashCommand struct {
 ```
 
 <a name="SlashCommand.ApplicationID"></a>
-### func \(SlashCommand\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L160>)
+### func \(SlashCommand\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L160>)
 
 ```go
 func (c SlashCommand) ApplicationID() snowflake.ID
@@ -12621,7 +12624,7 @@ func (c SlashCommand) ApplicationID() snowflake.ID
 
 
 <a name="SlashCommand.Contexts"></a>
-### func \(SlashCommand\) [Contexts](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L195>)
+### func \(SlashCommand\) [Contexts](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L195>)
 
 ```go
 func (c SlashCommand) Contexts() []InteractionContextType
@@ -12630,7 +12633,7 @@ func (c SlashCommand) Contexts() []InteractionContextType
 
 
 <a name="SlashCommand.CreatedAt"></a>
-### func \(SlashCommand\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L203>)
+### func \(SlashCommand\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L203>)
 
 ```go
 func (c SlashCommand) CreatedAt() time.Time
@@ -12639,7 +12642,7 @@ func (c SlashCommand) CreatedAt() time.Time
 
 
 <a name="SlashCommand.DMPermission"></a>
-### func \(SlashCommand\) [DMPermission](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L183>)
+### func \(SlashCommand\) [DMPermission](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L183>)
 
 ```go
 func (c SlashCommand) DMPermission() bool
@@ -12648,7 +12651,7 @@ func (c SlashCommand) DMPermission() bool
 
 
 <a name="SlashCommand.DefaultMemberPermissions"></a>
-### func \(SlashCommand\) [DefaultMemberPermissions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L180>)
+### func \(SlashCommand\) [DefaultMemberPermissions](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L180>)
 
 ```go
 func (c SlashCommand) DefaultMemberPermissions() Permissions
@@ -12657,7 +12660,7 @@ func (c SlashCommand) DefaultMemberPermissions() Permissions
 
 
 <a name="SlashCommand.GuildID"></a>
-### func \(SlashCommand\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L164>)
+### func \(SlashCommand\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L164>)
 
 ```go
 func (c SlashCommand) GuildID() *snowflake.ID
@@ -12666,7 +12669,7 @@ func (c SlashCommand) GuildID() *snowflake.ID
 
 
 <a name="SlashCommand.ID"></a>
-### func \(SlashCommand\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L152>)
+### func \(SlashCommand\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L152>)
 
 ```go
 func (c SlashCommand) ID() snowflake.ID
@@ -12675,7 +12678,7 @@ func (c SlashCommand) ID() snowflake.ID
 
 
 <a name="SlashCommand.IntegrationTypes"></a>
-### func \(SlashCommand\) [IntegrationTypes](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L191>)
+### func \(SlashCommand\) [IntegrationTypes](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L191>)
 
 ```go
 func (c SlashCommand) IntegrationTypes() []ApplicationIntegrationType
@@ -12684,7 +12687,7 @@ func (c SlashCommand) IntegrationTypes() []ApplicationIntegrationType
 
 
 <a name="SlashCommand.MarshalJSON"></a>
-### func \(SlashCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L130>)
+### func \(SlashCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L130>)
 
 ```go
 func (c SlashCommand) MarshalJSON() ([]byte, error)
@@ -12693,7 +12696,7 @@ func (c SlashCommand) MarshalJSON() ([]byte, error)
 
 
 <a name="SlashCommand.Mention"></a>
-### func \(SlashCommand\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L207>)
+### func \(SlashCommand\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L207>)
 
 ```go
 func (c SlashCommand) Mention() string
@@ -12702,7 +12705,7 @@ func (c SlashCommand) Mention() string
 
 
 <a name="SlashCommand.NSFW"></a>
-### func \(SlashCommand\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L187>)
+### func \(SlashCommand\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L187>)
 
 ```go
 func (c SlashCommand) NSFW() bool
@@ -12711,7 +12714,7 @@ func (c SlashCommand) NSFW() bool
 
 
 <a name="SlashCommand.Name"></a>
-### func \(SlashCommand\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L168>)
+### func \(SlashCommand\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L168>)
 
 ```go
 func (c SlashCommand) Name() string
@@ -12720,7 +12723,7 @@ func (c SlashCommand) Name() string
 
 
 <a name="SlashCommand.NameLocalizations"></a>
-### func \(SlashCommand\) [NameLocalizations](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L172>)
+### func \(SlashCommand\) [NameLocalizations](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L172>)
 
 ```go
 func (c SlashCommand) NameLocalizations() map[Locale]string
@@ -12729,7 +12732,7 @@ func (c SlashCommand) NameLocalizations() map[Locale]string
 
 
 <a name="SlashCommand.NameLocalized"></a>
-### func \(SlashCommand\) [NameLocalized](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L176>)
+### func \(SlashCommand\) [NameLocalized](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L176>)
 
 ```go
 func (c SlashCommand) NameLocalized() string
@@ -12738,7 +12741,7 @@ func (c SlashCommand) NameLocalized() string
 
 
 <a name="SlashCommand.Type"></a>
-### func \(SlashCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L156>)
+### func \(SlashCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L156>)
 
 ```go
 func (SlashCommand) Type() ApplicationCommandType
@@ -12747,7 +12750,7 @@ func (SlashCommand) Type() ApplicationCommandType
 
 
 <a name="SlashCommand.UnmarshalJSON"></a>
-### func \(\*SlashCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L105>)
+### func \(\*SlashCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L105>)
 
 ```go
 func (c *SlashCommand) UnmarshalJSON(data []byte) error
@@ -12756,7 +12759,7 @@ func (c *SlashCommand) UnmarshalJSON(data []byte) error
 
 
 <a name="SlashCommand.Version"></a>
-### func \(SlashCommand\) [Version](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L199>)
+### func \(SlashCommand\) [Version](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L199>)
 
 ```go
 func (c SlashCommand) Version() snowflake.ID
@@ -12765,7 +12768,7 @@ func (c SlashCommand) Version() snowflake.ID
 
 
 <a name="SlashCommandCreate"></a>
-## type [SlashCommandCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L12-L24>)
+## type [SlashCommandCreate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L12-L24>)
 
 
 
@@ -12786,7 +12789,7 @@ type SlashCommandCreate struct {
 ```
 
 <a name="SlashCommandCreate.CommandName"></a>
-### func \(SlashCommandCreate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L41>)
+### func \(SlashCommandCreate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L41>)
 
 ```go
 func (c SlashCommandCreate) CommandName() string
@@ -12795,7 +12798,7 @@ func (c SlashCommandCreate) CommandName() string
 
 
 <a name="SlashCommandCreate.MarshalJSON"></a>
-### func \(SlashCommandCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L26>)
+### func \(SlashCommandCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L26>)
 
 ```go
 func (c SlashCommandCreate) MarshalJSON() ([]byte, error)
@@ -12804,7 +12807,7 @@ func (c SlashCommandCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="SlashCommandCreate.Type"></a>
-### func \(SlashCommandCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L37>)
+### func \(SlashCommandCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L37>)
 
 ```go
 func (SlashCommandCreate) Type() ApplicationCommandType
@@ -12813,7 +12816,7 @@ func (SlashCommandCreate) Type() ApplicationCommandType
 
 
 <a name="SlashCommandInteractionData"></a>
-## type [SlashCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L173-L181>)
+## type [SlashCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L173-L181>)
 
 
 
@@ -12828,7 +12831,7 @@ type SlashCommandInteractionData struct {
 ```
 
 <a name="SlashCommandInteractionData.All"></a>
-### func \(SlashCommandInteractionData\) [All](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L470>)
+### func \(SlashCommandInteractionData\) [All](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L470>)
 
 ```go
 func (d SlashCommandInteractionData) All() []SlashCommandOption
@@ -12837,7 +12840,7 @@ func (d SlashCommandInteractionData) All() []SlashCommandOption
 
 
 <a name="SlashCommandInteractionData.Attachment"></a>
-### func \(SlashCommandInteractionData\) [Attachment](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L463>)
+### func \(SlashCommandInteractionData\) [Attachment](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L463>)
 
 ```go
 func (d SlashCommandInteractionData) Attachment(name string) Attachment
@@ -12846,7 +12849,7 @@ func (d SlashCommandInteractionData) Attachment(name string) Attachment
 
 
 <a name="SlashCommandInteractionData.Bool"></a>
-### func \(SlashCommandInteractionData\) [Bool](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L339>)
+### func \(SlashCommandInteractionData\) [Bool](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L339>)
 
 ```go
 func (d SlashCommandInteractionData) Bool(name string) bool
@@ -12855,7 +12858,7 @@ func (d SlashCommandInteractionData) Bool(name string) bool
 
 
 <a name="SlashCommandInteractionData.Channel"></a>
-### func \(SlashCommandInteractionData\) [Channel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L393>)
+### func \(SlashCommandInteractionData\) [Channel](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L393>)
 
 ```go
 func (d SlashCommandInteractionData) Channel(name string) ResolvedChannel
@@ -12864,7 +12867,7 @@ func (d SlashCommandInteractionData) Channel(name string) ResolvedChannel
 
 
 <a name="SlashCommandInteractionData.CommandID"></a>
-### func \(SlashCommandInteractionData\) [CommandID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L267>)
+### func \(SlashCommandInteractionData\) [CommandID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L267>)
 
 ```go
 func (d SlashCommandInteractionData) CommandID() snowflake.ID
@@ -12873,7 +12876,7 @@ func (d SlashCommandInteractionData) CommandID() snowflake.ID
 
 
 <a name="SlashCommandInteractionData.CommandName"></a>
-### func \(SlashCommandInteractionData\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L271>)
+### func \(SlashCommandInteractionData\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L271>)
 
 ```go
 func (d SlashCommandInteractionData) CommandName() string
@@ -12882,7 +12885,7 @@ func (d SlashCommandInteractionData) CommandName() string
 
 
 <a name="SlashCommandInteractionData.CommandPath"></a>
-### func \(SlashCommandInteractionData\) [CommandPath](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L275>)
+### func \(SlashCommandInteractionData\) [CommandPath](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L275>)
 
 ```go
 func (d SlashCommandInteractionData) CommandPath() string
@@ -12891,7 +12894,7 @@ func (d SlashCommandInteractionData) CommandPath() string
 
 
 <a name="SlashCommandInteractionData.Find"></a>
-### func \(SlashCommandInteractionData\) [Find](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L486>)
+### func \(SlashCommandInteractionData\) [Find](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L486>)
 
 ```go
 func (d SlashCommandInteractionData) Find(optionFindFunc func(option SlashCommandOption) bool) (SlashCommandOption, bool)
@@ -12900,7 +12903,7 @@ func (d SlashCommandInteractionData) Find(optionFindFunc func(option SlashComman
 
 
 <a name="SlashCommandInteractionData.FindAll"></a>
-### func \(SlashCommandInteractionData\) [FindAll](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L495>)
+### func \(SlashCommandInteractionData\) [FindAll](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L495>)
 
 ```go
 func (d SlashCommandInteractionData) FindAll(optionFindFunc func(option SlashCommandOption) bool) []SlashCommandOption
@@ -12909,7 +12912,7 @@ func (d SlashCommandInteractionData) FindAll(optionFindFunc func(option SlashCom
 
 
 <a name="SlashCommandInteractionData.Float"></a>
-### func \(SlashCommandInteractionData\) [Float](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L445>)
+### func \(SlashCommandInteractionData\) [Float](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L445>)
 
 ```go
 func (d SlashCommandInteractionData) Float(name string) float64
@@ -12918,7 +12921,7 @@ func (d SlashCommandInteractionData) Float(name string) float64
 
 
 <a name="SlashCommandInteractionData.GetByType"></a>
-### func \(SlashCommandInteractionData\) [GetByType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L480>)
+### func \(SlashCommandInteractionData\) [GetByType](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L480>)
 
 ```go
 func (d SlashCommandInteractionData) GetByType(optionType ApplicationCommandOptionType) []SlashCommandOption
@@ -12927,7 +12930,7 @@ func (d SlashCommandInteractionData) GetByType(optionType ApplicationCommandOpti
 
 
 <a name="SlashCommandInteractionData.GuildID"></a>
-### func \(SlashCommandInteractionData\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L286>)
+### func \(SlashCommandInteractionData\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L286>)
 
 ```go
 func (d SlashCommandInteractionData) GuildID() *snowflake.ID
@@ -12936,7 +12939,7 @@ func (d SlashCommandInteractionData) GuildID() *snowflake.ID
 
 
 <a name="SlashCommandInteractionData.Int"></a>
-### func \(SlashCommandInteractionData\) [Int](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L322>)
+### func \(SlashCommandInteractionData\) [Int](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L322>)
 
 ```go
 func (d SlashCommandInteractionData) Int(name string) int
@@ -12945,7 +12948,7 @@ func (d SlashCommandInteractionData) Int(name string) int
 
 
 <a name="SlashCommandInteractionData.MarshalJSON"></a>
-### func \(SlashCommandInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L223>)
+### func \(SlashCommandInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L223>)
 
 ```go
 func (d SlashCommandInteractionData) MarshalJSON() ([]byte, error)
@@ -12954,7 +12957,7 @@ func (d SlashCommandInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="SlashCommandInteractionData.Member"></a>
-### func \(SlashCommandInteractionData\) [Member](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L375>)
+### func \(SlashCommandInteractionData\) [Member](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L375>)
 
 ```go
 func (d SlashCommandInteractionData) Member(name string) ResolvedMember
@@ -12963,7 +12966,7 @@ func (d SlashCommandInteractionData) Member(name string) ResolvedMember
 
 
 <a name="SlashCommandInteractionData.OptAttachment"></a>
-### func \(SlashCommandInteractionData\) [OptAttachment](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L452>)
+### func \(SlashCommandInteractionData\) [OptAttachment](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L452>)
 
 ```go
 func (d SlashCommandInteractionData) OptAttachment(name string) (Attachment, bool)
@@ -12972,7 +12975,7 @@ func (d SlashCommandInteractionData) OptAttachment(name string) (Attachment, boo
 
 
 <a name="SlashCommandInteractionData.OptBool"></a>
-### func \(SlashCommandInteractionData\) [OptBool](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L329>)
+### func \(SlashCommandInteractionData\) [OptBool](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L329>)
 
 ```go
 func (d SlashCommandInteractionData) OptBool(name string) (bool, bool)
@@ -12981,7 +12984,7 @@ func (d SlashCommandInteractionData) OptBool(name string) (bool, bool)
 
 
 <a name="SlashCommandInteractionData.OptChannel"></a>
-### func \(SlashCommandInteractionData\) [OptChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L382>)
+### func \(SlashCommandInteractionData\) [OptChannel](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L382>)
 
 ```go
 func (d SlashCommandInteractionData) OptChannel(name string) (ResolvedChannel, bool)
@@ -12990,7 +12993,7 @@ func (d SlashCommandInteractionData) OptChannel(name string) (ResolvedChannel, b
 
 
 <a name="SlashCommandInteractionData.OptFloat"></a>
-### func \(SlashCommandInteractionData\) [OptFloat](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L435>)
+### func \(SlashCommandInteractionData\) [OptFloat](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L435>)
 
 ```go
 func (d SlashCommandInteractionData) OptFloat(name string) (float64, bool)
@@ -12999,7 +13002,7 @@ func (d SlashCommandInteractionData) OptFloat(name string) (float64, bool)
 
 
 <a name="SlashCommandInteractionData.OptInt"></a>
-### func \(SlashCommandInteractionData\) [OptInt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L312>)
+### func \(SlashCommandInteractionData\) [OptInt](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L312>)
 
 ```go
 func (d SlashCommandInteractionData) OptInt(name string) (int, bool)
@@ -13008,7 +13011,7 @@ func (d SlashCommandInteractionData) OptInt(name string) (int, bool)
 
 
 <a name="SlashCommandInteractionData.OptMember"></a>
-### func \(SlashCommandInteractionData\) [OptMember](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L364>)
+### func \(SlashCommandInteractionData\) [OptMember](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L364>)
 
 ```go
 func (d SlashCommandInteractionData) OptMember(name string) (ResolvedMember, bool)
@@ -13017,7 +13020,7 @@ func (d SlashCommandInteractionData) OptMember(name string) (ResolvedMember, boo
 
 
 <a name="SlashCommandInteractionData.OptRole"></a>
-### func \(SlashCommandInteractionData\) [OptRole](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L400>)
+### func \(SlashCommandInteractionData\) [OptRole](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L400>)
 
 ```go
 func (d SlashCommandInteractionData) OptRole(name string) (Role, bool)
@@ -13026,7 +13029,7 @@ func (d SlashCommandInteractionData) OptRole(name string) (Role, bool)
 
 
 <a name="SlashCommandInteractionData.OptSnowflake"></a>
-### func \(SlashCommandInteractionData\) [OptSnowflake](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L418>)
+### func \(SlashCommandInteractionData\) [OptSnowflake](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L418>)
 
 ```go
 func (d SlashCommandInteractionData) OptSnowflake(name string) (snowflake.ID, bool)
@@ -13035,7 +13038,7 @@ func (d SlashCommandInteractionData) OptSnowflake(name string) (snowflake.ID, bo
 
 
 <a name="SlashCommandInteractionData.OptString"></a>
-### func \(SlashCommandInteractionData\) [OptString](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L295>)
+### func \(SlashCommandInteractionData\) [OptString](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L295>)
 
 ```go
 func (d SlashCommandInteractionData) OptString(name string) (string, bool)
@@ -13044,7 +13047,7 @@ func (d SlashCommandInteractionData) OptString(name string) (string, bool)
 
 
 <a name="SlashCommandInteractionData.OptUser"></a>
-### func \(SlashCommandInteractionData\) [OptUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L346>)
+### func \(SlashCommandInteractionData\) [OptUser](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L346>)
 
 ```go
 func (d SlashCommandInteractionData) OptUser(name string) (User, bool)
@@ -13053,7 +13056,7 @@ func (d SlashCommandInteractionData) OptUser(name string) (User, bool)
 
 
 <a name="SlashCommandInteractionData.Option"></a>
-### func \(SlashCommandInteractionData\) [Option](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L290>)
+### func \(SlashCommandInteractionData\) [Option](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L290>)
 
 ```go
 func (d SlashCommandInteractionData) Option(name string) (SlashCommandOption, bool)
@@ -13062,7 +13065,7 @@ func (d SlashCommandInteractionData) Option(name string) (SlashCommandOption, bo
 
 
 <a name="SlashCommandInteractionData.Role"></a>
-### func \(SlashCommandInteractionData\) [Role](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L411>)
+### func \(SlashCommandInteractionData\) [Role](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L411>)
 
 ```go
 func (d SlashCommandInteractionData) Role(name string) Role
@@ -13071,7 +13074,7 @@ func (d SlashCommandInteractionData) Role(name string) Role
 
 
 <a name="SlashCommandInteractionData.Snowflake"></a>
-### func \(SlashCommandInteractionData\) [Snowflake](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L428>)
+### func \(SlashCommandInteractionData\) [Snowflake](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L428>)
 
 ```go
 func (d SlashCommandInteractionData) Snowflake(name string) snowflake.ID
@@ -13080,7 +13083,7 @@ func (d SlashCommandInteractionData) Snowflake(name string) snowflake.ID
 
 
 <a name="SlashCommandInteractionData.String"></a>
-### func \(SlashCommandInteractionData\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L305>)
+### func \(SlashCommandInteractionData\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L305>)
 
 ```go
 func (d SlashCommandInteractionData) String(name string) string
@@ -13089,7 +13092,7 @@ func (d SlashCommandInteractionData) String(name string) string
 
 
 <a name="SlashCommandInteractionData.Type"></a>
-### func \(SlashCommandInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L263>)
+### func \(SlashCommandInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L263>)
 
 ```go
 func (SlashCommandInteractionData) Type() ApplicationCommandType
@@ -13098,7 +13101,7 @@ func (SlashCommandInteractionData) Type() ApplicationCommandType
 
 
 <a name="SlashCommandInteractionData.UnmarshalJSON"></a>
-### func \(\*SlashCommandInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L183>)
+### func \(\*SlashCommandInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L183>)
 
 ```go
 func (d *SlashCommandInteractionData) UnmarshalJSON(data []byte) error
@@ -13107,7 +13110,7 @@ func (d *SlashCommandInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="SlashCommandInteractionData.User"></a>
-### func \(SlashCommandInteractionData\) [User](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L357>)
+### func \(SlashCommandInteractionData\) [User](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L357>)
 
 ```go
 func (d SlashCommandInteractionData) User(name string) User
@@ -13116,7 +13119,7 @@ func (d SlashCommandInteractionData) User(name string) User
 
 
 <a name="SlashCommandOption"></a>
-## type [SlashCommandOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/slash_command_option.go#L81-L85>)
+## type [SlashCommandOption](<https://github.com/disgoorg/disgo/blob/master/discord/slash_command_option.go#L81-L85>)
 
 
 
@@ -13129,7 +13132,7 @@ type SlashCommandOption struct {
 ```
 
 <a name="SlashCommandOptionSubCommand"></a>
-## type [SlashCommandOptionSubCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/slash_command_option.go#L55-L59>)
+## type [SlashCommandOptionSubCommand](<https://github.com/disgoorg/disgo/blob/master/discord/slash_command_option.go#L55-L59>)
 
 
 
@@ -13142,7 +13145,7 @@ type SlashCommandOptionSubCommand struct {
 ```
 
 <a name="SlashCommandOptionSubCommandGroup"></a>
-## type [SlashCommandOptionSubCommandGroup](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/slash_command_option.go#L68-L72>)
+## type [SlashCommandOptionSubCommandGroup](<https://github.com/disgoorg/disgo/blob/master/discord/slash_command_option.go#L68-L72>)
 
 
 
@@ -13155,7 +13158,7 @@ type SlashCommandOptionSubCommandGroup struct {
 ```
 
 <a name="SlashCommandUpdate"></a>
-## type [SlashCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L12-L24>)
+## type [SlashCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L12-L24>)
 
 
 
@@ -13176,7 +13179,7 @@ type SlashCommandUpdate struct {
 ```
 
 <a name="SlashCommandUpdate.CommandName"></a>
-### func \(SlashCommandUpdate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L41>)
+### func \(SlashCommandUpdate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L41>)
 
 ```go
 func (c SlashCommandUpdate) CommandName() *string
@@ -13185,7 +13188,7 @@ func (c SlashCommandUpdate) CommandName() *string
 
 
 <a name="SlashCommandUpdate.MarshalJSON"></a>
-### func \(SlashCommandUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L26>)
+### func \(SlashCommandUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L26>)
 
 ```go
 func (c SlashCommandUpdate) MarshalJSON() ([]byte, error)
@@ -13194,7 +13197,7 @@ func (c SlashCommandUpdate) MarshalJSON() ([]byte, error)
 
 
 <a name="SlashCommandUpdate.Type"></a>
-### func \(SlashCommandUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L37>)
+### func \(SlashCommandUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L37>)
 
 ```go
 func (SlashCommandUpdate) Type() ApplicationCommandType
@@ -13203,7 +13206,7 @@ func (SlashCommandUpdate) Type() ApplicationCommandType
 
 
 <a name="StageInstance"></a>
-## type [StageInstance](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/stage_instance.go#L16-L23>)
+## type [StageInstance](<https://github.com/disgoorg/disgo/blob/master/discord/stage_instance.go#L16-L23>)
 
 
 
@@ -13219,7 +13222,7 @@ type StageInstance struct {
 ```
 
 <a name="StageInstance.CreatedAt"></a>
-### func \(StageInstance\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/stage_instance.go#L25>)
+### func \(StageInstance\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/stage_instance.go#L25>)
 
 ```go
 func (e StageInstance) CreatedAt() time.Time
@@ -13228,7 +13231,7 @@ func (e StageInstance) CreatedAt() time.Time
 
 
 <a name="StageInstanceCreate"></a>
-## type [StageInstanceCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/stage_instance.go#L29-L35>)
+## type [StageInstanceCreate](<https://github.com/disgoorg/disgo/blob/master/discord/stage_instance.go#L29-L35>)
 
 
 
@@ -13243,7 +13246,7 @@ type StageInstanceCreate struct {
 ```
 
 <a name="StageInstanceUpdate"></a>
-## type [StageInstanceUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/stage_instance.go#L37-L40>)
+## type [StageInstanceUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/stage_instance.go#L37-L40>)
 
 
 
@@ -13255,7 +13258,7 @@ type StageInstanceUpdate struct {
 ```
 
 <a name="StagePrivacyLevel"></a>
-## type [StagePrivacyLevel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/stage_instance.go#L9>)
+## type [StagePrivacyLevel](<https://github.com/disgoorg/disgo/blob/master/discord/stage_instance.go#L9>)
 
 
 
@@ -13273,7 +13276,7 @@ const (
 ```
 
 <a name="Sticker"></a>
-## type [Sticker](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L10-L22>)
+## type [Sticker](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L10-L22>)
 
 Sticker is a sticker sent with a Message
 
@@ -13294,7 +13297,7 @@ type Sticker struct {
 ```
 
 <a name="Sticker.CreatedAt"></a>
-### func \(Sticker\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L37>)
+### func \(Sticker\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L37>)
 
 ```go
 func (s Sticker) CreatedAt() time.Time
@@ -13303,7 +13306,7 @@ func (s Sticker) CreatedAt() time.Time
 
 
 <a name="Sticker.URL"></a>
-### func \(Sticker\) [URL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L24>)
+### func \(Sticker\) [URL](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L24>)
 
 ```go
 func (s Sticker) URL(opts ...CDNOpt) string
@@ -13312,7 +13315,7 @@ func (s Sticker) URL(opts ...CDNOpt) string
 
 
 <a name="StickerCreate"></a>
-## type [StickerCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L59-L64>)
+## type [StickerCreate](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L59-L64>)
 
 
 
@@ -13326,7 +13329,7 @@ type StickerCreate struct {
 ```
 
 <a name="StickerCreate.ToBody"></a>
-### func \(StickerCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L67>)
+### func \(StickerCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L67>)
 
 ```go
 func (c StickerCreate) ToBody() (any, error)
@@ -13335,7 +13338,7 @@ func (c StickerCreate) ToBody() (any, error)
 ToBody returns the MessageCreate ready for body
 
 <a name="StickerFormatType"></a>
-## type [StickerFormatType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L49>)
+## type [StickerFormatType](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L49>)
 
 StickerFormatType is the Format type of Sticker
 
@@ -13355,7 +13358,7 @@ const (
 ```
 
 <a name="StickerPack"></a>
-## type [StickerPack](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L80-L88>)
+## type [StickerPack](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L80-L88>)
 
 
 
@@ -13372,7 +13375,7 @@ type StickerPack struct {
 ```
 
 <a name="StickerPack.BannerURL"></a>
-### func \(StickerPack\) [BannerURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L90>)
+### func \(StickerPack\) [BannerURL](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L90>)
 
 ```go
 func (p StickerPack) BannerURL(opts ...CDNOpt) *string
@@ -13381,7 +13384,7 @@ func (p StickerPack) BannerURL(opts ...CDNOpt) *string
 
 
 <a name="StickerPacks"></a>
-## type [StickerPacks](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L98-L100>)
+## type [StickerPacks](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L98-L100>)
 
 
 
@@ -13392,7 +13395,7 @@ type StickerPacks struct {
 ```
 
 <a name="StickerType"></a>
-## type [StickerType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L41>)
+## type [StickerType](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L41>)
 
 
 
@@ -13410,7 +13413,7 @@ const (
 ```
 
 <a name="StickerUpdate"></a>
-## type [StickerUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/sticker.go#L74-L78>)
+## type [StickerUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/sticker.go#L74-L78>)
 
 
 
@@ -13423,7 +13426,7 @@ type StickerUpdate struct {
 ```
 
 <a name="StringSelectMenuComponent"></a>
-## type [StringSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L28-L35>)
+## type [StringSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L28-L35>)
 
 
 
@@ -13439,7 +13442,7 @@ type StringSelectMenuComponent struct {
 ```
 
 <a name="NewStringSelectMenu"></a>
-### func [NewStringSelectMenu](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L20>)
+### func [NewStringSelectMenu](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L20>)
 
 ```go
 func NewStringSelectMenu(customID string, placeholder string, options ...StringSelectMenuOption) StringSelectMenuComponent
@@ -13448,7 +13451,7 @@ func NewStringSelectMenu(customID string, placeholder string, options ...StringS
 NewStringSelectMenu builds a new SelectMenuComponent from the provided values
 
 <a name="StringSelectMenuComponent.AddOptions"></a>
-### func \(StringSelectMenuComponent\) [AddOptions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L120>)
+### func \(StringSelectMenuComponent\) [AddOptions](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L120>)
 
 ```go
 func (c StringSelectMenuComponent) AddOptions(options ...StringSelectMenuOption) StringSelectMenuComponent
@@ -13457,7 +13460,7 @@ func (c StringSelectMenuComponent) AddOptions(options ...StringSelectMenuOption)
 AddOptions returns a new StringSelectMenuComponent with the provided StringSelectMenuOption\(s\) added
 
 <a name="StringSelectMenuComponent.AsDisabled"></a>
-### func \(StringSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L91>)
+### func \(StringSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L91>)
 
 ```go
 func (c StringSelectMenuComponent) AsDisabled() StringSelectMenuComponent
@@ -13466,7 +13469,7 @@ func (c StringSelectMenuComponent) AsDisabled() StringSelectMenuComponent
 AsDisabled returns a new StringSelectMenuComponent but disabled
 
 <a name="StringSelectMenuComponent.AsEnabled"></a>
-### func \(StringSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L85>)
+### func \(StringSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L85>)
 
 ```go
 func (c StringSelectMenuComponent) AsEnabled() StringSelectMenuComponent
@@ -13475,7 +13478,7 @@ func (c StringSelectMenuComponent) AsEnabled() StringSelectMenuComponent
 AsEnabled returns a new StringSelectMenuComponent but enabled
 
 <a name="StringSelectMenuComponent.ID"></a>
-### func \(StringSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L52>)
+### func \(StringSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L52>)
 
 ```go
 func (c StringSelectMenuComponent) ID() string
@@ -13484,7 +13487,7 @@ func (c StringSelectMenuComponent) ID() string
 
 
 <a name="StringSelectMenuComponent.MarshalJSON"></a>
-### func \(StringSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L37>)
+### func \(StringSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L37>)
 
 ```go
 func (c StringSelectMenuComponent) MarshalJSON() ([]byte, error)
@@ -13493,7 +13496,7 @@ func (c StringSelectMenuComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="StringSelectMenuComponent.RemoveOption"></a>
-### func \(StringSelectMenuComponent\) [RemoveOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L126>)
+### func \(StringSelectMenuComponent\) [RemoveOption](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L126>)
 
 ```go
 func (c StringSelectMenuComponent) RemoveOption(index int) StringSelectMenuComponent
@@ -13502,7 +13505,7 @@ func (c StringSelectMenuComponent) RemoveOption(index int) StringSelectMenuCompo
 RemoveOption returns a new StringSelectMenuComponent with the provided StringSelectMenuOption at the index removed
 
 <a name="StringSelectMenuComponent.SetOption"></a>
-### func \(StringSelectMenuComponent\) [SetOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L109>)
+### func \(StringSelectMenuComponent\) [SetOption](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L109>)
 
 ```go
 func (c StringSelectMenuComponent) SetOption(value string, option StringSelectMenuOption) StringSelectMenuComponent
@@ -13511,7 +13514,7 @@ func (c StringSelectMenuComponent) SetOption(value string, option StringSelectMe
 SetOption returns a new StringSelectMenuComponent with the StringSelectMenuOption which has the value replaced
 
 <a name="StringSelectMenuComponent.SetOptions"></a>
-### func \(StringSelectMenuComponent\) [SetOptions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L103>)
+### func \(StringSelectMenuComponent\) [SetOptions](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L103>)
 
 ```go
 func (c StringSelectMenuComponent) SetOptions(options ...StringSelectMenuOption) StringSelectMenuComponent
@@ -13520,7 +13523,7 @@ func (c StringSelectMenuComponent) SetOptions(options ...StringSelectMenuOption)
 SetOptions returns a new StringSelectMenuComponent with the provided StringSelectMenuOption\(s\)
 
 <a name="StringSelectMenuComponent.Type"></a>
-### func \(StringSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L48>)
+### func \(StringSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L48>)
 
 ```go
 func (StringSelectMenuComponent) Type() ComponentType
@@ -13529,7 +13532,7 @@ func (StringSelectMenuComponent) Type() ComponentType
 
 
 <a name="StringSelectMenuComponent.WithCustomID"></a>
-### func \(StringSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L61>)
+### func \(StringSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L61>)
 
 ```go
 func (c StringSelectMenuComponent) WithCustomID(customID string) StringSelectMenuComponent
@@ -13538,7 +13541,7 @@ func (c StringSelectMenuComponent) WithCustomID(customID string) StringSelectMen
 WithCustomID returns a new StringSelectMenuComponent with the provided customID
 
 <a name="StringSelectMenuComponent.WithDisabled"></a>
-### func \(StringSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L97>)
+### func \(StringSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L97>)
 
 ```go
 func (c StringSelectMenuComponent) WithDisabled(disabled bool) StringSelectMenuComponent
@@ -13547,7 +13550,7 @@ func (c StringSelectMenuComponent) WithDisabled(disabled bool) StringSelectMenuC
 WithDisabled returns a new StringSelectMenuComponent with the provided disabled
 
 <a name="StringSelectMenuComponent.WithMaxValues"></a>
-### func \(StringSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L79>)
+### func \(StringSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L79>)
 
 ```go
 func (c StringSelectMenuComponent) WithMaxValues(maxValue int) StringSelectMenuComponent
@@ -13556,7 +13559,7 @@ func (c StringSelectMenuComponent) WithMaxValues(maxValue int) StringSelectMenuC
 WithMaxValues returns a new StringSelectMenuComponent with the provided maxValue
 
 <a name="StringSelectMenuComponent.WithMinValues"></a>
-### func \(StringSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L73>)
+### func \(StringSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L73>)
 
 ```go
 func (c StringSelectMenuComponent) WithMinValues(minValue int) StringSelectMenuComponent
@@ -13565,7 +13568,7 @@ func (c StringSelectMenuComponent) WithMinValues(minValue int) StringSelectMenuC
 WithMinValues returns a new StringSelectMenuComponent with the provided minValue
 
 <a name="StringSelectMenuComponent.WithPlaceholder"></a>
-### func \(StringSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L67>)
+### func \(StringSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L67>)
 
 ```go
 func (c StringSelectMenuComponent) WithPlaceholder(placeholder string) StringSelectMenuComponent
@@ -13574,7 +13577,7 @@ func (c StringSelectMenuComponent) WithPlaceholder(placeholder string) StringSel
 WithPlaceholder returns a new StringSelectMenuComponent with the provided placeholder
 
 <a name="StringSelectMenuInteractionData"></a>
-## type [StringSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L230-L233>)
+## type [StringSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L230-L233>)
 
 
 
@@ -13586,7 +13589,7 @@ type StringSelectMenuInteractionData struct {
 ```
 
 <a name="StringSelectMenuInteractionData.CustomID"></a>
-### func \(StringSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L257>)
+### func \(StringSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L257>)
 
 ```go
 func (d StringSelectMenuInteractionData) CustomID() string
@@ -13595,7 +13598,7 @@ func (d StringSelectMenuInteractionData) CustomID() string
 
 
 <a name="StringSelectMenuInteractionData.MarshalJSON"></a>
-### func \(StringSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L245>)
+### func \(StringSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L245>)
 
 ```go
 func (d StringSelectMenuInteractionData) MarshalJSON() ([]byte, error)
@@ -13604,7 +13607,7 @@ func (d StringSelectMenuInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="StringSelectMenuInteractionData.Type"></a>
-### func \(StringSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L253>)
+### func \(StringSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L253>)
 
 ```go
 func (StringSelectMenuInteractionData) Type() ComponentType
@@ -13613,7 +13616,7 @@ func (StringSelectMenuInteractionData) Type() ComponentType
 
 
 <a name="StringSelectMenuInteractionData.UnmarshalJSON"></a>
-### func \(\*StringSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L235>)
+### func \(\*StringSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L235>)
 
 ```go
 func (d *StringSelectMenuInteractionData) UnmarshalJSON(data []byte) error
@@ -13622,7 +13625,7 @@ func (d *StringSelectMenuInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="StringSelectMenuOption"></a>
-## type [StringSelectMenuOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L142-L148>)
+## type [StringSelectMenuOption](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L142-L148>)
 
 StringSelectMenuOption represents an option in a StringSelectMenuComponent
 
@@ -13637,7 +13640,7 @@ type StringSelectMenuOption struct {
 ```
 
 <a name="NewStringSelectMenuOption"></a>
-### func [NewStringSelectMenuOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L134>)
+### func [NewStringSelectMenuOption](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L134>)
 
 ```go
 func NewStringSelectMenuOption(label string, value string) StringSelectMenuOption
@@ -13646,7 +13649,7 @@ func NewStringSelectMenuOption(label string, value string) StringSelectMenuOptio
 NewStringSelectMenuOption builds a new StringSelectMenuOption
 
 <a name="StringSelectMenuOption.WithDefault"></a>
-### func \(StringSelectMenuOption\) [WithDefault](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L175>)
+### func \(StringSelectMenuOption\) [WithDefault](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L175>)
 
 ```go
 func (o StringSelectMenuOption) WithDefault(defaultOption bool) StringSelectMenuOption
@@ -13655,7 +13658,7 @@ func (o StringSelectMenuOption) WithDefault(defaultOption bool) StringSelectMenu
 WithDefault returns a new StringSelectMenuOption as default/non\-default
 
 <a name="StringSelectMenuOption.WithDescription"></a>
-### func \(StringSelectMenuOption\) [WithDescription](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L163>)
+### func \(StringSelectMenuOption\) [WithDescription](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L163>)
 
 ```go
 func (o StringSelectMenuOption) WithDescription(description string) StringSelectMenuOption
@@ -13664,7 +13667,7 @@ func (o StringSelectMenuOption) WithDescription(description string) StringSelect
 WithDescription returns a new StringSelectMenuOption with the provided description
 
 <a name="StringSelectMenuOption.WithEmoji"></a>
-### func \(StringSelectMenuOption\) [WithEmoji](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L169>)
+### func \(StringSelectMenuOption\) [WithEmoji](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L169>)
 
 ```go
 func (o StringSelectMenuOption) WithEmoji(emoji ComponentEmoji) StringSelectMenuOption
@@ -13673,7 +13676,7 @@ func (o StringSelectMenuOption) WithEmoji(emoji ComponentEmoji) StringSelectMenu
 WithEmoji returns a new StringSelectMenuOption with the provided Emoji
 
 <a name="StringSelectMenuOption.WithLabel"></a>
-### func \(StringSelectMenuOption\) [WithLabel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L151>)
+### func \(StringSelectMenuOption\) [WithLabel](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L151>)
 
 ```go
 func (o StringSelectMenuOption) WithLabel(label string) StringSelectMenuOption
@@ -13682,7 +13685,7 @@ func (o StringSelectMenuOption) WithLabel(label string) StringSelectMenuOption
 WithLabel returns a new StringSelectMenuOption with the provided label
 
 <a name="StringSelectMenuOption.WithValue"></a>
-### func \(StringSelectMenuOption\) [WithValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L157>)
+### func \(StringSelectMenuOption\) [WithValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L157>)
 
 ```go
 func (o StringSelectMenuOption) WithValue(value string) StringSelectMenuOption
@@ -13691,7 +13694,7 @@ func (o StringSelectMenuOption) WithValue(value string) StringSelectMenuOption
 WithValue returns a new StringSelectMenuOption with the provided value
 
 <a name="SystemChannelFlags"></a>
-## type [SystemChannelFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L24>)
+## type [SystemChannelFlags](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L24>)
 
 SystemChannelFlags contains the settings for the Guild\(s\) system channel
 
@@ -13713,7 +13716,7 @@ const (
 ```
 
 <a name="SystemChannelFlags.Add"></a>
-### func \(SystemChannelFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L37>)
+### func \(SystemChannelFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L37>)
 
 ```go
 func (f SystemChannelFlags) Add(bits ...SystemChannelFlags) SystemChannelFlags
@@ -13722,7 +13725,7 @@ func (f SystemChannelFlags) Add(bits ...SystemChannelFlags) SystemChannelFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="SystemChannelFlags.Has"></a>
-### func \(SystemChannelFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L47>)
+### func \(SystemChannelFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L47>)
 
 ```go
 func (f SystemChannelFlags) Has(bits ...SystemChannelFlags) bool
@@ -13731,7 +13734,7 @@ func (f SystemChannelFlags) Has(bits ...SystemChannelFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="SystemChannelFlags.Missing"></a>
-### func \(SystemChannelFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L52>)
+### func \(SystemChannelFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L52>)
 
 ```go
 func (f SystemChannelFlags) Missing(bits ...SystemChannelFlags) bool
@@ -13740,7 +13743,7 @@ func (f SystemChannelFlags) Missing(bits ...SystemChannelFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="SystemChannelFlags.Remove"></a>
-### func \(SystemChannelFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L42>)
+### func \(SystemChannelFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L42>)
 
 ```go
 func (f SystemChannelFlags) Remove(bits ...SystemChannelFlags) SystemChannelFlags
@@ -13749,7 +13752,7 @@ func (f SystemChannelFlags) Remove(bits ...SystemChannelFlags) SystemChannelFlag
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="Team"></a>
-## type [Team](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L226-L232>)
+## type [Team](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L226-L232>)
 
 
 
@@ -13764,7 +13767,7 @@ type Team struct {
 ```
 
 <a name="Team.CreatedAt"></a>
-### func \(Team\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L242>)
+### func \(Team\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L242>)
 
 ```go
 func (t Team) CreatedAt() time.Time
@@ -13773,7 +13776,7 @@ func (t Team) CreatedAt() time.Time
 
 
 <a name="Team.IconURL"></a>
-### func \(Team\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L234>)
+### func \(Team\) [IconURL](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L234>)
 
 ```go
 func (t Team) IconURL(opts ...CDNOpt) *string
@@ -13782,7 +13785,7 @@ func (t Team) IconURL(opts ...CDNOpt) *string
 
 
 <a name="TeamMember"></a>
-## type [TeamMember](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L246-L251>)
+## type [TeamMember](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L246-L251>)
 
 
 
@@ -13796,7 +13799,7 @@ type TeamMember struct {
 ```
 
 <a name="TeamRole"></a>
-## type [TeamRole](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L260>)
+## type [TeamRole](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L260>)
 
 
 
@@ -13815,7 +13818,7 @@ const (
 ```
 
 <a name="TemplateGuild"></a>
-## type [TemplateGuild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild_template.go#L24-L38>)
+## type [TemplateGuild](<https://github.com/disgoorg/disgo/blob/master/discord/guild_template.go#L24-L38>)
 
 
 
@@ -13838,7 +13841,7 @@ type TemplateGuild struct {
 ```
 
 <a name="TestEntitlementCreate"></a>
-## type [TestEntitlementCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/entitlement.go#L35-L39>)
+## type [TestEntitlementCreate](<https://github.com/disgoorg/disgo/blob/master/discord/entitlement.go#L35-L39>)
 
 
 
@@ -13851,7 +13854,7 @@ type TestEntitlementCreate struct {
 ```
 
 <a name="TextInputComponent"></a>
-## type [TextInputComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L384-L393>)
+## type [TextInputComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L384-L393>)
 
 
 
@@ -13869,7 +13872,7 @@ type TextInputComponent struct {
 ```
 
 <a name="NewParagraphTextInput"></a>
-### func [NewParagraphTextInput](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L380>)
+### func [NewParagraphTextInput](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L380>)
 
 ```go
 func NewParagraphTextInput(customID string, label string) TextInputComponent
@@ -13878,7 +13881,7 @@ func NewParagraphTextInput(customID string, label string) TextInputComponent
 
 
 <a name="NewShortTextInput"></a>
-### func [NewShortTextInput](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L376>)
+### func [NewShortTextInput](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L376>)
 
 ```go
 func NewShortTextInput(customID string, label string) TextInputComponent
@@ -13887,7 +13890,7 @@ func NewShortTextInput(customID string, label string) TextInputComponent
 
 
 <a name="NewTextInput"></a>
-### func [NewTextInput](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L368>)
+### func [NewTextInput](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L368>)
 
 ```go
 func NewTextInput(customID string, style TextInputStyle, label string) TextInputComponent
@@ -13896,7 +13899,7 @@ func NewTextInput(customID string, style TextInputStyle, label string) TextInput
 
 
 <a name="TextInputComponent.ID"></a>
-### func \(TextInputComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L410>)
+### func \(TextInputComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L410>)
 
 ```go
 func (c TextInputComponent) ID() string
@@ -13905,7 +13908,7 @@ func (c TextInputComponent) ID() string
 
 
 <a name="TextInputComponent.MarshalJSON"></a>
-### func \(TextInputComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L395>)
+### func \(TextInputComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L395>)
 
 ```go
 func (c TextInputComponent) MarshalJSON() ([]byte, error)
@@ -13914,7 +13917,7 @@ func (c TextInputComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="TextInputComponent.Type"></a>
-### func \(TextInputComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L406>)
+### func \(TextInputComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L406>)
 
 ```go
 func (TextInputComponent) Type() ComponentType
@@ -13923,7 +13926,7 @@ func (TextInputComponent) Type() ComponentType
 
 
 <a name="TextInputComponent.WithCustomID"></a>
-### func \(TextInputComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L418>)
+### func \(TextInputComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L418>)
 
 ```go
 func (c TextInputComponent) WithCustomID(customID string) TextInputComponent
@@ -13932,7 +13935,7 @@ func (c TextInputComponent) WithCustomID(customID string) TextInputComponent
 WithCustomID returns a new SelectMenuComponent with the provided customID
 
 <a name="TextInputComponent.WithMaxLength"></a>
-### func \(TextInputComponent\) [WithMaxLength](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L436>)
+### func \(TextInputComponent\) [WithMaxLength](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L436>)
 
 ```go
 func (c TextInputComponent) WithMaxLength(maxLength int) TextInputComponent
@@ -13941,7 +13944,7 @@ func (c TextInputComponent) WithMaxLength(maxLength int) TextInputComponent
 WithMaxLength returns a new TextInputComponent with the provided maxLength
 
 <a name="TextInputComponent.WithMinLength"></a>
-### func \(TextInputComponent\) [WithMinLength](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L430>)
+### func \(TextInputComponent\) [WithMinLength](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L430>)
 
 ```go
 func (c TextInputComponent) WithMinLength(minLength int) TextInputComponent
@@ -13950,7 +13953,7 @@ func (c TextInputComponent) WithMinLength(minLength int) TextInputComponent
 WithMinLength returns a new TextInputComponent with the provided minLength
 
 <a name="TextInputComponent.WithPlaceholder"></a>
-### func \(TextInputComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L448>)
+### func \(TextInputComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L448>)
 
 ```go
 func (c TextInputComponent) WithPlaceholder(placeholder string) TextInputComponent
@@ -13959,7 +13962,7 @@ func (c TextInputComponent) WithPlaceholder(placeholder string) TextInputCompone
 WithPlaceholder returns a new TextInputComponent with the provided placeholder
 
 <a name="TextInputComponent.WithRequired"></a>
-### func \(TextInputComponent\) [WithRequired](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L442>)
+### func \(TextInputComponent\) [WithRequired](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L442>)
 
 ```go
 func (c TextInputComponent) WithRequired(required bool) TextInputComponent
@@ -13968,7 +13971,7 @@ func (c TextInputComponent) WithRequired(required bool) TextInputComponent
 WithRequired returns a new TextInputComponent with the provided required
 
 <a name="TextInputComponent.WithStyle"></a>
-### func \(TextInputComponent\) [WithStyle](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L424>)
+### func \(TextInputComponent\) [WithStyle](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L424>)
 
 ```go
 func (c TextInputComponent) WithStyle(style TextInputStyle) TextInputComponent
@@ -13977,7 +13980,7 @@ func (c TextInputComponent) WithStyle(style TextInputStyle) TextInputComponent
 WithStyle returns a new SelectMenuComponent with the provided TextInputStyle
 
 <a name="TextInputComponent.WithValue"></a>
-### func \(TextInputComponent\) [WithValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L454>)
+### func \(TextInputComponent\) [WithValue](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L454>)
 
 ```go
 func (c TextInputComponent) WithValue(value string) TextInputComponent
@@ -13986,7 +13989,7 @@ func (c TextInputComponent) WithValue(value string) TextInputComponent
 WithValue returns a new TextInputComponent with the provided value
 
 <a name="TextInputStyle"></a>
-## type [TextInputStyle](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L459>)
+## type [TextInputStyle](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L459>)
 
 
 
@@ -14004,7 +14007,7 @@ const (
 ```
 
 <a name="ThreadChannelPost"></a>
-## type [ThreadChannelPost](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L30-L33>)
+## type [ThreadChannelPost](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L30-L33>)
 
 
 
@@ -14016,7 +14019,7 @@ type ThreadChannelPost struct {
 ```
 
 <a name="ThreadChannelPostCreate"></a>
-## type [ThreadChannelPostCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L14-L20>)
+## type [ThreadChannelPostCreate](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L14-L20>)
 
 
 
@@ -14031,7 +14034,7 @@ type ThreadChannelPostCreate struct {
 ```
 
 <a name="ThreadChannelPostCreate.ToBody"></a>
-### func \(ThreadChannelPostCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L22>)
+### func \(ThreadChannelPostCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L22>)
 
 ```go
 func (c ThreadChannelPostCreate) ToBody() (any, error)
@@ -14040,7 +14043,7 @@ func (c ThreadChannelPostCreate) ToBody() (any, error)
 
 
 <a name="ThreadCreate"></a>
-## type [ThreadCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L35-L38>)
+## type [ThreadCreate](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L35-L38>)
 
 
 
@@ -14052,7 +14055,7 @@ type ThreadCreate interface {
 ```
 
 <a name="ThreadCreateFromMessage"></a>
-## type [ThreadCreateFromMessage](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread.go#L8-L12>)
+## type [ThreadCreateFromMessage](<https://github.com/disgoorg/disgo/blob/master/discord/thread.go#L8-L12>)
 
 
 
@@ -14065,7 +14068,7 @@ type ThreadCreateFromMessage struct {
 ```
 
 <a name="ThreadMember"></a>
-## type [ThreadMember](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread_member.go#L9-L15>)
+## type [ThreadMember](<https://github.com/disgoorg/disgo/blob/master/discord/thread_member.go#L9-L15>)
 
 
 
@@ -14080,7 +14083,7 @@ type ThreadMember struct {
 ```
 
 <a name="ThreadMemberFlags"></a>
-## type [ThreadMemberFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/thread_member.go#L17>)
+## type [ThreadMemberFlags](<https://github.com/disgoorg/disgo/blob/master/discord/thread_member.go#L17>)
 
 
 
@@ -14089,7 +14092,7 @@ type ThreadMemberFlags int
 ```
 
 <a name="ThreadMetadata"></a>
-## type [ThreadMetadata](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1315-L1322>)
+## type [ThreadMetadata](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1315-L1322>)
 
 
 
@@ -14105,7 +14108,7 @@ type ThreadMetadata struct {
 ```
 
 <a name="Timestamp"></a>
-## type [Timestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L98-L101>)
+## type [Timestamp](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L98-L101>)
 
 Timestamp represents a timestamp markdown object https://discord.com/developers/docs/reference#message-formatting
 
@@ -14117,7 +14120,7 @@ type Timestamp struct {
 ```
 
 <a name="NewTimestamp"></a>
-### func [NewTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L88>)
+### func [NewTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L88>)
 
 ```go
 func NewTimestamp(style TimestampStyle, time time.Time) Timestamp
@@ -14126,7 +14129,7 @@ func NewTimestamp(style TimestampStyle, time time.Time) Timestamp
 NewTimestamp returns a new Timestamp with the given TimestampStyle & time.Time
 
 <a name="ParseTimestamp"></a>
-### func [ParseTimestamp](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L78>)
+### func [ParseTimestamp](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L78>)
 
 ```go
 func ParseTimestamp(str string) (*Timestamp, error)
@@ -14135,7 +14138,7 @@ func ParseTimestamp(str string) (*Timestamp, error)
 ParseTimestamp parses the first Timestamp found in the provided string
 
 <a name="ParseTimestamps"></a>
-### func [ParseTimestamps](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L56>)
+### func [ParseTimestamps](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L56>)
 
 ```go
 func ParseTimestamps(str string, n int) ([]Timestamp, error)
@@ -14144,7 +14147,7 @@ func ParseTimestamps(str string, n int) ([]Timestamp, error)
 ParseTimestamps parses all Timestamp\(s\) found in the provided string
 
 <a name="Timestamp.Format"></a>
-### func \(Timestamp\) [Format](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L109>)
+### func \(Timestamp\) [Format](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L109>)
 
 ```go
 func (t Timestamp) Format() string
@@ -14153,7 +14156,7 @@ func (t Timestamp) Format() string
 Format returns the Timestamp as markdown
 
 <a name="Timestamp.FormatWith"></a>
-### func \(Timestamp\) [FormatWith](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L114>)
+### func \(Timestamp\) [FormatWith](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L114>)
 
 ```go
 func (t Timestamp) FormatWith(style TimestampStyle) string
@@ -14162,7 +14165,7 @@ func (t Timestamp) FormatWith(style TimestampStyle) string
 FormatWith returns the Timestamp as markdown with the given TimestampStyle
 
 <a name="Timestamp.String"></a>
-### func \(Timestamp\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L104>)
+### func \(Timestamp\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L104>)
 
 ```go
 func (t Timestamp) String() string
@@ -14171,7 +14174,7 @@ func (t Timestamp) String() string
 String returns the Timestamp as markdown
 
 <a name="TimestampStyle"></a>
-## type [TimestampStyle](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L14>)
+## type [TimestampStyle](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L14>)
 
 TimestampStyle is used to determine how to display the Timestamp for the User in the client
 
@@ -14210,7 +14213,7 @@ const (
 ```
 
 <a name="TimestampStyle.Format"></a>
-### func \(TimestampStyle\) [Format](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L48>)
+### func \(TimestampStyle\) [Format](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L48>)
 
 ```go
 func (f TimestampStyle) Format(seconds int64) string
@@ -14219,7 +14222,7 @@ func (f TimestampStyle) Format(seconds int64) string
 Format returns the seconds formatted as markdown string
 
 <a name="TimestampStyle.FormatTime"></a>
-### func \(TimestampStyle\) [FormatTime](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/timestamp.go#L43>)
+### func \(TimestampStyle\) [FormatTime](<https://github.com/disgoorg/disgo/blob/master/discord/timestamp.go#L43>)
 
 ```go
 func (f TimestampStyle) FormatTime(time time.Time) string
@@ -14228,7 +14231,7 @@ func (f TimestampStyle) FormatTime(time time.Time) string
 FormatTime returns the time.Time formatted as markdown string
 
 <a name="TokenType"></a>
-## type [TokenType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L167>)
+## type [TokenType](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L167>)
 
 
 
@@ -14246,7 +14249,7 @@ const (
 ```
 
 <a name="TokenType.Apply"></a>
-### func \(TokenType\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L178>)
+### func \(TokenType\) [Apply](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L178>)
 
 ```go
 func (t TokenType) Apply(token string) string
@@ -14255,7 +14258,7 @@ func (t TokenType) Apply(token string) string
 
 
 <a name="TokenType.String"></a>
-### func \(TokenType\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application.go#L174>)
+### func \(TokenType\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/application.go#L174>)
 
 ```go
 func (t TokenType) String() string
@@ -14264,7 +14267,7 @@ func (t TokenType) String() string
 
 
 <a name="TwitchIntegration"></a>
-## type [TwitchIntegration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L97-L111>)
+## type [TwitchIntegration](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L97-L111>)
 
 
 
@@ -14287,7 +14290,7 @@ type TwitchIntegration struct {
 ```
 
 <a name="TwitchIntegration.CreatedAt"></a>
-### func \(TwitchIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L132>)
+### func \(TwitchIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L132>)
 
 ```go
 func (i TwitchIntegration) CreatedAt() time.Time
@@ -14296,7 +14299,7 @@ func (i TwitchIntegration) CreatedAt() time.Time
 
 
 <a name="TwitchIntegration.ID"></a>
-### func \(TwitchIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L128>)
+### func \(TwitchIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L128>)
 
 ```go
 func (i TwitchIntegration) ID() snowflake.ID
@@ -14305,7 +14308,7 @@ func (i TwitchIntegration) ID() snowflake.ID
 
 
 <a name="TwitchIntegration.MarshalJSON"></a>
-### func \(TwitchIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L113>)
+### func \(TwitchIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L113>)
 
 ```go
 func (i TwitchIntegration) MarshalJSON() ([]byte, error)
@@ -14314,7 +14317,7 @@ func (i TwitchIntegration) MarshalJSON() ([]byte, error)
 
 
 <a name="TwitchIntegration.Type"></a>
-### func \(TwitchIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L124>)
+### func \(TwitchIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L124>)
 
 ```go
 func (TwitchIntegration) Type() IntegrationType
@@ -14323,7 +14326,7 @@ func (TwitchIntegration) Type() IntegrationType
 
 
 <a name="UnavailableGuild"></a>
-## type [UnavailableGuild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L249-L252>)
+## type [UnavailableGuild](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L249-L252>)
 
 
 
@@ -14335,7 +14338,7 @@ type UnavailableGuild struct {
 ```
 
 <a name="UnmarshalApplicationCommand"></a>
-## type [UnmarshalApplicationCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L38-L40>)
+## type [UnmarshalApplicationCommand](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L38-L40>)
 
 
 
@@ -14346,7 +14349,7 @@ type UnmarshalApplicationCommand struct {
 ```
 
 <a name="UnmarshalApplicationCommand.UnmarshalJSON"></a>
-### func \(\*UnmarshalApplicationCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L42>)
+### func \(\*UnmarshalApplicationCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L42>)
 
 ```go
 func (u *UnmarshalApplicationCommand) UnmarshalJSON(data []byte) error
@@ -14355,7 +14358,7 @@ func (u *UnmarshalApplicationCommand) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalApplicationCommandOption"></a>
-## type [UnmarshalApplicationCommandOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L35-L37>)
+## type [UnmarshalApplicationCommandOption](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L35-L37>)
 
 
 
@@ -14366,7 +14369,7 @@ type UnmarshalApplicationCommandOption struct {
 ```
 
 <a name="UnmarshalApplicationCommandOption.UnmarshalJSON"></a>
-### func \(\*UnmarshalApplicationCommandOption\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_option.go#L39>)
+### func \(\*UnmarshalApplicationCommandOption\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_option.go#L39>)
 
 ```go
 func (u *UnmarshalApplicationCommandOption) UnmarshalJSON(data []byte) error
@@ -14375,7 +14378,7 @@ func (u *UnmarshalApplicationCommandOption) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalApplicationCommandPermission"></a>
-## type [UnmarshalApplicationCommandPermission](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L55-L57>)
+## type [UnmarshalApplicationCommandPermission](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L55-L57>)
 
 
 
@@ -14386,7 +14389,7 @@ type UnmarshalApplicationCommandPermission struct {
 ```
 
 <a name="UnmarshalApplicationCommandPermission.UnmarshalJSON"></a>
-### func \(\*UnmarshalApplicationCommandPermission\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_permission.go#L59>)
+### func \(\*UnmarshalApplicationCommandPermission\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_permission.go#L59>)
 
 ```go
 func (p *UnmarshalApplicationCommandPermission) UnmarshalJSON(data []byte) error
@@ -14395,7 +14398,7 @@ func (p *UnmarshalApplicationCommandPermission) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalAutocompleteOption"></a>
-## type [UnmarshalAutocompleteOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_autocomplete_option.go#L12-L14>)
+## type [UnmarshalAutocompleteOption](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_autocomplete_option.go#L12-L14>)
 
 
 
@@ -14406,7 +14409,7 @@ type UnmarshalAutocompleteOption struct {
 ```
 
 <a name="UnmarshalAutocompleteOption.UnmarshalJSON"></a>
-### func \(\*UnmarshalAutocompleteOption\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_autocomplete_option.go#L16>)
+### func \(\*UnmarshalAutocompleteOption\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_autocomplete_option.go#L16>)
 
 ```go
 func (o *UnmarshalAutocompleteOption) UnmarshalJSON(data []byte) error
@@ -14415,7 +14418,7 @@ func (o *UnmarshalAutocompleteOption) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalChannel"></a>
-## type [UnmarshalChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L154-L156>)
+## type [UnmarshalChannel](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L154-L156>)
 
 
 
@@ -14426,7 +14429,7 @@ type UnmarshalChannel struct {
 ```
 
 <a name="UnmarshalChannel.UnmarshalJSON"></a>
-### func \(\*UnmarshalChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L158>)
+### func \(\*UnmarshalChannel\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L158>)
 
 ```go
 func (u *UnmarshalChannel) UnmarshalJSON(data []byte) error
@@ -14435,7 +14438,7 @@ func (u *UnmarshalChannel) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalComponent"></a>
-## type [UnmarshalComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L43-L45>)
+## type [UnmarshalComponent](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L43-L45>)
 
 
 
@@ -14446,7 +14449,7 @@ type UnmarshalComponent struct {
 ```
 
 <a name="UnmarshalComponent.UnmarshalJSON"></a>
-### func \(\*UnmarshalComponent\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/component.go#L47>)
+### func \(\*UnmarshalComponent\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/component.go#L47>)
 
 ```go
 func (u *UnmarshalComponent) UnmarshalJSON(data []byte) error
@@ -14455,7 +14458,7 @@ func (u *UnmarshalComponent) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalIntegration"></a>
-## type [UnmarshalIntegration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L46-L48>)
+## type [UnmarshalIntegration](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L46-L48>)
 
 
 
@@ -14466,7 +14469,7 @@ type UnmarshalIntegration struct {
 ```
 
 <a name="UnmarshalIntegration.UnmarshalJSON"></a>
-### func \(\*UnmarshalIntegration\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L50>)
+### func \(\*UnmarshalIntegration\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L50>)
 
 ```go
 func (i *UnmarshalIntegration) UnmarshalJSON(data []byte) error
@@ -14475,7 +14478,7 @@ func (i *UnmarshalIntegration) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalPermissionOverwrite"></a>
-## type [UnmarshalPermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L50-L52>)
+## type [UnmarshalPermissionOverwrite](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L50-L52>)
 
 
 
@@ -14486,7 +14489,7 @@ type UnmarshalPermissionOverwrite struct {
 ```
 
 <a name="UnmarshalPermissionOverwrite.UnmarshalJSON"></a>
-### func \(\*UnmarshalPermissionOverwrite\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/permission_overwrite.go#L54>)
+### func \(\*UnmarshalPermissionOverwrite\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/permission_overwrite.go#L54>)
 
 ```go
 func (o *UnmarshalPermissionOverwrite) UnmarshalJSON(data []byte) error
@@ -14495,7 +14498,7 @@ func (o *UnmarshalPermissionOverwrite) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalSlashCommandOption"></a>
-## type [UnmarshalSlashCommandOption](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/slash_command_option.go#L12-L14>)
+## type [UnmarshalSlashCommandOption](<https://github.com/disgoorg/disgo/blob/master/discord/slash_command_option.go#L12-L14>)
 
 
 
@@ -14506,7 +14509,7 @@ type UnmarshalSlashCommandOption struct {
 ```
 
 <a name="UnmarshalSlashCommandOption.UnmarshalJSON"></a>
-### func \(\*UnmarshalSlashCommandOption\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/slash_command_option.go#L16>)
+### func \(\*UnmarshalSlashCommandOption\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/slash_command_option.go#L16>)
 
 ```go
 func (o *UnmarshalSlashCommandOption) UnmarshalJSON(data []byte) error
@@ -14515,7 +14518,7 @@ func (o *UnmarshalSlashCommandOption) UnmarshalJSON(data []byte) error
 
 
 <a name="UnmarshalWebhook"></a>
-## type [UnmarshalWebhook](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L33-L35>)
+## type [UnmarshalWebhook](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L33-L35>)
 
 
 
@@ -14526,7 +14529,7 @@ type UnmarshalWebhook struct {
 ```
 
 <a name="UnmarshalWebhook.UnmarshalJSON"></a>
-### func \(\*UnmarshalWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L37>)
+### func \(\*UnmarshalWebhook\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L37>)
 
 ```go
 func (w *UnmarshalWebhook) UnmarshalJSON(data []byte) error
@@ -14535,7 +14538,7 @@ func (w *UnmarshalWebhook) UnmarshalJSON(data []byte) error
 
 
 <a name="User"></a>
-## type [User](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L67-L79>)
+## type [User](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L67-L79>)
 
 User is a struct for interacting with discord's users
 
@@ -14556,7 +14559,7 @@ type User struct {
 ```
 
 <a name="User.AvatarDecorationURL"></a>
-### func \(User\) [AvatarDecorationURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L147>)
+### func \(User\) [AvatarDecorationURL](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L147>)
 
 ```go
 func (u User) AvatarDecorationURL(opts ...CDNOpt) *string
@@ -14565,7 +14568,7 @@ func (u User) AvatarDecorationURL(opts ...CDNOpt) *string
 AvatarDecorationURL returns the avatar decoration URL if set or nil
 
 <a name="User.AvatarURL"></a>
-### func \(User\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L116>)
+### func \(User\) [AvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L116>)
 
 ```go
 func (u User) AvatarURL(opts ...CDNOpt) *string
@@ -14574,7 +14577,7 @@ func (u User) AvatarURL(opts ...CDNOpt) *string
 AvatarURL returns the avatar URL of the user if set or nil
 
 <a name="User.BannerURL"></a>
-### func \(User\) [BannerURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L138>)
+### func \(User\) [BannerURL](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L138>)
 
 ```go
 func (u User) BannerURL(opts ...CDNOpt) *string
@@ -14583,7 +14586,7 @@ func (u User) BannerURL(opts ...CDNOpt) *string
 BannerURL returns the banner URL if set or nil
 
 <a name="User.CreatedAt"></a>
-### func \(User\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L155>)
+### func \(User\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L155>)
 
 ```go
 func (u User) CreatedAt() time.Time
@@ -14592,7 +14595,7 @@ func (u User) CreatedAt() time.Time
 
 
 <a name="User.DefaultAvatarURL"></a>
-### func \(User\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L125>)
+### func \(User\) [DefaultAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L125>)
 
 ```go
 func (u User) DefaultAvatarURL(opts ...CDNOpt) string
@@ -14601,7 +14604,7 @@ func (u User) DefaultAvatarURL(opts ...CDNOpt) string
 DefaultAvatarURL calculates and returns the default avatar URL
 
 <a name="User.EffectiveAvatarURL"></a>
-### func \(User\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L105>)
+### func \(User\) [EffectiveAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L105>)
 
 ```go
 func (u User) EffectiveAvatarURL(opts ...CDNOpt) string
@@ -14610,7 +14613,7 @@ func (u User) EffectiveAvatarURL(opts ...CDNOpt) string
 EffectiveAvatarURL returns the avatar URL of the user if set, falling back to the default avatar URL
 
 <a name="User.EffectiveName"></a>
-### func \(User\) [EffectiveName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L97>)
+### func \(User\) [EffectiveName](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L97>)
 
 ```go
 func (u User) EffectiveName() string
@@ -14619,7 +14622,7 @@ func (u User) EffectiveName() string
 EffectiveName returns the global \(display\) name of the user if set, falling back to the username
 
 <a name="User.Mention"></a>
-### func \(User\) [Mention](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L87>)
+### func \(User\) [Mention](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L87>)
 
 ```go
 func (u User) Mention() string
@@ -14628,7 +14631,7 @@ func (u User) Mention() string
 Mention returns a mention of the user
 
 <a name="User.String"></a>
-### func \(User\) [String](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L82>)
+### func \(User\) [String](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L82>)
 
 ```go
 func (u User) String() string
@@ -14637,7 +14640,7 @@ func (u User) String() string
 String returns a mention of the user
 
 <a name="User.Tag"></a>
-### func \(User\) [Tag](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L92>)
+### func \(User\) [Tag](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L92>)
 
 ```go
 func (u User) Tag() string
@@ -14646,7 +14649,7 @@ func (u User) Tag() string
 Tag returns a formatted string of "Username\#Discriminator", falling back to the username if discriminator is "0"
 
 <a name="UserCommand"></a>
-## type [UserCommand](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L215-L228>)
+## type [UserCommand](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L215-L228>)
 
 
 
@@ -14657,7 +14660,7 @@ type UserCommand struct {
 ```
 
 <a name="UserCommand.ApplicationID"></a>
-### func \(UserCommand\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L277>)
+### func \(UserCommand\) [ApplicationID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L277>)
 
 ```go
 func (c UserCommand) ApplicationID() snowflake.ID
@@ -14666,7 +14669,7 @@ func (c UserCommand) ApplicationID() snowflake.ID
 
 
 <a name="UserCommand.Contexts"></a>
-### func \(UserCommand\) [Contexts](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L312>)
+### func \(UserCommand\) [Contexts](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L312>)
 
 ```go
 func (c UserCommand) Contexts() []InteractionContextType
@@ -14675,7 +14678,7 @@ func (c UserCommand) Contexts() []InteractionContextType
 
 
 <a name="UserCommand.CreatedAt"></a>
-### func \(UserCommand\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L320>)
+### func \(UserCommand\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L320>)
 
 ```go
 func (c UserCommand) CreatedAt() time.Time
@@ -14684,7 +14687,7 @@ func (c UserCommand) CreatedAt() time.Time
 
 
 <a name="UserCommand.DMPermission"></a>
-### func \(UserCommand\) [DMPermission](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L300>)
+### func \(UserCommand\) [DMPermission](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L300>)
 
 ```go
 func (c UserCommand) DMPermission() bool
@@ -14693,7 +14696,7 @@ func (c UserCommand) DMPermission() bool
 
 
 <a name="UserCommand.DefaultMemberPermissions"></a>
-### func \(UserCommand\) [DefaultMemberPermissions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L297>)
+### func \(UserCommand\) [DefaultMemberPermissions](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L297>)
 
 ```go
 func (c UserCommand) DefaultMemberPermissions() Permissions
@@ -14702,7 +14705,7 @@ func (c UserCommand) DefaultMemberPermissions() Permissions
 
 
 <a name="UserCommand.GuildID"></a>
-### func \(UserCommand\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L281>)
+### func \(UserCommand\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L281>)
 
 ```go
 func (c UserCommand) GuildID() *snowflake.ID
@@ -14711,7 +14714,7 @@ func (c UserCommand) GuildID() *snowflake.ID
 
 
 <a name="UserCommand.ID"></a>
-### func \(UserCommand\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L269>)
+### func \(UserCommand\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L269>)
 
 ```go
 func (c UserCommand) ID() snowflake.ID
@@ -14720,7 +14723,7 @@ func (c UserCommand) ID() snowflake.ID
 
 
 <a name="UserCommand.IntegrationTypes"></a>
-### func \(UserCommand\) [IntegrationTypes](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L308>)
+### func \(UserCommand\) [IntegrationTypes](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L308>)
 
 ```go
 func (c UserCommand) IntegrationTypes() []ApplicationIntegrationType
@@ -14729,7 +14732,7 @@ func (c UserCommand) IntegrationTypes() []ApplicationIntegrationType
 
 
 <a name="UserCommand.MarshalJSON"></a>
-### func \(UserCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L251>)
+### func \(UserCommand\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L251>)
 
 ```go
 func (c UserCommand) MarshalJSON() ([]byte, error)
@@ -14738,7 +14741,7 @@ func (c UserCommand) MarshalJSON() ([]byte, error)
 
 
 <a name="UserCommand.NSFW"></a>
-### func \(UserCommand\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L304>)
+### func \(UserCommand\) [NSFW](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L304>)
 
 ```go
 func (c UserCommand) NSFW() bool
@@ -14747,7 +14750,7 @@ func (c UserCommand) NSFW() bool
 
 
 <a name="UserCommand.Name"></a>
-### func \(UserCommand\) [Name](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L285>)
+### func \(UserCommand\) [Name](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L285>)
 
 ```go
 func (c UserCommand) Name() string
@@ -14756,7 +14759,7 @@ func (c UserCommand) Name() string
 
 
 <a name="UserCommand.NameLocalizations"></a>
-### func \(UserCommand\) [NameLocalizations](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L289>)
+### func \(UserCommand\) [NameLocalizations](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L289>)
 
 ```go
 func (c UserCommand) NameLocalizations() map[Locale]string
@@ -14765,7 +14768,7 @@ func (c UserCommand) NameLocalizations() map[Locale]string
 
 
 <a name="UserCommand.NameLocalized"></a>
-### func \(UserCommand\) [NameLocalized](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L293>)
+### func \(UserCommand\) [NameLocalized](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L293>)
 
 ```go
 func (c UserCommand) NameLocalized() string
@@ -14774,7 +14777,7 @@ func (c UserCommand) NameLocalized() string
 
 
 <a name="UserCommand.Type"></a>
-### func \(UserCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L273>)
+### func \(UserCommand\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L273>)
 
 ```go
 func (c UserCommand) Type() ApplicationCommandType
@@ -14783,7 +14786,7 @@ func (c UserCommand) Type() ApplicationCommandType
 
 
 <a name="UserCommand.UnmarshalJSON"></a>
-### func \(\*UserCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L230>)
+### func \(\*UserCommand\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L230>)
 
 ```go
 func (c *UserCommand) UnmarshalJSON(data []byte) error
@@ -14792,7 +14795,7 @@ func (c *UserCommand) UnmarshalJSON(data []byte) error
 
 
 <a name="UserCommand.Version"></a>
-### func \(UserCommand\) [Version](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command.go#L316>)
+### func \(UserCommand\) [Version](<https://github.com/disgoorg/disgo/blob/master/discord/application_command.go#L316>)
 
 ```go
 func (c UserCommand) Version() snowflake.ID
@@ -14801,7 +14804,7 @@ func (c UserCommand) Version() snowflake.ID
 
 
 <a name="UserCommandCreate"></a>
-## type [UserCommandCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L47-L56>)
+## type [UserCommandCreate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L47-L56>)
 
 
 
@@ -14819,7 +14822,7 @@ type UserCommandCreate struct {
 ```
 
 <a name="UserCommandCreate.CommandName"></a>
-### func \(UserCommandCreate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L73>)
+### func \(UserCommandCreate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L73>)
 
 ```go
 func (c UserCommandCreate) CommandName() string
@@ -14828,7 +14831,7 @@ func (c UserCommandCreate) CommandName() string
 
 
 <a name="UserCommandCreate.MarshalJSON"></a>
-### func \(UserCommandCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L58>)
+### func \(UserCommandCreate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L58>)
 
 ```go
 func (c UserCommandCreate) MarshalJSON() ([]byte, error)
@@ -14837,7 +14840,7 @@ func (c UserCommandCreate) MarshalJSON() ([]byte, error)
 
 
 <a name="UserCommandCreate.Type"></a>
-### func \(UserCommandCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_create.go#L69>)
+### func \(UserCommandCreate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_create.go#L69>)
 
 ```go
 func (UserCommandCreate) Type() ApplicationCommandType
@@ -14846,7 +14849,7 @@ func (UserCommandCreate) Type() ApplicationCommandType
 
 
 <a name="UserCommandInteractionData"></a>
-## type [UserCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L528-L534>)
+## type [UserCommandInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L528-L534>)
 
 
 
@@ -14858,7 +14861,7 @@ type UserCommandInteractionData struct {
 ```
 
 <a name="UserCommandInteractionData.CommandID"></a>
-### func \(UserCommandInteractionData\) [CommandID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L564>)
+### func \(UserCommandInteractionData\) [CommandID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L564>)
 
 ```go
 func (d UserCommandInteractionData) CommandID() snowflake.ID
@@ -14867,7 +14870,7 @@ func (d UserCommandInteractionData) CommandID() snowflake.ID
 
 
 <a name="UserCommandInteractionData.CommandName"></a>
-### func \(UserCommandInteractionData\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L568>)
+### func \(UserCommandInteractionData\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L568>)
 
 ```go
 func (d UserCommandInteractionData) CommandName() string
@@ -14876,7 +14879,7 @@ func (d UserCommandInteractionData) CommandName() string
 
 
 <a name="UserCommandInteractionData.GuildID"></a>
-### func \(UserCommandInteractionData\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L572>)
+### func \(UserCommandInteractionData\) [GuildID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L572>)
 
 ```go
 func (d UserCommandInteractionData) GuildID() *snowflake.ID
@@ -14885,7 +14888,7 @@ func (d UserCommandInteractionData) GuildID() *snowflake.ID
 
 
 <a name="UserCommandInteractionData.MarshalJSON"></a>
-### func \(\*UserCommandInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L549>)
+### func \(\*UserCommandInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L549>)
 
 ```go
 func (d *UserCommandInteractionData) MarshalJSON() ([]byte, error)
@@ -14894,7 +14897,7 @@ func (d *UserCommandInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="UserCommandInteractionData.TargetID"></a>
-### func \(UserCommandInteractionData\) [TargetID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L576>)
+### func \(UserCommandInteractionData\) [TargetID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L576>)
 
 ```go
 func (d UserCommandInteractionData) TargetID() snowflake.ID
@@ -14903,7 +14906,7 @@ func (d UserCommandInteractionData) TargetID() snowflake.ID
 
 
 <a name="UserCommandInteractionData.TargetMember"></a>
-### func \(UserCommandInteractionData\) [TargetMember](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L584>)
+### func \(UserCommandInteractionData\) [TargetMember](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L584>)
 
 ```go
 func (d UserCommandInteractionData) TargetMember() ResolvedMember
@@ -14912,7 +14915,7 @@ func (d UserCommandInteractionData) TargetMember() ResolvedMember
 
 
 <a name="UserCommandInteractionData.TargetUser"></a>
-### func \(UserCommandInteractionData\) [TargetUser](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L580>)
+### func \(UserCommandInteractionData\) [TargetUser](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L580>)
 
 ```go
 func (d UserCommandInteractionData) TargetUser() User
@@ -14921,7 +14924,7 @@ func (d UserCommandInteractionData) TargetUser() User
 
 
 <a name="UserCommandInteractionData.Type"></a>
-### func \(UserCommandInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L560>)
+### func \(UserCommandInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L560>)
 
 ```go
 func (UserCommandInteractionData) Type() ApplicationCommandType
@@ -14930,7 +14933,7 @@ func (UserCommandInteractionData) Type() ApplicationCommandType
 
 
 <a name="UserCommandInteractionData.UnmarshalJSON"></a>
-### func \(\*UserCommandInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L536>)
+### func \(\*UserCommandInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L536>)
 
 ```go
 func (d *UserCommandInteractionData) UnmarshalJSON(data []byte) error
@@ -14939,7 +14942,7 @@ func (d *UserCommandInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="UserCommandResolved"></a>
-## type [UserCommandResolved](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L591-L594>)
+## type [UserCommandResolved](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L591-L594>)
 
 
 
@@ -14951,7 +14954,7 @@ type UserCommandResolved struct {
 ```
 
 <a name="UserCommandResolved.UnmarshalJSON"></a>
-### func \(\*UserCommandResolved\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_application_command.go#L596>)
+### func \(\*UserCommandResolved\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_application_command.go#L596>)
 
 ```go
 func (r *UserCommandResolved) UnmarshalJSON(data []byte) error
@@ -14960,7 +14963,7 @@ func (r *UserCommandResolved) UnmarshalJSON(data []byte) error
 
 
 <a name="UserCommandUpdate"></a>
-## type [UserCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L47-L56>)
+## type [UserCommandUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L47-L56>)
 
 
 
@@ -14978,7 +14981,7 @@ type UserCommandUpdate struct {
 ```
 
 <a name="UserCommandUpdate.CommandName"></a>
-### func \(UserCommandUpdate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L73>)
+### func \(UserCommandUpdate\) [CommandName](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L73>)
 
 ```go
 func (c UserCommandUpdate) CommandName() *string
@@ -14987,7 +14990,7 @@ func (c UserCommandUpdate) CommandName() *string
 
 
 <a name="UserCommandUpdate.MarshalJSON"></a>
-### func \(UserCommandUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L58>)
+### func \(UserCommandUpdate\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L58>)
 
 ```go
 func (c UserCommandUpdate) MarshalJSON() ([]byte, error)
@@ -14996,7 +14999,7 @@ func (c UserCommandUpdate) MarshalJSON() ([]byte, error)
 
 
 <a name="UserCommandUpdate.Type"></a>
-### func \(UserCommandUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/application_command_update.go#L69>)
+### func \(UserCommandUpdate\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/application_command_update.go#L69>)
 
 ```go
 func (UserCommandUpdate) Type() ApplicationCommandType
@@ -15005,7 +15008,7 @@ func (UserCommandUpdate) Type() ApplicationCommandType
 
 
 <a name="UserFlags"></a>
-## type [UserFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L14>)
+## type [UserFlags](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L14>)
 
 UserFlags defines certain flags/badges a user can have \(https://discord.com/developers/docs/resources/user#user-object-user-flags\)
 
@@ -15041,7 +15044,7 @@ const (
 ```
 
 <a name="UserFlags.Add"></a>
-### func \(UserFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L45>)
+### func \(UserFlags\) [Add](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L45>)
 
 ```go
 func (f UserFlags) Add(bits ...UserFlags) UserFlags
@@ -15050,7 +15053,7 @@ func (f UserFlags) Add(bits ...UserFlags) UserFlags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="UserFlags.Has"></a>
-### func \(UserFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L55>)
+### func \(UserFlags\) [Has](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L55>)
 
 ```go
 func (f UserFlags) Has(bits ...UserFlags) bool
@@ -15059,7 +15062,7 @@ func (f UserFlags) Has(bits ...UserFlags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="UserFlags.Missing"></a>
-### func \(UserFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L60>)
+### func \(UserFlags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L60>)
 
 ```go
 func (f UserFlags) Missing(bits ...UserFlags) bool
@@ -15068,7 +15071,7 @@ func (f UserFlags) Missing(bits ...UserFlags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="UserFlags.Remove"></a>
-### func \(UserFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L50>)
+### func \(UserFlags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L50>)
 
 ```go
 func (f UserFlags) Remove(bits ...UserFlags) UserFlags
@@ -15077,7 +15080,7 @@ func (f UserFlags) Remove(bits ...UserFlags) UserFlags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="UserSelectMenuComponent"></a>
-## type [UserSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L194-L201>)
+## type [UserSelectMenuComponent](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L194-L201>)
 
 
 
@@ -15093,7 +15096,7 @@ type UserSelectMenuComponent struct {
 ```
 
 <a name="NewUserSelectMenu"></a>
-### func [NewUserSelectMenu](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L187>)
+### func [NewUserSelectMenu](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L187>)
 
 ```go
 func NewUserSelectMenu(customID string, placeholder string) UserSelectMenuComponent
@@ -15102,7 +15105,7 @@ func NewUserSelectMenu(customID string, placeholder string) UserSelectMenuCompon
 NewUserSelectMenu builds a new SelectMenuComponent from the provided values
 
 <a name="UserSelectMenuComponent.AddDefaultValue"></a>
-### func \(UserSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L279>)
+### func \(UserSelectMenuComponent\) [AddDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L279>)
 
 ```go
 func (c UserSelectMenuComponent) AddDefaultValue(defaultValue snowflake.ID) UserSelectMenuComponent
@@ -15111,7 +15114,7 @@ func (c UserSelectMenuComponent) AddDefaultValue(defaultValue snowflake.ID) User
 AddDefaultValue returns a new UserSelectMenuComponent with the provided default value added
 
 <a name="UserSelectMenuComponent.AsDisabled"></a>
-### func \(UserSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L257>)
+### func \(UserSelectMenuComponent\) [AsDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L257>)
 
 ```go
 func (c UserSelectMenuComponent) AsDisabled() UserSelectMenuComponent
@@ -15120,7 +15123,7 @@ func (c UserSelectMenuComponent) AsDisabled() UserSelectMenuComponent
 AsDisabled returns a new UserSelectMenuComponent but disabled
 
 <a name="UserSelectMenuComponent.AsEnabled"></a>
-### func \(UserSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L251>)
+### func \(UserSelectMenuComponent\) [AsEnabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L251>)
 
 ```go
 func (c UserSelectMenuComponent) AsEnabled() UserSelectMenuComponent
@@ -15129,7 +15132,7 @@ func (c UserSelectMenuComponent) AsEnabled() UserSelectMenuComponent
 AsEnabled returns a new UserSelectMenuComponent but enabled
 
 <a name="UserSelectMenuComponent.ID"></a>
-### func \(UserSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L218>)
+### func \(UserSelectMenuComponent\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L218>)
 
 ```go
 func (c UserSelectMenuComponent) ID() string
@@ -15138,7 +15141,7 @@ func (c UserSelectMenuComponent) ID() string
 
 
 <a name="UserSelectMenuComponent.MarshalJSON"></a>
-### func \(UserSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L203>)
+### func \(UserSelectMenuComponent\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L203>)
 
 ```go
 func (c UserSelectMenuComponent) MarshalJSON() ([]byte, error)
@@ -15147,7 +15150,7 @@ func (c UserSelectMenuComponent) MarshalJSON() ([]byte, error)
 
 
 <a name="UserSelectMenuComponent.RemoveDefaultValue"></a>
-### func \(UserSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L285>)
+### func \(UserSelectMenuComponent\) [RemoveDefaultValue](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L285>)
 
 ```go
 func (c UserSelectMenuComponent) RemoveDefaultValue(index int) UserSelectMenuComponent
@@ -15156,7 +15159,7 @@ func (c UserSelectMenuComponent) RemoveDefaultValue(index int) UserSelectMenuCom
 RemoveDefaultValue returns a new UserSelectMenuComponent with the provided default value at the index removed
 
 <a name="UserSelectMenuComponent.SetDefaultValues"></a>
-### func \(UserSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L269>)
+### func \(UserSelectMenuComponent\) [SetDefaultValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L269>)
 
 ```go
 func (c UserSelectMenuComponent) SetDefaultValues(defaultValues ...snowflake.ID) UserSelectMenuComponent
@@ -15165,7 +15168,7 @@ func (c UserSelectMenuComponent) SetDefaultValues(defaultValues ...snowflake.ID)
 SetDefaultValues returns a new UserSelectMenuComponent with the provided default values
 
 <a name="UserSelectMenuComponent.Type"></a>
-### func \(UserSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L214>)
+### func \(UserSelectMenuComponent\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L214>)
 
 ```go
 func (UserSelectMenuComponent) Type() ComponentType
@@ -15174,7 +15177,7 @@ func (UserSelectMenuComponent) Type() ComponentType
 
 
 <a name="UserSelectMenuComponent.WithCustomID"></a>
-### func \(UserSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L227>)
+### func \(UserSelectMenuComponent\) [WithCustomID](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L227>)
 
 ```go
 func (c UserSelectMenuComponent) WithCustomID(customID string) UserSelectMenuComponent
@@ -15183,7 +15186,7 @@ func (c UserSelectMenuComponent) WithCustomID(customID string) UserSelectMenuCom
 WithCustomID returns a new UserSelectMenuComponent with the provided customID
 
 <a name="UserSelectMenuComponent.WithDisabled"></a>
-### func \(UserSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L263>)
+### func \(UserSelectMenuComponent\) [WithDisabled](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L263>)
 
 ```go
 func (c UserSelectMenuComponent) WithDisabled(disabled bool) UserSelectMenuComponent
@@ -15192,7 +15195,7 @@ func (c UserSelectMenuComponent) WithDisabled(disabled bool) UserSelectMenuCompo
 WithDisabled returns a new UserSelectMenuComponent with the provided disabled
 
 <a name="UserSelectMenuComponent.WithMaxValues"></a>
-### func \(UserSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L245>)
+### func \(UserSelectMenuComponent\) [WithMaxValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L245>)
 
 ```go
 func (c UserSelectMenuComponent) WithMaxValues(maxValue int) UserSelectMenuComponent
@@ -15201,7 +15204,7 @@ func (c UserSelectMenuComponent) WithMaxValues(maxValue int) UserSelectMenuCompo
 WithMaxValues returns a new UserSelectMenuComponent with the provided maxValue
 
 <a name="UserSelectMenuComponent.WithMinValues"></a>
-### func \(UserSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L239>)
+### func \(UserSelectMenuComponent\) [WithMinValues](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L239>)
 
 ```go
 func (c UserSelectMenuComponent) WithMinValues(minValue int) UserSelectMenuComponent
@@ -15210,7 +15213,7 @@ func (c UserSelectMenuComponent) WithMinValues(minValue int) UserSelectMenuCompo
 WithMinValues returns a new UserSelectMenuComponent with the provided minValue
 
 <a name="UserSelectMenuComponent.WithPlaceholder"></a>
-### func \(UserSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/select_menu.go#L233>)
+### func \(UserSelectMenuComponent\) [WithPlaceholder](<https://github.com/disgoorg/disgo/blob/master/discord/select_menu.go#L233>)
 
 ```go
 func (c UserSelectMenuComponent) WithPlaceholder(placeholder string) UserSelectMenuComponent
@@ -15219,7 +15222,7 @@ func (c UserSelectMenuComponent) WithPlaceholder(placeholder string) UserSelectM
 WithPlaceholder returns a new UserSelectMenuComponent with the provided placeholder
 
 <a name="UserSelectMenuInteractionData"></a>
-## type [UserSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L264-L268>)
+## type [UserSelectMenuInteractionData](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L264-L268>)
 
 
 
@@ -15232,7 +15235,7 @@ type UserSelectMenuInteractionData struct {
 ```
 
 <a name="UserSelectMenuInteractionData.CustomID"></a>
-### func \(UserSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L325>)
+### func \(UserSelectMenuInteractionData\) [CustomID](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L325>)
 
 ```go
 func (d UserSelectMenuInteractionData) CustomID() string
@@ -15241,7 +15244,7 @@ func (d UserSelectMenuInteractionData) CustomID() string
 
 
 <a name="UserSelectMenuInteractionData.MarshalJSON"></a>
-### func \(UserSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L289>)
+### func \(UserSelectMenuInteractionData\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L289>)
 
 ```go
 func (d UserSelectMenuInteractionData) MarshalJSON() ([]byte, error)
@@ -15250,7 +15253,7 @@ func (d UserSelectMenuInteractionData) MarshalJSON() ([]byte, error)
 
 
 <a name="UserSelectMenuInteractionData.Members"></a>
-### func \(UserSelectMenuInteractionData\) [Members](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L311>)
+### func \(UserSelectMenuInteractionData\) [Members](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L311>)
 
 ```go
 func (d UserSelectMenuInteractionData) Members() []ResolvedMember
@@ -15259,7 +15262,7 @@ func (d UserSelectMenuInteractionData) Members() []ResolvedMember
 
 
 <a name="UserSelectMenuInteractionData.Type"></a>
-### func \(UserSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L321>)
+### func \(UserSelectMenuInteractionData\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L321>)
 
 ```go
 func (UserSelectMenuInteractionData) Type() ComponentType
@@ -15268,7 +15271,7 @@ func (UserSelectMenuInteractionData) Type() ComponentType
 
 
 <a name="UserSelectMenuInteractionData.UnmarshalJSON"></a>
-### func \(\*UserSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L275>)
+### func \(\*UserSelectMenuInteractionData\) [UnmarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L275>)
 
 ```go
 func (d *UserSelectMenuInteractionData) UnmarshalJSON(data []byte) error
@@ -15277,7 +15280,7 @@ func (d *UserSelectMenuInteractionData) UnmarshalJSON(data []byte) error
 
 
 <a name="UserSelectMenuInteractionData.Users"></a>
-### func \(UserSelectMenuInteractionData\) [Users](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L301>)
+### func \(UserSelectMenuInteractionData\) [Users](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L301>)
 
 ```go
 func (d UserSelectMenuInteractionData) Users() []User
@@ -15286,7 +15289,7 @@ func (d UserSelectMenuInteractionData) Users() []User
 
 
 <a name="UserSelectMenuResolved"></a>
-## type [UserSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/interaction_component.go#L270-L273>)
+## type [UserSelectMenuResolved](<https://github.com/disgoorg/disgo/blob/master/discord/interaction_component.go#L270-L273>)
 
 
 
@@ -15298,7 +15301,7 @@ type UserSelectMenuResolved struct {
 ```
 
 <a name="UserUpdate"></a>
-## type [UserUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/user.go#L185-L188>)
+## type [UserUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/user.go#L185-L188>)
 
 UserUpdate is the payload used to update the OAuth2User
 
@@ -15310,7 +15313,7 @@ type UserUpdate struct {
 ```
 
 <a name="UserVoiceStateUpdate"></a>
-## type [UserVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/voice_state.go#L32-L35>)
+## type [UserVoiceStateUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/voice_state.go#L32-L35>)
 
 
 
@@ -15322,7 +15325,7 @@ type UserVoiceStateUpdate struct {
 ```
 
 <a name="VerificationLevel"></a>
-## type [VerificationLevel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/guild.go#L57>)
+## type [VerificationLevel](<https://github.com/disgoorg/disgo/blob/master/discord/guild.go#L57>)
 
 The VerificationLevel of a Guild that members must be to send messages
 
@@ -15343,7 +15346,7 @@ const (
 ```
 
 <a name="VideoQualityMode"></a>
-## type [VideoQualityMode](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/channel.go#L1308>)
+## type [VideoQualityMode](<https://github.com/disgoorg/disgo/blob/master/discord/channel.go#L1308>)
 
 VideoQualityMode https://com/developers/docs/resources/channel#channel-object-video-quality-modes
 
@@ -15361,7 +15364,7 @@ const (
 ```
 
 <a name="VisibilityType"></a>
-## type [VisibilityType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/connection.go#L40>)
+## type [VisibilityType](<https://github.com/disgoorg/disgo/blob/master/discord/connection.go#L40>)
 
 
 
@@ -15379,7 +15382,7 @@ const (
 ```
 
 <a name="VoiceRegion"></a>
-## type [VoiceRegion](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/voice_region.go#L6-L13>)
+## type [VoiceRegion](<https://github.com/disgoorg/disgo/blob/master/discord/voice_region.go#L6-L13>)
 
 VoiceRegion \(https://discord.com/developers/docs/resources/voice#voice-region-object\)
 
@@ -15395,7 +15398,7 @@ type VoiceRegion struct {
 ```
 
 <a name="VoiceState"></a>
-## type [VoiceState](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/voice_state.go#L11-L24>)
+## type [VoiceState](<https://github.com/disgoorg/disgo/blob/master/discord/voice_state.go#L11-L24>)
 
 VoiceState from Discord
 
@@ -15417,7 +15420,7 @@ type VoiceState struct {
 ```
 
 <a name="Webhook"></a>
-## type [Webhook](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L22-L31>)
+## type [Webhook](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L22-L31>)
 
 Webhook \(https://discord.com/developers/docs/resources/webhook\) is a way to post messages to Discord using the Discord API which do not require bot authentication or use.
 
@@ -15435,7 +15438,7 @@ type Webhook interface {
 ```
 
 <a name="WebhookCreate"></a>
-## type [WebhookCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L345-L348>)
+## type [WebhookCreate](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L345-L348>)
 
 WebhookCreate is used to create a Webhook
 
@@ -15447,7 +15450,7 @@ type WebhookCreate struct {
 ```
 
 <a name="WebhookMessageCreate"></a>
-## type [WebhookMessageCreate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create.go#L5-L19>)
+## type [WebhookMessageCreate](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create.go#L5-L19>)
 
 
 
@@ -15470,7 +15473,7 @@ type WebhookMessageCreate struct {
 ```
 
 <a name="WebhookMessageCreate.ToBody"></a>
-### func \(WebhookMessageCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create.go#L22>)
+### func \(WebhookMessageCreate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create.go#L22>)
 
 ```go
 func (m WebhookMessageCreate) ToBody() (any, error)
@@ -15479,7 +15482,7 @@ func (m WebhookMessageCreate) ToBody() (any, error)
 ToBody returns the MessageCreate ready for body
 
 <a name="WebhookMessageCreateBuilder"></a>
-## type [WebhookMessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L9-L11>)
+## type [WebhookMessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L9-L11>)
 
 WebhookMessageCreateBuilder helper to build Message\(s\) easier
 
@@ -15490,7 +15493,7 @@ type WebhookMessageCreateBuilder struct {
 ```
 
 <a name="NewWebhookMessageCreateBuilder"></a>
-### func [NewWebhookMessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L14>)
+### func [NewWebhookMessageCreateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L14>)
 
 ```go
 func NewWebhookMessageCreateBuilder() *WebhookMessageCreateBuilder
@@ -15499,7 +15502,7 @@ func NewWebhookMessageCreateBuilder() *WebhookMessageCreateBuilder
 NewWebhookMessageCreateBuilder creates a new WebhookMessageCreateBuilder to be built later
 
 <a name="WebhookMessageCreateBuilder.AddActionRow"></a>
-### func \(\*WebhookMessageCreateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L98>)
+### func \(\*WebhookMessageCreateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L98>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) AddActionRow(components ...InteractiveComponent) *WebhookMessageCreateBuilder
@@ -15508,7 +15511,7 @@ func (b *WebhookMessageCreateBuilder) AddActionRow(components ...InteractiveComp
 AddActionRow adds a new discord.ActionRowComponent with the provided discord.InteractiveComponent\(s\) to the Message
 
 <a name="WebhookMessageCreateBuilder.AddContainerComponents"></a>
-### func \(\*WebhookMessageCreateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L104>)
+### func \(\*WebhookMessageCreateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L104>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) AddContainerComponents(containers ...ContainerComponent) *WebhookMessageCreateBuilder
@@ -15517,7 +15520,7 @@ func (b *WebhookMessageCreateBuilder) AddContainerComponents(containers ...Conta
 AddContainerComponents adds the discord.ContainerComponent\(s\) to the Message
 
 <a name="WebhookMessageCreateBuilder.AddEmbeds"></a>
-### func \(\*WebhookMessageCreateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L64>)
+### func \(\*WebhookMessageCreateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L64>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) AddEmbeds(embeds ...Embed) *WebhookMessageCreateBuilder
@@ -15526,7 +15529,7 @@ func (b *WebhookMessageCreateBuilder) AddEmbeds(embeds ...Embed) *WebhookMessage
 AddEmbeds adds multiple embeds to the Message
 
 <a name="WebhookMessageCreateBuilder.AddFile"></a>
-### func \(\*WebhookMessageCreateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L144>)
+### func \(\*WebhookMessageCreateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L144>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) AddFile(name string, description string, reader io.Reader, flags ...FileFlags) *WebhookMessageCreateBuilder
@@ -15535,7 +15538,7 @@ func (b *WebhookMessageCreateBuilder) AddFile(name string, description string, r
 AddFile adds a discord.File to the discord.MessageCreate
 
 <a name="WebhookMessageCreateBuilder.AddFiles"></a>
-### func \(\*WebhookMessageCreateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L138>)
+### func \(\*WebhookMessageCreateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L138>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) AddFiles(files ...*File) *WebhookMessageCreateBuilder
@@ -15544,7 +15547,7 @@ func (b *WebhookMessageCreateBuilder) AddFiles(files ...*File) *WebhookMessageCr
 AddFiles adds the discord.File\(s\) to the discord.MessageCreate
 
 <a name="WebhookMessageCreateBuilder.AddFlags"></a>
-### func \(\*WebhookMessageCreateBuilder\) [AddFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L181>)
+### func \(\*WebhookMessageCreateBuilder\) [AddFlags](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L181>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) AddFlags(flags ...MessageFlags) *WebhookMessageCreateBuilder
@@ -15553,7 +15556,7 @@ func (b *WebhookMessageCreateBuilder) AddFlags(flags ...MessageFlags) *WebhookMe
 AddFlags adds the MessageFlags of the Message
 
 <a name="WebhookMessageCreateBuilder.Build"></a>
-### func \(\*WebhookMessageCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L226>)
+### func \(\*WebhookMessageCreateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L226>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) Build() WebhookMessageCreate
@@ -15562,7 +15565,7 @@ func (b *WebhookMessageCreateBuilder) Build() WebhookMessageCreate
 Build builds the WebhookMessageCreateBuilder to a MessageCreate struct
 
 <a name="WebhookMessageCreateBuilder.ClearAllowedMentions"></a>
-### func \(\*WebhookMessageCreateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L170>)
+### func \(\*WebhookMessageCreateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L170>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) ClearAllowedMentions() *WebhookMessageCreateBuilder
@@ -15571,7 +15574,7 @@ func (b *WebhookMessageCreateBuilder) ClearAllowedMentions() *WebhookMessageCrea
 ClearAllowedMentions clears the allowed mentions of the Message
 
 <a name="WebhookMessageCreateBuilder.ClearContainerComponents"></a>
-### func \(\*WebhookMessageCreateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L118>)
+### func \(\*WebhookMessageCreateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L118>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) ClearContainerComponents() *WebhookMessageCreateBuilder
@@ -15580,7 +15583,7 @@ func (b *WebhookMessageCreateBuilder) ClearContainerComponents() *WebhookMessage
 ClearContainerComponents removes all the discord.ContainerComponent\(s\) of the Message
 
 <a name="WebhookMessageCreateBuilder.ClearEmbeds"></a>
-### func \(\*WebhookMessageCreateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L70>)
+### func \(\*WebhookMessageCreateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L70>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) ClearEmbeds() *WebhookMessageCreateBuilder
@@ -15589,7 +15592,7 @@ func (b *WebhookMessageCreateBuilder) ClearEmbeds() *WebhookMessageCreateBuilder
 ClearEmbeds removes all the embeds from the Message
 
 <a name="WebhookMessageCreateBuilder.ClearFiles"></a>
-### func \(\*WebhookMessageCreateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L150>)
+### func \(\*WebhookMessageCreateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L150>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) ClearFiles() *WebhookMessageCreateBuilder
@@ -15598,7 +15601,7 @@ func (b *WebhookMessageCreateBuilder) ClearFiles() *WebhookMessageCreateBuilder
 ClearFiles removes all discord.File\(s\) of this discord.MessageCreate
 
 <a name="WebhookMessageCreateBuilder.ClearFlags"></a>
-### func \(\*WebhookMessageCreateBuilder\) [ClearFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L193>)
+### func \(\*WebhookMessageCreateBuilder\) [ClearFlags](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L193>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) ClearFlags() *WebhookMessageCreateBuilder
@@ -15607,7 +15610,7 @@ func (b *WebhookMessageCreateBuilder) ClearFlags() *WebhookMessageCreateBuilder
 ClearFlags clears the discord.MessageFlags of the Message
 
 <a name="WebhookMessageCreateBuilder.ClearPoll"></a>
-### func \(\*WebhookMessageCreateBuilder\) [ClearPoll](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L220>)
+### func \(\*WebhookMessageCreateBuilder\) [ClearPoll](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L220>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) ClearPoll() *WebhookMessageCreateBuilder
@@ -15616,7 +15619,7 @@ func (b *WebhookMessageCreateBuilder) ClearPoll() *WebhookMessageCreateBuilder
 ClearPoll clears the Poll of the webhook Message
 
 <a name="WebhookMessageCreateBuilder.RemoveContainerComponent"></a>
-### func \(\*WebhookMessageCreateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L110>)
+### func \(\*WebhookMessageCreateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L110>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) RemoveContainerComponent(i int) *WebhookMessageCreateBuilder
@@ -15625,7 +15628,7 @@ func (b *WebhookMessageCreateBuilder) RemoveContainerComponent(i int) *WebhookMe
 RemoveContainerComponent removes a discord.ActionRowComponent from the Message
 
 <a name="WebhookMessageCreateBuilder.RemoveEmbed"></a>
-### func \(\*WebhookMessageCreateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L76>)
+### func \(\*WebhookMessageCreateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L76>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) RemoveEmbed(i int) *WebhookMessageCreateBuilder
@@ -15634,7 +15637,7 @@ func (b *WebhookMessageCreateBuilder) RemoveEmbed(i int) *WebhookMessageCreateBu
 RemoveEmbed removes an embed from the Message
 
 <a name="WebhookMessageCreateBuilder.RemoveFile"></a>
-### func \(\*WebhookMessageCreateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L156>)
+### func \(\*WebhookMessageCreateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L156>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) RemoveFile(i int) *WebhookMessageCreateBuilder
@@ -15643,7 +15646,7 @@ func (b *WebhookMessageCreateBuilder) RemoveFile(i int) *WebhookMessageCreateBui
 RemoveFile removes the discord.File at this index
 
 <a name="WebhookMessageCreateBuilder.RemoveFlags"></a>
-### func \(\*WebhookMessageCreateBuilder\) [RemoveFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L187>)
+### func \(\*WebhookMessageCreateBuilder\) [RemoveFlags](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L187>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) RemoveFlags(flags ...MessageFlags) *WebhookMessageCreateBuilder
@@ -15652,7 +15655,7 @@ func (b *WebhookMessageCreateBuilder) RemoveFlags(flags ...MessageFlags) *Webhoo
 RemoveFlags removes the MessageFlags of the Message
 
 <a name="WebhookMessageCreateBuilder.SetAllowedMentions"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L164>)
+### func \(\*WebhookMessageCreateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L164>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetAllowedMentions(allowedMentions *AllowedMentions) *WebhookMessageCreateBuilder
@@ -15661,7 +15664,7 @@ func (b *WebhookMessageCreateBuilder) SetAllowedMentions(allowedMentions *Allowe
 SetAllowedMentions sets the AllowedMentions of the Message
 
 <a name="WebhookMessageCreateBuilder.SetAvatarURL"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetAvatarURL](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L38>)
+### func \(\*WebhookMessageCreateBuilder\) [SetAvatarURL](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L38>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetAvatarURL(url string) *WebhookMessageCreateBuilder
@@ -15670,7 +15673,7 @@ func (b *WebhookMessageCreateBuilder) SetAvatarURL(url string) *WebhookMessageCr
 
 
 <a name="WebhookMessageCreateBuilder.SetContainerComponent"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L90>)
+### func \(\*WebhookMessageCreateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L90>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetContainerComponent(i int, container ContainerComponent) *WebhookMessageCreateBuilder
@@ -15679,7 +15682,7 @@ func (b *WebhookMessageCreateBuilder) SetContainerComponent(i int, container Con
 SetContainerComponent sets the provided discord.InteractiveComponent at the index of discord.InteractiveComponent\(s\)
 
 <a name="WebhookMessageCreateBuilder.SetContainerComponents"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L84>)
+### func \(\*WebhookMessageCreateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L84>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetContainerComponents(containerComponents ...ContainerComponent) *WebhookMessageCreateBuilder
@@ -15688,7 +15691,7 @@ func (b *WebhookMessageCreateBuilder) SetContainerComponents(containerComponents
 SetContainerComponents sets the discord.ContainerComponent\(s\) of the Message
 
 <a name="WebhookMessageCreateBuilder.SetContent"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L23>)
+### func \(\*WebhookMessageCreateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L23>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetContent(content string) *WebhookMessageCreateBuilder
@@ -15697,7 +15700,7 @@ func (b *WebhookMessageCreateBuilder) SetContent(content string) *WebhookMessage
 SetContent sets content of the Message
 
 <a name="WebhookMessageCreateBuilder.SetContentf"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L29>)
+### func \(\*WebhookMessageCreateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L29>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetContentf(content string, a ...any) *WebhookMessageCreateBuilder
@@ -15706,7 +15709,7 @@ func (b *WebhookMessageCreateBuilder) SetContentf(content string, a ...any) *Web
 SetContentf sets content of the Message
 
 <a name="WebhookMessageCreateBuilder.SetEmbed"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L56>)
+### func \(\*WebhookMessageCreateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L56>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetEmbed(i int, embed Embed) *WebhookMessageCreateBuilder
@@ -15715,7 +15718,7 @@ func (b *WebhookMessageCreateBuilder) SetEmbed(i int, embed Embed) *WebhookMessa
 SetEmbed sets the provided Embed at the index of the Message
 
 <a name="WebhookMessageCreateBuilder.SetEmbeds"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L50>)
+### func \(\*WebhookMessageCreateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L50>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetEmbeds(embeds ...Embed) *WebhookMessageCreateBuilder
@@ -15724,7 +15727,7 @@ func (b *WebhookMessageCreateBuilder) SetEmbeds(embeds ...Embed) *WebhookMessage
 SetEmbeds sets the Embed\(s\) of the Message
 
 <a name="WebhookMessageCreateBuilder.SetFile"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L130>)
+### func \(\*WebhookMessageCreateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L130>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetFile(i int, file *File) *WebhookMessageCreateBuilder
@@ -15733,7 +15736,7 @@ func (b *WebhookMessageCreateBuilder) SetFile(i int, file *File) *WebhookMessage
 SetFile sets the discord.File at the index for this discord.MessageCreate
 
 <a name="WebhookMessageCreateBuilder.SetFiles"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L124>)
+### func \(\*WebhookMessageCreateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L124>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetFiles(files ...*File) *WebhookMessageCreateBuilder
@@ -15742,7 +15745,7 @@ func (b *WebhookMessageCreateBuilder) SetFiles(files ...*File) *WebhookMessageCr
 SetFiles sets the File\(s\) for this MessageCreate
 
 <a name="WebhookMessageCreateBuilder.SetFlags"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetFlags](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L175>)
+### func \(\*WebhookMessageCreateBuilder\) [SetFlags](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L175>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetFlags(flags MessageFlags) *WebhookMessageCreateBuilder
@@ -15751,7 +15754,7 @@ func (b *WebhookMessageCreateBuilder) SetFlags(flags MessageFlags) *WebhookMessa
 SetFlags sets the message flags of the Message
 
 <a name="WebhookMessageCreateBuilder.SetPoll"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetPoll](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L214>)
+### func \(\*WebhookMessageCreateBuilder\) [SetPoll](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L214>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetPoll(poll PollCreate) *WebhookMessageCreateBuilder
@@ -15760,7 +15763,7 @@ func (b *WebhookMessageCreateBuilder) SetPoll(poll PollCreate) *WebhookMessageCr
 SetPoll sets the Poll of the webhook Message
 
 <a name="WebhookMessageCreateBuilder.SetSuppressEmbeds"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetSuppressEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L198>)
+### func \(\*WebhookMessageCreateBuilder\) [SetSuppressEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L198>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetSuppressEmbeds(suppressEmbeds bool) *WebhookMessageCreateBuilder
@@ -15769,7 +15772,7 @@ func (b *WebhookMessageCreateBuilder) SetSuppressEmbeds(suppressEmbeds bool) *We
 SetSuppressEmbeds adds/removes discord.MessageFlagSuppressEmbeds to the Message flags
 
 <a name="WebhookMessageCreateBuilder.SetTTS"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetTTS](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L44>)
+### func \(\*WebhookMessageCreateBuilder\) [SetTTS](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L44>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetTTS(tts bool) *WebhookMessageCreateBuilder
@@ -15778,7 +15781,7 @@ func (b *WebhookMessageCreateBuilder) SetTTS(tts bool) *WebhookMessageCreateBuil
 SetTTS sets the text to speech of the Message
 
 <a name="WebhookMessageCreateBuilder.SetThreadName"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetThreadName](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L208>)
+### func \(\*WebhookMessageCreateBuilder\) [SetThreadName](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L208>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetThreadName(threadName string) *WebhookMessageCreateBuilder
@@ -15787,7 +15790,7 @@ func (b *WebhookMessageCreateBuilder) SetThreadName(threadName string) *WebhookM
 SetThreadName sets the thread name the new webhook message should create.
 
 <a name="WebhookMessageCreateBuilder.SetUsername"></a>
-### func \(\*WebhookMessageCreateBuilder\) [SetUsername](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_create_builder.go#L33>)
+### func \(\*WebhookMessageCreateBuilder\) [SetUsername](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_create_builder.go#L33>)
 
 ```go
 func (b *WebhookMessageCreateBuilder) SetUsername(username string) *WebhookMessageCreateBuilder
@@ -15796,7 +15799,7 @@ func (b *WebhookMessageCreateBuilder) SetUsername(username string) *WebhookMessa
 
 
 <a name="WebhookMessageUpdate"></a>
-## type [WebhookMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update.go#L4-L11>)
+## type [WebhookMessageUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update.go#L4-L11>)
 
 WebhookMessageUpdate is used to edit a Message
 
@@ -15812,7 +15815,7 @@ type WebhookMessageUpdate struct {
 ```
 
 <a name="WebhookMessageUpdate.ToBody"></a>
-### func \(WebhookMessageUpdate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update.go#L14>)
+### func \(WebhookMessageUpdate\) [ToBody](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update.go#L14>)
 
 ```go
 func (m WebhookMessageUpdate) ToBody() (any, error)
@@ -15821,7 +15824,7 @@ func (m WebhookMessageUpdate) ToBody() (any, error)
 ToBody returns the WebhookMessageUpdate ready for body
 
 <a name="WebhookMessageUpdateBuilder"></a>
-## type [WebhookMessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L11-L13>)
+## type [WebhookMessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L11-L13>)
 
 WebhookMessageUpdateBuilder helper to build MessageUpdate easier
 
@@ -15832,7 +15835,7 @@ type WebhookMessageUpdateBuilder struct {
 ```
 
 <a name="NewWebhookMessageUpdateBuilder"></a>
-### func [NewWebhookMessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L16>)
+### func [NewWebhookMessageUpdateBuilder](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L16>)
 
 ```go
 func NewWebhookMessageUpdateBuilder() *WebhookMessageUpdateBuilder
@@ -15841,7 +15844,7 @@ func NewWebhookMessageUpdateBuilder() *WebhookMessageUpdateBuilder
 NewWebhookMessageUpdateBuilder creates a new WebhookMessageUpdateBuilder to be built later
 
 <a name="WebhookMessageUpdateBuilder.AddActionRow"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L107>)
+### func \(\*WebhookMessageUpdateBuilder\) [AddActionRow](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L107>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) AddActionRow(components ...InteractiveComponent) *WebhookMessageUpdateBuilder
@@ -15850,7 +15853,7 @@ func (b *WebhookMessageUpdateBuilder) AddActionRow(components ...InteractiveComp
 AddActionRow adds a new discord.ActionRowComponent with the provided discord.InteractiveComponent\(s\) to the Message
 
 <a name="WebhookMessageUpdateBuilder.AddContainerComponents"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L116>)
+### func \(\*WebhookMessageUpdateBuilder\) [AddContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L116>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) AddContainerComponents(containers ...ContainerComponent) *WebhookMessageUpdateBuilder
@@ -15859,7 +15862,7 @@ func (b *WebhookMessageUpdateBuilder) AddContainerComponents(containers ...Conta
 AddContainerComponents adds the discord.ContainerComponent\(s\) to the Message
 
 <a name="WebhookMessageUpdateBuilder.AddEmbeds"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L61>)
+### func \(\*WebhookMessageUpdateBuilder\) [AddEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L61>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) AddEmbeds(embeds ...Embed) *WebhookMessageUpdateBuilder
@@ -15868,7 +15871,7 @@ func (b *WebhookMessageUpdateBuilder) AddEmbeds(embeds ...Embed) *WebhookMessage
 AddEmbeds adds multiple embeds to the Message
 
 <a name="WebhookMessageUpdateBuilder.AddFile"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L162>)
+### func \(\*WebhookMessageUpdateBuilder\) [AddFile](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L162>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) AddFile(name string, description string, reader io.Reader, flags ...FileFlags) *WebhookMessageUpdateBuilder
@@ -15877,7 +15880,7 @@ func (b *WebhookMessageUpdateBuilder) AddFile(name string, description string, r
 AddFile adds a new discord.File to the discord.MessageUpdate
 
 <a name="WebhookMessageUpdateBuilder.AddFiles"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L156>)
+### func \(\*WebhookMessageUpdateBuilder\) [AddFiles](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L156>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) AddFiles(files ...*File) *WebhookMessageUpdateBuilder
@@ -15886,7 +15889,7 @@ func (b *WebhookMessageUpdateBuilder) AddFiles(files ...*File) *WebhookMessageUp
 AddFiles adds the new discord.File\(s\) to the discord.MessageUpdate
 
 <a name="WebhookMessageUpdateBuilder.Build"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L215>)
+### func \(\*WebhookMessageUpdateBuilder\) [Build](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L215>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) Build() WebhookMessageUpdate
@@ -15895,7 +15898,7 @@ func (b *WebhookMessageUpdateBuilder) Build() WebhookMessageUpdate
 Build builds the WebhookMessageUpdateBuilder to a MessageUpdate struct
 
 <a name="WebhookMessageUpdateBuilder.ClearAllowedMentions"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L210>)
+### func \(\*WebhookMessageUpdateBuilder\) [ClearAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L210>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) ClearAllowedMentions() *WebhookMessageUpdateBuilder
@@ -15904,7 +15907,7 @@ func (b *WebhookMessageUpdateBuilder) ClearAllowedMentions() *WebhookMessageUpda
 ClearAllowedMentions clears the allowed mentions of the Message
 
 <a name="WebhookMessageUpdateBuilder.ClearContainerComponents"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L136>)
+### func \(\*WebhookMessageUpdateBuilder\) [ClearContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L136>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) ClearContainerComponents() *WebhookMessageUpdateBuilder
@@ -15913,7 +15916,7 @@ func (b *WebhookMessageUpdateBuilder) ClearContainerComponents() *WebhookMessage
 ClearContainerComponents removes all the discord.ContainerComponent\(s\) of the Message
 
 <a name="WebhookMessageUpdateBuilder.ClearContent"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [ClearContent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L36>)
+### func \(\*WebhookMessageUpdateBuilder\) [ClearContent](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L36>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) ClearContent() *WebhookMessageUpdateBuilder
@@ -15922,7 +15925,7 @@ func (b *WebhookMessageUpdateBuilder) ClearContent() *WebhookMessageUpdateBuilde
 ClearContent removes content of the Message
 
 <a name="WebhookMessageUpdateBuilder.ClearEmbeds"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L70>)
+### func \(\*WebhookMessageUpdateBuilder\) [ClearEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L70>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) ClearEmbeds() *WebhookMessageUpdateBuilder
@@ -15931,7 +15934,7 @@ func (b *WebhookMessageUpdateBuilder) ClearEmbeds() *WebhookMessageUpdateBuilder
 ClearEmbeds removes all the embeds from the Message
 
 <a name="WebhookMessageUpdateBuilder.ClearFiles"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L168>)
+### func \(\*WebhookMessageUpdateBuilder\) [ClearFiles](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L168>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) ClearFiles() *WebhookMessageUpdateBuilder
@@ -15940,7 +15943,7 @@ func (b *WebhookMessageUpdateBuilder) ClearFiles() *WebhookMessageUpdateBuilder
 ClearFiles removes all new discord.File\(s\) of this discord.MessageUpdate
 
 <a name="WebhookMessageUpdateBuilder.RemoveContainerComponent"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L125>)
+### func \(\*WebhookMessageUpdateBuilder\) [RemoveContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L125>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) RemoveContainerComponent(i int) *WebhookMessageUpdateBuilder
@@ -15949,7 +15952,7 @@ func (b *WebhookMessageUpdateBuilder) RemoveContainerComponent(i int) *WebhookMe
 RemoveContainerComponent removes a discord.ContainerComponent from the Message
 
 <a name="WebhookMessageUpdateBuilder.RemoveEmbed"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L76>)
+### func \(\*WebhookMessageUpdateBuilder\) [RemoveEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L76>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) RemoveEmbed(i int) *WebhookMessageUpdateBuilder
@@ -15958,7 +15961,7 @@ func (b *WebhookMessageUpdateBuilder) RemoveEmbed(i int) *WebhookMessageUpdateBu
 RemoveEmbed removes an embed from the Message
 
 <a name="WebhookMessageUpdateBuilder.RemoveFile"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L174>)
+### func \(\*WebhookMessageUpdateBuilder\) [RemoveFile](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L174>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) RemoveFile(i int) *WebhookMessageUpdateBuilder
@@ -15967,7 +15970,7 @@ func (b *WebhookMessageUpdateBuilder) RemoveFile(i int) *WebhookMessageUpdateBui
 RemoveFile removes the new discord.File at this index
 
 <a name="WebhookMessageUpdateBuilder.RetainAttachments"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [RetainAttachments](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L182>)
+### func \(\*WebhookMessageUpdateBuilder\) [RetainAttachments](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L182>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) RetainAttachments(attachments ...Attachment) *WebhookMessageUpdateBuilder
@@ -15976,7 +15979,7 @@ func (b *WebhookMessageUpdateBuilder) RetainAttachments(attachments ...Attachmen
 RetainAttachments removes all Attachment\(s\) from this Message except the ones provided
 
 <a name="WebhookMessageUpdateBuilder.RetainAttachmentsByID"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [RetainAttachmentsByID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L193>)
+### func \(\*WebhookMessageUpdateBuilder\) [RetainAttachmentsByID](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L193>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) RetainAttachmentsByID(attachmentIDs ...snowflake.ID) *WebhookMessageUpdateBuilder
@@ -15985,7 +15988,7 @@ func (b *WebhookMessageUpdateBuilder) RetainAttachmentsByID(attachmentIDs ...sno
 RetainAttachmentsByID removes all Attachment\(s\) from this Message except the ones provided
 
 <a name="WebhookMessageUpdateBuilder.SetAllowedMentions"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L204>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetAllowedMentions](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L204>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetAllowedMentions(allowedMentions *AllowedMentions) *WebhookMessageUpdateBuilder
@@ -15994,7 +15997,7 @@ func (b *WebhookMessageUpdateBuilder) SetAllowedMentions(allowedMentions *Allowe
 SetAllowedMentions sets the AllowedMentions of the Message
 
 <a name="WebhookMessageUpdateBuilder.SetContainerComponent"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L96>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetContainerComponent](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L96>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetContainerComponent(i int, container ContainerComponent) *WebhookMessageUpdateBuilder
@@ -16003,7 +16006,7 @@ func (b *WebhookMessageUpdateBuilder) SetContainerComponent(i int, container Con
 SetContainerComponent sets the provided discord.InteractiveComponent at the index of discord.InteractiveComponent\(s\)
 
 <a name="WebhookMessageUpdateBuilder.SetContainerComponents"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L87>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetContainerComponents](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L87>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetContainerComponents(containerComponents ...ContainerComponent) *WebhookMessageUpdateBuilder
@@ -16012,7 +16015,7 @@ func (b *WebhookMessageUpdateBuilder) SetContainerComponents(containerComponents
 SetContainerComponents sets the discord.ContainerComponent\(s\) of the Message
 
 <a name="WebhookMessageUpdateBuilder.SetContent"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L25>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetContent](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L25>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetContent(content string) *WebhookMessageUpdateBuilder
@@ -16021,7 +16024,7 @@ func (b *WebhookMessageUpdateBuilder) SetContent(content string) *WebhookMessage
 SetContent sets content of the Message
 
 <a name="WebhookMessageUpdateBuilder.SetContentf"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L31>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetContentf](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L31>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetContentf(content string, a ...any) *WebhookMessageUpdateBuilder
@@ -16030,7 +16033,7 @@ func (b *WebhookMessageUpdateBuilder) SetContentf(content string, a ...any) *Web
 SetContentf sets content of the Message
 
 <a name="WebhookMessageUpdateBuilder.SetEmbed"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L50>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetEmbed](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L50>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetEmbed(i int, embed Embed) *WebhookMessageUpdateBuilder
@@ -16039,7 +16042,7 @@ func (b *WebhookMessageUpdateBuilder) SetEmbed(i int, embed Embed) *WebhookMessa
 SetEmbed sets the provided Embed at the index of the Message
 
 <a name="WebhookMessageUpdateBuilder.SetEmbeds"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L41>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetEmbeds](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L41>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetEmbeds(embeds ...Embed) *WebhookMessageUpdateBuilder
@@ -16048,7 +16051,7 @@ func (b *WebhookMessageUpdateBuilder) SetEmbeds(embeds ...Embed) *WebhookMessage
 SetEmbeds sets the Embed\(s\) of the Message
 
 <a name="WebhookMessageUpdateBuilder.SetFile"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L148>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetFile](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L148>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetFile(i int, file *File) *WebhookMessageUpdateBuilder
@@ -16057,7 +16060,7 @@ func (b *WebhookMessageUpdateBuilder) SetFile(i int, file *File) *WebhookMessage
 SetFile sets the new discord.File at the index for this discord.MessageUpdate
 
 <a name="WebhookMessageUpdateBuilder.SetFiles"></a>
-### func \(\*WebhookMessageUpdateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook_message_update_builder.go#L142>)
+### func \(\*WebhookMessageUpdateBuilder\) [SetFiles](<https://github.com/disgoorg/disgo/blob/master/discord/webhook_message_update_builder.go#L142>)
 
 ```go
 func (b *WebhookMessageUpdateBuilder) SetFiles(files ...*File) *WebhookMessageUpdateBuilder
@@ -16066,7 +16069,7 @@ func (b *WebhookMessageUpdateBuilder) SetFiles(files ...*File) *WebhookMessageUp
 SetFiles sets the new discord.File\(s\) for this discord.MessageUpdate
 
 <a name="WebhookSourceChannel"></a>
-## type [WebhookSourceChannel](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L339-L342>)
+## type [WebhookSourceChannel](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L339-L342>)
 
 
 
@@ -16078,7 +16081,7 @@ type WebhookSourceChannel struct {
 ```
 
 <a name="WebhookSourceGuild"></a>
-## type [WebhookSourceGuild](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L333-L337>)
+## type [WebhookSourceGuild](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L333-L337>)
 
 
 
@@ -16091,7 +16094,7 @@ type WebhookSourceGuild struct {
 ```
 
 <a name="WebhookType"></a>
-## type [WebhookType](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L12>)
+## type [WebhookType](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L12>)
 
 WebhookType \(https: //discord.com/developers/docs/resources/webhook\#webhook\-object\-webhook\-types\)
 
@@ -16110,7 +16113,7 @@ const (
 ```
 
 <a name="WebhookUpdate"></a>
-## type [WebhookUpdate](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L351-L355>)
+## type [WebhookUpdate](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L351-L355>)
 
 WebhookUpdate is used to update a Webhook
 
@@ -16123,7 +16126,7 @@ type WebhookUpdate struct {
 ```
 
 <a name="WebhookUpdateWithToken"></a>
-## type [WebhookUpdateWithToken](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/webhook.go#L358-L361>)
+## type [WebhookUpdateWithToken](<https://github.com/disgoorg/disgo/blob/master/discord/webhook.go#L358-L361>)
 
 WebhookUpdateWithToken is used to update a Webhook with the token
 
@@ -16135,7 +16138,7 @@ type WebhookUpdateWithToken struct {
 ```
 
 <a name="YouTubeIntegration"></a>
-## type [YouTubeIntegration](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L136-L149>)
+## type [YouTubeIntegration](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L136-L149>)
 
 
 
@@ -16157,7 +16160,7 @@ type YouTubeIntegration struct {
 ```
 
 <a name="YouTubeIntegration.CreatedAt"></a>
-### func \(YouTubeIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L170>)
+### func \(YouTubeIntegration\) [CreatedAt](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L170>)
 
 ```go
 func (i YouTubeIntegration) CreatedAt() time.Time
@@ -16166,7 +16169,7 @@ func (i YouTubeIntegration) CreatedAt() time.Time
 
 
 <a name="YouTubeIntegration.ID"></a>
-### func \(YouTubeIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L166>)
+### func \(YouTubeIntegration\) [ID](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L166>)
 
 ```go
 func (i YouTubeIntegration) ID() snowflake.ID
@@ -16175,7 +16178,7 @@ func (i YouTubeIntegration) ID() snowflake.ID
 
 
 <a name="YouTubeIntegration.MarshalJSON"></a>
-### func \(YouTubeIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L151>)
+### func \(YouTubeIntegration\) [MarshalJSON](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L151>)
 
 ```go
 func (i YouTubeIntegration) MarshalJSON() ([]byte, error)
@@ -16184,7 +16187,7 @@ func (i YouTubeIntegration) MarshalJSON() ([]byte, error)
 
 
 <a name="YouTubeIntegration.Type"></a>
-### func \(YouTubeIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/disgo/discord/integration.go#L162>)
+### func \(YouTubeIntegration\) [Type](<https://github.com/disgoorg/disgo/blob/master/discord/integration.go#L162>)
 
 ```go
 func (YouTubeIntegration) Type() IntegrationType

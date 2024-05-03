@@ -1,10 +1,13 @@
+# Cache
 
 ```go
 import "github.com/disgoorg/disgo/cache"
 ```
 
+Package cache provides a generic cache interface for Discord entities.
+
 <a name="PolicyAll"></a>
-## func [PolicyAll](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L14>)
+## func [PolicyAll](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L14>)
 
 ```go
 func PolicyAll[T any](_ T) bool
@@ -13,7 +16,7 @@ func PolicyAll[T any](_ T) bool
 PolicyAll returns a policy that will cache all entities.
 
 <a name="PolicyMembersPending"></a>
-## func [PolicyMembersPending](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L24>)
+## func [PolicyMembersPending](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L24>)
 
 ```go
 func PolicyMembersPending(member discord.Member) bool
@@ -22,7 +25,7 @@ func PolicyMembersPending(member discord.Member) bool
 PolicyMembersPending is a policy that will only cache members that are pending.
 
 <a name="PolicyNone"></a>
-## func [PolicyNone](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L11>)
+## func [PolicyNone](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L11>)
 
 ```go
 func PolicyNone[T any](_ T) bool
@@ -31,7 +34,7 @@ func PolicyNone[T any](_ T) bool
 PolicyNone returns a policy that will never cache anything.
 
 <a name="Cache"></a>
-## type [Cache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L14-L32>)
+## type [Cache](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L14-L32>)
 
 Cache is a simple key value store. They key is always a snowflake.ID. The cache provides a simple way to store and retrieve entities. But is not guaranteed to be thread safe as this depends on the underlying implementation.
 
@@ -58,7 +61,7 @@ type Cache[T any] interface {
 ```
 
 <a name="NewCache"></a>
-### func [NewCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L39>)
+### func [NewCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L39>)
 
 ```go
 func NewCache[T any](flags Flags, neededFlags Flags, policy Policy[T]) Cache[T]
@@ -67,7 +70,7 @@ func NewCache[T any](flags Flags, neededFlags Flags, policy Policy[T]) Cache[T]
 NewCache returns a new DefaultCache implementation which filter the entities after the gives Flags and Policy. This cache implementation is thread safe and can be used in multiple goroutines without any issues. It also only hands out copies to the entities. Regardless these entities should be handles as immutable.
 
 <a name="Caches"></a>
-## type [Caches](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L675-L754>)
+## type [Caches](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L675-L754>)
 
 Caches combines all different entity caches into one with some utility methods.
 
@@ -155,7 +158,7 @@ type Caches interface {
 ```
 
 <a name="New"></a>
-### func [New](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L757>)
+### func [New](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L757>)
 
 ```go
 func New(opts ...ConfigOpt) Caches
@@ -164,7 +167,7 @@ func New(opts ...ConfigOpt) Caches
 New returns a new default Caches instance with the given ConfigOpt\(s\) applied.
 
 <a name="ChannelCache"></a>
-## type [ChannelCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L133-L140>)
+## type [ChannelCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L133-L140>)
 
 
 
@@ -180,7 +183,7 @@ type ChannelCache interface {
 ```
 
 <a name="NewChannelCache"></a>
-### func [NewChannelCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L142>)
+### func [NewChannelCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L142>)
 
 ```go
 func NewChannelCache(cache Cache[discord.GuildChannel]) ChannelCache
@@ -189,7 +192,7 @@ func NewChannelCache(cache Cache[discord.GuildChannel]) ChannelCache
 
 
 <a name="Config"></a>
-## type [Config](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L28-L68>)
+## type [Config](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L28-L68>)
 
 Config lets you configure your Caches instance.
 
@@ -238,7 +241,7 @@ type Config struct {
 ```
 
 <a name="DefaultConfig"></a>
-### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L10>)
+### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L10>)
 
 ```go
 func DefaultConfig() *Config
@@ -247,7 +250,7 @@ func DefaultConfig() *Config
 DefaultConfig returns a Config with sensible defaults.
 
 <a name="Config.Apply"></a>
-### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L74>)
+### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L74>)
 
 ```go
 func (c *Config) Apply(opts []ConfigOpt)
@@ -256,7 +259,7 @@ func (c *Config) Apply(opts []ConfigOpt)
 Apply applies the given ConfigOpt\(s\) to the Config
 
 <a name="ConfigOpt"></a>
-## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L71>)
+## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L71>)
 
 ConfigOpt is a type alias for a function that takes a Config and is used to configure your Caches.
 
@@ -265,7 +268,7 @@ type ConfigOpt func(config *Config)
 ```
 
 <a name="WithCaches"></a>
-### func [WithCaches](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L120>)
+### func [WithCaches](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L120>)
 
 ```go
 func WithCaches(flags ...Flags) ConfigOpt
@@ -274,7 +277,7 @@ func WithCaches(flags ...Flags) ConfigOpt
 WithCaches sets the Flags of the Config.
 
 <a name="WithChannelCache"></a>
-### func [WithChannelCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L148>)
+### func [WithChannelCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L148>)
 
 ```go
 func WithChannelCache(channelCache ChannelCache) ConfigOpt
@@ -283,7 +286,7 @@ func WithChannelCache(channelCache ChannelCache) ConfigOpt
 WithChannelCache sets the ChannelCache of the Config.
 
 <a name="WithChannelCachePolicy"></a>
-### func [WithChannelCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L141>)
+### func [WithChannelCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L141>)
 
 ```go
 func WithChannelCachePolicy(policy Policy[discord.GuildChannel]) ConfigOpt
@@ -292,7 +295,7 @@ func WithChannelCachePolicy(policy Policy[discord.GuildChannel]) ConfigOpt
 WithChannelCachePolicy sets the Policy\[discord.Channel\] of the Config.
 
 <a name="WithEmojiCache"></a>
-### func [WithEmojiCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L274>)
+### func [WithEmojiCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L274>)
 
 ```go
 func WithEmojiCache(emojiCache EmojiCache) ConfigOpt
@@ -301,7 +304,7 @@ func WithEmojiCache(emojiCache EmojiCache) ConfigOpt
 WithEmojiCache sets the EmojiCache of the Config.
 
 <a name="WithEmojiCachePolicy"></a>
-### func [WithEmojiCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L267>)
+### func [WithEmojiCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L267>)
 
 ```go
 func WithEmojiCachePolicy(policy Policy[discord.Emoji]) ConfigOpt
@@ -310,7 +313,7 @@ func WithEmojiCachePolicy(policy Policy[discord.Emoji]) ConfigOpt
 WithEmojiCachePolicy sets the Policy\[discord.Emoji\] of the Config.
 
 <a name="WithGuildCache"></a>
-### func [WithGuildCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L134>)
+### func [WithGuildCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L134>)
 
 ```go
 func WithGuildCache(guildCache GuildCache) ConfigOpt
@@ -319,7 +322,7 @@ func WithGuildCache(guildCache GuildCache) ConfigOpt
 WithGuildCache sets the GuildCache of the Config.
 
 <a name="WithGuildCachePolicy"></a>
-### func [WithGuildCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L127>)
+### func [WithGuildCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L127>)
 
 ```go
 func WithGuildCachePolicy(policy Policy[discord.Guild]) ConfigOpt
@@ -328,7 +331,7 @@ func WithGuildCachePolicy(policy Policy[discord.Guild]) ConfigOpt
 WithGuildCachePolicy sets the Policy\[discord.Guild\] of the Config.
 
 <a name="WithGuildScheduledEventCache"></a>
-### func [WithGuildScheduledEventCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L176>)
+### func [WithGuildScheduledEventCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L176>)
 
 ```go
 func WithGuildScheduledEventCache(guildScheduledEventCache GuildScheduledEventCache) ConfigOpt
@@ -337,7 +340,7 @@ func WithGuildScheduledEventCache(guildScheduledEventCache GuildScheduledEventCa
 WithGuildScheduledEventCache sets the GuildScheduledEventCache of the Config.
 
 <a name="WithGuildScheduledEventCachePolicy"></a>
-### func [WithGuildScheduledEventCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L169>)
+### func [WithGuildScheduledEventCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L169>)
 
 ```go
 func WithGuildScheduledEventCachePolicy(policy Policy[discord.GuildScheduledEvent]) ConfigOpt
@@ -346,7 +349,7 @@ func WithGuildScheduledEventCachePolicy(policy Policy[discord.GuildScheduledEven
 WithGuildScheduledEventCachePolicy sets the Policy\[discord.GuildScheduledEvent\] of the Config.
 
 <a name="WithMemberCache"></a>
-### func [WithMemberCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L204>)
+### func [WithMemberCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L204>)
 
 ```go
 func WithMemberCache(memberCache MemberCache) ConfigOpt
@@ -355,7 +358,7 @@ func WithMemberCache(memberCache MemberCache) ConfigOpt
 WithMemberCache sets the MemberCache of the Config.
 
 <a name="WithMemberCachePolicy"></a>
-### func [WithMemberCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L197>)
+### func [WithMemberCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L197>)
 
 ```go
 func WithMemberCachePolicy(policy Policy[discord.Member]) ConfigOpt
@@ -364,7 +367,7 @@ func WithMemberCachePolicy(policy Policy[discord.Member]) ConfigOpt
 WithMemberCachePolicy sets the Policy\[discord.Member\] of the Config.
 
 <a name="WithMessageCache"></a>
-### func [WithMessageCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L260>)
+### func [WithMessageCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L260>)
 
 ```go
 func WithMessageCache(messageCache MessageCache) ConfigOpt
@@ -373,7 +376,7 @@ func WithMessageCache(messageCache MessageCache) ConfigOpt
 WithMessageCache sets the MessageCache of the Config.
 
 <a name="WithMessageCachePolicy"></a>
-### func [WithMessageCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L253>)
+### func [WithMessageCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L253>)
 
 ```go
 func WithMessageCachePolicy(policy Policy[discord.Message]) ConfigOpt
@@ -382,7 +385,7 @@ func WithMessageCachePolicy(policy Policy[discord.Message]) ConfigOpt
 WithMessageCachePolicy sets the Policy\[discord.Message\] of the Config.
 
 <a name="WithPresenceCache"></a>
-### func [WithPresenceCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L232>)
+### func [WithPresenceCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L232>)
 
 ```go
 func WithPresenceCache(presenceCache PresenceCache) ConfigOpt
@@ -391,7 +394,7 @@ func WithPresenceCache(presenceCache PresenceCache) ConfigOpt
 WithPresenceCache sets the PresenceCache of the Config.
 
 <a name="WithPresenceCachePolicy"></a>
-### func [WithPresenceCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L225>)
+### func [WithPresenceCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L225>)
 
 ```go
 func WithPresenceCachePolicy(policy Policy[discord.Presence]) ConfigOpt
@@ -400,7 +403,7 @@ func WithPresenceCachePolicy(policy Policy[discord.Presence]) ConfigOpt
 WithPresenceCachePolicy sets the Policy\[discord.Presence\] of the Config.
 
 <a name="WithRoleCache"></a>
-### func [WithRoleCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L190>)
+### func [WithRoleCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L190>)
 
 ```go
 func WithRoleCache(roleCache RoleCache) ConfigOpt
@@ -409,7 +412,7 @@ func WithRoleCache(roleCache RoleCache) ConfigOpt
 WithRoleCache sets the RoleCache of the Config.
 
 <a name="WithRoleCachePolicy"></a>
-### func [WithRoleCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L183>)
+### func [WithRoleCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L183>)
 
 ```go
 func WithRoleCachePolicy(policy Policy[discord.Role]) ConfigOpt
@@ -418,7 +421,7 @@ func WithRoleCachePolicy(policy Policy[discord.Role]) ConfigOpt
 WithRoleCachePolicy sets the Policy\[discord.Role\] of the Config.
 
 <a name="WithStageInstanceCache"></a>
-### func [WithStageInstanceCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L162>)
+### func [WithStageInstanceCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L162>)
 
 ```go
 func WithStageInstanceCache(stageInstanceCache StageInstanceCache) ConfigOpt
@@ -427,7 +430,7 @@ func WithStageInstanceCache(stageInstanceCache StageInstanceCache) ConfigOpt
 WithStageInstanceCache sets the StageInstanceCache of the Config.
 
 <a name="WithStageInstanceCachePolicy"></a>
-### func [WithStageInstanceCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L155>)
+### func [WithStageInstanceCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L155>)
 
 ```go
 func WithStageInstanceCachePolicy(policy Policy[discord.StageInstance]) ConfigOpt
@@ -436,7 +439,7 @@ func WithStageInstanceCachePolicy(policy Policy[discord.StageInstance]) ConfigOp
 WithStageInstanceCachePolicy sets the Policy\[discord.Guild\] of the Config.
 
 <a name="WithStickerCache"></a>
-### func [WithStickerCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L288>)
+### func [WithStickerCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L288>)
 
 ```go
 func WithStickerCache(stickerCache StickerCache) ConfigOpt
@@ -445,7 +448,7 @@ func WithStickerCache(stickerCache StickerCache) ConfigOpt
 WithStickerCache sets the StickerCache of the Config.
 
 <a name="WithStickerCachePolicy"></a>
-### func [WithStickerCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L281>)
+### func [WithStickerCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L281>)
 
 ```go
 func WithStickerCachePolicy(policy Policy[discord.Sticker]) ConfigOpt
@@ -454,7 +457,7 @@ func WithStickerCachePolicy(policy Policy[discord.Sticker]) ConfigOpt
 WithStickerCachePolicy sets the Policy\[discord.Sticker\] of the Config.
 
 <a name="WithThreadMemberCache"></a>
-### func [WithThreadMemberCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L218>)
+### func [WithThreadMemberCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L218>)
 
 ```go
 func WithThreadMemberCache(threadMemberCache ThreadMemberCache) ConfigOpt
@@ -463,7 +466,7 @@ func WithThreadMemberCache(threadMemberCache ThreadMemberCache) ConfigOpt
 WithThreadMemberCache sets the ThreadMemberCache of the Config.
 
 <a name="WithThreadMemberCachePolicy"></a>
-### func [WithThreadMemberCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L211>)
+### func [WithThreadMemberCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L211>)
 
 ```go
 func WithThreadMemberCachePolicy(policy Policy[discord.ThreadMember]) ConfigOpt
@@ -472,7 +475,7 @@ func WithThreadMemberCachePolicy(policy Policy[discord.ThreadMember]) ConfigOpt
 WithThreadMemberCachePolicy sets the Policy\[discord.ThreadMember\] of the Config.
 
 <a name="WithVoiceStateCache"></a>
-### func [WithVoiceStateCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L246>)
+### func [WithVoiceStateCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L246>)
 
 ```go
 func WithVoiceStateCache(voiceStateCache VoiceStateCache) ConfigOpt
@@ -481,7 +484,7 @@ func WithVoiceStateCache(voiceStateCache VoiceStateCache) ConfigOpt
 WithVoiceStateCache sets the VoiceStateCache of the Config.
 
 <a name="WithVoiceStateCachePolicy"></a>
-### func [WithVoiceStateCachePolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_config.go#L239>)
+### func [WithVoiceStateCachePolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_config.go#L239>)
 
 ```go
 func WithVoiceStateCachePolicy(policy Policy[discord.VoiceState]) ConfigOpt
@@ -490,7 +493,7 @@ func WithVoiceStateCachePolicy(policy Policy[discord.VoiceState]) ConfigOpt
 WithVoiceStateCachePolicy sets the Policy\[discord.VoiceState\] of the Config.
 
 <a name="DefaultCache"></a>
-## type [DefaultCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L49-L55>)
+## type [DefaultCache](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L49-L55>)
 
 DefaultCache is a simple thread safe cache key value store.
 
@@ -501,7 +504,7 @@ type DefaultCache[T any] struct {
 ```
 
 <a name="DefaultCache[T].ForEach"></a>
-### func \(\*DefaultCache\[T\]\) [ForEach](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L102>)
+### func \(\*DefaultCache\[T\]\) [ForEach](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L102>)
 
 ```go
 func (c *DefaultCache[T]) ForEach(forEachFunc func(entity T))
@@ -510,7 +513,7 @@ func (c *DefaultCache[T]) ForEach(forEachFunc func(entity T))
 
 
 <a name="DefaultCache[T].Get"></a>
-### func \(\*DefaultCache\[T\]\) [Get](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L57>)
+### func \(\*DefaultCache\[T\]\) [Get](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L57>)
 
 ```go
 func (c *DefaultCache[T]) Get(id snowflake.ID) (T, bool)
@@ -519,7 +522,7 @@ func (c *DefaultCache[T]) Get(id snowflake.ID) (T, bool)
 
 
 <a name="DefaultCache[T].Len"></a>
-### func \(\*DefaultCache\[T\]\) [Len](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L96>)
+### func \(\*DefaultCache\[T\]\) [Len](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L96>)
 
 ```go
 func (c *DefaultCache[T]) Len() int
@@ -528,7 +531,7 @@ func (c *DefaultCache[T]) Len() int
 
 
 <a name="DefaultCache[T].Put"></a>
-### func \(\*DefaultCache\[T\]\) [Put](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L64>)
+### func \(\*DefaultCache\[T\]\) [Put](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L64>)
 
 ```go
 func (c *DefaultCache[T]) Put(id snowflake.ID, entity T)
@@ -537,7 +540,7 @@ func (c *DefaultCache[T]) Put(id snowflake.ID, entity T)
 
 
 <a name="DefaultCache[T].Remove"></a>
-### func \(\*DefaultCache\[T\]\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L76>)
+### func \(\*DefaultCache\[T\]\) [Remove](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L76>)
 
 ```go
 func (c *DefaultCache[T]) Remove(id snowflake.ID) (T, bool)
@@ -546,7 +549,7 @@ func (c *DefaultCache[T]) Remove(id snowflake.ID) (T, bool)
 
 
 <a name="DefaultCache[T].RemoveIf"></a>
-### func \(\*DefaultCache\[T\]\) [RemoveIf](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L86>)
+### func \(\*DefaultCache\[T\]\) [RemoveIf](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L86>)
 
 ```go
 func (c *DefaultCache[T]) RemoveIf(filterFunc FilterFunc[T])
@@ -555,7 +558,7 @@ func (c *DefaultCache[T]) RemoveIf(filterFunc FilterFunc[T])
 
 
 <a name="EmojiCache"></a>
-## type [EmojiCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L575-L583>)
+## type [EmojiCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L575-L583>)
 
 
 
@@ -572,7 +575,7 @@ type EmojiCache interface {
 ```
 
 <a name="NewEmojiCache"></a>
-### func [NewEmojiCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L585>)
+### func [NewEmojiCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L585>)
 
 ```go
 func NewEmojiCache(cache GroupedCache[discord.Emoji]) EmojiCache
@@ -581,7 +584,7 @@ func NewEmojiCache(cache GroupedCache[discord.Emoji]) EmojiCache
 
 
 <a name="FilterFunc"></a>
-## type [FilterFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache.go#L10>)
+## type [FilterFunc](<https://github.com/disgoorg/disgo/blob/master/cache/cache.go#L10>)
 
 FilterFunc is used to filter cached entities.
 
@@ -590,7 +593,7 @@ type FilterFunc[T any] func(T) bool
 ```
 
 <a name="Flags"></a>
-## type [Flags](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_flags.go#L6>)
+## type [Flags](<https://github.com/disgoorg/disgo/blob/master/cache/cache_flags.go#L6>)
 
 Flags are used to enable/disable certain internal caches
 
@@ -632,7 +635,7 @@ const (
 ```
 
 <a name="Flags.Add"></a>
-### func \(Flags\) [Add](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_flags.go#L39>)
+### func \(Flags\) [Add](<https://github.com/disgoorg/disgo/blob/master/cache/cache_flags.go#L39>)
 
 ```go
 func (f Flags) Add(bits ...Flags) Flags
@@ -641,7 +644,7 @@ func (f Flags) Add(bits ...Flags) Flags
 Add allows you to add multiple bits together, producing a new bit
 
 <a name="Flags.Has"></a>
-### func \(Flags\) [Has](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_flags.go#L49>)
+### func \(Flags\) [Has](<https://github.com/disgoorg/disgo/blob/master/cache/cache_flags.go#L49>)
 
 ```go
 func (f Flags) Has(bits ...Flags) bool
@@ -650,7 +653,7 @@ func (f Flags) Has(bits ...Flags) bool
 Has will ensure that the bit includes all the bits entered
 
 <a name="Flags.Missing"></a>
-### func \(Flags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_flags.go#L54>)
+### func \(Flags\) [Missing](<https://github.com/disgoorg/disgo/blob/master/cache/cache_flags.go#L54>)
 
 ```go
 func (f Flags) Missing(bits ...Flags) bool
@@ -659,7 +662,7 @@ func (f Flags) Missing(bits ...Flags) bool
 Missing will check whether the bit is missing any one of the bits
 
 <a name="Flags.Remove"></a>
-### func \(Flags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_flags.go#L44>)
+### func \(Flags\) [Remove](<https://github.com/disgoorg/disgo/blob/master/cache/cache_flags.go#L44>)
 
 ```go
 func (f Flags) Remove(bits ...Flags) Flags
@@ -668,7 +671,7 @@ func (f Flags) Remove(bits ...Flags) Flags
 Remove allows you to subtract multiple bits from the first, producing a new bit
 
 <a name="GroupedCache"></a>
-## type [GroupedCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/grouped_cache.go#L14-L44>)
+## type [GroupedCache](<https://github.com/disgoorg/disgo/blob/master/cache/grouped_cache.go#L14-L44>)
 
 GroupedCache is a simple key value store grouped by a snowflake.ID. They key is always a snowflake.ID. The cache provides a simple way to store and retrieve entities. But is not guaranteed to be thread safe as this depends on the underlying implementation.
 
@@ -707,7 +710,7 @@ type GroupedCache[T any] interface {
 ```
 
 <a name="NewGroupedCache"></a>
-### func [NewGroupedCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/grouped_cache.go#L49>)
+### func [NewGroupedCache](<https://github.com/disgoorg/disgo/blob/master/cache/grouped_cache.go#L49>)
 
 ```go
 func NewGroupedCache[T any](flags Flags, neededFlags Flags, policy Policy[T]) GroupedCache[T]
@@ -716,7 +719,7 @@ func NewGroupedCache[T any](flags Flags, neededFlags Flags, policy Policy[T]) Gr
 NewGroupedCache returns a new default GroupedCache with the provided flags, neededFlags and policy.
 
 <a name="GroupedFilterFunc"></a>
-## type [GroupedFilterFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/grouped_cache.go#L10>)
+## type [GroupedFilterFunc](<https://github.com/disgoorg/disgo/blob/master/cache/grouped_cache.go#L10>)
 
 GroupedFilterFunc is used to filter grouped cached entities.
 
@@ -725,7 +728,7 @@ type GroupedFilterFunc[T any] func(groupID snowflake.ID, entity T) bool
 ```
 
 <a name="GuildCache"></a>
-## type [GuildCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L43-L57>)
+## type [GuildCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L43-L57>)
 
 
 
@@ -748,7 +751,7 @@ type GuildCache interface {
 ```
 
 <a name="NewGuildCache"></a>
-### func [NewGuildCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L59>)
+### func [NewGuildCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L59>)
 
 ```go
 func NewGuildCache(cache Cache[discord.Guild], unreadyGuilds Set[snowflake.ID], unavailableGuilds Set[snowflake.ID]) GuildCache
@@ -757,7 +760,7 @@ func NewGuildCache(cache Cache[discord.Guild], unreadyGuilds Set[snowflake.ID], 
 
 
 <a name="GuildScheduledEventCache"></a>
-## type [GuildScheduledEventCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L228-L236>)
+## type [GuildScheduledEventCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L228-L236>)
 
 
 
@@ -774,7 +777,7 @@ type GuildScheduledEventCache interface {
 ```
 
 <a name="NewGuildScheduledEventCache"></a>
-### func [NewGuildScheduledEventCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L238>)
+### func [NewGuildScheduledEventCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L238>)
 
 ```go
 func NewGuildScheduledEventCache(cache GroupedCache[discord.GuildScheduledEvent]) GuildScheduledEventCache
@@ -783,7 +786,7 @@ func NewGuildScheduledEventCache(cache GroupedCache[discord.GuildScheduledEvent]
 
 
 <a name="MemberCache"></a>
-## type [MemberCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L324-L332>)
+## type [MemberCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L324-L332>)
 
 
 
@@ -800,7 +803,7 @@ type MemberCache interface {
 ```
 
 <a name="NewMemberCache"></a>
-### func [NewMemberCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L334>)
+### func [NewMemberCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L334>)
 
 ```go
 func NewMemberCache(cache GroupedCache[discord.Member]) MemberCache
@@ -809,7 +812,7 @@ func NewMemberCache(cache GroupedCache[discord.Member]) MemberCache
 
 
 <a name="MessageCache"></a>
-## type [MessageCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L520-L529>)
+## type [MessageCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L520-L529>)
 
 
 
@@ -827,7 +830,7 @@ type MessageCache interface {
 ```
 
 <a name="NewMessageCache"></a>
-### func [NewMessageCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L531>)
+### func [NewMessageCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L531>)
 
 ```go
 func NewMessageCache(cache GroupedCache[discord.Message]) MessageCache
@@ -836,7 +839,7 @@ func NewMessageCache(cache GroupedCache[discord.Message]) MessageCache
 
 
 <a name="Policy"></a>
-## type [Policy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L51>)
+## type [Policy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L51>)
 
 Policy can be used to define your own policy for when entities should be cached.
 
@@ -845,7 +848,7 @@ type Policy[T any] func(entity T) bool
 ```
 
 <a name="AllPolicies"></a>
-### func [AllPolicies](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L81>)
+### func [AllPolicies](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L81>)
 
 ```go
 func AllPolicies[T any](policies ...Policy[T]) Policy[T]
@@ -854,7 +857,7 @@ func AllPolicies[T any](policies ...Policy[T]) Policy[T]
 AllPolicies is a shorthand for CachePolicy.And\(CachePolicy\).And\(CachePolicy\) etc.
 
 <a name="AnyPolicy"></a>
-### func [AnyPolicy](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L68>)
+### func [AnyPolicy](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L68>)
 
 ```go
 func AnyPolicy[T any](policies ...Policy[T]) Policy[T]
@@ -863,7 +866,7 @@ func AnyPolicy[T any](policies ...Policy[T]) Policy[T]
 AnyPolicy is a shorthand for CachePolicy.Or\(CachePolicy\).Or\(CachePolicy\) etc.
 
 <a name="PolicyChannelExclude"></a>
-### func [PolicyChannelExclude](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L44>)
+### func [PolicyChannelExclude](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L44>)
 
 ```go
 func PolicyChannelExclude(channelTypes ...discord.ChannelType) Policy[discord.Channel]
@@ -872,7 +875,7 @@ func PolicyChannelExclude(channelTypes ...discord.ChannelType) Policy[discord.Ch
 PolicyChannelExclude returns a policy that will not cache channels of the given types.
 
 <a name="PolicyChannelInclude"></a>
-### func [PolicyChannelInclude](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L37>)
+### func [PolicyChannelInclude](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L37>)
 
 ```go
 func PolicyChannelInclude(channelTypes ...discord.ChannelType) Policy[discord.Channel]
@@ -881,7 +884,7 @@ func PolicyChannelInclude(channelTypes ...discord.ChannelType) Policy[discord.Ch
 PolicyChannelInclude returns a policy that will only cache channels of the given types.
 
 <a name="PolicyMembersInVoice"></a>
-### func [PolicyMembersInVoice](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L29>)
+### func [PolicyMembersInVoice](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L29>)
 
 ```go
 func PolicyMembersInVoice(caches Caches) Policy[discord.Member]
@@ -890,7 +893,7 @@ func PolicyMembersInVoice(caches Caches) Policy[discord.Member]
 PolicyMembersInVoice returns a policy that will only cache members that are connected to an audio channel.
 
 <a name="PolicyMembersInclude"></a>
-### func [PolicyMembersInclude](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L17>)
+### func [PolicyMembersInclude](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L17>)
 
 ```go
 func PolicyMembersInclude(guildIDs ...snowflake.ID) Policy[discord.Member]
@@ -899,7 +902,7 @@ func PolicyMembersInclude(guildIDs ...snowflake.ID) Policy[discord.Member]
 PolicyMembersInclude returns a policy that will only cache members of the given guilds.
 
 <a name="Policy[T].And"></a>
-### func \(Policy\[T\]\) [And](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L61>)
+### func \(Policy\[T\]\) [And](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L61>)
 
 ```go
 func (p Policy[T]) And(policy Policy[T]) Policy[T]
@@ -908,7 +911,7 @@ func (p Policy[T]) And(policy Policy[T]) Policy[T]
 And allows you to require both CachePolicy\(s\) to be true for the entity to be cached
 
 <a name="Policy[T].Or"></a>
-### func \(Policy\[T\]\) [Or](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/cache_policy.go#L54>)
+### func \(Policy\[T\]\) [Or](<https://github.com/disgoorg/disgo/blob/master/cache/cache_policy.go#L54>)
 
 ```go
 func (p Policy[T]) Or(policy Policy[T]) Policy[T]
@@ -917,7 +920,7 @@ func (p Policy[T]) Or(policy Policy[T]) Policy[T]
 Or allows you to combine the CachePolicy with another, meaning either of them needs to be true
 
 <a name="PresenceCache"></a>
-## type [PresenceCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L422-L430>)
+## type [PresenceCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L422-L430>)
 
 
 
@@ -934,7 +937,7 @@ type PresenceCache interface {
 ```
 
 <a name="NewPresenceCache"></a>
-### func [NewPresenceCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L432>)
+### func [NewPresenceCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L432>)
 
 ```go
 func NewPresenceCache(cache GroupedCache[discord.Presence]) PresenceCache
@@ -943,7 +946,7 @@ func NewPresenceCache(cache GroupedCache[discord.Presence]) PresenceCache
 
 
 <a name="RoleCache"></a>
-## type [RoleCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L276-L284>)
+## type [RoleCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L276-L284>)
 
 
 
@@ -960,7 +963,7 @@ type RoleCache interface {
 ```
 
 <a name="NewRoleCache"></a>
-### func [NewRoleCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L286>)
+### func [NewRoleCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L286>)
 
 ```go
 func NewRoleCache(cache GroupedCache[discord.Role]) RoleCache
@@ -969,7 +972,7 @@ func NewRoleCache(cache GroupedCache[discord.Role]) RoleCache
 
 
 <a name="SelfUserCache"></a>
-## type [SelfUserCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L12-L15>)
+## type [SelfUserCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L12-L15>)
 
 
 
@@ -981,7 +984,7 @@ type SelfUserCache interface {
 ```
 
 <a name="NewSelfUserCache"></a>
-### func [NewSelfUserCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L17>)
+### func [NewSelfUserCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L17>)
 
 ```go
 func NewSelfUserCache() SelfUserCache
@@ -990,7 +993,7 @@ func NewSelfUserCache() SelfUserCache
 
 
 <a name="Set"></a>
-## type [Set](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/set.go#L6-L19>)
+## type [Set](<https://github.com/disgoorg/disgo/blob/master/cache/set.go#L6-L19>)
 
 Set is a collection of unique items. It should be thread\-safe.
 
@@ -1012,7 +1015,7 @@ type Set[T comparable] interface {
 ```
 
 <a name="NewSet"></a>
-### func [NewSet](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/set.go#L27>)
+### func [NewSet](<https://github.com/disgoorg/disgo/blob/master/cache/set.go#L27>)
 
 ```go
 func NewSet[T comparable]() Set[T]
@@ -1021,7 +1024,7 @@ func NewSet[T comparable]() Set[T]
 NewSet returns a thread\-safe in memory implementation of a set.
 
 <a name="StageInstanceCache"></a>
-## type [StageInstanceCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L178-L186>)
+## type [StageInstanceCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L178-L186>)
 
 
 
@@ -1038,7 +1041,7 @@ type StageInstanceCache interface {
 ```
 
 <a name="NewStageInstanceCache"></a>
-### func [NewStageInstanceCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L188>)
+### func [NewStageInstanceCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L188>)
 
 ```go
 func NewStageInstanceCache(cache GroupedCache[discord.StageInstance]) StageInstanceCache
@@ -1047,7 +1050,7 @@ func NewStageInstanceCache(cache GroupedCache[discord.StageInstance]) StageInsta
 
 
 <a name="StickerCache"></a>
-## type [StickerCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L623-L631>)
+## type [StickerCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L623-L631>)
 
 
 
@@ -1064,7 +1067,7 @@ type StickerCache interface {
 ```
 
 <a name="NewStickerCache"></a>
-### func [NewStickerCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L633>)
+### func [NewStickerCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L633>)
 
 ```go
 func NewStickerCache(cache GroupedCache[discord.Sticker]) StickerCache
@@ -1073,7 +1076,7 @@ func NewStickerCache(cache GroupedCache[discord.Sticker]) StickerCache
 
 
 <a name="ThreadMemberCache"></a>
-## type [ThreadMemberCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L372-L380>)
+## type [ThreadMemberCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L372-L380>)
 
 
 
@@ -1090,7 +1093,7 @@ type ThreadMemberCache interface {
 ```
 
 <a name="NewThreadMemberCache"></a>
-### func [NewThreadMemberCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L382>)
+### func [NewThreadMemberCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L382>)
 
 ```go
 func NewThreadMemberCache(cache GroupedCache[discord.ThreadMember]) ThreadMemberCache
@@ -1099,7 +1102,7 @@ func NewThreadMemberCache(cache GroupedCache[discord.ThreadMember]) ThreadMember
 
 
 <a name="VoiceStateCache"></a>
-## type [VoiceStateCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L472-L480>)
+## type [VoiceStateCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L472-L480>)
 
 
 
@@ -1116,7 +1119,7 @@ type VoiceStateCache interface {
 ```
 
 <a name="NewVoiceStateCache"></a>
-### func [NewVoiceStateCache](<https://github.com/disgoorg/disgo/blob/master/disgo/cache/caches.go#L482>)
+### func [NewVoiceStateCache](<https://github.com/disgoorg/disgo/blob/master/cache/caches.go#L482>)
 
 ```go
 func NewVoiceStateCache(cache GroupedCache[discord.VoiceState]) VoiceStateCache

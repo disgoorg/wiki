@@ -1,7 +1,10 @@
+# Bot
 
 ```go
 import "github.com/disgoorg/disgo/bot"
 ```
+
+Package bot connects the Gateway/Sharding, HTTPServer, Cache, Rest & Events packages into a single high level client interface.
 
 ## Variables
 
@@ -12,7 +15,7 @@ var ErrNoUserIDs = errors.New("no user ids to request")
 ```
 
 <a name="MemberChunkingFilterAll"></a>
-## func [MemberChunkingFilterAll](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L10>)
+## func [MemberChunkingFilterAll](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L10>)
 
 ```go
 func MemberChunkingFilterAll(_ snowflake.ID) bool
@@ -21,7 +24,7 @@ func MemberChunkingFilterAll(_ snowflake.ID) bool
 MemberChunkingFilterAll is a MemberChunkingFilter which includes all guilds.
 
 <a name="MemberChunkingFilterDefault"></a>
-## func [MemberChunkingFilterDefault](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L16>)
+## func [MemberChunkingFilterDefault](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L16>)
 
 ```go
 func MemberChunkingFilterDefault(guildID snowflake.ID) bool
@@ -30,7 +33,7 @@ func MemberChunkingFilterDefault(guildID snowflake.ID) bool
 MemberChunkingFilterDefault is the default MemberChunkingFilter.
 
 <a name="MemberChunkingFilterNone"></a>
-## func [MemberChunkingFilterNone](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L13>)
+## func [MemberChunkingFilterNone](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L13>)
 
 ```go
 func MemberChunkingFilterNone(_ snowflake.ID) bool
@@ -39,7 +42,7 @@ func MemberChunkingFilterNone(_ snowflake.ID) bool
 MemberChunkingFilterNone is a MemberChunkingFilter which excludes all guilds.
 
 <a name="NewEventCollector"></a>
-## func [NewEventCollector](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_collector.go#L28>)
+## func [NewEventCollector](<https://github.com/disgoorg/disgo/blob/master/bot/event_collector.go#L28>)
 
 ```go
 func NewEventCollector[E Event](client Client, filterFunc func(e E) bool) (<-chan E, func())
@@ -48,7 +51,7 @@ func NewEventCollector[E Event](client Client, filterFunc func(e E) bool) (<-cha
 NewEventCollector returns a channel in which the events of type T gets sent which pass the passed filter and a function which can be used to stop the event collector. The close function needs to be called to stop the event collector.
 
 <a name="WaitForEvent"></a>
-## func [WaitForEvent](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_collector.go#L9>)
+## func [WaitForEvent](<https://github.com/disgoorg/disgo/blob/master/bot/event_collector.go#L9>)
 
 ```go
 func WaitForEvent[E Event](client Client, ctx context.Context, filterFunc func(e E) bool, actionFunc func(e E), cancelFunc func())
@@ -57,7 +60,7 @@ func WaitForEvent[E Event](client Client, ctx context.Context, filterFunc func(e
 WaitForEvent waits for an event passing the filterFunc and then calls the actionFunc. You can cancel this function with the passed context.Context and the cancelFunc gets called then.
 
 <a name="Client"></a>
-## type [Client](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/client.go#L22-L112>)
+## type [Client](<https://github.com/disgoorg/disgo/blob/master/bot/client.go#L22-L112>)
 
 Client is a high level interface for interacting with Discord's API. It combines the functionality of the rest, gateway/sharding, httpserver and cache into one easy to use interface. Create a new client with disgo.New.
 
@@ -156,7 +159,7 @@ type Client interface {
 ```
 
 <a name="BuildClient"></a>
-### func [BuildClient](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L212>)
+### func [BuildClient](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L212>)
 
 ```go
 func BuildClient(token string, cfg *Config, gatewayEventHandlerFunc func(client Client) gateway.EventHandlerFunc, httpServerEventHandlerFunc func(client Client) httpserver.EventHandlerFunc, os string, name string, github string, version string) (Client, error)
@@ -165,7 +168,7 @@ func BuildClient(token string, cfg *Config, gatewayEventHandlerFunc func(client 
 BuildClient creates a new Client instance with the given token, Config, gateway handlers, http handlers os, name, github & version.
 
 <a name="Config"></a>
-## type [Config](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L27-L55>)
+## type [Config](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L27-L55>)
 
 Config lets you configure your Client instance.
 
@@ -202,7 +205,7 @@ type Config struct {
 ```
 
 <a name="DefaultConfig"></a>
-### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L18>)
+### func [DefaultConfig](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L18>)
 
 ```go
 func DefaultConfig(gatewayHandlers map[gateway.EventType]GatewayEventHandler, httpHandler HTTPServerEventHandler) *Config
@@ -211,7 +214,7 @@ func DefaultConfig(gatewayHandlers map[gateway.EventType]GatewayEventHandler, ht
 DefaultConfig returns a Config with sensible defaults.
 
 <a name="Config.Apply"></a>
-### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L61>)
+### func \(\*Config\) [Apply](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L61>)
 
 ```go
 func (c *Config) Apply(opts []ConfigOpt)
@@ -220,7 +223,7 @@ func (c *Config) Apply(opts []ConfigOpt)
 Apply applies the given ConfigOpt\(s\) to the Config
 
 <a name="ConfigOpt"></a>
-## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L58>)
+## type [ConfigOpt](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L58>)
 
 ConfigOpt is a type alias for a function that takes a Config and is used to configure your Client.
 
@@ -229,7 +232,7 @@ type ConfigOpt func(config *Config)
 ```
 
 <a name="WithCacheConfigOpts"></a>
-### func [WithCacheConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L191>)
+### func [WithCacheConfigOpts](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L191>)
 
 ```go
 func WithCacheConfigOpts(opts ...cache.ConfigOpt) ConfigOpt
@@ -238,7 +241,7 @@ func WithCacheConfigOpts(opts ...cache.ConfigOpt) ConfigOpt
 WithCacheConfigOpts lets you configure the default cache.Caches.
 
 <a name="WithCaches"></a>
-### func [WithCaches](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L184>)
+### func [WithCaches](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L184>)
 
 ```go
 func WithCaches(caches cache.Caches) ConfigOpt
@@ -247,7 +250,7 @@ func WithCaches(caches cache.Caches) ConfigOpt
 WithCaches lets you inject your own cache.Caches.
 
 <a name="WithDefaultGateway"></a>
-### func [WithDefaultGateway](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L134>)
+### func [WithDefaultGateway](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L134>)
 
 ```go
 func WithDefaultGateway() ConfigOpt
@@ -256,7 +259,7 @@ func WithDefaultGateway() ConfigOpt
 WithDefaultGateway creates a gateway.Gateway with sensible defaults.
 
 <a name="WithDefaultShardManager"></a>
-### func [WithDefaultShardManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L155>)
+### func [WithDefaultShardManager](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L155>)
 
 ```go
 func WithDefaultShardManager() ConfigOpt
@@ -265,7 +268,7 @@ func WithDefaultShardManager() ConfigOpt
 WithDefaultShardManager creates a sharding.ShardManager with sensible defaults.
 
 <a name="WithEventListenerChan"></a>
-### func [WithEventListenerChan](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L122>)
+### func [WithEventListenerChan](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L122>)
 
 ```go
 func WithEventListenerChan[E Event](c chan<- E) ConfigOpt
@@ -274,7 +277,7 @@ func WithEventListenerChan[E Event](c chan<- E) ConfigOpt
 WithEventListenerChan adds the given chan\<\- E to the default EventManager.
 
 <a name="WithEventListenerFunc"></a>
-### func [WithEventListenerFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L117>)
+### func [WithEventListenerFunc](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L117>)
 
 ```go
 func WithEventListenerFunc[E Event](f func(e E)) ConfigOpt
@@ -283,7 +286,7 @@ func WithEventListenerFunc[E Event](f func(e E)) ConfigOpt
 WithEventListenerFunc adds the given func\(e E\) to the default EventManager.
 
 <a name="WithEventListeners"></a>
-### func [WithEventListeners](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L110>)
+### func [WithEventListeners](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L110>)
 
 ```go
 func WithEventListeners(eventListeners ...EventListener) ConfigOpt
@@ -292,7 +295,7 @@ func WithEventListeners(eventListeners ...EventListener) ConfigOpt
 WithEventListeners adds the given EventListener\(s\) to the default EventManager.
 
 <a name="WithEventManager"></a>
-### func [WithEventManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L96>)
+### func [WithEventManager](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L96>)
 
 ```go
 func WithEventManager(eventManager EventManager) ConfigOpt
@@ -301,7 +304,7 @@ func WithEventManager(eventManager EventManager) ConfigOpt
 WithEventManager lets you inject your own EventManager.
 
 <a name="WithEventManagerConfigOpts"></a>
-### func [WithEventManagerConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L103>)
+### func [WithEventManagerConfigOpts](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L103>)
 
 ```go
 func WithEventManagerConfigOpts(opts ...EventManagerConfigOpt) ConfigOpt
@@ -310,7 +313,7 @@ func WithEventManagerConfigOpts(opts ...EventManagerConfigOpt) ConfigOpt
 WithEventManagerConfigOpts lets you configure the default EventManager.
 
 <a name="WithGateway"></a>
-### func [WithGateway](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L127>)
+### func [WithGateway](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L127>)
 
 ```go
 func WithGateway(gateway gateway.Gateway) ConfigOpt
@@ -319,7 +322,7 @@ func WithGateway(gateway gateway.Gateway) ConfigOpt
 WithGateway lets you inject your own gateway.Gateway.
 
 <a name="WithGatewayConfigOpts"></a>
-### func [WithGatewayConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L141>)
+### func [WithGatewayConfigOpts](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L141>)
 
 ```go
 func WithGatewayConfigOpts(opts ...gateway.ConfigOpt) ConfigOpt
@@ -328,7 +331,7 @@ func WithGatewayConfigOpts(opts ...gateway.ConfigOpt) ConfigOpt
 WithGatewayConfigOpts lets you configure the default gateway.Gateway.
 
 <a name="WithHTTPServer"></a>
-### func [WithHTTPServer](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L169>)
+### func [WithHTTPServer](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L169>)
 
 ```go
 func WithHTTPServer(httpServer httpserver.Server) ConfigOpt
@@ -337,7 +340,7 @@ func WithHTTPServer(httpServer httpserver.Server) ConfigOpt
 WithHTTPServer lets you inject your own httpserver.Server.
 
 <a name="WithHTTPServerConfigOpts"></a>
-### func [WithHTTPServerConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L176>)
+### func [WithHTTPServerConfigOpts](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L176>)
 
 ```go
 func WithHTTPServerConfigOpts(publicKey string, opts ...httpserver.ConfigOpt) ConfigOpt
@@ -346,7 +349,7 @@ func WithHTTPServerConfigOpts(publicKey string, opts ...httpserver.ConfigOpt) Co
 WithHTTPServerConfigOpts lets you configure the default httpserver.Server.
 
 <a name="WithLogger"></a>
-### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L68>)
+### func [WithLogger](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L68>)
 
 ```go
 func WithLogger(logger *slog.Logger) ConfigOpt
@@ -355,7 +358,7 @@ func WithLogger(logger *slog.Logger) ConfigOpt
 WithLogger lets you inject your own logger implementing \*slog.Logger.
 
 <a name="WithMemberChunkingFilter"></a>
-### func [WithMemberChunkingFilter](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L205>)
+### func [WithMemberChunkingFilter](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L205>)
 
 ```go
 func WithMemberChunkingFilter(memberChunkingFilter MemberChunkingFilter) ConfigOpt
@@ -364,7 +367,7 @@ func WithMemberChunkingFilter(memberChunkingFilter MemberChunkingFilter) ConfigO
 WithMemberChunkingFilter lets you configure the default MemberChunkingFilter.
 
 <a name="WithMemberChunkingManager"></a>
-### func [WithMemberChunkingManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L198>)
+### func [WithMemberChunkingManager](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L198>)
 
 ```go
 func WithMemberChunkingManager(memberChunkingManager MemberChunkingManager) ConfigOpt
@@ -373,7 +376,7 @@ func WithMemberChunkingManager(memberChunkingManager MemberChunkingManager) Conf
 WithMemberChunkingManager lets you inject your own MemberChunkingManager.
 
 <a name="WithRest"></a>
-### func [WithRest](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L89>)
+### func [WithRest](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L89>)
 
 ```go
 func WithRest(rest rest.Rest) ConfigOpt
@@ -382,7 +385,7 @@ func WithRest(rest rest.Rest) ConfigOpt
 WithRest lets you inject your own rest.Rest.
 
 <a name="WithRestClient"></a>
-### func [WithRestClient](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L75>)
+### func [WithRestClient](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L75>)
 
 ```go
 func WithRestClient(restClient rest.Client) ConfigOpt
@@ -391,7 +394,7 @@ func WithRestClient(restClient rest.Client) ConfigOpt
 WithRestClient lets you inject your own rest.Client.
 
 <a name="WithRestClientConfigOpts"></a>
-### func [WithRestClientConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L82>)
+### func [WithRestClientConfigOpts](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L82>)
 
 ```go
 func WithRestClientConfigOpts(opts ...rest.ConfigOpt) ConfigOpt
@@ -400,7 +403,7 @@ func WithRestClientConfigOpts(opts ...rest.ConfigOpt) ConfigOpt
 WithRestClientConfigOpts let's you configure the default rest.Client.
 
 <a name="WithShardManager"></a>
-### func [WithShardManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L148>)
+### func [WithShardManager](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L148>)
 
 ```go
 func WithShardManager(shardManager sharding.ShardManager) ConfigOpt
@@ -409,7 +412,7 @@ func WithShardManager(shardManager sharding.ShardManager) ConfigOpt
 WithShardManager lets you inject your own sharding.ShardManager.
 
 <a name="WithShardManagerConfigOpts"></a>
-### func [WithShardManagerConfigOpts](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/config.go#L162>)
+### func [WithShardManagerConfigOpts](<https://github.com/disgoorg/disgo/blob/master/bot/config.go#L162>)
 
 ```go
 func WithShardManagerConfigOpts(opts ...sharding.ConfigOpt) ConfigOpt
@@ -418,7 +421,7 @@ func WithShardManagerConfigOpts(opts ...sharding.ConfigOpt) ConfigOpt
 WithShardManagerConfigOpts lets you configure the default sharding.ShardManager.
 
 <a name="Event"></a>
-## type [Event](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L84-L87>)
+## type [Event](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L84-L87>)
 
 Event the basic interface each event implement
 
@@ -430,7 +433,7 @@ type Event interface {
 ```
 
 <a name="EventListener"></a>
-## type [EventListener](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L49-L51>)
+## type [EventListener](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L49-L51>)
 
 EventListener is used to create new EventListener to listen to events
 
@@ -441,7 +444,7 @@ type EventListener interface {
 ```
 
 <a name="NewListenerChan"></a>
-### func [NewListenerChan](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L69>)
+### func [NewListenerChan](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L69>)
 
 ```go
 func NewListenerChan[E Event](c chan<- E) EventListener
@@ -450,7 +453,7 @@ func NewListenerChan[E Event](c chan<- E) EventListener
 NewListenerChan returns a new EventListener for the given chan\<\- Event
 
 <a name="NewListenerFunc"></a>
-### func [NewListenerFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L54>)
+### func [NewListenerFunc](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L54>)
 
 ```go
 func NewListenerFunc[E Event](f func(e E)) EventListener
@@ -459,7 +462,7 @@ func NewListenerFunc[E Event](f func(e E)) EventListener
 NewListenerFunc returns a new EventListener for the given func\(e E\)
 
 <a name="EventManager"></a>
-## type [EventManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L31-L46>)
+## type [EventManager](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L31-L46>)
 
 EventManager lets you listen for specific events triggered by raw gateway events
 
@@ -483,7 +486,7 @@ type EventManager interface {
 ```
 
 <a name="NewEventManager"></a>
-### func [NewEventManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L15>)
+### func [NewEventManager](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L15>)
 
 ```go
 func NewEventManager(client Client, opts ...EventManagerConfigOpt) EventManager
@@ -492,7 +495,7 @@ func NewEventManager(client Client, opts ...EventManagerConfigOpt) EventManager
 NewEventManager returns a new EventManager with the EventManagerConfigOpt\(s\) applied.
 
 <a name="EventManagerConfig"></a>
-## type [EventManagerConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L17-L24>)
+## type [EventManagerConfig](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L17-L24>)
 
 EventManagerConfig can be used to configure the EventManager.
 
@@ -508,7 +511,7 @@ type EventManagerConfig struct {
 ```
 
 <a name="DefaultEventManagerConfig"></a>
-### func [DefaultEventManagerConfig](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L10>)
+### func [DefaultEventManagerConfig](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L10>)
 
 ```go
 func DefaultEventManagerConfig() *EventManagerConfig
@@ -517,7 +520,7 @@ func DefaultEventManagerConfig() *EventManagerConfig
 DefaultEventManagerConfig returns a new EventManagerConfig with all default values.
 
 <a name="EventManagerConfig.Apply"></a>
-### func \(\*EventManagerConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L30>)
+### func \(\*EventManagerConfig\) [Apply](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L30>)
 
 ```go
 func (c *EventManagerConfig) Apply(opts []EventManagerConfigOpt)
@@ -526,7 +529,7 @@ func (c *EventManagerConfig) Apply(opts []EventManagerConfigOpt)
 Apply applies the given EventManagerConfigOpt\(s\) to the EventManagerConfig.
 
 <a name="EventManagerConfigOpt"></a>
-## type [EventManagerConfigOpt](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L27>)
+## type [EventManagerConfigOpt](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L27>)
 
 EventManagerConfigOpt is a functional option for configuring an EventManager.
 
@@ -535,7 +538,7 @@ type EventManagerConfigOpt func(config *EventManagerConfig)
 ```
 
 <a name="WithAsyncEventsEnabled"></a>
-### func [WithAsyncEventsEnabled](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L61>)
+### func [WithAsyncEventsEnabled](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L61>)
 
 ```go
 func WithAsyncEventsEnabled() EventManagerConfigOpt
@@ -544,7 +547,7 @@ func WithAsyncEventsEnabled() EventManagerConfigOpt
 WithAsyncEventsEnabled enables/disables the async events.
 
 <a name="WithEventManagerLogger"></a>
-### func [WithEventManagerLogger](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L37>)
+### func [WithEventManagerLogger](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L37>)
 
 ```go
 func WithEventManagerLogger(logger *slog.Logger) EventManagerConfigOpt
@@ -553,7 +556,7 @@ func WithEventManagerLogger(logger *slog.Logger) EventManagerConfigOpt
 WithEventManagerLogger overrides the default logger in the EventManagerConfig.
 
 <a name="WithGatewayHandlers"></a>
-### func [WithGatewayHandlers](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L68>)
+### func [WithGatewayHandlers](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L68>)
 
 ```go
 func WithGatewayHandlers(handlers map[gateway.EventType]GatewayEventHandler) EventManagerConfigOpt
@@ -562,7 +565,7 @@ func WithGatewayHandlers(handlers map[gateway.EventType]GatewayEventHandler) Eve
 WithGatewayHandlers overrides the default GatewayEventHandler\(s\) in the EventManagerConfig.
 
 <a name="WithHTTPServerHandler"></a>
-### func [WithHTTPServerHandler](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L75>)
+### func [WithHTTPServerHandler](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L75>)
 
 ```go
 func WithHTTPServerHandler(handler HTTPServerEventHandler) EventManagerConfigOpt
@@ -571,7 +574,7 @@ func WithHTTPServerHandler(handler HTTPServerEventHandler) EventManagerConfigOpt
 WithHTTPServerHandler overrides the given HTTPServerEventHandler in the EventManagerConfig.
 
 <a name="WithListenerChan"></a>
-### func [WithListenerChan](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L56>)
+### func [WithListenerChan](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L56>)
 
 ```go
 func WithListenerChan[E Event](c chan<- E) EventManagerConfigOpt
@@ -580,7 +583,7 @@ func WithListenerChan[E Event](c chan<- E) EventManagerConfigOpt
 WithListenerChan adds the given chan\<\- E to the EventManagerConfig.
 
 <a name="WithListenerFunc"></a>
-### func [WithListenerFunc](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L51>)
+### func [WithListenerFunc](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L51>)
 
 ```go
 func WithListenerFunc[E Event](f func(e E)) EventManagerConfigOpt
@@ -589,7 +592,7 @@ func WithListenerFunc[E Event](f func(e E)) EventManagerConfigOpt
 WithListenerFunc adds the given func\(e E\) to the EventManagerConfig.
 
 <a name="WithListeners"></a>
-### func [WithListeners](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager_config.go#L44>)
+### func [WithListeners](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager_config.go#L44>)
 
 ```go
 func WithListeners(listeners ...EventListener) EventManagerConfigOpt
@@ -598,7 +601,7 @@ func WithListeners(listeners ...EventListener) EventManagerConfigOpt
 WithListeners adds the given EventListener\(s\) to the EventManagerConfig.
 
 <a name="GatewayEventHandler"></a>
-## type [GatewayEventHandler](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L90-L93>)
+## type [GatewayEventHandler](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L90-L93>)
 
 GatewayEventHandler is used to handle Gateway Event\(s\)
 
@@ -610,7 +613,7 @@ type GatewayEventHandler interface {
 ```
 
 <a name="NewGatewayEventHandler"></a>
-### func [NewGatewayEventHandler](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L96>)
+### func [NewGatewayEventHandler](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L96>)
 
 ```go
 func NewGatewayEventHandler[T gateway.EventData](eventType gateway.EventType, handleFunc func(client Client, sequenceNumber int, shardID int, event T)) GatewayEventHandler
@@ -619,7 +622,7 @@ func NewGatewayEventHandler[T gateway.EventData](eventType gateway.EventType, ha
 NewGatewayEventHandler returns a new GatewayEventHandler for the given GatewayEventType and handler func
 
 <a name="HTTPServerEventHandler"></a>
-## type [HTTPServerEventHandler](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/event_manager.go#L116-L118>)
+## type [HTTPServerEventHandler](<https://github.com/disgoorg/disgo/blob/master/bot/event_manager.go#L116-L118>)
 
 HTTPServerEventHandler is used to handle HTTP Event\(s\)
 
@@ -630,7 +633,7 @@ type HTTPServerEventHandler interface {
 ```
 
 <a name="MemberChunkingFilter"></a>
-## type [MemberChunkingFilter](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L35>)
+## type [MemberChunkingFilter](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L35>)
 
 MemberChunkingFilter is a filter that can be used to filter from which guilds to request members from.
 
@@ -639,7 +642,7 @@ type MemberChunkingFilter func(guildID snowflake.ID) bool
 ```
 
 <a name="AllMemberChunkingFilters"></a>
-### func [AllMemberChunkingFilters](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L65>)
+### func [AllMemberChunkingFilters](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L65>)
 
 ```go
 func AllMemberChunkingFilters(filters ...MemberChunkingFilter) MemberChunkingFilter
@@ -648,7 +651,7 @@ func AllMemberChunkingFilters(filters ...MemberChunkingFilter) MemberChunkingFil
 AllMemberChunkingFilters is a shorthand for MemberChunkingFilter.And\(MemberChunkingFilter\).And\(MemberChunkingFilter\) etc.
 
 <a name="AnyMemberChunkingFilter"></a>
-### func [AnyMemberChunkingFilter](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L52>)
+### func [AnyMemberChunkingFilter](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L52>)
 
 ```go
 func AnyMemberChunkingFilter(filters ...MemberChunkingFilter) MemberChunkingFilter
@@ -657,7 +660,7 @@ func AnyMemberChunkingFilter(filters ...MemberChunkingFilter) MemberChunkingFilt
 AnyMemberChunkingFilter is a shorthand for MemberChunkingFilter.Or\(MemberChunkingFilter\).Or\(MemberChunkingFilter\) etc.
 
 <a name="MemberChunkingFilterExcludeGuildIDs"></a>
-### func [MemberChunkingFilterExcludeGuildIDs](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L28>)
+### func [MemberChunkingFilterExcludeGuildIDs](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L28>)
 
 ```go
 func MemberChunkingFilterExcludeGuildIDs(guildIDs ...snowflake.ID) MemberChunkingFilter
@@ -666,7 +669,7 @@ func MemberChunkingFilterExcludeGuildIDs(guildIDs ...snowflake.ID) MemberChunkin
 MemberChunkingFilterExcludeGuildIDs returns a MemberChunkingFilter which excludes the given guildIDs.
 
 <a name="MemberChunkingFilterIncludeGuildIDs"></a>
-### func [MemberChunkingFilterIncludeGuildIDs](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L21>)
+### func [MemberChunkingFilterIncludeGuildIDs](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L21>)
 
 ```go
 func MemberChunkingFilterIncludeGuildIDs(guildIDs ...snowflake.ID) MemberChunkingFilter
@@ -675,7 +678,7 @@ func MemberChunkingFilterIncludeGuildIDs(guildIDs ...snowflake.ID) MemberChunkin
 MemberChunkingFilterIncludeGuildIDs returns a MemberChunkingFilter which includes the given guildIDs.
 
 <a name="MemberChunkingFilter.And"></a>
-### func \(MemberChunkingFilter\) [And](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L45>)
+### func \(MemberChunkingFilter\) [And](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L45>)
 
 ```go
 func (f MemberChunkingFilter) And(filter MemberChunkingFilter) MemberChunkingFilter
@@ -684,7 +687,7 @@ func (f MemberChunkingFilter) And(filter MemberChunkingFilter) MemberChunkingFil
 And allows you to require both MemberChunkingFilter\(s\) to be true for the guild to be chunked
 
 <a name="MemberChunkingFilter.Or"></a>
-### func \(MemberChunkingFilter\) [Or](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_filter.go#L38>)
+### func \(MemberChunkingFilter\) [Or](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_filter.go#L38>)
 
 ```go
 func (f MemberChunkingFilter) Or(filter MemberChunkingFilter) MemberChunkingFilter
@@ -693,7 +696,7 @@ func (f MemberChunkingFilter) Or(filter MemberChunkingFilter) MemberChunkingFilt
 Or allows you to combine the MemberChunkingFilter with another, meaning either of them needs to be true for the guild to be chunked.
 
 <a name="MemberChunkingManager"></a>
-## type [MemberChunkingManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_manager.go#L39-L93>)
+## type [MemberChunkingManager](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_manager.go#L39-L93>)
 
 MemberChunkingManager is used to request members for guilds from the discord gateway.
 
@@ -756,7 +759,7 @@ type MemberChunkingManager interface {
 ```
 
 <a name="NewMemberChunkingManager"></a>
-### func [NewMemberChunkingManager](<https://github.com/disgoorg/disgo/blob/master/disgo/bot/member_chunking_manager.go#L21>)
+### func [NewMemberChunkingManager](<https://github.com/disgoorg/disgo/blob/master/bot/member_chunking_manager.go#L21>)
 
 ```go
 func NewMemberChunkingManager(client Client, logger *slog.Logger, memberChunkingFilter MemberChunkingFilter) MemberChunkingManager
