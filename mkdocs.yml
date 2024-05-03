@@ -36,6 +36,9 @@ nav:
     - Examples: disgolink/examples.md
     - Events: disgolink/events.md
     - Plugins: disgolink/plugins.md
+    - Packages:
+      - disgolink: disgolink/packages/disgolink.md
+      - lavalink: disgolink/packages/lavalink.md
 
 plugins:
   - search

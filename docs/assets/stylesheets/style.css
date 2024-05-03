@@ -8,9 +8,9 @@
     right: .3rem;
     display: block;
     padding: .3rem .4rem;
-    color: var(--md-default-bg-color);
+    color: var(--md-primary-bg-color);
     font-size: .5rem;
-    border: .05rem solid var(--md-default-bg-color--lighter);
+    border: .05rem solid var(--md-primary-bg-color--light);
     border-radius: .1rem;
     content: "S";
   }
