@@ -6,6 +6,9 @@ copyright: Copyright 2022 TopiSenpai, Skye-31
 watch:
   - templates
 
+extra_javascript:
+  - path: 'assets/scripts/extra_script.js'
+
 extra_css:
   - 'assets/stylesheets/colors.css'
   - 'assets/stylesheets/style.css'

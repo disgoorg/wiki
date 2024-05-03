@@ -7,8 +7,6 @@ template: index.html
 <div class="grid-container" markdown>
 <div class="grid-child grid-child-sized" markdown>
 
-[DisGo](https://github.com/disgoorg/disgo) is a [Discord](https://discord.com/) API wrapper written in [Golang](https://golang.org/) aimed to be consistent, modular, customizable and less pain to use than other libraries.
-
 ## **More information**
 Documentation is still under construction so you may consider also looking at these:
 
@@ -25,10 +23,6 @@ Documentation is still under construction so you may consider also looking at th
 === "DisGoLink"
     ```bash
     $ go get github.com/disgoorg/disgolink
-    ```
-=== "DisGoPlayer"
-    ```bash
-    $ go get github.com/disgoorg/disgoplayer
     ```
 </div>
 </div>
