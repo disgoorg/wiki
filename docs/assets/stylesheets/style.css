@@ -7,13 +7,12 @@
     top: .3rem;
     right: .3rem;
     display: block;
-    padding: .1rem .4rem;
+    padding: .3rem .4rem;
     color: var(--md-default-bg-color);
-    font-weight: bold;
-    font-size: .8rem;
+    font-size: .5rem;
     border: .05rem solid var(--md-default-bg-color--lighter);
     border-radius: .1rem;
-    content: "/";
+    content: "S";
   }
 
 .container {
