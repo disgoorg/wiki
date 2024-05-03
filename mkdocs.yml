@@ -18,6 +18,18 @@ nav:
     - Features: disgo/features.md
     - Getting Started: disgo/index.md
     - Examples: disgo/examples.md
+    - disgo Package: disgo/packages/disgo.md
+    - discord: disgo/packages/discord.md
+    - bot: disgo/packages/bot.md
+    - gateway: disgo/packages/gateway.md
+    - sharding: disgo/packages/sharding.md
+    - cache: disgo/packages/cache.md
+    - httpserver: disgo/packages/httpserver.md
+    - events: disgo/packages/events.md
+    - rest: disgo/packages/rest.md
+    - webhook: disgo/packages/webhook.md
+    - oauth2: disgo/packages/oauth2.md
+    - voice: disgo/packages/voice.md
   - DisGoLink:
     - Getting Started: disgolink/index.md
     - Examples: disgolink/examples.md
