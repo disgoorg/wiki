@@ -3,16 +3,14 @@
 site_name: DisGo Wiki
 site_description: DisGo Wiki
 site_author: topi314
+site_url: https://disgo.dev
+
+repo_name: disgo
+repo_url: https://github.com/disgoorg/disgo
+edit_uri: ../disgo-wiki/edit/master/docs/
+
 copyright: Copyright 2025 topi314, Skye-31
 
-watch:
-  - overrides
-
-extra_css:
-  - 'assets/stylesheets/colors.css'
-  - 'assets/stylesheets/style.css'
-
-use_directory_urls: true
 nav:
   - Home: index.md
   - DisGo:
@@ -22,30 +20,16 @@ nav:
     - disgolink/index.md
     - Getting Started: disgolink/getting-started.md
 
-plugins:
-  - search
-  - git-revision-date-localized:
-      enable_creation_date: true
+extra_css:
+  - stylesheets/style.css
+  - stylesheets/colors.css
 
-markdown_extensions:
-  - admonition
-  - meta
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - footnotes
-  - def_list
-  - attr_list
-  - md_in_html
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - toc:
-      permalink: true
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/disgoorg
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/9tKpqXjYVC
 
 theme:
   custom_dir: overrides
@@ -80,12 +64,38 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
-repo_name: disgo
-repo_url: https://github.com/disgoorg/disgo
-edit_uri: ../disgo-wiki/edit/master/docs/
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/disgoorg
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/9tKpqXjYVC
+markdown_extensions:
+  - admonition
+  - meta
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - footnotes
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - offline
+  - search:
+      lang: en
+  - social:
+      cards_layout_options:
+        background_color: "#5865F2"
+        color: "#FFFFFF"
+  - git-revision-date-localized:
+  - markdownextradata
+
+watch:
+  - overrides
+
+use_directory_urls: true
