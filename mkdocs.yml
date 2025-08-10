@@ -6,7 +6,7 @@ site_author: topi314
 copyright: Copyright 2025 topi314, Skye-31
 
 watch:
-  - templates
+  - overrides
 
 extra_css:
   - 'assets/stylesheets/colors.css'
@@ -48,18 +48,20 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 theme:
-  custom_dir: templates
+  custom_dir: overrides
   favicon: assets/images/logo.png
   features:
     - navigation.tracking
     - navigation.instant
     - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.sections
     - navigation.indexes
     - toc.integrate
     - content.code.annotate
+    - announce.dismiss
   name: material
   logo: assets/images/logo.png
   icon:

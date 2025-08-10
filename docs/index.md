@@ -1,8 +1,8 @@
 ---
 template: index.html
+hide:
+  - navigation
 ---
-
-<!-- Placeholder to make the page render -->
 
 <div class="grid-container" markdown>
 <div class="grid-child grid-child-sized" markdown>
