@@ -1,0 +1,13 @@
+services:
+  mkdocs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mkdocs
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/docs/
+    environment:
+      - TZ=Europe/Berlin

@@ -21,9 +21,5 @@ template: index.html
     ```bash
     $ go get github.com/disgoorg/disgolink
     ```
-=== "DisGoPlayer"
-    ```bash
-    $ go get github.com/disgoorg/disgoplayer
-    ```
 </div>
 </div>

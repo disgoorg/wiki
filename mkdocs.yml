@@ -1,7 +1,9 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
 site_name: DisGo Wiki
 site_description: DisGo Wiki
-site_author: TopiSenpai
-copyright: Copyright 2022 TopiSenpai, Skye-31
+site_author: topi314
+copyright: Copyright 2025 topi314, Skye-31
 
 watch:
   - templates
@@ -10,18 +12,15 @@ extra_css:
   - 'assets/stylesheets/colors.css'
   - 'assets/stylesheets/style.css'
 
+use_directory_urls: true
 nav:
+  - Home: index.md
   - DisGo:
-    - Index: disgo/index.md
+    - disgo/index.md
     - Getting Started: disgo/getting-started.md
-    - Bot: disgo/bot.md
-    - Gateway: disgo/gateway.md
-  - DisGoPlayer:
-    - Getting Started: disgoplayer/getting-started.md
   - DisGoLink:
+    - disgolink/index.md
     - Getting Started: disgolink/getting-started.md
-  - log:
-    - Getting Started: log/getting-started.md
 
 plugins:
   - search
@@ -45,7 +44,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 theme:
@@ -54,8 +53,11 @@ theme:
   features:
     - navigation.tracking
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
     - navigation.top
+    - navigation.sections
+    - navigation.indexes
     - toc.integrate
     - content.code.annotate
   name: material
