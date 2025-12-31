@@ -36,6 +36,6 @@ params:
 ## Explore
 
 {{< cards >}}
-  {{< card link="https://pkg.go.dev/github.com/disgoorg/disgo" title="Docs" icon="arrow-up-right" >}}
+  {{< card link="https://pkg.go.dev/github.com/disgoorg/disgo" title="Go Reference" icon="arrow-up-right" >}}
   {{< card link="guide/introduction" title="Guide" icon="book-open" >}}
 {{< /cards >}}

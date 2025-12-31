@@ -19,7 +19,7 @@ markup:
 
 menu:
   main:
-    - name: Docs
+    - name: Go Reference
       url: https://pkg.go.dev/github.com/disgoorg/disgo
       weight: 1
       params:
