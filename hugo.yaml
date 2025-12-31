@@ -26,7 +26,7 @@ menu:
         type: link
         icon: arrow-up-right
     - name: Guide
-      pageRef: /introduction
+      pageRef: /guide/introduction
       weight: 2
     - name: Theme Toggle
       weight: 3
