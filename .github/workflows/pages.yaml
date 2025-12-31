@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site to Cloudflare
 
 on:
   # Runs on pushes targeting the default branch
@@ -42,9 +42,6 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.24'
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
       - name: Setup Hugo
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
@@ -54,23 +51,17 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: |
-          hugo \
-            --gc --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
+        run: hugo --gc --minify
 
   # Deployment job
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME}}
+          githubToken: ${{ secrets.GITHUB_TOKEN}}
